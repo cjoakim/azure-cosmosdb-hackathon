@@ -1,3 +1,3 @@
 # azure-cosmosdb-hackathon
 
-## Server-Side programming with Stored Triggers
+## Challenge 7 - Server-Side programming with Triggers

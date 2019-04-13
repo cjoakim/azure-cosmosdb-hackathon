@@ -1,3 +1,3 @@
 # azure-cosmosdb-hackathon
 
-## Use the Change Feed with Azure Functions
+## Challenge 4 - Use the Change Feed with Azure Functions

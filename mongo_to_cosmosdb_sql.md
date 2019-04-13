@@ -1,6 +1,6 @@
 # azure-cosmosdb-hackathon
 
-## Port a MongoDB database CosmosDB/SQL
+## Challenge 3 - Port a MongoDB database CosmosDB/SQL
 
 Use your favorite workstation OS and programming language for this challenge
 

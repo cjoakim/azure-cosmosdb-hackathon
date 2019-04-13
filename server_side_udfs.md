@@ -1,3 +1,3 @@
 # azure-cosmosdb-hackathon
 
-## Server-Side programming with Stored UDFs
+## Challenge 6 - Server-Side programming with UDFs

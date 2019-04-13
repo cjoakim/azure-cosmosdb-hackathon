@@ -1,3 +1,3 @@
 # azure-cosmosdb-hackathon
 
-## Cassandra
+## Challenge 9 - Cassandra

@@ -1,3 +1,3 @@
 # azure-cosmosdb-hackathon
 
-## Server-Side programming with Stored Procedures
+## Challenge 5 - Server-Side programming with Stored Procedures

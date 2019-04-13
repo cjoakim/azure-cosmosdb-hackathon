@@ -1,6 +1,6 @@
 # azure-cosmosdb-hackathon
 
-## Port a MongoDB database CosmosDB/Mongo with CLI tools
+## Challenge 2 - Port a MongoDB database CosmosDB/Mongo with CLI tools
 
 No programming is involved in this solution.  The only tools you should
 use are native MongoDB CLI tools (mongo, mongoimport, etc), the Azure CLI,

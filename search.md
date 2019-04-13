@@ -1,3 +1,3 @@
 # azure-cosmosdb-hackathon
 
-## Integrate Azure Search with CosmosDB
+## Challenge 11 - Integrate Azure Search with CosmosDB

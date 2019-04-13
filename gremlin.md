@@ -1,3 +1,3 @@
 # azure-cosmosdb-hackathon
 
-## Gremlin
+## Challenge 8 - Gremlin Graph Database
