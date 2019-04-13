@@ -13,7 +13,9 @@ is strongly suggested, rather than using configuration files.
 
 This codebase uses the following environment variables in all programming languages:
 ```
-
+COSMOSDB_HACKATHON_BASE_DIR
+AZURE_COSMOSDB_SQLDB_URI
+AZURE_COSMOSDB_SQLDB_KEY
 ```
 
 ---
@@ -25,7 +27,7 @@ Not every challenge is currently implemented in each language.
 It's entirely fine if your working implementation varies from the solutions
 in this GitHub repository.
 
-- [Challenge 1 - .Net Core](solutions/challenge1/dotnetcore/notes.md)  **Implemented!**
+- [Challenge 1 - .Net Core](solutions/challenge1/dotnetcore/notes.md) &nbsp;&nbsp; **Implemented!**
 - [Challenge 1 - Java](solutions/challenge1/java/notes.md)
 - [Challenge 1 - Node.js](solutions/challenge1/node/notes.md)
 - [Challenge 1 - Python](solutions/challenge1/python/notes.md)
@@ -75,4 +77,6 @@ in this GitHub repository.
 - [Challenge 10 - Node.js](solutions/challenge10/node/notes.md)
 - [Challenge 10 - Python](solutions/challenge10/python/notes.md)
 
-* = Currently implemented
+---
+
+[Hackathon Outline](outline.md)

@@ -30,7 +30,7 @@ Alpha version 1
 
 ### Challenge-Specific
 
-- For Challenge 2, either a local or remote MongoDB.
+- For Challenge 2, MongoDB installed locally.
 
 ### Suggested Libraries
 
