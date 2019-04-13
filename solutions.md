@@ -14,6 +14,7 @@ is strongly suggested, rather than using configuration files.
 This codebase uses the following environment variables in all programming languages:
 ```
 COSMOSDB_HACKATHON_BASE_DIR
+AZURE_SUBSCRIPTION_ID
 AZURE_COSMOSDB_SQLDB_URI
 AZURE_COSMOSDB_SQLDB_KEY
 ```
@@ -32,10 +33,7 @@ in this GitHub repository.
 - [Challenge 1 - Node.js](solutions/challenge1/node/notes.md)
 - [Challenge 1 - Python](solutions/challenge1/python/notes.md)
 
-- [Challenge 2 - .Net Core](solutions/challenge2/dotnetcore/notes.md)
-- [Challenge 2 - Java](solutions/challenge2/java/notes.md)
-- [Challenge 2 - Node.js](solutions/challenge2/node/notes.md)
-- [Challenge 2 - Python](solutions/challenge2/python/notes.md)
+- [Challenge 2 - CLI](solutions/challenge2/cli/notes.md) &nbsp;&nbsp; **Implemented!**
 
 - [Challenge 3 - .Net Core](solutions/challenge3/dotnetcore/notes.md)
 - [Challenge 3 - Java](solutions/challenge3/java/notes.md)

@@ -11,7 +11,7 @@ Alpha version 1
 ### Overview
 
 - [Challenge 1 - Port Relational and GPS Data to CosmosDB/SQL](relational_gps_sql.md)
-- [Challenge 2 - Port a MongoDB database CosmosDB/Mongo](mongo_to_cosmosdb_mongo.md)
+- [Challenge 2 - Port a MongoDB database CosmosDB/Mongo with CLI tools](mongo_to_cosmosdb_mongo.md) (1)
 - [Challenge 3 - Port a MongoDB database CosmosDB/SQL](mongo_to_cosmosdb_sql.md)
 - [Challenge 4 - Use the Change Feed with Azure Functions](change_feed_functions.md)
 - [Challenge 5 - Server-Side programming with Stored Procedures](server_side_stored_procs.md)
@@ -20,6 +20,8 @@ Alpha version 1
 - [Challenge 8 - Gremlin](gremlin.md)
 - [Challenge 9 - Cassandra](cassandra.md)
 - [Challenge 10 - Integrate Azure Search with CosmosDB](search.md)
+
+(1) Recommended that you skip this challenge if you don't have MongoDB installed on your workstation
 
 ---
 
