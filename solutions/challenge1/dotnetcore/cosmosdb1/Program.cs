@@ -18,8 +18,6 @@
     // Chris Joakim, Microsoft, 2019/04/13
 
     // https://github.com/Azure/azure-cosmos-dotnet-v2/blob/master/samples/partition-stats/Program.cs
-
-    //[SuppressMessage("StyleCop.CSharp.DocumentationRules", "SA1600:ElementsMustBeDocumented", Justification = "For illustration purposes.")]
     public class Program
     {
         // Instance variables:
@@ -99,6 +97,22 @@
             return UriFactory.CreateDocumentCollectionUri(this.DbName, this.CollName);
         }
 
+        private void CountDocuments(string dbName, string collName)
+        {
+            Uri uri = getUri();
+            string sql = "SELECT VALUE COUNT(1) FROM c";
+            Console.WriteLine("sql: {0}", sql);
+
+            // This approach casts the result into a generic Object:
+            FeedOptions queryOptions = 
+                new FeedOptions { MaxItemCount = -1, EnableCrossPartitionQuery = true };
+            IQueryable<Object> results =
+                this.Client.CreateDocumentQuery<Object>(uri, sql, queryOptions);
+            foreach (Object result in results)
+            {
+                Console.WriteLine("Count {0}", JsonConvert.SerializeObject(result, Formatting.Indented));
+            }
+        }
 
         private void QueryAirportByIataCode(string iataCode)
         {
@@ -108,7 +122,7 @@
 
             // This approach casts the result into a generic Object:
             FeedOptions queryOptions = 
-                new FeedOptions { MaxItemCount = -1, EnableCrossPartitionQuery = true };
+                new FeedOptions { MaxItemCount = -1, EnableCrossPartitionQuery = false };
             IQueryable<Object> airports =
                 this.Client.CreateDocumentQuery<Object>(uri, sql, queryOptions);
             foreach (Object airport in airports)
@@ -194,6 +208,16 @@
             Thread.Sleep(3000);
         }
 
+        private static void CountDocumentsInCollection(string dbName, string collName)
+        {
+            Program p = new Program();
+            p.DbName = dbName;
+            p.CollName = collName;
+            p.ReadAirportsCsv();
+            p.DisplayValues();
+            p.InitializeClient();
+            p.CountDocuments(dbName, collName);
+        }
         private static void QueryAirportByIataCode(string dbName, string collName, string iataCode)
         {
             Program p = new Program();
@@ -230,6 +254,9 @@
         // dotnet run load_cosmosdb_airports_collection <dbName> <collName> <sleepMs> <maxRows>
         // dotnet run load_cosmosdb_airports_collection hackathon airports 200 3
         //
+        // dotnet run count_documents <dbName> <collName>
+        // dotnet run count_documents hackathon airports
+        //
         // dotnet run query_airport_by_iata_code <dbName> <collName> <iataCode>
         // dotnet run query_airport_by_iata_code hackathon airports CLT
         //
@@ -257,6 +284,11 @@
                         sleepMs = Int32.Parse(args[3]);
                         maxRows = Int32.Parse(args[4]);
                         LoadCosmosDbAirportsCollection(dbName, collName, sleepMs, maxRows);
+                        break;
+                    case "count_documents":
+                        dbName   = args[1];
+                        collName = args[2];
+                        CountDocumentsInCollection(dbName, collName);
                         break;
                     case "query_airport_by_iata_code":
                         dbName   = args[1];

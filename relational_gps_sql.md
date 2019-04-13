@@ -7,8 +7,9 @@
 - Use database export file **data/openflights_airports.csv** as the input
 - This file contains thousands of Airport rows, keep only valid fully-populated records
 - Filter the rows to include only the United States, the United Kingdom, and Japan
-- Load the filtered Airport rows into a CosmosDB/SQL API collection
+- Load the filtered Airport documents into a CosmosDB/SQL API collection
 - Ensure that the GPS information for each Airport document is in GeoJSON format
+- Ensure that queries by IATA Code are fast and efficient
 - Use your favorite workstation OS and programming language
 
 ## Questions
@@ -18,6 +19,8 @@
 
 - Query the collection efficiently by the IATA Code **CLT** (Charlotte, NC)
   and display the resulting document(s).  What is the altitude of CLT airport?
+
+- What is the RU cost to query the DB by an IATA Code?
 
 - Using native CosmosDB database functionality, query the airports that are within
   40 kilometers of GPS location 35.499235 (latitude) and -80.848469 (longitude).
