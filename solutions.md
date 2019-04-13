@@ -75,6 +75,11 @@ in this GitHub repository.
 - [Challenge 10 - Node.js](solutions/challenge10/node/notes.md)
 - [Challenge 10 - Python](solutions/challenge10/python/notes.md)
 
+- [Challenge 11 - .Net Core](solutions/challenge11/dotnetcore/notes.md)
+- [Challenge 11 - Java](solutions/challenge11/java/notes.md)
+- [Challenge 11 - Node.js](solutions/challenge11/node/notes.md)
+- [Challenge 11 - Python](solutions/challenge11/python/notes.md)
+
 ---
 
 [Hackathon Outline](outline.md)
