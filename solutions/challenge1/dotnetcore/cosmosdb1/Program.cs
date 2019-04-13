@@ -15,7 +15,7 @@
     using Newtonsoft.Json;
 
     // Main .Net Core program for the Hackathon
-    // Chris Joakim, Microsoft, 2019/04/12
+    // Chris Joakim, Microsoft, 2019/04/13
 
     // https://github.com/Azure/azure-cosmos-dotnet-v2/blob/master/samples/partition-stats/Program.cs
 
@@ -63,10 +63,6 @@
             Console.WriteLine("InitializeClient: {0}", this.Client);
         }
 
-
-
-
-
         private Document CreateAirportDocumentSync(Airport airport)
         {
             Uri uri = UriFactory.CreateDocumentCollectionUri(this.DbName, this.CollName);
@@ -100,13 +96,12 @@
 
         private Uri getUri()
         {
-
             return UriFactory.CreateDocumentCollectionUri(this.DbName, this.CollName);
         }
 
 
-        private void QueryAirportByIataCode(string iataCode) {
-
+        private void QueryAirportByIataCode(string iataCode)
+        {
             Uri uri = getUri();
             string sql = $"SELECT * FROM c WHERE c.pk = '{iataCode}'";
             Console.WriteLine("sql: {0}", sql);
@@ -132,8 +127,8 @@
             // }
         }
 
-        private  void QueryAirportsByLocation(double lat, double lng, double km) {
-
+        private  void QueryAirportsByLocation(double lat, double lng, double km)
+        {
             try {
                 int count = 0;
                 double meters = km * 1000;
@@ -198,8 +193,9 @@
             Console.WriteLine("Terminating...");
             Thread.Sleep(3000);
         }
-        private static void QueryAirportByIataCode(string dbName, string collName, string iataCode) {
 
+        private static void QueryAirportByIataCode(string dbName, string collName, string iataCode)
+        {
             Program p = new Program();
             p.DbName = dbName;
             p.CollName = collName;
@@ -208,9 +204,10 @@
             p.InitializeClient();
             p.QueryAirportByIataCode(iataCode);
         }
-        private static void QueryAirportsByLocation(
-            string dbName, string collName, double lat, double lng, double km) {
 
+        private static void QueryAirportsByLocation(
+            string dbName, string collName, double lat, double lng, double km)
+        {
             Console.WriteLine("QueryAirportsByLocation - db: {0} coll: {1} lat: {2} lng: {3} km: {4}", dbName, collName, lat, lng, km);
 
             Program p = new Program();
@@ -222,8 +219,8 @@
             p.QueryAirportsByLocation(lat, lng, km);
         }
 
-        private static string ReadEnvVar(string name) {
-
+        private static string ReadEnvVar(string name)
+        {
             return Environment.GetEnvironmentVariable(name);
         } 
 

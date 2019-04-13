@@ -1,8 +1,12 @@
 # cj
 
 .vscode/
-**/tmp/
-
+**/tmp/*
+**/bin/*
+**/obj/*
+**/Debug/*
+solutions/challenge1/dotnetcore/cosmosdb1/bin/*
+solutions/challenge1/dotnetcore/cosmosdb1/obj/*
 
 # Logs
 logs

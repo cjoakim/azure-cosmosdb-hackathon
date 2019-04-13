@@ -5,11 +5,12 @@ using Newtonsoft.Json;
 // AirportId,Name,City,Country,IataCode,IcaoCode,Latitude,Longitude,Altitude,TimezoneNum,Dst,TimezoneCode
 // 3682,"Hartsfield Jackson Atlanta Intl","Atlanta","United States","ATL","KATL",33.636719,-84.428067,1026,-5,"A","America/New_York"
 //
-// Chris Joakim, Microsoft, 2019/04/12
+// Chris Joakim, Microsoft, 2019/04/13
 
-namespace Hackathon {
-
-    public class Airport {
+namespace Hackathon
+{
+    public class Airport
+    {
         public string pk { get; set; }
         public int    AirportId { get; set; }
         public string Name { get; set; }
@@ -36,6 +37,7 @@ namespace Hackathon {
             pk = IataCode;
             this.location = new Location(this.Latitude, this.Longitude);
         }
+
         public bool IsInCountry(string[] countryList)
         {
             try {
@@ -51,6 +53,7 @@ namespace Hackathon {
             }
             return false;
         }
+        
         public bool IsValid()
         {
             try {

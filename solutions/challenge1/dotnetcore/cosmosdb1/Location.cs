@@ -12,11 +12,12 @@ using Newtonsoft.Json;
 //     ]
 //   }
 //
-// Chris Joakim, Microsoft, 2019/04/12
+// Chris Joakim, Microsoft, 2019/04/13
 
-namespace Hackathon {
-
-    public class Location {
+namespace Hackathon
+{
+    public class Location
+    {
         public string type { get; set; }
         public double[] coordinates { get; set; }
 
@@ -28,6 +29,7 @@ namespace Hackathon {
             this.coordinates[0] = lng;
             this.coordinates[1] = lat;
         }
+
         public string ToJson()
         {
             return JsonConvert.SerializeObject(this);
