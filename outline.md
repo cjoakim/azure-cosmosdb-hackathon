@@ -6,10 +6,6 @@ Alpha version 1
 
 ---
 
-![azure-cosmos-db](img/azure-cosmos-db.png)
-
----
-
 # The Challenges
 
 ### Overview
