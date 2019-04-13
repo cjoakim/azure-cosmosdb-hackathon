@@ -37,8 +37,8 @@ Alpha version 1
 #### .Net Core
 
 ```
-    <PackageReference Include="CsvHelper" Version="12.1.2" />
-    <PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="2.3.0" />
+<PackageReference Include="CsvHelper" Version="12.1.2" />
+<PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="2.3.0" />
 ```
 
 #### Java
@@ -46,6 +46,10 @@ Alpha version 1
 ### Node.js
 
 ### Python
+
+```
+pydocumentdb 
+```
 
 ---
 

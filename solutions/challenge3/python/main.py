@@ -1,6 +1,7 @@
 """
 Usage:
-    python main.py load_azure_sql_collection airports data/airports.json
+    python main.py load_azure_sql_collection <dbname> <collname> <infile>
+    python main.py load_azure_sql_collection hackathon airports3 data/mongoexport_airports.json
 Options:
     -h --help     Show this screen.
     --version     Show version.
@@ -18,15 +19,12 @@ import arrow
 
 from docopt import docopt
 
-# MongoDB library
-from pymongo import MongoClient  
-
 # Microsoft open-source library for CosmosDB w/SQL API
 import pydocumentdb.document_client as document_client 
 
 from src.joakim import cosmos
 
-VERSION='Feb 2019'
+VERSION='April 2019'
 
 
 class Main(object):
@@ -45,21 +43,20 @@ class Main(object):
             func = sys.argv[1].lower()
 
             if func == 'load_azure_sql_collection':
-                collname = sys.argv[2]
-                infile = sys.argv[3]
-                self.load_azure_sql_collection(collname, infile)
+                dbname   = sys.argv[2]
+                collname = sys.argv[3]
+                infile   = sys.argv[4]
+                self.load_azure_sql_collection(dbname, collname, infile)
 
             else:
                 self.print_options('invalid function')
         else:
             self.print_options('no function given on command-line')
 
-    def load_azure_sql_collection(self, collname, infile):
-        host = os.getenv('AZURE_COSMOSDB_SQLDB_URI')
-        key  = os.getenv('AZURE_COSMOSDB_SQLDB_KEY')
-        dbname = os.getenv('AZURE_COSMOSDB_SQLDB_DBNAME')
+    def load_azure_sql_collection(self, dbname, collname, infile):
+        host   = os.getenv('AZURE_COSMOSDB_SQLDB_URI')
+        key    = os.getenv('AZURE_COSMOSDB_SQLDB_KEY')
         colllink = self.sql_collection_link(dbname, collname)
-
         client = document_client.DocumentClient(host, {'masterKey': key})
         client.default_headers['x-ms-documentdb-query-enablecrosspartition'] = True
 

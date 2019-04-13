@@ -1,12 +1,26 @@
 # cj
 
-.vscode/
-**/tmp/*
+**/.intellij.
+**/.vscode/
+
 **/bin/*
+**/include/*
+**/lib/*
+**/log/*
+**/man/*
 **/obj/*
+**/tmp/*
 **/Debug/*
+
 solutions/challenge1/dotnetcore/cosmosdb1/bin/*
 solutions/challenge1/dotnetcore/cosmosdb1/obj/*
+
+**/__pycache__/
+**/*.py[cod]
+**/pyvenv.cfg
+
+# C extensions
+*.so
 
 # Logs
 logs
