@@ -10,22 +10,6 @@ Alpha version 1
 
 ---
 
-# System Requirements
-
-## General
-
-- Bring your favorite workstation: Windows, macOS, or Linux
-- Bring your favorite langage(s): .Net Core, Java, Node.js, Python3
-- Bring your favorite IDE: [Visual Studio Code](https://code.visualstudio.com) recommended  
-- Install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) 
-- An Azure Subscription
-
-## Challenge-Specific
-
-- For Challenge 2, either a local or remote MongoDB.
-
----
-
 # The Challenges
 
 ### Overview
@@ -40,3 +24,11 @@ Alpha version 1
 - [Challenge 8 - Gremlin](gremlin.md)
 - [Challenge 9 - Cassandra](cassandra.md)
 - [Challenge 10 - Integrate Azure Search with CosmosDB](search.md)
+
+---
+
+# Solutions
+
+- [Challenge 1 - .Net Core](solutions/challenge1/dotnetcore/notes.md)
+
+### Overview
