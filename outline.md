@@ -29,6 +29,4 @@ Alpha version 1
 
 # Solutions
 
-- [Challenge 1 - .Net Core](solutions/challenge1/dotnetcore/notes.md)
-
-### Overview
+[Hackathon Outline](solutions.md)
