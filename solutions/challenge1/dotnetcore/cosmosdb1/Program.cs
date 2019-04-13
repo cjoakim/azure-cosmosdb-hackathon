@@ -64,11 +64,11 @@
         private Document CreateAirportDocumentSync(Airport airport)
         {
             Uri uri = UriFactory.CreateDocumentCollectionUri(this.DbName, this.CollName);
-            //Console.WriteLine("uri: {0}", uri);
             try
             {
                 Task<ResourceResponse<Document>> doc = this.Client.CreateDocumentAsync(uri, airport);
                 doc.Wait();
+                Console.WriteLine("RequestCharge: {0}", doc.Result.RequestCharge); // // x-ms-request-charge
                 return doc.Result;
             }
             catch (Exception e) {
@@ -105,7 +105,10 @@
 
             // This approach casts the result into a generic Object:
             FeedOptions queryOptions = 
-                new FeedOptions { MaxItemCount = -1, EnableCrossPartitionQuery = true };
+                new FeedOptions { 
+                    MaxItemCount = -1, 
+                    EnableCrossPartitionQuery = true,
+                    PopulateQueryMetrics = true };
             IQueryable<Object> results =
                 this.Client.CreateDocumentQuery<Object>(uri, sql, queryOptions);
             foreach (Object result in results)
@@ -122,7 +125,10 @@
 
             // This approach casts the result into a generic Object:
             FeedOptions queryOptions = 
-                new FeedOptions { MaxItemCount = -1, EnableCrossPartitionQuery = false };
+                new FeedOptions { 
+                    MaxItemCount = -1, 
+                    EnableCrossPartitionQuery = false,
+                    PopulateQueryMetrics = true };
             IQueryable<Object> airports =
                 this.Client.CreateDocumentQuery<Object>(uri, sql, queryOptions);
             foreach (Object airport in airports)
@@ -149,9 +155,11 @@
                 Uri uri = getUri();
                 string sql = $"SELECT * from c WHERE ST_DISTANCE(c.location, {{'type': 'Point', 'coordinates':[{lng}, {lat}]}}) < {meters}";
                 Console.WriteLine("sql: {0}", sql);
-
                 FeedOptions queryOptions = 
-                    new FeedOptions { MaxItemCount = -1, EnableCrossPartitionQuery = true };
+                    new FeedOptions { 
+                        MaxItemCount = -1, 
+                        EnableCrossPartitionQuery = true,
+                        PopulateQueryMetrics = true };
                 IQueryable<Object> airports =
                     this.Client.CreateDocumentQuery<Object>(uri, sql, queryOptions);
                 foreach (Object airport in airports)

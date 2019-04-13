@@ -32,6 +32,21 @@ Alpha version 1
 
 - For Challenge 2, either a local or remote MongoDB.
 
+### Suggested Libraries
+
+#### .Net Core
+
+```
+    <PackageReference Include="CsvHelper" Version="12.1.2" />
+    <PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="2.3.0" />
+```
+
+#### Java
+
+### Node.js
+
+### Python
+
 ---
 
 ## Getting Started

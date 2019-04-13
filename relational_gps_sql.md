@@ -17,10 +17,10 @@
 - Query the number of documents in the collection.
   How many documents are there?
 
+- What is the approximate RU cost (RequestCharge) to insert each document into the DB?
+
 - Query the collection efficiently by the IATA Code **CLT** (Charlotte, NC)
   and display the resulting document(s).  What is the altitude of CLT airport?
-
-- What is the RU cost to query the DB by an IATA Code?
 
 - Using native CosmosDB database functionality, query the airports that are within
   40 kilometers of GPS location 35.499235 (latitude) and -80.848469 (longitude).
@@ -28,5 +28,6 @@
 
 ## Links
 
-- See http://geojson.org
-- See https://docs.microsoft.com/en-us/azure/cosmos-db/geospatial
+- http://geojson.org
+- https://docs.microsoft.com/en-us/azure/cosmos-db/geospatial
+- https://docs.microsoft.com/en-us/azure/cosmos-db/how-to-sql-query
