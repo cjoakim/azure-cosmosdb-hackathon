@@ -15,15 +15,34 @@ Alpha version 1
 ## General
 
 - Bring your favorite workstation: Windows, macOS, or Linux
-- Bring your favorite langage(s): .Net Core, Java, Node.js, Python3
+- Bring your favorite langage(s): .Net Core, Java, Node.js, Python3, etc
 - Bring your favorite IDE: [Visual Studio Code](https://code.visualstudio.com) recommended  
 - Install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) 
-- An Azure Subscription
+- Bring your Azure Subscription that you can add resources to
+- Git source control system
 
 ## Challenge-Specific
 
 - For Challenge 2, either a local or remote MongoDB.
 
 ---
+
+# Getting Started
+
+Use the [git](https://git-scm.com) program to clone this repository to a 
+**hackathon base directory** on your workstation:
+
+```
+git clone https://github.com/cjoakim/azure-cosmosdb-hackathon.git
+```
+
+Then, set environment variable **COSMOSDB_HACKATHON_BASE_DIR** to the root
+directory of this GitHub repository you cloned.  The reason for doing this 
+is that the provided solutions use this environment variable to locate data
+files.
+
+---
+
+# Let's Go
 
 [Hackathon Outline](outline.md)
