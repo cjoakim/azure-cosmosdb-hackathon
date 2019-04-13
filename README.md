@@ -10,9 +10,16 @@ Alpha version 1
 
 ---
 
-# System Requirements
+## NoSQL and CosmosDB
 
-## General
+- [What is NoSQL?](what-is-nosql.md)
+- [What is CosmosDB?](what-is-cosmosdb.md)
+
+---
+
+## System Requirements
+
+### General
 
 - Bring your favorite workstation: Windows, macOS, or Linux
 - Bring your favorite langage(s): .Net Core, Java, Node.js, Python3, etc
@@ -21,13 +28,13 @@ Alpha version 1
 - Bring your Azure Subscription that you can add resources to
 - Git source control system
 
-## Challenge-Specific
+### Challenge-Specific
 
 - For Challenge 2, either a local or remote MongoDB.
 
 ---
 
-# Getting Started
+## Getting Started
 
 Use the [git](https://git-scm.com) program to clone this repository to a 
 **hackathon base directory** on your workstation:
@@ -43,6 +50,6 @@ files.
 
 ---
 
-# Let's Go
+## Let's Go
 
 [Hackathon Outline](outline.md)
