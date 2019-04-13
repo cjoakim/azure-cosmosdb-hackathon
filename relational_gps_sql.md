@@ -2,6 +2,8 @@
 
 ## Challenge 1 - Port Relational and GPS Data to CosmosDB/SQL
 
+Use your favorite workstation OS and programming language for this challenge
+
 ## Processing
 
 - Use database export file **data/openflights_airports.csv** as the input
@@ -10,7 +12,6 @@
 - Load the filtered Airport documents into a CosmosDB/SQL API collection
 - Ensure that the GPS information for each Airport document is in GeoJSON format
 - Ensure that queries by IATA Code are fast and efficient
-- Use your favorite workstation OS and programming language
 
 ## Questions
 
