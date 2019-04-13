@@ -1,3 +1,9 @@
+# cj
+
+.vscode/
+**/tmp/
+
+
 # Logs
 logs
 *.log

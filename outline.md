@@ -25,4 +25,4 @@ Alpha version 1
 
 # Solutions
 
-[Hackathon Outline](solutions.md)
+[Solutions](solutions.md)

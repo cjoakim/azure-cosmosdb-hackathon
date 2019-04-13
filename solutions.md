@@ -22,7 +22,6 @@ This codebase uses the following environment variables in all programming langua
 
 The following are implementations of one of many possible solutions.
 Not every challenge is currently implemented in each language.
-
 It's entirely fine if your working implementation varies from the solutions
 in this GitHub repository.
 
@@ -75,3 +74,5 @@ in this GitHub repository.
 - [Challenge 10 - Java](solutions/challenge10/java/notes.md)
 - [Challenge 10 - Node.js](solutions/challenge10/node/notes.md)
 - [Challenge 10 - Python](solutions/challenge10/python/notes.md)
+
+* = Currently implemented
