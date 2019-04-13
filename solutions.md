@@ -25,7 +25,7 @@ Not every challenge is currently implemented in each language.
 It's entirely fine if your working implementation varies from the solutions
 in this GitHub repository.
 
-- [Challenge 1 - .Net Core](solutions/challenge1/dotnetcore/notes.md)
+- [Challenge 1 - .Net Core](solutions/challenge1/dotnetcore/notes.md)  **Implemented!**
 - [Challenge 1 - Java](solutions/challenge1/java/notes.md)
 - [Challenge 1 - Node.js](solutions/challenge1/node/notes.md)
 - [Challenge 1 - Python](solutions/challenge1/python/notes.md)

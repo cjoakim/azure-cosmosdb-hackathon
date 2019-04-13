@@ -23,7 +23,7 @@ Alpha version 1
 
 - Bring your favorite workstation: Windows, macOS, or Linux
 - Bring your favorite langage(s): .Net Core, Java, Node.js, Python3, etc
-- Bring your favorite IDE: [Visual Studio Code](https://code.visualstudio.com) recommended  
+- Bring your favorite IDE: [Visual Studio Code](https://code.visualstudio.com) is suggested  
 - Install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) 
 - Bring your Azure Subscription that you can add resources to
 - Git source control system
