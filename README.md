@@ -71,4 +71,4 @@ files.
 
 ## Let's Go
 
-[Hackathon Outline](outline.md)
+[Hackathon Challenges](challenges.md)

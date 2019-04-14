@@ -104,4 +104,4 @@ in this GitHub repository.
 
 ---
 
-[Hackathon Outline](outline.md)
+[Hackathon Challenges](challenges.md)
