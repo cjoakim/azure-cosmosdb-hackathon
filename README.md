@@ -69,6 +69,6 @@ files.
 
 ---
 
-## Let's Go
+## Let's Go Code!
 
 [Hackathon Challenges](challenges.md)

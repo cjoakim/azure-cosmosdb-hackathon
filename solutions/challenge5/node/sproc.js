@@ -207,6 +207,8 @@ var bulkImport = {
         }
 
         function createDoc(doc, callback) {
+            doc['bulk_import_date'] = new Date();
+
             var isAccepted = collection.createDocument(collectionLink, doc, callback);
             // If the request was accepted, callback will be called.
             // Otherwise report current count back to the client, 
