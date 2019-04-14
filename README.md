@@ -44,7 +44,16 @@ Hackathon with CosmosDB
 
 ### Node.js
 
+"dependencies": {
+    "azure": "^2.3.1-preview",
+    "documentdb": "^1.14.5",
+    "sleep": "^6.0.0",
+    "uuid": "^3.3.2"
+}
+
 ### Python
+
+requirements.in:
 
 ```
 pydocumentdb 
