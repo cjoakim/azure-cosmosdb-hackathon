@@ -7,9 +7,10 @@ Use your favorite workstation OS and programming language for this challenge
 
 ## Processing
 
-- Use file **data/major_airports.json** as the input
-- Load all rows and non-nested fields (i.e. - exclude location) for each airport.
+- Use file **data/major_airports.json** as the input.
+- Load all rows and non-nested fields (i.e. - exclude 'location') for each airport.
 - You can use the following CQL to create the hackathon.major_airports table
+  in Azure Portal when you create the table.
 
 ```
 (iata_code text, city text, country text, name text, rank int, passengers int, tz_num float, tz_code text, latitude float, longitude float, altitude float, PRIMARY KEY (iata_code)) 
@@ -29,4 +30,9 @@ Use your favorite workstation OS and programming language for this challenge
 
 ## Links
 
+- https://docs.microsoft.com/en-us/azure/cosmos-db/cassandra-introduction
+- https://docs.microsoft.com/en-us/azure/cosmos-db/create-cassandra-dotnet
+- https://docs.microsoft.com/en-us/azure/cosmos-db/create-cassandra-api-account-java
+- https://docs.microsoft.com/en-us/azure/cosmos-db/create-cassandra-nodejs
+- https://docs.microsoft.com/en-us/azure/cosmos-db/create-cassandra-python
 
