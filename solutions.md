@@ -92,7 +92,7 @@ in this GitHub repository.
 
 - [.Net Core](solutions/challenge10/dotnetcore/notes.md)
 - [Java](solutions/challenge10/java/notes.md)
-- [Node.js](solutions/challenge10/node/notes.md)
+- [Node.js](solutions/challenge10/node/notes.md) &nbsp;&nbsp; **Implemented!**
 - [Python](solutions/challenge10/python/notes.md)
 
 ## Challenge 11 - Integrate Azure Search with CosmosDB

@@ -8,6 +8,7 @@
 **/lib/*
 **/log/*
 **/man/*
+**/node_modules/*
 **/obj/*
 **/tmp/*
 **/Debug/*
