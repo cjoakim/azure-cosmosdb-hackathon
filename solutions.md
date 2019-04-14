@@ -86,7 +86,7 @@ in this GitHub repository.
 - [.Net Core](solutions/challenge9/dotnetcore/notes.md)
 - [Java](solutions/challenge9/java/notes.md)
 - [Node.js](solutions/challenge9/node/notes.md)
-- [Python](solutions/challenge9/python/notes.md)
+- [Python](solutions/challenge9/python/notes.md) &nbsp;&nbsp; **Implemented!**
 
 ## Challenge 10 - Use the CosmosDB REST API
 
