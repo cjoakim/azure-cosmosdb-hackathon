@@ -8,22 +8,22 @@
 // node main.js list_databases
 // node main.js list_collections hackathon
 //
-// node main.js create_stored_proc hackathon airports5 lookupDoc create
-// node main.js create_stored_proc hackathon airports5 createHistoryDoc create
-// node main.js create_stored_proc hackathon airports5 bulkImport create
-// node main.js create_stored_proc hackathon airports5 upsertAirportDoc create
+// node main.js create_stored_proc hackathon airports lookupDoc create
+// node main.js create_stored_proc hackathon airports createHistoryDoc create
+// node main.js create_stored_proc hackathon airports bulkImport create
+// node main.js create_stored_proc hackathon airports upsertAirportDoc create
 //
-// node main.js delete_stored_proc hackathon airports5 lookupDoc
+// node main.js delete_stored_proc hackathon airports lookupDoc
 //
-// node main.js execute_stored_proc hackathon airports5 lookupDoc bos bos
-// node main.js execute_stored_proc hackathon airports5 createHistoryDoc bos bos
-// node main.js execute_stored_proc hackathon airports5 bulkImport
-// node main.js execute_stored_proc hackathon airports5 upsertAirportDoc
+// node main.js execute_stored_proc hackathon airports lookupDoc bos bos
+// node main.js execute_stored_proc hackathon airports createHistoryDoc bos bos
+// node main.js execute_stored_proc hackathon airports bulkImport
+// node main.js execute_stored_proc hackathon airports upsertAirportDoc
 //
-// node main.js create_udf hackathon airports5 docOverlayUdf create
+// node main.js create_udf hackathon airports docOverlayUdf create
 //
-// node main.js create_trigger hackathon airports5 preCreate create
-// node main.js create_trigger hackathon airports5 postHistory create
+// node main.js create_trigger hackathon airports preCreate create
+// node main.js create_trigger hackathon airports postHistory create
 //
 // Links:
 // https://docs.microsoft.com/en-us/azure/cosmos-db/programming
@@ -227,11 +227,9 @@ class Main {
             case 'bulkImport':
                 sproc_def = sproc.bulkImport;
                 break;
-
             case 'upsertAirportDoc':
                 sproc_def = sproc.upsertAirportDoc;
                 break;
-
             default:
                 console.log('error: unknown sprocname - ' + sprocname);
         }

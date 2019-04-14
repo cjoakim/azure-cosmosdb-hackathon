@@ -2,26 +2,36 @@
 
 ## Challenge 5 - Server-Side programming with Stored Procedures
 
-Use your favorite workstation OS and programming language for this challenge
+Use your favorite workstation OS and programming language for this challenge.
+Node.js is recommended since CosmosDB server-side programming is done in **JavaScript**.
 
 ## Processing
 
-- Use a CosmosDB/SQL database collection previously created in this Hackathon, such as in Challenge 1
-- Either manually or programatically create a stored procedure named 'lookupDoc'
+- In your CosmosDB/SQL database create a collection named 'music_bands' with the partition key 'pk'
+- In this collection either manually or programatically create a stored procedure named 'lookupDoc'
   - It should look up a document given both its' id and partition key attributes
 - Programatically create a stored procedure named 'bulkImport'
   - It should receive an Array of JSON documents and insert them into the collection
   - It should add an attribute named 'bulk_import_date' to each document with the server-side date
-- Invoke the 'bulkImport' stored procedure with the contents of file **data/world_airports_50.json**
-- In Azure Portal, query the bulk-imported airport with IATA Code 'SYD' and capture its' value
+- Invoke the 'bulkImport' stored procedure with this simple array of four documents:
+  - {pk: "u2", name: "bono"}
+  - {pk: "u2", name: "edge"}
+  - {pk: "u2", name: "adam clayton"}
+  - {pk: "u2", name: "larry mullen"}  
+- In Azure Portal, query the bulk-imported music_bands collection for name 'bono' and capture that document
 - Programatically delete the stored procedure named 'lookupDoc'
 - Programatically delete the stored procedure named 'bulkImport'
 
 ## Questions
 
-- Query the airport with IATA Code 'SYD', using  stored procedure 'lookupDoc', and display it.
-  What is the value of its' 'bulk_import_date' attribute?
+- Invoke the 'lookupDoc' stored procedure for name 'bono'
+  What is the 'bulk_import_date' of that document?
 
+- Programatically delete the stored procedure named 'lookupDoc'.
+  View Azure Portal - is the stored procedure still there?
+
+- Programatically delete the stored procedure named 'bulkImport'.
+  View Azure Portal - is the stored procedure still there?
 
 ## Links
 

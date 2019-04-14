@@ -57,7 +57,7 @@ in this GitHub repository.
 
 - [.Net Core](solutions/challenge5/dotnetcore/notes.md)
 - [Java](solutions/challenge5/java/notes.md)
-- [Node.js](solutions/challenge5/node/notes.md)
+- [Node.js](solutions/challenge5/node/notes.md) &nbsp;&nbsp; **Implemented!**
 - [Python](solutions/challenge5/python/notes.md)
 
 ## Challenge 6 - Server-Side programming with UDFs
