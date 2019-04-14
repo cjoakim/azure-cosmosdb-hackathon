@@ -11,12 +11,29 @@ Alpha version 1
 In general, the use of **environment variables** for configuration and secret values
 is strongly suggested, rather than using configuration files.
 
-This codebase uses the following environment variables in all programming languages:
+This codebase uses the following environment variables in all programming languages.
+**These values are samples**, see Azure Portal for **your values**.
+
 ```
 COSMOSDB_HACKATHON_BASE_DIR
 AZURE_SUBSCRIPTION_ID
-AZURE_COSMOSDB_SQLDB_URI
-AZURE_COSMOSDB_SQLDB_KEY
+
+AZURE_COSMOSDB_CASSDB_ACCT=cjoakimcosmosdbcass
+AZURE_COSMOSDB_CASSDB_PASS=...secret...
+AZURE_COSMOSDB_CASSDB_PORT=10350
+AZURE_COSMOSDB_CASSDB_URI=cjoakimcosmosdbcass.cassandra.cosmos.azure.com
+AZURE_COSMOSDB_CASSDB_USER=cjoakimcosmosdbcass
+
+AZURE_COSMOSDB_MONGODB_CONN_STRING=mongodb://cjoakimcosmosdbmongo:...secret...@cjoakimcosmosdbmongo.documents.azure.com:10255/?ssl=true&replicaSet=globaldb
+AZURE_COSMOSDB_MONGODB_DBNAME=hackathon
+AZURE_COSMOSDB_MONGODB_HOST=cjoakimcosmosdbmongo.documents.azure.com
+AZURE_COSMOSDB_MONGODB_PASS=...secret...
+AZURE_COSMOSDB_MONGODB_PORT=10255
+AZURE_COSMOSDB_MONGODB_USER=cjoakimcosmosdbmongo
+
+AZURE_COSMOSDB_SQLDB_DBNAME=hackathon
+AZURE_COSMOSDB_SQLDB_KEY=...secret...
+AZURE_COSMOSDB_SQLDB_URI=https://cjoakimcosmosdbsql.documents.azure.com:443/
 ```
 
 ---

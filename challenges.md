@@ -6,8 +6,6 @@ Hackathon with CosmosDB
 
 # The Challenges
 
-### Overview
-
 - [Challenge 1 - Port Relational and GPS Data to CosmosDB/SQL](relational_gps_sql.md)
 - [Challenge 2 - Port a MongoDB database CosmosDB/Mongo with CLI tools](mongo_to_cosmosdb_mongo.md) (1)
 - [Challenge 3 - Port a MongoDB database CosmosDB/SQL](mongo_to_cosmosdb_sql.md)
