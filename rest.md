@@ -3,13 +3,13 @@
 ## Challenge 10 - Use the CosmosDB REST API
 
 Use your favorite workstation OS and programming language for this challenge.
-Or, use a HTTP client programs like curl.
+Use inherent HTTP functionality, or a library, with your programming language.
+Do not use a CosmosDB SDK for this challenge.
 
 ## Processing
 
 - Query one of the CosmosDB/SQL collections you have already created in this hackathon
 - Invoke primitive HTTP calls per the CosmosDB REST API
-- A programming language may be used to invoke the HTTP calls
 - Generate a HMAC key for each HTTP request with the REST API
 - Prefer to use environment variables vs hard-coded values in your scripts
 
