@@ -1,0 +1,6482 @@
+[
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.854526,
+        41.79163
+      ]
+    },
+    "postal_cd": "06001",
+    "country_cd": "US",
+    "city_name": "Avon",
+    "state_abbrv": "CT",
+    "latitude": 41.79163,
+    "longitude": -72.854526
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.736005,
+        41.852981
+      ]
+    },
+    "postal_cd": "06002",
+    "country_cd": "US",
+    "city_name": "Bloomfield",
+    "state_abbrv": "CT",
+    "latitude": 41.852981,
+    "longitude": -72.736005
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6443,
+        41.8525
+      ]
+    },
+    "postal_cd": "06006",
+    "country_cd": "US",
+    "city_name": "Windsor",
+    "state_abbrv": "CT",
+    "latitude": 41.8525,
+    "longitude": -72.6443
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.94049,
+        41.681368
+      ]
+    },
+    "postal_cd": "06010",
+    "country_cd": "US",
+    "city_name": "Bristol",
+    "state_abbrv": "CT",
+    "latitude": 41.681368,
+    "longitude": -72.94049
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9494,
+        41.6714
+      ]
+    },
+    "postal_cd": "06011",
+    "country_cd": "US",
+    "city_name": "Bristol",
+    "state_abbrv": "CT",
+    "latitude": 41.6714,
+    "longitude": -72.9494
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.95722,
+        41.761312
+      ]
+    },
+    "postal_cd": "06013",
+    "country_cd": "US",
+    "city_name": "Burlington",
+    "state_abbrv": "CT",
+    "latitude": 41.761312,
+    "longitude": -72.95722
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.551654,
+        41.907656
+      ]
+    },
+    "postal_cd": "06016",
+    "country_cd": "US",
+    "city_name": "Broad Brook",
+    "state_abbrv": "CT",
+    "latitude": 41.907656,
+    "longitude": -72.551654
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.296278,
+        42.024547
+      ]
+    },
+    "postal_cd": "06018",
+    "country_cd": "US",
+    "city_name": "Canaan",
+    "state_abbrv": "CT",
+    "latitude": 42.024547,
+    "longitude": -73.296278
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.913404,
+        41.86312
+      ]
+    },
+    "postal_cd": "06019",
+    "country_cd": "US",
+    "city_name": "Canton",
+    "state_abbrv": "CT",
+    "latitude": 41.86312,
+    "longitude": -72.913404
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.899338,
+        41.874296
+      ]
+    },
+    "postal_cd": "06020",
+    "country_cd": "US",
+    "city_name": "Canton Center",
+    "state_abbrv": "CT",
+    "latitude": 41.874296,
+    "longitude": -72.899338
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.105694,
+        42.01505
+      ]
+    },
+    "postal_cd": "06021",
+    "country_cd": "US",
+    "city_name": "Colebrook",
+    "state_abbrv": "CT",
+    "latitude": 42.01505,
+    "longitude": -73.105694
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.941774,
+        41.815832
+      ]
+    },
+    "postal_cd": "06022",
+    "country_cd": "US",
+    "city_name": "Collinsville",
+    "state_abbrv": "CT",
+    "latitude": 41.815832,
+    "longitude": -72.941774
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.720382,
+        41.615878
+      ]
+    },
+    "postal_cd": "06023",
+    "country_cd": "US",
+    "city_name": "East Berlin",
+    "state_abbrv": "CT",
+    "latitude": 41.615878,
+    "longitude": -72.720382
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.285,
+        42.012216
+      ]
+    },
+    "postal_cd": "06024",
+    "country_cd": "US",
+    "city_name": "East Canaan",
+    "state_abbrv": "CT",
+    "latitude": 42.012216,
+    "longitude": -73.285
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5347,
+        41.6972
+      ]
+    },
+    "postal_cd": "06025",
+    "country_cd": "US",
+    "city_name": "East Glastonbury",
+    "state_abbrv": "CT",
+    "latitude": 41.6972,
+    "longitude": -72.5347
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.736118,
+        41.939313
+      ]
+    },
+    "postal_cd": "06026",
+    "country_cd": "US",
+    "city_name": "East Granby",
+    "state_abbrv": "CT",
+    "latitude": 41.939313,
+    "longitude": -72.736118
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.914885,
+        42.00429
+      ]
+    },
+    "postal_cd": "06027",
+    "country_cd": "US",
+    "city_name": "East Hartland",
+    "state_abbrv": "CT",
+    "latitude": 42.00429,
+    "longitude": -72.914885
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5961,
+        41.8478
+      ]
+    },
+    "postal_cd": "06028",
+    "country_cd": "US",
+    "city_name": "East Windsor Hill",
+    "state_abbrv": "CT",
+    "latitude": 41.8478,
+    "longitude": -72.5961
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.422811,
+        41.907038
+      ]
+    },
+    "postal_cd": "06029",
+    "country_cd": "US",
+    "city_name": "Ellington",
+    "state_abbrv": "CT",
+    "latitude": 41.907038,
+    "longitude": -72.422811
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.8326,
+        41.7197
+      ]
+    },
+    "postal_cd": "06030",
+    "country_cd": "US",
+    "city_name": "Farmington",
+    "state_abbrv": "CT",
+    "latitude": 41.7197,
+    "longitude": -72.8326
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.308842,
+        41.946985
+      ]
+    },
+    "postal_cd": "06031",
+    "country_cd": "US",
+    "city_name": "Falls Village",
+    "state_abbrv": "CT",
+    "latitude": 41.946985,
+    "longitude": -73.308842
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.827648,
+        41.724962
+      ]
+    },
+    "postal_cd": "06032",
+    "country_cd": "US",
+    "city_name": "Farmington",
+    "state_abbrv": "CT",
+    "latitude": 41.724962,
+    "longitude": -72.827648
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.550419,
+        41.699979
+      ]
+    },
+    "postal_cd": "06033",
+    "country_cd": "US",
+    "city_name": "Glastonbury",
+    "state_abbrv": "CT",
+    "latitude": 41.699979,
+    "longitude": -72.550419
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.8326,
+        41.7197
+      ]
+    },
+    "postal_cd": "06034",
+    "country_cd": "US",
+    "city_name": "Farmington",
+    "state_abbrv": "CT",
+    "latitude": 41.7197,
+    "longitude": -72.8326
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.799348,
+        41.960094
+      ]
+    },
+    "postal_cd": "06035",
+    "country_cd": "US",
+    "city_name": "Granby",
+    "state_abbrv": "CT",
+    "latitude": 41.960094,
+    "longitude": -72.799348
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.776083,
+        41.603421
+      ]
+    },
+    "postal_cd": "06037",
+    "country_cd": "US",
+    "city_name": "Berlin",
+    "state_abbrv": "CT",
+    "latitude": 41.603421,
+    "longitude": -72.776083
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.428777,
+        41.950747
+      ]
+    },
+    "postal_cd": "06039",
+    "country_cd": "US",
+    "city_name": "Lakeville",
+    "state_abbrv": "CT",
+    "latitude": 41.950747,
+    "longitude": -73.428777
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.522655,
+        41.762222
+      ]
+    },
+    "postal_cd": "06040",
+    "country_cd": "US",
+    "city_name": "Manchester",
+    "state_abbrv": "CT",
+    "latitude": 41.762222,
+    "longitude": -72.522655
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5219,
+        41.7759
+      ]
+    },
+    "postal_cd": "06041",
+    "country_cd": "US",
+    "city_name": "Manchester",
+    "state_abbrv": "CT",
+    "latitude": 41.7759,
+    "longitude": -72.5219
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.527573,
+        41.80026
+      ]
+    },
+    "postal_cd": "06042",
+    "country_cd": "US",
+    "city_name": "Manchester",
+    "state_abbrv": "CT",
+    "latitude": 41.80026,
+    "longitude": -72.527573
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.438889,
+        41.766414
+      ]
+    },
+    "postal_cd": "06043",
+    "country_cd": "US",
+    "city_name": "Bolton",
+    "state_abbrv": "CT",
+    "latitude": 41.766414,
+    "longitude": -72.438889
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5219,
+        41.7759
+      ]
+    },
+    "postal_cd": "06045",
+    "country_cd": "US",
+    "city_name": "Manchester",
+    "state_abbrv": "CT",
+    "latitude": 41.7759,
+    "longitude": -72.5219
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.7801,
+        41.6612
+      ]
+    },
+    "postal_cd": "06050",
+    "country_cd": "US",
+    "city_name": "New Britain",
+    "state_abbrv": "CT",
+    "latitude": 41.6612,
+    "longitude": -72.7801
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.770214,
+        41.667447
+      ]
+    },
+    "postal_cd": "06051",
+    "country_cd": "US",
+    "city_name": "New Britain",
+    "state_abbrv": "CT",
+    "latitude": 41.667447,
+    "longitude": -72.770214
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.803642,
+        41.657118
+      ]
+    },
+    "postal_cd": "06052",
+    "country_cd": "US",
+    "city_name": "New Britain",
+    "state_abbrv": "CT",
+    "latitude": 41.657118,
+    "longitude": -72.803642
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.791084,
+        41.690259
+      ]
+    },
+    "postal_cd": "06053",
+    "country_cd": "US",
+    "city_name": "New Britain",
+    "state_abbrv": "CT",
+    "latitude": 41.690259,
+    "longitude": -72.791084
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.00754,
+        41.846708
+      ]
+    },
+    "postal_cd": "06057",
+    "country_cd": "US",
+    "city_name": "New Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.846708,
+    "longitude": -73.00754
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.200952,
+        41.957252
+      ]
+    },
+    "postal_cd": "06058",
+    "country_cd": "US",
+    "city_name": "Norfolk",
+    "state_abbrv": "CT",
+    "latitude": 41.957252,
+    "longitude": -73.200952
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.943458,
+        41.960138
+      ]
+    },
+    "postal_cd": "06059",
+    "country_cd": "US",
+    "city_name": "North Canton",
+    "state_abbrv": "CT",
+    "latitude": 41.960138,
+    "longitude": -72.943458
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.843489,
+        41.996784
+      ]
+    },
+    "postal_cd": "06060",
+    "country_cd": "US",
+    "city_name": "North Granby",
+    "state_abbrv": "CT",
+    "latitude": 41.996784,
+    "longitude": -72.843489
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9667,
+        41.8757
+      ]
+    },
+    "postal_cd": "06061",
+    "country_cd": "US",
+    "city_name": "Pine Meadow",
+    "state_abbrv": "CT",
+    "latitude": 41.8757,
+    "longitude": -72.9667
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.85416,
+        41.673817
+      ]
+    },
+    "postal_cd": "06062",
+    "country_cd": "US",
+    "city_name": "Plainville",
+    "state_abbrv": "CT",
+    "latitude": 41.673817,
+    "longitude": -72.85416
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.970956,
+        41.926558
+      ]
+    },
+    "postal_cd": "06063",
+    "country_cd": "US",
+    "city_name": "Barkhamsted",
+    "state_abbrv": "CT",
+    "latitude": 41.926558,
+    "longitude": -72.970956
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6795,
+        41.9048
+      ]
+    },
+    "postal_cd": "06064",
+    "country_cd": "US",
+    "city_name": "Poquonock",
+    "state_abbrv": "CT",
+    "latitude": 41.9048,
+    "longitude": -72.6795
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.007264,
+        41.976157
+      ]
+    },
+    "postal_cd": "06065",
+    "country_cd": "US",
+    "city_name": "Riverton",
+    "state_abbrv": "CT",
+    "latitude": 41.976157,
+    "longitude": -73.007264
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.463295,
+        41.836454
+      ]
+    },
+    "postal_cd": "06066",
+    "country_cd": "US",
+    "city_name": "Vernon Rockville",
+    "state_abbrv": "CT",
+    "latitude": 41.836454,
+    "longitude": -72.463295
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.669886,
+        41.656396
+      ]
+    },
+    "postal_cd": "06067",
+    "country_cd": "US",
+    "city_name": "Rocky Hill",
+    "state_abbrv": "CT",
+    "latitude": 41.656396,
+    "longitude": -72.669886
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.415942,
+        42.008199
+      ]
+    },
+    "postal_cd": "06068",
+    "country_cd": "US",
+    "city_name": "Salisbury",
+    "state_abbrv": "CT",
+    "latitude": 42.008199,
+    "longitude": -73.415942
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.434241,
+        41.855594
+      ]
+    },
+    "postal_cd": "06069",
+    "country_cd": "US",
+    "city_name": "Sharon",
+    "state_abbrv": "CT",
+    "latitude": 41.855594,
+    "longitude": -73.434241
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.817214,
+        41.868372
+      ]
+    },
+    "postal_cd": "06070",
+    "country_cd": "US",
+    "city_name": "Simsbury",
+    "state_abbrv": "CT",
+    "latitude": 41.868372,
+    "longitude": -72.817214
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.436453,
+        41.990812
+      ]
+    },
+    "postal_cd": "06071",
+    "country_cd": "US",
+    "city_name": "Somers",
+    "state_abbrv": "CT",
+    "latitude": 41.990812,
+    "longitude": -72.436453
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.4884,
+        41.9828
+      ]
+    },
+    "postal_cd": "06072",
+    "country_cd": "US",
+    "city_name": "Somersville",
+    "state_abbrv": "CT",
+    "latitude": 41.9828,
+    "longitude": -72.4884
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.566352,
+        41.645614
+      ]
+    },
+    "postal_cd": "06073",
+    "country_cd": "US",
+    "city_name": "South Glastonbury",
+    "state_abbrv": "CT",
+    "latitude": 41.645614,
+    "longitude": -72.566352
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.571689,
+        41.833966
+      ]
+    },
+    "postal_cd": "06074",
+    "country_cd": "US",
+    "city_name": "South Windsor",
+    "state_abbrv": "CT",
+    "latitude": 41.833966,
+    "longitude": -72.571689
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.2896,
+        41.9848
+      ]
+    },
+    "postal_cd": "06075",
+    "country_cd": "US",
+    "city_name": "Stafford",
+    "state_abbrv": "CT",
+    "latitude": 41.9848,
+    "longitude": -72.2896
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.253458,
+        41.986493
+      ]
+    },
+    "postal_cd": "06076",
+    "country_cd": "US",
+    "city_name": "Stafford Springs",
+    "state_abbrv": "CT",
+    "latitude": 41.986493,
+    "longitude": -72.253458
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.2594,
+        41.9938
+      ]
+    },
+    "postal_cd": "06077",
+    "country_cd": "US",
+    "city_name": "Staffordville",
+    "state_abbrv": "CT",
+    "latitude": 41.9938,
+    "longitude": -72.2594
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.653976,
+        41.989507
+      ]
+    },
+    "postal_cd": "06078",
+    "country_cd": "US",
+    "city_name": "Suffield",
+    "state_abbrv": "CT",
+    "latitude": 41.989507,
+    "longitude": -72.653976
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.4219,
+        41.9834
+      ]
+    },
+    "postal_cd": "06079",
+    "country_cd": "US",
+    "city_name": "Taconic",
+    "state_abbrv": "CT",
+    "latitude": 41.9834,
+    "longitude": -73.4219
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6423,
+        41.9856
+      ]
+    },
+    "postal_cd": "06080",
+    "country_cd": "US",
+    "city_name": "Suffield",
+    "state_abbrv": "CT",
+    "latitude": 41.9856,
+    "longitude": -72.6423
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.767326,
+        41.906904
+      ]
+    },
+    "postal_cd": "06081",
+    "country_cd": "US",
+    "city_name": "Tariffville",
+    "state_abbrv": "CT",
+    "latitude": 41.906904,
+    "longitude": -72.767326
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5581,
+        41.984371
+      ]
+    },
+    "postal_cd": "06082",
+    "country_cd": "US",
+    "city_name": "Enfield",
+    "state_abbrv": "CT",
+    "latitude": 41.984371,
+    "longitude": -72.5581
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5922,
+        41.9761
+      ]
+    },
+    "postal_cd": "06083",
+    "country_cd": "US",
+    "city_name": "Enfield",
+    "state_abbrv": "CT",
+    "latitude": 41.9761,
+    "longitude": -72.5922
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.362992,
+        41.883916
+      ]
+    },
+    "postal_cd": "06084",
+    "country_cd": "US",
+    "city_name": "Tolland",
+    "state_abbrv": "CT",
+    "latitude": 41.883916,
+    "longitude": -72.362992
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.886981,
+        41.746852
+      ]
+    },
+    "postal_cd": "06085",
+    "country_cd": "US",
+    "city_name": "Unionville",
+    "state_abbrv": "CT",
+    "latitude": 41.746852,
+    "longitude": -72.886981
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.8869,
+        41.7576
+      ]
+    },
+    "postal_cd": "06087",
+    "country_cd": "US",
+    "city_name": "Unionville",
+    "state_abbrv": "CT",
+    "latitude": 41.7576,
+    "longitude": -72.8869
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.591952,
+        41.904084
+      ]
+    },
+    "postal_cd": "06088",
+    "country_cd": "US",
+    "city_name": "East Windsor",
+    "state_abbrv": "CT",
+    "latitude": 41.904084,
+    "longitude": -72.591952
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.823856,
+        41.838743
+      ]
+    },
+    "postal_cd": "06089",
+    "country_cd": "US",
+    "city_name": "Weatogue",
+    "state_abbrv": "CT",
+    "latitude": 41.838743,
+    "longitude": -72.823856
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.865304,
+        41.957361
+      ]
+    },
+    "postal_cd": "06090",
+    "country_cd": "US",
+    "city_name": "West Granby",
+    "state_abbrv": "CT",
+    "latitude": 41.957361,
+    "longitude": -72.865304
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.978128,
+        42.013182
+      ]
+    },
+    "postal_cd": "06091",
+    "country_cd": "US",
+    "city_name": "West Hartland",
+    "state_abbrv": "CT",
+    "latitude": 42.013182,
+    "longitude": -72.978128
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.849683,
+        41.868913
+      ]
+    },
+    "postal_cd": "06092",
+    "country_cd": "US",
+    "city_name": "West Simsbury",
+    "state_abbrv": "CT",
+    "latitude": 41.868913,
+    "longitude": -72.849683
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.728301,
+        41.994921
+      ]
+    },
+    "postal_cd": "06093",
+    "country_cd": "US",
+    "city_name": "West Suffield",
+    "state_abbrv": "CT",
+    "latitude": 41.994921,
+    "longitude": -72.728301
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.136,
+        41.9019
+      ]
+    },
+    "postal_cd": "06094",
+    "country_cd": "US",
+    "city_name": "Winchester Center",
+    "state_abbrv": "CT",
+    "latitude": 41.9019,
+    "longitude": -73.136
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.679525,
+        41.863194
+      ]
+    },
+    "postal_cd": "06095",
+    "country_cd": "US",
+    "city_name": "Windsor",
+    "state_abbrv": "CT",
+    "latitude": 41.863194,
+    "longitude": -72.679525
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.654944,
+        41.92326
+      ]
+    },
+    "postal_cd": "06096",
+    "country_cd": "US",
+    "city_name": "Windsor Locks",
+    "state_abbrv": "CT",
+    "latitude": 41.92326,
+    "longitude": -72.654944
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.094492,
+        41.958816
+      ]
+    },
+    "postal_cd": "06098",
+    "country_cd": "US",
+    "city_name": "Winsted",
+    "state_abbrv": "CT",
+    "latitude": 41.958816,
+    "longitude": -73.094492
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6613,
+        41.7826
+      ]
+    },
+    "postal_cd": "06101",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7826,
+    "longitude": -72.6613
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6855,
+        41.7569
+      ]
+    },
+    "postal_cd": "06102",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7569,
+    "longitude": -72.6855
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.67197,
+        41.76521
+      ]
+    },
+    "postal_cd": "06103",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.76521,
+    "longitude": -72.67197
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6628,
+        41.7959
+      ]
+    },
+    "postal_cd": "06104",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7959,
+    "longitude": -72.6628
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.700117,
+        41.77607
+      ]
+    },
+    "postal_cd": "06105",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.77607,
+    "longitude": -72.700117
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.685657,
+        41.745017
+      ]
+    },
+    "postal_cd": "06106",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.745017,
+    "longitude": -72.685657
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.758694,
+        41.753138
+      ]
+    },
+    "postal_cd": "06107",
+    "country_cd": "US",
+    "city_name": "West Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.753138,
+    "longitude": -72.758694
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.621944,
+        41.777484
+      ]
+    },
+    "postal_cd": "06108",
+    "country_cd": "US",
+    "city_name": "East Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.777484,
+    "longitude": -72.621944
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.657788,
+        41.697806
+      ]
+    },
+    "postal_cd": "06109",
+    "country_cd": "US",
+    "city_name": "Wethersfield",
+    "state_abbrv": "CT",
+    "latitude": 41.697806,
+    "longitude": -72.657788
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.738332,
+        41.734077
+      ]
+    },
+    "postal_cd": "06110",
+    "country_cd": "US",
+    "city_name": "West Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.734077,
+    "longitude": -72.738332
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.731474,
+        41.685889
+      ]
+    },
+    "postal_cd": "06111",
+    "country_cd": "US",
+    "city_name": "Newington",
+    "state_abbrv": "CT",
+    "latitude": 41.685889,
+    "longitude": -72.731474
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.697629,
+        41.791489
+      ]
+    },
+    "postal_cd": "06112",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.791489,
+    "longitude": -72.697629
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.674882,
+        41.740216
+      ]
+    },
+    "postal_cd": "06114",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.740216,
+    "longitude": -72.674882
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6729,
+        41.7672
+      ]
+    },
+    "postal_cd": "06115",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7672,
+    "longitude": -72.6729
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.756911,
+        41.77787
+      ]
+    },
+    "postal_cd": "06117",
+    "country_cd": "US",
+    "city_name": "West Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.77787,
+    "longitude": -72.756911
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.613704,
+        41.74875
+      ]
+    },
+    "postal_cd": "06118",
+    "country_cd": "US",
+    "city_name": "East Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.74875,
+    "longitude": -72.613704
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.72709,
+        41.763783
+      ]
+    },
+    "postal_cd": "06119",
+    "country_cd": "US",
+    "city_name": "West Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.763783,
+    "longitude": -72.72709
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.66607,
+        41.788334
+      ]
+    },
+    "postal_cd": "06120",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.788334,
+    "longitude": -72.66607
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06123",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06126",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06127",
+    "country_cd": "US",
+    "city_name": "West Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6128,
+        41.7823
+      ]
+    },
+    "postal_cd": "06128",
+    "country_cd": "US",
+    "city_name": "East Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7823,
+    "longitude": -72.6128
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06129",
+    "country_cd": "US",
+    "city_name": "Wethersfield",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06131",
+    "country_cd": "US",
+    "city_name": "Newington",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06132",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.705,
+        41.7502
+      ]
+    },
+    "postal_cd": "06133",
+    "country_cd": "US",
+    "city_name": "West Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7502,
+    "longitude": -72.705
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06134",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.8697,
+        41.5812
+      ]
+    },
+    "postal_cd": "06137",
+    "country_cd": "US",
+    "city_name": "West Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.5812,
+    "longitude": -72.8697
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6217,
+        41.7568
+      ]
+    },
+    "postal_cd": "06138",
+    "country_cd": "US",
+    "city_name": "East Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7568,
+    "longitude": -72.6217
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06140",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06141",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06142",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06143",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06144",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06145",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06146",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06147",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06150",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06151",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6825,
+        41.7666
+      ]
+    },
+    "postal_cd": "06152",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7666,
+    "longitude": -72.6825
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06153",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06154",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06155",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06156",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06160",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06161",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06167",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06176",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6859,
+        41.7638
+      ]
+    },
+    "postal_cd": "06180",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7638,
+    "longitude": -72.6859
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6798,
+        41.7639
+      ]
+    },
+    "postal_cd": "06183",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7639,
+    "longitude": -72.6798
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6594,
+        41.7944
+      ]
+    },
+    "postal_cd": "06199",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "CT",
+    "latitude": 41.7944,
+    "longitude": -72.6594
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.20971,
+        41.703182
+      ]
+    },
+    "postal_cd": "06226",
+    "country_cd": "US",
+    "city_name": "Willimantic",
+    "state_abbrv": "CT",
+    "latitude": 41.703182,
+    "longitude": -72.20971
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.0072,
+        41.8608
+      ]
+    },
+    "postal_cd": "06230",
+    "country_cd": "US",
+    "city_name": "Abington",
+    "state_abbrv": "CT",
+    "latitude": 41.8608,
+    "longitude": -72.0072
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.373095,
+        41.628816
+      ]
+    },
+    "postal_cd": "06231",
+    "country_cd": "US",
+    "city_name": "Amston",
+    "state_abbrv": "CT",
+    "latitude": 41.628816,
+    "longitude": -72.373095
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.373882,
+        41.731918
+      ]
+    },
+    "postal_cd": "06232",
+    "country_cd": "US",
+    "city_name": "Andover",
+    "state_abbrv": "CT",
+    "latitude": 41.731918,
+    "longitude": -72.373882
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.8618,
+        41.8767
+      ]
+    },
+    "postal_cd": "06233",
+    "country_cd": "US",
+    "city_name": "Ballouville",
+    "state_abbrv": "CT",
+    "latitude": 41.8767,
+    "longitude": -71.8618
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.95449,
+        41.7855
+      ]
+    },
+    "postal_cd": "06234",
+    "country_cd": "US",
+    "city_name": "Brooklyn",
+    "state_abbrv": "CT",
+    "latitude": 41.7855,
+    "longitude": -71.95449
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.127949,
+        41.789356
+      ]
+    },
+    "postal_cd": "06235",
+    "country_cd": "US",
+    "city_name": "Chaplin",
+    "state_abbrv": "CT",
+    "latitude": 41.789356,
+    "longitude": -72.127949
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.297783,
+        41.690983
+      ]
+    },
+    "postal_cd": "06237",
+    "country_cd": "US",
+    "city_name": "Columbia",
+    "state_abbrv": "CT",
+    "latitude": 41.690983,
+    "longitude": -72.297783
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.335271,
+        41.777064
+      ]
+    },
+    "postal_cd": "06238",
+    "country_cd": "US",
+    "city_name": "Coventry",
+    "state_abbrv": "CT",
+    "latitude": 41.777064,
+    "longitude": -72.335271
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.85461,
+        41.784786
+      ]
+    },
+    "postal_cd": "06239",
+    "country_cd": "US",
+    "city_name": "Danielson",
+    "state_abbrv": "CT",
+    "latitude": 41.784786,
+    "longitude": -71.85461
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.864336,
+        41.853273
+      ]
+    },
+    "postal_cd": "06241",
+    "country_cd": "US",
+    "city_name": "Dayville",
+    "state_abbrv": "CT",
+    "latitude": 41.853273,
+    "longitude": -71.864336
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.098516,
+        41.892976
+      ]
+    },
+    "postal_cd": "06242",
+    "country_cd": "US",
+    "city_name": "Eastford",
+    "state_abbrv": "CT",
+    "latitude": 41.892976,
+    "longitude": -72.098516
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.806556,
+        41.84333
+      ]
+    },
+    "postal_cd": "06243",
+    "country_cd": "US",
+    "city_name": "East Killingly",
+    "state_abbrv": "CT",
+    "latitude": 41.84333,
+    "longitude": -71.806556
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.9754,
+        41.9874
+      ]
+    },
+    "postal_cd": "06244",
+    "country_cd": "US",
+    "city_name": "East Woodstock",
+    "state_abbrv": "CT",
+    "latitude": 41.9874,
+    "longitude": -71.9754
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.9406,
+        42.0137
+      ]
+    },
+    "postal_cd": "06245",
+    "country_cd": "US",
+    "city_name": "Fabyan",
+    "state_abbrv": "CT",
+    "latitude": 42.0137,
+    "longitude": -71.9406
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.8953,
+        41.9685
+      ]
+    },
+    "postal_cd": "06246",
+    "country_cd": "US",
+    "city_name": "Grosvenor Dale",
+    "state_abbrv": "CT",
+    "latitude": 41.9685,
+    "longitude": -71.8953
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.067894,
+        41.765127
+      ]
+    },
+    "postal_cd": "06247",
+    "country_cd": "US",
+    "city_name": "Hampton",
+    "state_abbrv": "CT",
+    "latitude": 41.765127,
+    "longitude": -72.067894
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.402115,
+        41.687935
+      ]
+    },
+    "postal_cd": "06248",
+    "country_cd": "US",
+    "city_name": "Hebron",
+    "state_abbrv": "CT",
+    "latitude": 41.687935,
+    "longitude": -72.402115
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.245833,
+        41.626576
+      ]
+    },
+    "postal_cd": "06249",
+    "country_cd": "US",
+    "city_name": "Lebanon",
+    "state_abbrv": "CT",
+    "latitude": 41.626576,
+    "longitude": -72.245833
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.206786,
+        41.781562
+      ]
+    },
+    "postal_cd": "06250",
+    "country_cd": "US",
+    "city_name": "Mansfield Center",
+    "state_abbrv": "CT",
+    "latitude": 41.781562,
+    "longitude": -72.206786
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.3066,
+        41.8014
+      ]
+    },
+    "postal_cd": "06251",
+    "country_cd": "US",
+    "city_name": "Mansfield Depot",
+    "state_abbrv": "CT",
+    "latitude": 41.8014,
+    "longitude": -72.3066
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.149048,
+        41.613941
+      ]
+    },
+    "postal_cd": "06254",
+    "country_cd": "US",
+    "city_name": "North Franklin",
+    "state_abbrv": "CT",
+    "latitude": 41.613941,
+    "longitude": -72.149048
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.90204,
+        41.978592
+      ]
+    },
+    "postal_cd": "06255",
+    "country_cd": "US",
+    "city_name": "North Grosvenordale",
+    "state_abbrv": "CT",
+    "latitude": 41.978592,
+    "longitude": -71.90204
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.154514,
+        41.733086
+      ]
+    },
+    "postal_cd": "06256",
+    "country_cd": "US",
+    "city_name": "North Windham",
+    "state_abbrv": "CT",
+    "latitude": 41.733086,
+    "longitude": -72.154514
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.9631,
+        41.8975
+      ]
+    },
+    "postal_cd": "06258",
+    "country_cd": "US",
+    "city_name": "Pomfret",
+    "state_abbrv": "CT",
+    "latitude": 41.8975,
+    "longitude": -71.9631
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.995071,
+        41.858004
+      ]
+    },
+    "postal_cd": "06259",
+    "country_cd": "US",
+    "city_name": "Pomfret Center",
+    "state_abbrv": "CT",
+    "latitude": 41.858004,
+    "longitude": -71.995071
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.86577,
+        41.900998
+      ]
+    },
+    "postal_cd": "06260",
+    "country_cd": "US",
+    "city_name": "Putnam",
+    "state_abbrv": "CT",
+    "latitude": 41.900998,
+    "longitude": -71.86577
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.945954,
+        42.019926
+      ]
+    },
+    "postal_cd": "06262",
+    "country_cd": "US",
+    "city_name": "Quinebaug",
+    "state_abbrv": "CT",
+    "latitude": 42.019926,
+    "longitude": -71.945954
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.9064,
+        41.8404
+      ]
+    },
+    "postal_cd": "06263",
+    "country_cd": "US",
+    "city_name": "Rogers",
+    "state_abbrv": "CT",
+    "latitude": 41.8404,
+    "longitude": -71.9064
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.101658,
+        41.695433
+      ]
+    },
+    "postal_cd": "06264",
+    "country_cd": "US",
+    "city_name": "Scotland",
+    "state_abbrv": "CT",
+    "latitude": 41.695433,
+    "longitude": -72.101658
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.2998,
+        41.8564
+      ]
+    },
+    "postal_cd": "06265",
+    "country_cd": "US",
+    "city_name": "South Willington",
+    "state_abbrv": "CT",
+    "latitude": 41.8564,
+    "longitude": -72.2998
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.16952,
+        41.668636
+      ]
+    },
+    "postal_cd": "06266",
+    "country_cd": "US",
+    "city_name": "South Windham",
+    "state_abbrv": "CT",
+    "latitude": 41.668636,
+    "longitude": -72.16952
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.9589,
+        41.9395
+      ]
+    },
+    "postal_cd": "06267",
+    "country_cd": "US",
+    "city_name": "South Woodstock",
+    "state_abbrv": "CT",
+    "latitude": 41.9395,
+    "longitude": -71.9589
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.252081,
+        41.791216
+      ]
+    },
+    "postal_cd": "06268",
+    "country_cd": "US",
+    "city_name": "Storrs Mansfield",
+    "state_abbrv": "CT",
+    "latitude": 41.791216,
+    "longitude": -72.252081
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.251674,
+        41.807038
+      ]
+    },
+    "postal_cd": "06269",
+    "country_cd": "US",
+    "city_name": "Storrs Mansfield",
+    "state_abbrv": "CT",
+    "latitude": 41.807038,
+    "longitude": -72.251674
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.861033,
+        41.975726
+      ]
+    },
+    "postal_cd": "06277",
+    "country_cd": "US",
+    "city_name": "Thompson",
+    "state_abbrv": "CT",
+    "latitude": 41.975726,
+    "longitude": -71.861033
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.158731,
+        41.895504
+      ]
+    },
+    "postal_cd": "06278",
+    "country_cd": "US",
+    "city_name": "Ashford",
+    "state_abbrv": "CT",
+    "latitude": 41.895504,
+    "longitude": -72.158731
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.262586,
+        41.894361
+      ]
+    },
+    "postal_cd": "06279",
+    "country_cd": "US",
+    "city_name": "Willington",
+    "state_abbrv": "CT",
+    "latitude": 41.894361,
+    "longitude": -72.262586
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.138868,
+        41.696284
+      ]
+    },
+    "postal_cd": "06280",
+    "country_cd": "US",
+    "city_name": "Windham",
+    "state_abbrv": "CT",
+    "latitude": 41.696284,
+    "longitude": -72.138868
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.009865,
+        41.963454
+      ]
+    },
+    "postal_cd": "06281",
+    "country_cd": "US",
+    "city_name": "Woodstock",
+    "state_abbrv": "CT",
+    "latitude": 41.963454,
+    "longitude": -72.009865
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.062232,
+        41.942186
+      ]
+    },
+    "postal_cd": "06282",
+    "country_cd": "US",
+    "city_name": "Woodstock Valley",
+    "state_abbrv": "CT",
+    "latitude": 41.942186,
+    "longitude": -72.062232
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.105722,
+        41.345754
+      ]
+    },
+    "postal_cd": "06320",
+    "country_cd": "US",
+    "city_name": "New London",
+    "state_abbrv": "CT",
+    "latitude": 41.345754,
+    "longitude": -72.105722
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.075404,
+        41.642835
+      ]
+    },
+    "postal_cd": "06330",
+    "country_cd": "US",
+    "city_name": "Baltic",
+    "state_abbrv": "CT",
+    "latitude": 41.642835,
+    "longitude": -72.075404
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.988436,
+        41.697506
+      ]
+    },
+    "postal_cd": "06331",
+    "country_cd": "US",
+    "city_name": "Canterbury",
+    "state_abbrv": "CT",
+    "latitude": 41.697506,
+    "longitude": -71.988436
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.9057,
+        41.7322
+      ]
+    },
+    "postal_cd": "06332",
+    "country_cd": "US",
+    "city_name": "Central Village",
+    "state_abbrv": "CT",
+    "latitude": 41.7322,
+    "longitude": -71.9057
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.236964,
+        41.376501
+      ]
+    },
+    "postal_cd": "06333",
+    "country_cd": "US",
+    "city_name": "East Lyme",
+    "state_abbrv": "CT",
+    "latitude": 41.376501,
+    "longitude": -72.236964
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.17754,
+        41.547243
+      ]
+    },
+    "postal_cd": "06334",
+    "country_cd": "US",
+    "city_name": "Bozrah",
+    "state_abbrv": "CT",
+    "latitude": 41.547243,
+    "longitude": -72.17754
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.059486,
+        41.440253
+      ]
+    },
+    "postal_cd": "06335",
+    "country_cd": "US",
+    "city_name": "Gales Ferry",
+    "state_abbrv": "CT",
+    "latitude": 41.440253,
+    "longitude": -72.059486
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.19679,
+        41.578076
+      ]
+    },
+    "postal_cd": "06336",
+    "country_cd": "US",
+    "city_name": "Gilman",
+    "state_abbrv": "CT",
+    "latitude": 41.578076,
+    "longitude": -72.19679
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.972735,
+        41.460561
+      ]
+    },
+    "postal_cd": "06338",
+    "country_cd": "US",
+    "city_name": "Mashantucket",
+    "state_abbrv": "CT",
+    "latitude": 41.460561,
+    "longitude": -71.972735
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.000108,
+        41.442488
+      ]
+    },
+    "postal_cd": "06339",
+    "country_cd": "US",
+    "city_name": "Ledyard",
+    "state_abbrv": "CT",
+    "latitude": 41.442488,
+    "longitude": -72.000108
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.038482,
+        41.358008
+      ]
+    },
+    "postal_cd": "06340",
+    "country_cd": "US",
+    "city_name": "Groton",
+    "state_abbrv": "CT",
+    "latitude": 41.358008,
+    "longitude": -72.038482
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.093358,
+        41.39466
+      ]
+    },
+    "postal_cd": "06349",
+    "country_cd": "US",
+    "city_name": "Groton",
+    "state_abbrv": "CT",
+    "latitude": 41.39466,
+    "longitude": -72.093358
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.0658,
+        41.6425
+      ]
+    },
+    "postal_cd": "06350",
+    "country_cd": "US",
+    "city_name": "Hanover",
+    "state_abbrv": "CT",
+    "latitude": 41.6425,
+    "longitude": -72.0658
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.951754,
+        41.578306
+      ]
+    },
+    "postal_cd": "06351",
+    "country_cd": "US",
+    "city_name": "Jewett City",
+    "state_abbrv": "CT",
+    "latitude": 41.578306,
+    "longitude": -71.951754
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.140471,
+        41.454016
+      ]
+    },
+    "postal_cd": "06353",
+    "country_cd": "US",
+    "city_name": "Montville",
+    "state_abbrv": "CT",
+    "latitude": 41.454016,
+    "longitude": -72.140471
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.847486,
+        41.703763
+      ]
+    },
+    "postal_cd": "06354",
+    "country_cd": "US",
+    "city_name": "Moosup",
+    "state_abbrv": "CT",
+    "latitude": 41.703763,
+    "longitude": -71.847486
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.974616,
+        41.372195
+      ]
+    },
+    "postal_cd": "06355",
+    "country_cd": "US",
+    "city_name": "Mystic",
+    "state_abbrv": "CT",
+    "latitude": 41.372195,
+    "longitude": -71.974616
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.21539,
+        41.326995
+      ]
+    },
+    "postal_cd": "06357",
+    "country_cd": "US",
+    "city_name": "Niantic",
+    "state_abbrv": "CT",
+    "latitude": 41.326995,
+    "longitude": -72.21539
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.87961,
+        41.468394
+      ]
+    },
+    "postal_cd": "06359",
+    "country_cd": "US",
+    "city_name": "North Stonington",
+    "state_abbrv": "CT",
+    "latitude": 41.468394,
+    "longitude": -71.87961
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.0914,
+        41.549099
+      ]
+    },
+    "postal_cd": "06360",
+    "country_cd": "US",
+    "city_name": "Norwich",
+    "state_abbrv": "CT",
+    "latitude": 41.549099,
+    "longitude": -72.0914
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.99183,
+        41.516775
+      ]
+    },
+    "postal_cd": "06365",
+    "country_cd": "US",
+    "city_name": "Preston",
+    "state_abbrv": "CT",
+    "latitude": 41.516775,
+    "longitude": -71.99183
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.19193,
+        41.465366
+      ]
+    },
+    "postal_cd": "06370",
+    "country_cd": "US",
+    "city_name": "Oakdale",
+    "state_abbrv": "CT",
+    "latitude": 41.465366,
+    "longitude": -72.19193
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.341172,
+        41.359226
+      ]
+    },
+    "postal_cd": "06371",
+    "country_cd": "US",
+    "city_name": "Old Lyme",
+    "state_abbrv": "CT",
+    "latitude": 41.359226,
+    "longitude": -72.341172
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.941,
+        41.3944
+      ]
+    },
+    "postal_cd": "06372",
+    "country_cd": "US",
+    "city_name": "Old Mystic",
+    "state_abbrv": "CT",
+    "latitude": 41.3944,
+    "longitude": -71.941
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.805544,
+        41.669529
+      ]
+    },
+    "postal_cd": "06373",
+    "country_cd": "US",
+    "city_name": "Oneco",
+    "state_abbrv": "CT",
+    "latitude": 41.669529,
+    "longitude": -71.805544
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.909217,
+        41.688392
+      ]
+    },
+    "postal_cd": "06374",
+    "country_cd": "US",
+    "city_name": "Plainfield",
+    "state_abbrv": "CT",
+    "latitude": 41.688392,
+    "longitude": -71.909217
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.131372,
+        41.398932
+      ]
+    },
+    "postal_cd": "06375",
+    "country_cd": "US",
+    "city_name": "Quaker Hill",
+    "state_abbrv": "CT",
+    "latitude": 41.398932,
+    "longitude": -72.131372
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.256424,
+        41.294774
+      ]
+    },
+    "postal_cd": "06376",
+    "country_cd": "US",
+    "city_name": "South Lyme",
+    "state_abbrv": "CT",
+    "latitude": 41.294774,
+    "longitude": -72.256424
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.823055,
+        41.719468
+      ]
+    },
+    "postal_cd": "06377",
+    "country_cd": "US",
+    "city_name": "Sterling",
+    "state_abbrv": "CT",
+    "latitude": 41.719468,
+    "longitude": -71.823055
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.916026,
+        41.380325
+      ]
+    },
+    "postal_cd": "06378",
+    "country_cd": "US",
+    "city_name": "Stonington",
+    "state_abbrv": "CT",
+    "latitude": 41.380325,
+    "longitude": -71.916026
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.863083,
+        41.368242
+      ]
+    },
+    "postal_cd": "06379",
+    "country_cd": "US",
+    "city_name": "Pawcatuck",
+    "state_abbrv": "CT",
+    "latitude": 41.368242,
+    "longitude": -71.863083
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.054591,
+        41.562845
+      ]
+    },
+    "postal_cd": "06380",
+    "country_cd": "US",
+    "city_name": "Taftville",
+    "state_abbrv": "CT",
+    "latitude": 41.562845,
+    "longitude": -72.054591
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.130043,
+        41.461951
+      ]
+    },
+    "postal_cd": "06382",
+    "country_cd": "US",
+    "city_name": "Uncasville",
+    "state_abbrv": "CT",
+    "latitude": 41.461951,
+    "longitude": -72.130043
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.0379,
+        41.6017
+      ]
+    },
+    "postal_cd": "06383",
+    "country_cd": "US",
+    "city_name": "Versailles",
+    "state_abbrv": "CT",
+    "latitude": 41.6017,
+    "longitude": -72.0379
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.835824,
+        41.57771
+      ]
+    },
+    "postal_cd": "06384",
+    "country_cd": "US",
+    "city_name": "Voluntown",
+    "state_abbrv": "CT",
+    "latitude": 41.57771,
+    "longitude": -71.835824
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.160086,
+        41.358637
+      ]
+    },
+    "postal_cd": "06385",
+    "country_cd": "US",
+    "city_name": "Waterford",
+    "state_abbrv": "CT",
+    "latitude": 41.358637,
+    "longitude": -72.160086
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.9127,
+        41.7443
+      ]
+    },
+    "postal_cd": "06387",
+    "country_cd": "US",
+    "city_name": "Wauregan",
+    "state_abbrv": "CT",
+    "latitude": 41.7443,
+    "longitude": -71.9127
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.9669,
+        41.3544
+      ]
+    },
+    "postal_cd": "06388",
+    "country_cd": "US",
+    "city_name": "West Mystic",
+    "state_abbrv": "CT",
+    "latitude": 41.3544,
+    "longitude": -71.9669
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.1252,
+        41.5612
+      ]
+    },
+    "postal_cd": "06389",
+    "country_cd": "US",
+    "city_name": "Yantic",
+    "state_abbrv": "CT",
+    "latitude": 41.5612,
+    "longitude": -72.1252
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.070286,
+        41.343456
+      ]
+    },
+    "postal_cd": "06401",
+    "country_cd": "US",
+    "city_name": "Ansonia",
+    "state_abbrv": "CT",
+    "latitude": 41.343456,
+    "longitude": -73.070286
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.05881,
+        41.436511
+      ]
+    },
+    "postal_cd": "06403",
+    "country_cd": "US",
+    "city_name": "Beacon Falls",
+    "state_abbrv": "CT",
+    "latitude": 41.436511,
+    "longitude": -73.05881
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.2577,
+        41.3667
+      ]
+    },
+    "postal_cd": "06404",
+    "country_cd": "US",
+    "city_name": "Botsford",
+    "state_abbrv": "CT",
+    "latitude": 41.3667,
+    "longitude": -73.2577
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.796443,
+        41.283154
+      ]
+    },
+    "postal_cd": "06405",
+    "country_cd": "US",
+    "city_name": "Branford",
+    "state_abbrv": "CT",
+    "latitude": 41.283154,
+    "longitude": -72.796443
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9011,
+        41.4989
+      ]
+    },
+    "postal_cd": "06408",
+    "country_cd": "US",
+    "city_name": "Cheshire",
+    "state_abbrv": "CT",
+    "latitude": 41.4989,
+    "longitude": -72.9011
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.413232,
+        41.348925
+      ]
+    },
+    "postal_cd": "06409",
+    "country_cd": "US",
+    "city_name": "Centerbrook",
+    "state_abbrv": "CT",
+    "latitude": 41.348925,
+    "longitude": -72.413232
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.908242,
+        41.505875
+      ]
+    },
+    "postal_cd": "06410",
+    "country_cd": "US",
+    "city_name": "Cheshire",
+    "state_abbrv": "CT",
+    "latitude": 41.505875,
+    "longitude": -72.908242
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9011,
+        41.4989
+      ]
+    },
+    "postal_cd": "06411",
+    "country_cd": "US",
+    "city_name": "Cheshire",
+    "state_abbrv": "CT",
+    "latitude": 41.4989,
+    "longitude": -72.9011
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.481793,
+        41.404863
+      ]
+    },
+    "postal_cd": "06412",
+    "country_cd": "US",
+    "city_name": "Chester",
+    "state_abbrv": "CT",
+    "latitude": 41.404863,
+    "longitude": -72.481793
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.535996,
+        41.298722
+      ]
+    },
+    "postal_cd": "06413",
+    "country_cd": "US",
+    "city_name": "Clinton",
+    "state_abbrv": "CT",
+    "latitude": 41.298722,
+    "longitude": -72.535996
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5568,
+        41.5636
+      ]
+    },
+    "postal_cd": "06414",
+    "country_cd": "US",
+    "city_name": "Cobalt",
+    "state_abbrv": "CT",
+    "latitude": 41.5636,
+    "longitude": -72.5568
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.342931,
+        41.546794
+      ]
+    },
+    "postal_cd": "06415",
+    "country_cd": "US",
+    "city_name": "Colchester",
+    "state_abbrv": "CT",
+    "latitude": 41.546794,
+    "longitude": -72.342931
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.666812,
+        41.606133
+      ]
+    },
+    "postal_cd": "06416",
+    "country_cd": "US",
+    "city_name": "Cromwell",
+    "state_abbrv": "CT",
+    "latitude": 41.606133,
+    "longitude": -72.666812
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.45324,
+        41.368053
+      ]
+    },
+    "postal_cd": "06417",
+    "country_cd": "US",
+    "city_name": "Deep River",
+    "state_abbrv": "CT",
+    "latitude": 41.368053,
+    "longitude": -72.45324
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.081896,
+        41.326886
+      ]
+    },
+    "postal_cd": "06418",
+    "country_cd": "US",
+    "city_name": "Derby",
+    "state_abbrv": "CT",
+    "latitude": 41.326886,
+    "longitude": -73.081896
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.579718,
+        41.37317
+      ]
+    },
+    "postal_cd": "06419",
+    "country_cd": "US",
+    "city_name": "Killingworth",
+    "state_abbrv": "CT",
+    "latitude": 41.37317,
+    "longitude": -72.579718
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.269776,
+        41.485775
+      ]
+    },
+    "postal_cd": "06420",
+    "country_cd": "US",
+    "city_name": "Salem",
+    "state_abbrv": "CT",
+    "latitude": 41.485775,
+    "longitude": -72.269776
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.677525,
+        41.461754
+      ]
+    },
+    "postal_cd": "06422",
+    "country_cd": "US",
+    "city_name": "Durham",
+    "state_abbrv": "CT",
+    "latitude": 41.461754,
+    "longitude": -72.677525
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.391838,
+        41.475914
+      ]
+    },
+    "postal_cd": "06423",
+    "country_cd": "US",
+    "city_name": "East Haddam",
+    "state_abbrv": "CT",
+    "latitude": 41.475914,
+    "longitude": -72.391838
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.496736,
+        41.553973
+      ]
+    },
+    "postal_cd": "06424",
+    "country_cd": "US",
+    "city_name": "East Hampton",
+    "state_abbrv": "CT",
+    "latitude": 41.553973,
+    "longitude": -72.496736
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.402204,
+        41.349058
+      ]
+    },
+    "postal_cd": "06426",
+    "country_cd": "US",
+    "city_name": "Essex",
+    "state_abbrv": "CT",
+    "latitude": 41.349058,
+    "longitude": -72.402204
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.689532,
+        41.33858
+      ]
+    },
+    "postal_cd": "06437",
+    "country_cd": "US",
+    "city_name": "Guilford",
+    "state_abbrv": "CT",
+    "latitude": 41.33858,
+    "longitude": -72.689532
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.504362,
+        41.460544
+      ]
+    },
+    "postal_cd": "06438",
+    "country_cd": "US",
+    "city_name": "Haddam",
+    "state_abbrv": "CT",
+    "latitude": 41.460544,
+    "longitude": -72.504362
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.4194,
+        41.4216
+      ]
+    },
+    "postal_cd": "06439",
+    "country_cd": "US",
+    "city_name": "Hadlyme",
+    "state_abbrv": "CT",
+    "latitude": 41.4216,
+    "longitude": -72.4194
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.3558,
+        41.4276
+      ]
+    },
+    "postal_cd": "06440",
+    "country_cd": "US",
+    "city_name": "Hawleyville",
+    "state_abbrv": "CT",
+    "latitude": 41.4276,
+    "longitude": -73.3558
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.582682,
+        41.462974
+      ]
+    },
+    "postal_cd": "06441",
+    "country_cd": "US",
+    "city_name": "Higganum",
+    "state_abbrv": "CT",
+    "latitude": 41.462974,
+    "longitude": -72.582682
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.44607,
+        41.347904
+      ]
+    },
+    "postal_cd": "06442",
+    "country_cd": "US",
+    "city_name": "Ivoryton",
+    "state_abbrv": "CT",
+    "latitude": 41.347904,
+    "longitude": -72.44607
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.601912,
+        41.343418
+      ]
+    },
+    "postal_cd": "06443",
+    "country_cd": "US",
+    "city_name": "Madison",
+    "state_abbrv": "CT",
+    "latitude": 41.343418,
+    "longitude": -72.601912
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9343,
+        41.5625
+      ]
+    },
+    "postal_cd": "06444",
+    "country_cd": "US",
+    "city_name": "Marion",
+    "state_abbrv": "CT",
+    "latitude": 41.5625,
+    "longitude": -72.9343
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.455882,
+        41.637948
+      ]
+    },
+    "postal_cd": "06447",
+    "country_cd": "US",
+    "city_name": "Marlborough",
+    "state_abbrv": "CT",
+    "latitude": 41.637948,
+    "longitude": -72.455882
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.779368,
+        41.537229
+      ]
+    },
+    "postal_cd": "06450",
+    "country_cd": "US",
+    "city_name": "Meriden",
+    "state_abbrv": "CT",
+    "latitude": 41.537229,
+    "longitude": -72.779368
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.818792,
+        41.538363
+      ]
+    },
+    "postal_cd": "06451",
+    "country_cd": "US",
+    "city_name": "Meriden",
+    "state_abbrv": "CT",
+    "latitude": 41.538363,
+    "longitude": -72.818792
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.71311,
+        41.515715
+      ]
+    },
+    "postal_cd": "06455",
+    "country_cd": "US",
+    "city_name": "Middlefield",
+    "state_abbrv": "CT",
+    "latitude": 41.515715,
+    "longitude": -72.71311
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5548,
+        41.5568
+      ]
+    },
+    "postal_cd": "06456",
+    "country_cd": "US",
+    "city_name": "Middle Haddam",
+    "state_abbrv": "CT",
+    "latitude": 41.5568,
+    "longitude": -72.5548
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.651825,
+        41.549521
+      ]
+    },
+    "postal_cd": "06457",
+    "country_cd": "US",
+    "city_name": "Middletown",
+    "state_abbrv": "CT",
+    "latitude": 41.549521,
+    "longitude": -72.651825
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.65569,
+        41.556473
+      ]
+    },
+    "postal_cd": "06459",
+    "country_cd": "US",
+    "city_name": "Middletown",
+    "state_abbrv": "CT",
+    "latitude": 41.556473,
+    "longitude": -72.65569
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.05192,
+        41.210994
+      ]
+    },
+    "postal_cd": "06460",
+    "country_cd": "US",
+    "city_name": "Milford",
+    "state_abbrv": "CT",
+    "latitude": 41.210994,
+    "longitude": -73.05192
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.065889,
+        41.238246
+      ]
+    },
+    "postal_cd": "06461",
+    "country_cd": "US",
+    "city_name": "Milford",
+    "state_abbrv": "CT",
+    "latitude": 41.238246,
+    "longitude": -73.065889
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.8922,
+        41.5655
+      ]
+    },
+    "postal_cd": "06467",
+    "country_cd": "US",
+    "city_name": "Milldale",
+    "state_abbrv": "CT",
+    "latitude": 41.5655,
+    "longitude": -72.8922
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.231554,
+        41.342188
+      ]
+    },
+    "postal_cd": "06468",
+    "country_cd": "US",
+    "city_name": "Monroe",
+    "state_abbrv": "CT",
+    "latitude": 41.342188,
+    "longitude": -73.231554
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.44333,
+        41.510894
+      ]
+    },
+    "postal_cd": "06469",
+    "country_cd": "US",
+    "city_name": "Moodus",
+    "state_abbrv": "CT",
+    "latitude": 41.510894,
+    "longitude": -72.44333
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.318419,
+        41.395394
+      ]
+    },
+    "postal_cd": "06470",
+    "country_cd": "US",
+    "city_name": "Newtown",
+    "state_abbrv": "CT",
+    "latitude": 41.395394,
+    "longitude": -73.318419
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.780914,
+        41.338705
+      ]
+    },
+    "postal_cd": "06471",
+    "country_cd": "US",
+    "city_name": "North Branford",
+    "state_abbrv": "CT",
+    "latitude": 41.338705,
+    "longitude": -72.780914
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.769162,
+        41.376411
+      ]
+    },
+    "postal_cd": "06472",
+    "country_cd": "US",
+    "city_name": "Northford",
+    "state_abbrv": "CT",
+    "latitude": 41.376411,
+    "longitude": -72.769162
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.85947,
+        41.383474
+      ]
+    },
+    "postal_cd": "06473",
+    "country_cd": "US",
+    "city_name": "North Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.383474,
+    "longitude": -72.85947
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.4017,
+        41.5805
+      ]
+    },
+    "postal_cd": "06474",
+    "country_cd": "US",
+    "city_name": "North Westchester",
+    "state_abbrv": "CT",
+    "latitude": 41.5805,
+    "longitude": -72.4017
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.387936,
+        41.301527
+      ]
+    },
+    "postal_cd": "06475",
+    "country_cd": "US",
+    "city_name": "Old Saybrook",
+    "state_abbrv": "CT",
+    "latitude": 41.301527,
+    "longitude": -72.387936
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.033412,
+        41.27948
+      ]
+    },
+    "postal_cd": "06477",
+    "country_cd": "US",
+    "city_name": "Orange",
+    "state_abbrv": "CT",
+    "latitude": 41.27948,
+    "longitude": -73.033412
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.142451,
+        41.42856
+      ]
+    },
+    "postal_cd": "06478",
+    "country_cd": "US",
+    "city_name": "Oxford",
+    "state_abbrv": "CT",
+    "latitude": 41.42856,
+    "longitude": -73.142451
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.900673,
+        41.577707
+      ]
+    },
+    "postal_cd": "06479",
+    "country_cd": "US",
+    "city_name": "Plantsville",
+    "state_abbrv": "CT",
+    "latitude": 41.577707,
+    "longitude": -72.900673
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.589099,
+        41.598382
+      ]
+    },
+    "postal_cd": "06480",
+    "country_cd": "US",
+    "city_name": "Portland",
+    "state_abbrv": "CT",
+    "latitude": 41.598382,
+    "longitude": -72.589099
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.699706,
+        41.534506
+      ]
+    },
+    "postal_cd": "06481",
+    "country_cd": "US",
+    "city_name": "Rockfall",
+    "state_abbrv": "CT",
+    "latitude": 41.534506,
+    "longitude": -72.699706
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.249334,
+        41.40497
+      ]
+    },
+    "postal_cd": "06482",
+    "country_cd": "US",
+    "city_name": "Sandy Hook",
+    "state_abbrv": "CT",
+    "latitude": 41.40497,
+    "longitude": -73.249334
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.094573,
+        41.383578
+      ]
+    },
+    "postal_cd": "06483",
+    "country_cd": "US",
+    "city_name": "Seymour",
+    "state_abbrv": "CT",
+    "latitude": 41.383578,
+    "longitude": -73.094573
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.134957,
+        41.315669
+      ]
+    },
+    "postal_cd": "06484",
+    "country_cd": "US",
+    "city_name": "Shelton",
+    "state_abbrv": "CT",
+    "latitude": 41.315669,
+    "longitude": -73.134957
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.2517,
+        41.4705
+      ]
+    },
+    "postal_cd": "06487",
+    "country_cd": "US",
+    "city_name": "South Britain",
+    "state_abbrv": "CT",
+    "latitude": 41.4705,
+    "longitude": -73.2517
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.235445,
+        41.467383
+      ]
+    },
+    "postal_cd": "06488",
+    "country_cd": "US",
+    "city_name": "Southbury",
+    "state_abbrv": "CT",
+    "latitude": 41.467383,
+    "longitude": -73.235445
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.876222,
+        41.600693
+      ]
+    },
+    "postal_cd": "06489",
+    "country_cd": "US",
+    "city_name": "Southington",
+    "state_abbrv": "CT",
+    "latitude": 41.600693,
+    "longitude": -72.876222
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.185,
+        41.3833
+      ]
+    },
+    "postal_cd": "06491",
+    "country_cd": "US",
+    "city_name": "Stevenson",
+    "state_abbrv": "CT",
+    "latitude": 41.3833,
+    "longitude": -73.185
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.810304,
+        41.456625
+      ]
+    },
+    "postal_cd": "06492",
+    "country_cd": "US",
+    "city_name": "Wallingford",
+    "state_abbrv": "CT",
+    "latitude": 41.456625,
+    "longitude": -72.810304
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.8185,
+        41.4539
+      ]
+    },
+    "postal_cd": "06493",
+    "country_cd": "US",
+    "city_name": "Wallingford",
+    "state_abbrv": "CT",
+    "latitude": 41.4539,
+    "longitude": -72.8185
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.8238,
+        41.4569
+      ]
+    },
+    "postal_cd": "06494",
+    "country_cd": "US",
+    "city_name": "Wallingford",
+    "state_abbrv": "CT",
+    "latitude": 41.4569,
+    "longitude": -72.8238
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.8041,
+        41.4588
+      ]
+    },
+    "postal_cd": "06495",
+    "country_cd": "US",
+    "city_name": "Wallingford",
+    "state_abbrv": "CT",
+    "latitude": 41.4588,
+    "longitude": -72.8041
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.465275,
+        41.308479
+      ]
+    },
+    "postal_cd": "06498",
+    "country_cd": "US",
+    "city_name": "Westbrook",
+    "state_abbrv": "CT",
+    "latitude": 41.308479,
+    "longitude": -72.465275
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06501",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06502",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06503",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.934946,
+        41.303647
+      ]
+    },
+    "postal_cd": "06504",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.303647,
+    "longitude": -72.934946
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06505",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06506",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06507",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06508",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06509",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.927354,
+        41.307716
+      ]
+    },
+    "postal_cd": "06510",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.307716,
+    "longitude": -72.927354
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.924686,
+        41.309418
+      ]
+    },
+    "postal_cd": "06511",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.309418,
+    "longitude": -72.924686
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.866298,
+        41.283517
+      ]
+    },
+    "postal_cd": "06512",
+    "country_cd": "US",
+    "city_name": "East Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.283517,
+    "longitude": -72.866298
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.86361,
+        41.315555
+      ]
+    },
+    "postal_cd": "06513",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.315555,
+    "longitude": -72.86361
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.939707,
+        41.371201
+      ]
+    },
+    "postal_cd": "06514",
+    "country_cd": "US",
+    "city_name": "Hamden",
+    "state_abbrv": "CT",
+    "latitude": 41.371201,
+    "longitude": -72.939707
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.969592,
+        41.329074
+      ]
+    },
+    "postal_cd": "06515",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.329074,
+    "longitude": -72.969592
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.959573,
+        41.27317
+      ]
+    },
+    "postal_cd": "06516",
+    "country_cd": "US",
+    "city_name": "West Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.27317,
+    "longitude": -72.959573
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.904194,
+        41.350618
+      ]
+    },
+    "postal_cd": "06517",
+    "country_cd": "US",
+    "city_name": "Hamden",
+    "state_abbrv": "CT",
+    "latitude": 41.350618,
+    "longitude": -72.904194
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.907432,
+        41.417583
+      ]
+    },
+    "postal_cd": "06518",
+    "country_cd": "US",
+    "city_name": "Hamden",
+    "state_abbrv": "CT",
+    "latitude": 41.417583,
+    "longitude": -72.907432
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.93767,
+        41.293437
+      ]
+    },
+    "postal_cd": "06519",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.293437,
+    "longitude": -72.93767
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06520",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06521",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.994356,
+        41.426601
+      ]
+    },
+    "postal_cd": "06524",
+    "country_cd": "US",
+    "city_name": "Bethany",
+    "state_abbrv": "CT",
+    "latitude": 41.426601,
+    "longitude": -72.994356
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.001883,
+        41.352946
+      ]
+    },
+    "postal_cd": "06525",
+    "country_cd": "US",
+    "city_name": "Woodbridge",
+    "state_abbrv": "CT",
+    "latitude": 41.352946,
+    "longitude": -73.001883
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06530",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06531",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06532",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06533",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06534",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06535",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06536",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06537",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06538",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9287,
+        41.3083
+      ]
+    },
+    "postal_cd": "06540",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "CT",
+    "latitude": 41.3083,
+    "longitude": -72.9287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.2054,
+        41.1667
+      ]
+    },
+    "postal_cd": "06601",
+    "country_cd": "US",
+    "city_name": "Bridgeport",
+    "state_abbrv": "CT",
+    "latitude": 41.1667,
+    "longitude": -73.2054
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.1965,
+        41.1738
+      ]
+    },
+    "postal_cd": "06602",
+    "country_cd": "US",
+    "city_name": "Bridgeport",
+    "state_abbrv": "CT",
+    "latitude": 41.1738,
+    "longitude": -73.1965
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.2099,
+        41.183653
+      ]
+    },
+    "postal_cd": "06604",
+    "country_cd": "US",
+    "city_name": "Bridgeport",
+    "state_abbrv": "CT",
+    "latitude": 41.183653,
+    "longitude": -73.2099
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.216444,
+        41.162298
+      ]
+    },
+    "postal_cd": "06605",
+    "country_cd": "US",
+    "city_name": "Bridgeport",
+    "state_abbrv": "CT",
+    "latitude": 41.162298,
+    "longitude": -73.216444
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.211428,
+        41.20862
+      ]
+    },
+    "postal_cd": "06606",
+    "country_cd": "US",
+    "city_name": "Bridgeport",
+    "state_abbrv": "CT",
+    "latitude": 41.20862,
+    "longitude": -73.211428
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.164916,
+        41.17589
+      ]
+    },
+    "postal_cd": "06607",
+    "country_cd": "US",
+    "city_name": "Bridgeport",
+    "state_abbrv": "CT",
+    "latitude": 41.17589,
+    "longitude": -73.164916
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.180174,
+        41.188238
+      ]
+    },
+    "postal_cd": "06608",
+    "country_cd": "US",
+    "city_name": "Bridgeport",
+    "state_abbrv": "CT",
+    "latitude": 41.188238,
+    "longitude": -73.180174
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.171486,
+        41.206456
+      ]
+    },
+    "postal_cd": "06610",
+    "country_cd": "US",
+    "city_name": "Bridgeport",
+    "state_abbrv": "CT",
+    "latitude": 41.206456,
+    "longitude": -73.171486
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.20786,
+        41.261696
+      ]
+    },
+    "postal_cd": "06611",
+    "country_cd": "US",
+    "city_name": "Trumbull",
+    "state_abbrv": "CT",
+    "latitude": 41.261696,
+    "longitude": -73.20786
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.305702,
+        41.276709
+      ]
+    },
+    "postal_cd": "06612",
+    "country_cd": "US",
+    "city_name": "Easton",
+    "state_abbrv": "CT",
+    "latitude": 41.276709,
+    "longitude": -73.305702
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.1248,
+        41.230203
+      ]
+    },
+    "postal_cd": "06614",
+    "country_cd": "US",
+    "city_name": "Stratford",
+    "state_abbrv": "CT",
+    "latitude": 41.230203,
+    "longitude": -73.1248
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.136492,
+        41.173882
+      ]
+    },
+    "postal_cd": "06615",
+    "country_cd": "US",
+    "city_name": "Stratford",
+    "state_abbrv": "CT",
+    "latitude": 41.173882,
+    "longitude": -73.136492
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.1284,
+        41.1895
+      ]
+    },
+    "postal_cd": "06650",
+    "country_cd": "US",
+    "city_name": "Bridgeport",
+    "state_abbrv": "CT",
+    "latitude": 41.1895,
+    "longitude": -73.1284
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.2054,
+        41.1667
+      ]
+    },
+    "postal_cd": "06673",
+    "country_cd": "US",
+    "city_name": "Bridgeport",
+    "state_abbrv": "CT",
+    "latitude": 41.1667,
+    "longitude": -73.2054
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.2054,
+        41.1667
+      ]
+    },
+    "postal_cd": "06699",
+    "country_cd": "US",
+    "city_name": "Bridgeport",
+    "state_abbrv": "CT",
+    "latitude": 41.1667,
+    "longitude": -73.2054
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.0516,
+        41.5584
+      ]
+    },
+    "postal_cd": "06701",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "CT",
+    "latitude": 41.5584,
+    "longitude": -73.0516
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.038908,
+        41.557411
+      ]
+    },
+    "postal_cd": "06702",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "CT",
+    "latitude": 41.557411,
+    "longitude": -73.038908
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.0516,
+        41.5584
+      ]
+    },
+    "postal_cd": "06703",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "CT",
+    "latitude": 41.5584,
+    "longitude": -73.0516
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.03393,
+        41.58446
+      ]
+    },
+    "postal_cd": "06704",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "CT",
+    "latitude": 41.58446,
+    "longitude": -73.03393
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.992267,
+        41.551596
+      ]
+    },
+    "postal_cd": "06705",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "CT",
+    "latitude": 41.551596,
+    "longitude": -72.992267
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.02277,
+        41.534804
+      ]
+    },
+    "postal_cd": "06706",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "CT",
+    "latitude": 41.534804,
+    "longitude": -73.02277
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.064841,
+        41.55146
+      ]
+    },
+    "postal_cd": "06708",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "CT",
+    "latitude": 41.55146,
+    "longitude": -73.064841
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.045416,
+        41.571625
+      ]
+    },
+    "postal_cd": "06710",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "CT",
+    "latitude": 41.571625,
+    "longitude": -73.045416
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.976396,
+        41.499114
+      ]
+    },
+    "postal_cd": "06712",
+    "country_cd": "US",
+    "city_name": "Prospect",
+    "state_abbrv": "CT",
+    "latitude": 41.499114,
+    "longitude": -72.976396
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.977545,
+        41.598904
+      ]
+    },
+    "postal_cd": "06716",
+    "country_cd": "US",
+    "city_name": "Wolcott",
+    "state_abbrv": "CT",
+    "latitude": 41.598904,
+    "longitude": -72.977545
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.0516,
+        41.5584
+      ]
+    },
+    "postal_cd": "06720",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "CT",
+    "latitude": 41.5584,
+    "longitude": -73.0516
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.0516,
+        41.5584
+      ]
+    },
+    "postal_cd": "06721",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "CT",
+    "latitude": 41.5584,
+    "longitude": -73.0516
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.0516,
+        41.5584
+      ]
+    },
+    "postal_cd": "06722",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "CT",
+    "latitude": 41.5584,
+    "longitude": -73.0516
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.0516,
+        41.5584
+      ]
+    },
+    "postal_cd": "06723",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "CT",
+    "latitude": 41.5584,
+    "longitude": -73.0516
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.0516,
+        41.5584
+      ]
+    },
+    "postal_cd": "06724",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "CT",
+    "latitude": 41.5584,
+    "longitude": -73.0516
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.0516,
+        41.5584
+      ]
+    },
+    "postal_cd": "06725",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "CT",
+    "latitude": 41.5584,
+    "longitude": -73.0516
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.0516,
+        41.5584
+      ]
+    },
+    "postal_cd": "06726",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "CT",
+    "latitude": 41.5584,
+    "longitude": -73.0516
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.0516,
+        41.5584
+      ]
+    },
+    "postal_cd": "06749",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "CT",
+    "latitude": 41.5584,
+    "longitude": -73.0516
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.257592,
+        41.722714
+      ]
+    },
+    "postal_cd": "06750",
+    "country_cd": "US",
+    "city_name": "Bantam",
+    "state_abbrv": "CT",
+    "latitude": 41.722714,
+    "longitude": -73.257592
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.209538,
+        41.637391
+      ]
+    },
+    "postal_cd": "06751",
+    "country_cd": "US",
+    "city_name": "Bethlehem",
+    "state_abbrv": "CT",
+    "latitude": 41.637391,
+    "longitude": -73.209538
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.35779,
+        41.51671
+      ]
+    },
+    "postal_cd": "06752",
+    "country_cd": "US",
+    "city_name": "Bridgewater",
+    "state_abbrv": "CT",
+    "latitude": 41.51671,
+    "longitude": -73.35779
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.3294,
+        41.8439
+      ]
+    },
+    "postal_cd": "06753",
+    "country_cd": "US",
+    "city_name": "Cornwall",
+    "state_abbrv": "CT",
+    "latitude": 41.8439,
+    "longitude": -73.3294
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.35746,
+        41.787124
+      ]
+    },
+    "postal_cd": "06754",
+    "country_cd": "US",
+    "city_name": "Cornwall Bridge",
+    "state_abbrv": "CT",
+    "latitude": 41.787124,
+    "longitude": -73.35746
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.484458,
+        41.648328
+      ]
+    },
+    "postal_cd": "06755",
+    "country_cd": "US",
+    "city_name": "Gaylordsville",
+    "state_abbrv": "CT",
+    "latitude": 41.648328,
+    "longitude": -73.484458
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.236882,
+        41.844544
+      ]
+    },
+    "postal_cd": "06756",
+    "country_cd": "US",
+    "city_name": "Goshen",
+    "state_abbrv": "CT",
+    "latitude": 41.844544,
+    "longitude": -73.236882
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.44834,
+        41.742712
+      ]
+    },
+    "postal_cd": "06757",
+    "country_cd": "US",
+    "city_name": "Kent",
+    "state_abbrv": "CT",
+    "latitude": 41.742712,
+    "longitude": -73.44834
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.243071,
+        41.677197
+      ]
+    },
+    "postal_cd": "06758",
+    "country_cd": "US",
+    "city_name": "Lakeside",
+    "state_abbrv": "CT",
+    "latitude": 41.677197,
+    "longitude": -73.243071
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.218392,
+        41.75564
+      ]
+    },
+    "postal_cd": "06759",
+    "country_cd": "US",
+    "city_name": "Litchfield",
+    "state_abbrv": "CT",
+    "latitude": 41.75564,
+    "longitude": -73.218392
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.115819,
+        41.528555
+      ]
+    },
+    "postal_cd": "06762",
+    "country_cd": "US",
+    "city_name": "Middlebury",
+    "state_abbrv": "CT",
+    "latitude": 41.528555,
+    "longitude": -73.115819
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.20843,
+        41.690327
+      ]
+    },
+    "postal_cd": "06763",
+    "country_cd": "US",
+    "city_name": "Morris",
+    "state_abbrv": "CT",
+    "latitude": 41.690327,
+    "longitude": -73.20843
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.05288,
+        41.487861
+      ]
+    },
+    "postal_cd": "06770",
+    "country_cd": "US",
+    "city_name": "Naugatuck",
+    "state_abbrv": "CT",
+    "latitude": 41.487861,
+    "longitude": -73.05288
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.415842,
+        41.587333
+      ]
+    },
+    "postal_cd": "06776",
+    "country_cd": "US",
+    "city_name": "New Milford",
+    "state_abbrv": "CT",
+    "latitude": 41.587333,
+    "longitude": -73.415842
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.334194,
+        41.69228
+      ]
+    },
+    "postal_cd": "06777",
+    "country_cd": "US",
+    "city_name": "New Preston Marble Dale",
+    "state_abbrv": "CT",
+    "latitude": 41.69228,
+    "longitude": -73.334194
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.104778,
+        41.70732
+      ]
+    },
+    "postal_cd": "06778",
+    "country_cd": "US",
+    "city_name": "Northfield",
+    "state_abbrv": "CT",
+    "latitude": 41.70732,
+    "longitude": -73.104778
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.080204,
+        41.595414
+      ]
+    },
+    "postal_cd": "06779",
+    "country_cd": "US",
+    "city_name": "Oakville",
+    "state_abbrv": "CT",
+    "latitude": 41.595414,
+    "longitude": -73.080204
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9939,
+        41.6729
+      ]
+    },
+    "postal_cd": "06781",
+    "country_cd": "US",
+    "city_name": "Pequabuck",
+    "state_abbrv": "CT",
+    "latitude": 41.6729,
+    "longitude": -72.9939
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.045766,
+        41.657477
+      ]
+    },
+    "postal_cd": "06782",
+    "country_cd": "US",
+    "city_name": "Plymouth",
+    "state_abbrv": "CT",
+    "latitude": 41.657477,
+    "longitude": -73.045766
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.29964,
+        41.55329
+      ]
+    },
+    "postal_cd": "06783",
+    "country_cd": "US",
+    "city_name": "Roxbury",
+    "state_abbrv": "CT",
+    "latitude": 41.55329,
+    "longitude": -73.29964
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.491172,
+        41.592224
+      ]
+    },
+    "postal_cd": "06784",
+    "country_cd": "US",
+    "city_name": "Sherman",
+    "state_abbrv": "CT",
+    "latitude": 41.592224,
+    "longitude": -73.491172
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.459347,
+        41.700596
+      ]
+    },
+    "postal_cd": "06785",
+    "country_cd": "US",
+    "city_name": "South Kent",
+    "state_abbrv": "CT",
+    "latitude": 41.700596,
+    "longitude": -73.459347
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.026039,
+        41.664262
+      ]
+    },
+    "postal_cd": "06786",
+    "country_cd": "US",
+    "city_name": "Terryville",
+    "state_abbrv": "CT",
+    "latitude": 41.664262,
+    "longitude": -73.026039
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.096012,
+        41.656803
+      ]
+    },
+    "postal_cd": "06787",
+    "country_cd": "US",
+    "city_name": "Thomaston",
+    "state_abbrv": "CT",
+    "latitude": 41.656803,
+    "longitude": -73.096012
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.12607,
+        41.839633
+      ]
+    },
+    "postal_cd": "06790",
+    "country_cd": "US",
+    "city_name": "Torrington",
+    "state_abbrv": "CT",
+    "latitude": 41.839633,
+    "longitude": -73.12607
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.059862,
+        41.752989
+      ]
+    },
+    "postal_cd": "06791",
+    "country_cd": "US",
+    "city_name": "Harwinton",
+    "state_abbrv": "CT",
+    "latitude": 41.752989,
+    "longitude": -73.059862
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.296241,
+        41.639272
+      ]
+    },
+    "postal_cd": "06793",
+    "country_cd": "US",
+    "city_name": "Washington",
+    "state_abbrv": "CT",
+    "latitude": 41.639272,
+    "longitude": -73.296241
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.316694,
+        41.650253
+      ]
+    },
+    "postal_cd": "06794",
+    "country_cd": "US",
+    "city_name": "Washington Depot",
+    "state_abbrv": "CT",
+    "latitude": 41.650253,
+    "longitude": -73.316694
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.11412,
+        41.615192
+      ]
+    },
+    "postal_cd": "06795",
+    "country_cd": "US",
+    "city_name": "Watertown",
+    "state_abbrv": "CT",
+    "latitude": 41.615192,
+    "longitude": -73.11412
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.335386,
+        41.864721
+      ]
+    },
+    "postal_cd": "06796",
+    "country_cd": "US",
+    "city_name": "West Cornwall",
+    "state_abbrv": "CT",
+    "latitude": 41.864721,
+    "longitude": -73.335386
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.205931,
+        41.56175
+      ]
+    },
+    "postal_cd": "06798",
+    "country_cd": "US",
+    "city_name": "Woodbury",
+    "state_abbrv": "CT",
+    "latitude": 41.56175,
+    "longitude": -73.205931
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.392979,
+        41.38183
+      ]
+    },
+    "postal_cd": "06801",
+    "country_cd": "US",
+    "city_name": "Bethel",
+    "state_abbrv": "CT",
+    "latitude": 41.38183,
+    "longitude": -73.392979
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.387889,
+        41.467638
+      ]
+    },
+    "postal_cd": "06804",
+    "country_cd": "US",
+    "city_name": "Brookfield",
+    "state_abbrv": "CT",
+    "latitude": 41.467638,
+    "longitude": -73.387889
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.590086,
+        41.059566
+      ]
+    },
+    "postal_cd": "06807",
+    "country_cd": "US",
+    "city_name": "Cos Cob",
+    "state_abbrv": "CT",
+    "latitude": 41.059566,
+    "longitude": -73.590086
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.472131,
+        41.378688
+      ]
+    },
+    "postal_cd": "06810",
+    "country_cd": "US",
+    "city_name": "Danbury",
+    "state_abbrv": "CT",
+    "latitude": 41.378688,
+    "longitude": -73.472131
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.479174,
+        41.42384
+      ]
+    },
+    "postal_cd": "06811",
+    "country_cd": "US",
+    "city_name": "Danbury",
+    "state_abbrv": "CT",
+    "latitude": 41.42384,
+    "longitude": -73.479174
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.482182,
+        41.487616
+      ]
+    },
+    "postal_cd": "06812",
+    "country_cd": "US",
+    "city_name": "New Fairfield",
+    "state_abbrv": "CT",
+    "latitude": 41.487616,
+    "longitude": -73.482182
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.4544,
+        41.3948
+      ]
+    },
+    "postal_cd": "06813",
+    "country_cd": "US",
+    "city_name": "Danbury",
+    "state_abbrv": "CT",
+    "latitude": 41.3948,
+    "longitude": -73.4544
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.4544,
+        41.3948
+      ]
+    },
+    "postal_cd": "06814",
+    "country_cd": "US",
+    "city_name": "Danbury",
+    "state_abbrv": "CT",
+    "latitude": 41.3948,
+    "longitude": -73.4544
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.4544,
+        41.3948
+      ]
+    },
+    "postal_cd": "06816",
+    "country_cd": "US",
+    "city_name": "Danbury",
+    "state_abbrv": "CT",
+    "latitude": 41.3948,
+    "longitude": -73.4544
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.4544,
+        41.3948
+      ]
+    },
+    "postal_cd": "06817",
+    "country_cd": "US",
+    "city_name": "Danbury",
+    "state_abbrv": "CT",
+    "latitude": 41.3948,
+    "longitude": -73.4544
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.481568,
+        41.075974
+      ]
+    },
+    "postal_cd": "06820",
+    "country_cd": "US",
+    "city_name": "Darien",
+    "state_abbrv": "CT",
+    "latitude": 41.075974,
+    "longitude": -73.481568
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.284305,
+        41.17451
+      ]
+    },
+    "postal_cd": "06824",
+    "country_cd": "US",
+    "city_name": "Fairfield",
+    "state_abbrv": "CT",
+    "latitude": 41.17451,
+    "longitude": -73.284305
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.244392,
+        41.196335
+      ]
+    },
+    "postal_cd": "06825",
+    "country_cd": "US",
+    "city_name": "Fairfield",
+    "state_abbrv": "CT",
+    "latitude": 41.196335,
+    "longitude": -73.244392
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.248001,
+        41.213495
+      ]
+    },
+    "postal_cd": "06828",
+    "country_cd": "US",
+    "city_name": "Fairfield",
+    "state_abbrv": "CT",
+    "latitude": 41.213495,
+    "longitude": -73.248001
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.4353,
+        41.2557
+      ]
+    },
+    "postal_cd": "06829",
+    "country_cd": "US",
+    "city_name": "Georgetown",
+    "state_abbrv": "CT",
+    "latitude": 41.2557,
+    "longitude": -73.4353
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.625848,
+        41.039806
+      ]
+    },
+    "postal_cd": "06830",
+    "country_cd": "US",
+    "city_name": "Greenwich",
+    "state_abbrv": "CT",
+    "latitude": 41.039806,
+    "longitude": -73.625848
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.663465,
+        41.08048
+      ]
+    },
+    "postal_cd": "06831",
+    "country_cd": "US",
+    "city_name": "Greenwich",
+    "state_abbrv": "CT",
+    "latitude": 41.08048,
+    "longitude": -73.663465
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.6287,
+        41.0266
+      ]
+    },
+    "postal_cd": "06836",
+    "country_cd": "US",
+    "city_name": "Greenwich",
+    "state_abbrv": "CT",
+    "latitude": 41.0266,
+    "longitude": -73.6287
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.315902,
+        41.122939
+      ]
+    },
+    "postal_cd": "06838",
+    "country_cd": "US",
+    "city_name": "Greens Farms",
+    "state_abbrv": "CT",
+    "latitude": 41.122939,
+    "longitude": -73.315902
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.502092,
+        41.162414
+      ]
+    },
+    "postal_cd": "06840",
+    "country_cd": "US",
+    "city_name": "New Canaan",
+    "state_abbrv": "CT",
+    "latitude": 41.162414,
+    "longitude": -73.502092
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.440972,
+        41.126856
+      ]
+    },
+    "postal_cd": "06850",
+    "country_cd": "US",
+    "city_name": "Norwalk",
+    "state_abbrv": "CT",
+    "latitude": 41.126856,
+    "longitude": -73.440972
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.405374,
+        41.139682
+      ]
+    },
+    "postal_cd": "06851",
+    "country_cd": "US",
+    "city_name": "Norwalk",
+    "state_abbrv": "CT",
+    "latitude": 41.139682,
+    "longitude": -73.405374
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.4086,
+        41.1176
+      ]
+    },
+    "postal_cd": "06852",
+    "country_cd": "US",
+    "city_name": "Norwalk",
+    "state_abbrv": "CT",
+    "latitude": 41.1176,
+    "longitude": -73.4086
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.437653,
+        41.070442
+      ]
+    },
+    "postal_cd": "06853",
+    "country_cd": "US",
+    "city_name": "Norwalk",
+    "state_abbrv": "CT",
+    "latitude": 41.070442,
+    "longitude": -73.437653
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.421231,
+        41.083487
+      ]
+    },
+    "postal_cd": "06854",
+    "country_cd": "US",
+    "city_name": "Norwalk",
+    "state_abbrv": "CT",
+    "latitude": 41.083487,
+    "longitude": -73.421231
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.398393,
+        41.10032
+      ]
+    },
+    "postal_cd": "06855",
+    "country_cd": "US",
+    "city_name": "Norwalk",
+    "state_abbrv": "CT",
+    "latitude": 41.10032,
+    "longitude": -73.398393
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.4086,
+        41.1176
+      ]
+    },
+    "postal_cd": "06856",
+    "country_cd": "US",
+    "city_name": "Norwalk",
+    "state_abbrv": "CT",
+    "latitude": 41.1176,
+    "longitude": -73.4086
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.4086,
+        41.1176
+      ]
+    },
+    "postal_cd": "06857",
+    "country_cd": "US",
+    "city_name": "Norwalk",
+    "state_abbrv": "CT",
+    "latitude": 41.1176,
+    "longitude": -73.4086
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.4086,
+        41.1176
+      ]
+    },
+    "postal_cd": "06858",
+    "country_cd": "US",
+    "city_name": "Norwalk",
+    "state_abbrv": "CT",
+    "latitude": 41.1176,
+    "longitude": -73.4086
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.4086,
+        41.1176
+      ]
+    },
+    "postal_cd": "06859",
+    "country_cd": "US",
+    "city_name": "Norwalk",
+    "state_abbrv": "CT",
+    "latitude": 41.1176,
+    "longitude": -73.4086
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.4086,
+        41.1176
+      ]
+    },
+    "postal_cd": "06860",
+    "country_cd": "US",
+    "city_name": "Norwalk",
+    "state_abbrv": "CT",
+    "latitude": 41.1176,
+    "longitude": -73.4086
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.570009,
+        41.033174
+      ]
+    },
+    "postal_cd": "06870",
+    "country_cd": "US",
+    "city_name": "Old Greenwich",
+    "state_abbrv": "CT",
+    "latitude": 41.033174,
+    "longitude": -73.570009
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.3839,
+        41.3025
+      ]
+    },
+    "postal_cd": "06875",
+    "country_cd": "US",
+    "city_name": "Redding Center",
+    "state_abbrv": "CT",
+    "latitude": 41.3025,
+    "longitude": -73.3839
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.3505,
+        41.3136
+      ]
+    },
+    "postal_cd": "06876",
+    "country_cd": "US",
+    "city_name": "Redding Ridge",
+    "state_abbrv": "CT",
+    "latitude": 41.3136,
+    "longitude": -73.3505
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.494562,
+        41.307379
+      ]
+    },
+    "postal_cd": "06877",
+    "country_cd": "US",
+    "city_name": "Ridgefield",
+    "state_abbrv": "CT",
+    "latitude": 41.307379,
+    "longitude": -73.494562
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.582238,
+        41.036005
+      ]
+    },
+    "postal_cd": "06878",
+    "country_cd": "US",
+    "city_name": "Riverside",
+    "state_abbrv": "CT",
+    "latitude": 41.036005,
+    "longitude": -73.582238
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.4989,
+        41.2815
+      ]
+    },
+    "postal_cd": "06879",
+    "country_cd": "US",
+    "city_name": "Ridgefield",
+    "state_abbrv": "CT",
+    "latitude": 41.2815,
+    "longitude": -73.4989
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.34415,
+        41.137996
+      ]
+    },
+    "postal_cd": "06880",
+    "country_cd": "US",
+    "city_name": "Westport",
+    "state_abbrv": "CT",
+    "latitude": 41.137996,
+    "longitude": -73.34415
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.3585,
+        41.1417
+      ]
+    },
+    "postal_cd": "06881",
+    "country_cd": "US",
+    "city_name": "Westport",
+    "state_abbrv": "CT",
+    "latitude": 41.1417,
+    "longitude": -73.3585
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.376709,
+        41.222568
+      ]
+    },
+    "postal_cd": "06883",
+    "country_cd": "US",
+    "city_name": "Weston",
+    "state_abbrv": "CT",
+    "latitude": 41.222568,
+    "longitude": -73.376709
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.3585,
+        41.1417
+      ]
+    },
+    "postal_cd": "06888",
+    "country_cd": "US",
+    "city_name": "Westport",
+    "state_abbrv": "CT",
+    "latitude": 41.1417,
+    "longitude": -73.3585
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.3585,
+        41.1417
+      ]
+    },
+    "postal_cd": "06889",
+    "country_cd": "US",
+    "city_name": "Westport",
+    "state_abbrv": "CT",
+    "latitude": 41.1417,
+    "longitude": -73.3585
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.290929,
+        41.148668
+      ]
+    },
+    "postal_cd": "06890",
+    "country_cd": "US",
+    "city_name": "Southport",
+    "state_abbrv": "CT",
+    "latitude": 41.148668,
+    "longitude": -73.290929
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.388026,
+        41.302196
+      ]
+    },
+    "postal_cd": "06896",
+    "country_cd": "US",
+    "city_name": "Redding",
+    "state_abbrv": "CT",
+    "latitude": 41.302196,
+    "longitude": -73.388026
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.441722,
+        41.20936
+      ]
+    },
+    "postal_cd": "06897",
+    "country_cd": "US",
+    "city_name": "Wilton",
+    "state_abbrv": "CT",
+    "latitude": 41.20936,
+    "longitude": -73.441722
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.538734,
+        41.054956
+      ]
+    },
+    "postal_cd": "06901",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.054956,
+    "longitude": -73.538734
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.545275,
+        41.060298
+      ]
+    },
+    "postal_cd": "06902",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.060298,
+    "longitude": -73.545275
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.574052,
+        41.13618
+      ]
+    },
+    "postal_cd": "06903",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.13618,
+    "longitude": -73.574052
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.5394,
+        41.0535
+      ]
+    },
+    "postal_cd": "06904",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.0535,
+    "longitude": -73.5394
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.54302,
+        41.086037
+      ]
+    },
+    "postal_cd": "06905",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.086037,
+    "longitude": -73.54302
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.52213,
+        41.072214
+      ]
+    },
+    "postal_cd": "06906",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.072214,
+    "longitude": -73.52213
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.518455,
+        41.096524
+      ]
+    },
+    "postal_cd": "06907",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.096524,
+    "longitude": -73.518455
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.5575,
+        41.0489
+      ]
+    },
+    "postal_cd": "06910",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.0489,
+    "longitude": -73.5575
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.5394,
+        41.0535
+      ]
+    },
+    "postal_cd": "06911",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.0535,
+    "longitude": -73.5394
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.5394,
+        41.0535
+      ]
+    },
+    "postal_cd": "06912",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.0535,
+    "longitude": -73.5394
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.5394,
+        41.0535
+      ]
+    },
+    "postal_cd": "06913",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.0535,
+    "longitude": -73.5394
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.5394,
+        41.0535
+      ]
+    },
+    "postal_cd": "06914",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.0535,
+    "longitude": -73.5394
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.5394,
+        41.0535
+      ]
+    },
+    "postal_cd": "06920",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.0535,
+    "longitude": -73.5394
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.5394,
+        41.0535
+      ]
+    },
+    "postal_cd": "06921",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.0535,
+    "longitude": -73.5394
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.5394,
+        41.0535
+      ]
+    },
+    "postal_cd": "06922",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.0535,
+    "longitude": -73.5394
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.5394,
+        41.0535
+      ]
+    },
+    "postal_cd": "06925",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.0535,
+    "longitude": -73.5394
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.5394,
+        41.0535
+      ]
+    },
+    "postal_cd": "06926",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.0535,
+    "longitude": -73.5394
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.5394,
+        41.0535
+      ]
+    },
+    "postal_cd": "06927",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.0535,
+    "longitude": -73.5394
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.5394,
+        41.0535
+      ]
+    },
+    "postal_cd": "06928",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "CT",
+    "latitude": 41.0535,
+    "longitude": -73.5394
+  }
+]

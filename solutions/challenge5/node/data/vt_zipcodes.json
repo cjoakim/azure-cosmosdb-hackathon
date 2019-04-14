@@ -1,0 +1,4637 @@
+[
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.385832,
+        43.66984
+      ]
+    },
+    "postal_cd": "05001",
+    "country_cd": "US",
+    "city_name": "White River Junction",
+    "state_abbrv": "VT",
+    "latitude": 43.66984,
+    "longitude": -72.385832
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.3194,
+        43.6487
+      ]
+    },
+    "postal_cd": "05009",
+    "country_cd": "US",
+    "city_name": "White River Junction",
+    "state_abbrv": "VT",
+    "latitude": 43.6487,
+    "longitude": -72.3194
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.4426,
+        43.4242
+      ]
+    },
+    "postal_cd": "05030",
+    "country_cd": "US",
+    "city_name": "Ascutney",
+    "state_abbrv": "VT",
+    "latitude": 43.4242,
+    "longitude": -72.4426
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.591802,
+        43.733622
+      ]
+    },
+    "postal_cd": "05031",
+    "country_cd": "US",
+    "city_name": "Barnard",
+    "state_abbrv": "VT",
+    "latitude": 43.733622,
+    "longitude": -72.591802
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.660149,
+        43.794058
+      ]
+    },
+    "postal_cd": "05032",
+    "country_cd": "US",
+    "city_name": "Bethel",
+    "state_abbrv": "VT",
+    "latitude": 43.794058,
+    "longitude": -72.660149
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.168174,
+        44.00902
+      ]
+    },
+    "postal_cd": "05033",
+    "country_cd": "US",
+    "city_name": "Bradford",
+    "state_abbrv": "VT",
+    "latitude": 44.00902,
+    "longitude": -72.168174
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.642531,
+        43.573407
+      ]
+    },
+    "postal_cd": "05034",
+    "country_cd": "US",
+    "city_name": "Bridgewater",
+    "state_abbrv": "VT",
+    "latitude": 43.573407,
+    "longitude": -72.642531
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.69438,
+        43.604408
+      ]
+    },
+    "postal_cd": "05035",
+    "country_cd": "US",
+    "city_name": "Bridgewater Corners",
+    "state_abbrv": "VT",
+    "latitude": 43.604408,
+    "longitude": -72.69438
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.582288,
+        44.026306
+      ]
+    },
+    "postal_cd": "05036",
+    "country_cd": "US",
+    "city_name": "Brookfield",
+    "state_abbrv": "VT",
+    "latitude": 44.026306,
+    "longitude": -72.582288
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.479116,
+        43.463316
+      ]
+    },
+    "postal_cd": "05037",
+    "country_cd": "US",
+    "city_name": "Brownsville",
+    "state_abbrv": "VT",
+    "latitude": 43.463316,
+    "longitude": -72.479116
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.46001,
+        43.99547
+      ]
+    },
+    "postal_cd": "05038",
+    "country_cd": "US",
+    "city_name": "Chelsea",
+    "state_abbrv": "VT",
+    "latitude": 43.99547,
+    "longitude": -72.46001
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.29318,
+        44.028081
+      ]
+    },
+    "postal_cd": "05039",
+    "country_cd": "US",
+    "city_name": "Corinth",
+    "state_abbrv": "VT",
+    "latitude": 44.028081,
+    "longitude": -72.29318
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.215918,
+        44.070278
+      ]
+    },
+    "postal_cd": "05040",
+    "country_cd": "US",
+    "city_name": "East Corinth",
+    "state_abbrv": "VT",
+    "latitude": 44.070278,
+    "longitude": -72.215918
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.539024,
+        43.949019
+      ]
+    },
+    "postal_cd": "05041",
+    "country_cd": "US",
+    "city_name": "East Randolph",
+    "state_abbrv": "VT",
+    "latitude": 43.949019,
+    "longitude": -72.539024
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.105888,
+        44.213434
+      ]
+    },
+    "postal_cd": "05042",
+    "country_cd": "US",
+    "city_name": "East Ryegate",
+    "state_abbrv": "VT",
+    "latitude": 44.213434,
+    "longitude": -72.105888
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.218249,
+        43.816922
+      ]
+    },
+    "postal_cd": "05043",
+    "country_cd": "US",
+    "city_name": "East Thetford",
+    "state_abbrv": "VT",
+    "latitude": 43.816922,
+    "longitude": -72.218249
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.189239,
+        43.917408
+      ]
+    },
+    "postal_cd": "05045",
+    "country_cd": "US",
+    "city_name": "Fairlee",
+    "state_abbrv": "VT",
+    "latitude": 43.917408,
+    "longitude": -72.189239
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.256546,
+        44.22744
+      ]
+    },
+    "postal_cd": "05046",
+    "country_cd": "US",
+    "city_name": "Groton",
+    "state_abbrv": "VT",
+    "latitude": 44.22744,
+    "longitude": -72.256546
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.3386,
+        43.6606
+      ]
+    },
+    "postal_cd": "05047",
+    "country_cd": "US",
+    "city_name": "Hartford",
+    "state_abbrv": "VT",
+    "latitude": 43.6606,
+    "longitude": -72.3386
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.429138,
+        43.578176
+      ]
+    },
+    "postal_cd": "05048",
+    "country_cd": "US",
+    "city_name": "Hartland",
+    "state_abbrv": "VT",
+    "latitude": 43.578176,
+    "longitude": -72.429138
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.4252,
+        43.5466
+      ]
+    },
+    "postal_cd": "05049",
+    "country_cd": "US",
+    "city_name": "Hartland Four Corners",
+    "state_abbrv": "VT",
+    "latitude": 43.5466,
+    "longitude": -72.4252
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.0585,
+        44.2588
+      ]
+    },
+    "postal_cd": "05050",
+    "country_cd": "US",
+    "city_name": "Mc Indoe Falls",
+    "state_abbrv": "VT",
+    "latitude": 44.2588,
+    "longitude": -72.0585
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.089628,
+        44.076622
+      ]
+    },
+    "postal_cd": "05051",
+    "country_cd": "US",
+    "city_name": "Newbury",
+    "state_abbrv": "VT",
+    "latitude": 44.076622,
+    "longitude": -72.089628
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.348348,
+        43.597046
+      ]
+    },
+    "postal_cd": "05052",
+    "country_cd": "US",
+    "city_name": "North Hartland",
+    "state_abbrv": "VT",
+    "latitude": 43.597046,
+    "longitude": -72.348348
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.501345,
+        43.72165
+      ]
+    },
+    "postal_cd": "05053",
+    "country_cd": "US",
+    "city_name": "North Pomfret",
+    "state_abbrv": "VT",
+    "latitude": 43.72165,
+    "longitude": -72.501345
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.18486,
+        43.85676
+      ]
+    },
+    "postal_cd": "05054",
+    "country_cd": "US",
+    "city_name": "North Thetford",
+    "state_abbrv": "VT",
+    "latitude": 43.85676,
+    "longitude": -72.18486
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.301863,
+        43.747833
+      ]
+    },
+    "postal_cd": "05055",
+    "country_cd": "US",
+    "city_name": "Norwich",
+    "state_abbrv": "VT",
+    "latitude": 43.747833,
+    "longitude": -72.301863
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.722152,
+        43.528302
+      ]
+    },
+    "postal_cd": "05056",
+    "country_cd": "US",
+    "city_name": "Plymouth",
+    "state_abbrv": "VT",
+    "latitude": 43.528302,
+    "longitude": -72.722152
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.266402,
+        43.884125
+      ]
+    },
+    "postal_cd": "05058",
+    "country_cd": "US",
+    "city_name": "Post Mills",
+    "state_abbrv": "VT",
+    "latitude": 43.884125,
+    "longitude": -72.266402
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.433168,
+        43.658016
+      ]
+    },
+    "postal_cd": "05059",
+    "country_cd": "US",
+    "city_name": "Quechee",
+    "state_abbrv": "VT",
+    "latitude": 43.658016,
+    "longitude": -72.433168
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.700166,
+        43.975176
+      ]
+    },
+    "postal_cd": "05060",
+    "country_cd": "US",
+    "city_name": "Randolph",
+    "state_abbrv": "VT",
+    "latitude": 43.975176,
+    "longitude": -72.700166
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.567786,
+        43.933028
+      ]
+    },
+    "postal_cd": "05061",
+    "country_cd": "US",
+    "city_name": "Randolph Center",
+    "state_abbrv": "VT",
+    "latitude": 43.933028,
+    "longitude": -72.567786
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.585046,
+        43.502448
+      ]
+    },
+    "postal_cd": "05062",
+    "country_cd": "US",
+    "city_name": "Reading",
+    "state_abbrv": "VT",
+    "latitude": 43.502448,
+    "longitude": -72.585046
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.433804,
+        43.779406
+      ]
+    },
+    "postal_cd": "05065",
+    "country_cd": "US",
+    "city_name": "Sharon",
+    "state_abbrv": "VT",
+    "latitude": 43.779406,
+    "longitude": -72.433804
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.53658,
+        43.689518
+      ]
+    },
+    "postal_cd": "05067",
+    "country_cd": "US",
+    "city_name": "South Pomfret",
+    "state_abbrv": "VT",
+    "latitude": 43.689518,
+    "longitude": -72.53658
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.539533,
+        43.781083
+      ]
+    },
+    "postal_cd": "05068",
+    "country_cd": "US",
+    "city_name": "South Royalton",
+    "state_abbrv": "VT",
+    "latitude": 43.781083,
+    "longitude": -72.539533
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.163906,
+        44.151152
+      ]
+    },
+    "postal_cd": "05069",
+    "country_cd": "US",
+    "city_name": "South Ryegate",
+    "state_abbrv": "VT",
+    "latitude": 44.151152,
+    "longitude": -72.163906
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.359428,
+        43.822875
+      ]
+    },
+    "postal_cd": "05070",
+    "country_cd": "US",
+    "city_name": "South Strafford",
+    "state_abbrv": "VT",
+    "latitude": 43.822875,
+    "longitude": -72.359428
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.570078,
+        43.563604
+      ]
+    },
+    "postal_cd": "05071",
+    "country_cd": "US",
+    "city_name": "South Woodstock",
+    "state_abbrv": "VT",
+    "latitude": 43.563604,
+    "longitude": -72.570078
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.381186,
+        43.877069
+      ]
+    },
+    "postal_cd": "05072",
+    "country_cd": "US",
+    "city_name": "Strafford",
+    "state_abbrv": "VT",
+    "latitude": 43.877069,
+    "longitude": -72.381186
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.461441,
+        43.62872
+      ]
+    },
+    "postal_cd": "05073",
+    "country_cd": "US",
+    "city_name": "Taftsville",
+    "state_abbrv": "VT",
+    "latitude": 43.62872,
+    "longitude": -72.461441
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.223552,
+        43.83316
+      ]
+    },
+    "postal_cd": "05074",
+    "country_cd": "US",
+    "city_name": "Thetford",
+    "state_abbrv": "VT",
+    "latitude": 43.83316,
+    "longitude": -72.223552
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.266435,
+        43.850324
+      ]
+    },
+    "postal_cd": "05075",
+    "country_cd": "US",
+    "city_name": "Thetford Center",
+    "state_abbrv": "VT",
+    "latitude": 43.850324,
+    "longitude": -72.266435
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.241166,
+        44.13125
+      ]
+    },
+    "postal_cd": "05076",
+    "country_cd": "US",
+    "city_name": "Topsham",
+    "state_abbrv": "VT",
+    "latitude": 44.13125,
+    "longitude": -72.241166
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.476708,
+        43.904932
+      ]
+    },
+    "postal_cd": "05077",
+    "country_cd": "US",
+    "city_name": "Tunbridge",
+    "state_abbrv": "VT",
+    "latitude": 43.904932,
+    "longitude": -72.476708
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.329855,
+        43.955564
+      ]
+    },
+    "postal_cd": "05079",
+    "country_cd": "US",
+    "city_name": "Vershire",
+    "state_abbrv": "VT",
+    "latitude": 43.955564,
+    "longitude": -72.329855
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.0879,
+        44.138568
+      ]
+    },
+    "postal_cd": "05081",
+    "country_cd": "US",
+    "city_name": "Wells River",
+    "state_abbrv": "VT",
+    "latitude": 44.138568,
+    "longitude": -72.0879
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.269378,
+        43.92911
+      ]
+    },
+    "postal_cd": "05083",
+    "country_cd": "US",
+    "city_name": "West Fairlee",
+    "state_abbrv": "VT",
+    "latitude": 43.92911,
+    "longitude": -72.269378
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.453778,
+        43.716006
+      ]
+    },
+    "postal_cd": "05084",
+    "country_cd": "US",
+    "city_name": "West Hartford",
+    "state_abbrv": "VT",
+    "latitude": 43.716006,
+    "longitude": -72.453778
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.147712,
+        44.07096
+      ]
+    },
+    "postal_cd": "05085",
+    "country_cd": "US",
+    "city_name": "West Newbury",
+    "state_abbrv": "VT",
+    "latitude": 44.07096,
+    "longitude": -72.147712
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.308048,
+        44.127523
+      ]
+    },
+    "postal_cd": "05086",
+    "country_cd": "US",
+    "city_name": "West Topsham",
+    "state_abbrv": "VT",
+    "latitude": 44.127523,
+    "longitude": -72.308048
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.308184,
+        43.67804
+      ]
+    },
+    "postal_cd": "05088",
+    "country_cd": "US",
+    "city_name": "Wilder",
+    "state_abbrv": "VT",
+    "latitude": 43.67804,
+    "longitude": -72.308184
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.456561,
+        43.483742
+      ]
+    },
+    "postal_cd": "05089",
+    "country_cd": "US",
+    "city_name": "Windsor",
+    "state_abbrv": "VT",
+    "latitude": 43.483742,
+    "longitude": -72.456561
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.569607,
+        43.65146
+      ]
+    },
+    "postal_cd": "05091",
+    "country_cd": "US",
+    "city_name": "Woodstock",
+    "state_abbrv": "VT",
+    "latitude": 43.65146,
+    "longitude": -72.569607
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.498478,
+        43.170609
+      ]
+    },
+    "postal_cd": "05101",
+    "country_cd": "US",
+    "city_name": "Bellows Falls",
+    "state_abbrv": "VT",
+    "latitude": 43.170609,
+    "longitude": -72.498478
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.573284,
+        43.153611
+      ]
+    },
+    "postal_cd": "05141",
+    "country_cd": "US",
+    "city_name": "Cambridgeport",
+    "state_abbrv": "VT",
+    "latitude": 43.153611,
+    "longitude": -72.573284
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.583604,
+        43.400492
+      ]
+    },
+    "postal_cd": "05142",
+    "country_cd": "US",
+    "city_name": "Cavendish",
+    "state_abbrv": "VT",
+    "latitude": 43.400492,
+    "longitude": -72.583604
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.645954,
+        43.226012
+      ]
+    },
+    "postal_cd": "05143",
+    "country_cd": "US",
+    "city_name": "Chester",
+    "state_abbrv": "VT",
+    "latitude": 43.226012,
+    "longitude": -72.645954
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5739,
+        43.3606
+      ]
+    },
+    "postal_cd": "05144",
+    "country_cd": "US",
+    "city_name": "Chester Depot",
+    "state_abbrv": "VT",
+    "latitude": 43.3606,
+    "longitude": -72.5739
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.620116,
+        43.169999
+      ]
+    },
+    "postal_cd": "05146",
+    "country_cd": "US",
+    "city_name": "Grafton",
+    "state_abbrv": "VT",
+    "latitude": 43.169999,
+    "longitude": -72.620116
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.853462,
+        43.248321
+      ]
+    },
+    "postal_cd": "05148",
+    "country_cd": "US",
+    "city_name": "Londonderry",
+    "state_abbrv": "VT",
+    "latitude": 43.248321,
+    "longitude": -72.853462
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.709738,
+        43.398882
+      ]
+    },
+    "postal_cd": "05149",
+    "country_cd": "US",
+    "city_name": "Ludlow",
+    "state_abbrv": "VT",
+    "latitude": 43.398882,
+    "longitude": -72.709738
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.524403,
+        43.338714
+      ]
+    },
+    "postal_cd": "05150",
+    "country_cd": "US",
+    "city_name": "North Springfield",
+    "state_abbrv": "VT",
+    "latitude": 43.338714,
+    "longitude": -72.524403
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.48008,
+        43.393446
+      ]
+    },
+    "postal_cd": "05151",
+    "country_cd": "US",
+    "city_name": "Perkinsville",
+    "state_abbrv": "VT",
+    "latitude": 43.393446,
+    "longitude": -72.48008
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.896006,
+        43.220797
+      ]
+    },
+    "postal_cd": "05152",
+    "country_cd": "US",
+    "city_name": "Peru",
+    "state_abbrv": "VT",
+    "latitude": 43.220797,
+    "longitude": -72.896006
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.626577,
+        43.416681
+      ]
+    },
+    "postal_cd": "05153",
+    "country_cd": "US",
+    "city_name": "Proctorsville",
+    "state_abbrv": "VT",
+    "latitude": 43.416681,
+    "longitude": -72.626577
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.509056,
+        43.143482
+      ]
+    },
+    "postal_cd": "05154",
+    "country_cd": "US",
+    "city_name": "Saxtons River",
+    "state_abbrv": "VT",
+    "latitude": 43.143482,
+    "longitude": -72.509056
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.803439,
+        43.183274
+      ]
+    },
+    "postal_cd": "05155",
+    "country_cd": "US",
+    "city_name": "South Londonderry",
+    "state_abbrv": "VT",
+    "latitude": 43.183274,
+    "longitude": -72.803439
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.469962,
+        43.316838
+      ]
+    },
+    "postal_cd": "05156",
+    "country_cd": "US",
+    "city_name": "Springfield",
+    "state_abbrv": "VT",
+    "latitude": 43.316838,
+    "longitude": -72.469962
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.476978,
+        43.09778
+      ]
+    },
+    "postal_cd": "05158",
+    "country_cd": "US",
+    "city_name": "Westminster",
+    "state_abbrv": "VT",
+    "latitude": 43.09778,
+    "longitude": -72.476978
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.4468,
+        43.0873
+      ]
+    },
+    "postal_cd": "05159",
+    "country_cd": "US",
+    "city_name": "Westminster Station",
+    "state_abbrv": "VT",
+    "latitude": 43.0873,
+    "longitude": -72.4468
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.811456,
+        43.309596
+      ]
+    },
+    "postal_cd": "05161",
+    "country_cd": "US",
+    "city_name": "Weston",
+    "state_abbrv": "VT",
+    "latitude": 43.309596,
+    "longitude": -72.811456
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.140554,
+        42.909722
+      ]
+    },
+    "postal_cd": "05201",
+    "country_cd": "US",
+    "city_name": "Bennington",
+    "state_abbrv": "VT",
+    "latitude": 42.909722,
+    "longitude": -73.140554
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.175492,
+        43.122999
+      ]
+    },
+    "postal_cd": "05250",
+    "country_cd": "US",
+    "city_name": "Arlington",
+    "state_abbrv": "VT",
+    "latitude": 43.122999,
+    "longitude": -73.175492
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.060044,
+        43.259472
+      ]
+    },
+    "postal_cd": "05251",
+    "country_cd": "US",
+    "city_name": "Dorset",
+    "state_abbrv": "VT",
+    "latitude": 43.259472,
+    "longitude": -73.060044
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.073236,
+        43.070921
+      ]
+    },
+    "postal_cd": "05252",
+    "country_cd": "US",
+    "city_name": "East Arlington",
+    "state_abbrv": "VT",
+    "latitude": 43.070921,
+    "longitude": -73.073236
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.008613,
+        43.257198
+      ]
+    },
+    "postal_cd": "05253",
+    "country_cd": "US",
+    "city_name": "East Dorset",
+    "state_abbrv": "VT",
+    "latitude": 43.257198,
+    "longitude": -73.008613
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.070029,
+        43.162543
+      ]
+    },
+    "postal_cd": "05254",
+    "country_cd": "US",
+    "city_name": "Manchester",
+    "state_abbrv": "VT",
+    "latitude": 43.162543,
+    "longitude": -73.070029
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.066116,
+        43.16966
+      ]
+    },
+    "postal_cd": "05255",
+    "country_cd": "US",
+    "city_name": "Manchester Center",
+    "state_abbrv": "VT",
+    "latitude": 43.16966,
+    "longitude": -73.066116
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.242846,
+        42.964386
+      ]
+    },
+    "postal_cd": "05257",
+    "country_cd": "US",
+    "city_name": "North Bennington",
+    "state_abbrv": "VT",
+    "latitude": 42.964386,
+    "longitude": -73.242846
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.26552,
+        42.813468
+      ]
+    },
+    "postal_cd": "05260",
+    "country_cd": "US",
+    "city_name": "North Pownal",
+    "state_abbrv": "VT",
+    "latitude": 42.813468,
+    "longitude": -73.26552
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.214612,
+        42.778853
+      ]
+    },
+    "postal_cd": "05261",
+    "country_cd": "US",
+    "city_name": "Pownal",
+    "state_abbrv": "VT",
+    "latitude": 42.778853,
+    "longitude": -73.214612
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.20097,
+        42.979762
+      ]
+    },
+    "postal_cd": "05262",
+    "country_cd": "US",
+    "city_name": "Shaftsbury",
+    "state_abbrv": "VT",
+    "latitude": 42.979762,
+    "longitude": -73.20097
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.681308,
+        42.859824
+      ]
+    },
+    "postal_cd": "05301",
+    "country_cd": "US",
+    "city_name": "Brattleboro",
+    "state_abbrv": "VT",
+    "latitude": 42.859824,
+    "longitude": -72.681308
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5584,
+        42.8509
+      ]
+    },
+    "postal_cd": "05302",
+    "country_cd": "US",
+    "city_name": "Brattleboro",
+    "state_abbrv": "VT",
+    "latitude": 42.8509,
+    "longitude": -72.5584
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5584,
+        42.8509
+      ]
+    },
+    "postal_cd": "05303",
+    "country_cd": "US",
+    "city_name": "Brattleboro",
+    "state_abbrv": "VT",
+    "latitude": 42.8509,
+    "longitude": -72.5584
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5584,
+        42.8509
+      ]
+    },
+    "postal_cd": "05304",
+    "country_cd": "US",
+    "city_name": "Brattleboro",
+    "state_abbrv": "VT",
+    "latitude": 42.8509,
+    "longitude": -72.5584
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.932236,
+        43.162644
+      ]
+    },
+    "postal_cd": "05340",
+    "country_cd": "US",
+    "city_name": "Bondville",
+    "state_abbrv": "VT",
+    "latitude": 43.162644,
+    "longitude": -72.932236
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.78056,
+        42.954899
+      ]
+    },
+    "postal_cd": "05341",
+    "country_cd": "US",
+    "city_name": "East Dover",
+    "state_abbrv": "VT",
+    "latitude": 42.954899,
+    "longitude": -72.78056
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.790134,
+        42.781178
+      ]
+    },
+    "postal_cd": "05342",
+    "country_cd": "US",
+    "city_name": "Jacksonville",
+    "state_abbrv": "VT",
+    "latitude": 42.781178,
+    "longitude": -72.790134
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.813372,
+        43.102245
+      ]
+    },
+    "postal_cd": "05343",
+    "country_cd": "US",
+    "city_name": "Jamaica",
+    "state_abbrv": "VT",
+    "latitude": 43.102245,
+    "longitude": -72.813372
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.750421,
+        42.846315
+      ]
+    },
+    "postal_cd": "05344",
+    "country_cd": "US",
+    "city_name": "Marlboro",
+    "state_abbrv": "VT",
+    "latitude": 42.846315,
+    "longitude": -72.750421
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.664267,
+        43.008875
+      ]
+    },
+    "postal_cd": "05345",
+    "country_cd": "US",
+    "city_name": "Newfane",
+    "state_abbrv": "VT",
+    "latitude": 43.008875,
+    "longitude": -72.664267
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.533803,
+        43.022472
+      ]
+    },
+    "postal_cd": "05346",
+    "country_cd": "US",
+    "city_name": "Putney",
+    "state_abbrv": "VT",
+    "latitude": 43.022472,
+    "longitude": -72.533803
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.97533,
+        42.799683
+      ]
+    },
+    "postal_cd": "05350",
+    "country_cd": "US",
+    "city_name": "Readsboro",
+    "state_abbrv": "VT",
+    "latitude": 42.799683,
+    "longitude": -72.97533
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.735813,
+        42.940816
+      ]
+    },
+    "postal_cd": "05351",
+    "country_cd": "US",
+    "city_name": "South Newfane",
+    "state_abbrv": "VT",
+    "latitude": 42.940816,
+    "longitude": -72.735813
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.077702,
+        42.789622
+      ]
+    },
+    "postal_cd": "05352",
+    "country_cd": "US",
+    "city_name": "Stamford",
+    "state_abbrv": "VT",
+    "latitude": 42.789622,
+    "longitude": -73.077702
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.692638,
+        43.069349
+      ]
+    },
+    "postal_cd": "05353",
+    "country_cd": "US",
+    "city_name": "Townshend",
+    "state_abbrv": "VT",
+    "latitude": 43.069349,
+    "longitude": -72.692638
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.512069,
+        42.77556
+      ]
+    },
+    "postal_cd": "05354",
+    "country_cd": "US",
+    "city_name": "Vernon",
+    "state_abbrv": "VT",
+    "latitude": 42.77556,
+    "longitude": -72.512069
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.813208,
+        43.021464
+      ]
+    },
+    "postal_cd": "05355",
+    "country_cd": "US",
+    "city_name": "Wardsboro",
+    "state_abbrv": "VT",
+    "latitude": 43.021464,
+    "longitude": -72.813208
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.896974,
+        42.973371
+      ]
+    },
+    "postal_cd": "05356",
+    "country_cd": "US",
+    "city_name": "West Dover",
+    "state_abbrv": "VT",
+    "latitude": 42.973371,
+    "longitude": -72.896974
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6159,
+        42.9264
+      ]
+    },
+    "postal_cd": "05357",
+    "country_cd": "US",
+    "city_name": "West Dummerston",
+    "state_abbrv": "VT",
+    "latitude": 42.9264,
+    "longitude": -72.6159
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.74374,
+        42.774471
+      ]
+    },
+    "postal_cd": "05358",
+    "country_cd": "US",
+    "city_name": "West Halifax",
+    "state_abbrv": "VT",
+    "latitude": 42.774471,
+    "longitude": -72.74374
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.719228,
+        43.146071
+      ]
+    },
+    "postal_cd": "05359",
+    "country_cd": "US",
+    "city_name": "West Townshend",
+    "state_abbrv": "VT",
+    "latitude": 43.146071,
+    "longitude": -72.719228
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.927014,
+        43.054472
+      ]
+    },
+    "postal_cd": "05360",
+    "country_cd": "US",
+    "city_name": "West Wardsboro",
+    "state_abbrv": "VT",
+    "latitude": 43.054472,
+    "longitude": -72.927014
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.87308,
+        42.783081
+      ]
+    },
+    "postal_cd": "05361",
+    "country_cd": "US",
+    "city_name": "Whitingham",
+    "state_abbrv": "VT",
+    "latitude": 42.783081,
+    "longitude": -72.87308
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.677001,
+        42.940978
+      ]
+    },
+    "postal_cd": "05362",
+    "country_cd": "US",
+    "city_name": "Williamsville",
+    "state_abbrv": "VT",
+    "latitude": 42.940978,
+    "longitude": -72.677001
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.888584,
+        42.872614
+      ]
+    },
+    "postal_cd": "05363",
+    "country_cd": "US",
+    "city_name": "Wilmington",
+    "state_abbrv": "VT",
+    "latitude": 42.872614,
+    "longitude": -72.888584
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.247857,
+        44.484133
+      ]
+    },
+    "postal_cd": "05401",
+    "country_cd": "US",
+    "city_name": "Burlington",
+    "state_abbrv": "VT",
+    "latitude": 44.484133,
+    "longitude": -73.247857
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.2126,
+        44.4756
+      ]
+    },
+    "postal_cd": "05402",
+    "country_cd": "US",
+    "city_name": "Burlington",
+    "state_abbrv": "VT",
+    "latitude": 44.4756,
+    "longitude": -73.2126
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.184981,
+        44.454475
+      ]
+    },
+    "postal_cd": "05403",
+    "country_cd": "US",
+    "city_name": "South Burlington",
+    "state_abbrv": "VT",
+    "latitude": 44.454475,
+    "longitude": -73.184981
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.183567,
+        44.49486
+      ]
+    },
+    "postal_cd": "05404",
+    "country_cd": "US",
+    "city_name": "Winooski",
+    "state_abbrv": "VT",
+    "latitude": 44.49486,
+    "longitude": -73.183567
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.195632,
+        44.47761
+      ]
+    },
+    "postal_cd": "05405",
+    "country_cd": "US",
+    "city_name": "Burlington",
+    "state_abbrv": "VT",
+    "latitude": 44.47761,
+    "longitude": -73.195632
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.2126,
+        44.4756
+      ]
+    },
+    "postal_cd": "05406",
+    "country_cd": "US",
+    "city_name": "Burlington",
+    "state_abbrv": "VT",
+    "latitude": 44.4756,
+    "longitude": -73.2126
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.2126,
+        44.4756
+      ]
+    },
+    "postal_cd": "05407",
+    "country_cd": "US",
+    "city_name": "South Burlington",
+    "state_abbrv": "VT",
+    "latitude": 44.4756,
+    "longitude": -73.2126
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.243959,
+        44.511264
+      ]
+    },
+    "postal_cd": "05408",
+    "country_cd": "US",
+    "city_name": "Burlington",
+    "state_abbrv": "VT",
+    "latitude": 44.511264,
+    "longitude": -73.243959
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.1485,
+        44.5437
+      ]
+    },
+    "postal_cd": "05439",
+    "country_cd": "US",
+    "city_name": "Colchester",
+    "state_abbrv": "VT",
+    "latitude": 44.5437,
+    "longitude": -73.1485
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.27328,
+        44.928483
+      ]
+    },
+    "postal_cd": "05440",
+    "country_cd": "US",
+    "city_name": "Alburgh",
+    "state_abbrv": "VT",
+    "latitude": 44.928483,
+    "longitude": -73.27328
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.751601,
+        44.782857
+      ]
+    },
+    "postal_cd": "05441",
+    "country_cd": "US",
+    "city_name": "Bakersfield",
+    "state_abbrv": "VT",
+    "latitude": 44.782857,
+    "longitude": -72.751601
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.669336,
+        44.76607
+      ]
+    },
+    "postal_cd": "05442",
+    "country_cd": "US",
+    "city_name": "Belvidere Center",
+    "state_abbrv": "VT",
+    "latitude": 44.76607,
+    "longitude": -72.669336
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.030774,
+        44.156921
+      ]
+    },
+    "postal_cd": "05443",
+    "country_cd": "US",
+    "city_name": "Bristol",
+    "state_abbrv": "VT",
+    "latitude": 44.156921,
+    "longitude": -73.030774
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.907013,
+        44.648159
+      ]
+    },
+    "postal_cd": "05444",
+    "country_cd": "US",
+    "city_name": "Cambridge",
+    "state_abbrv": "VT",
+    "latitude": 44.648159,
+    "longitude": -72.907013
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.236224,
+        44.311093
+      ]
+    },
+    "postal_cd": "05445",
+    "country_cd": "US",
+    "city_name": "Charlotte",
+    "state_abbrv": "VT",
+    "latitude": 44.311093,
+    "longitude": -73.236224
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.229872,
+        44.550854
+      ]
+    },
+    "postal_cd": "05446",
+    "country_cd": "US",
+    "city_name": "Colchester",
+    "state_abbrv": "VT",
+    "latitude": 44.550854,
+    "longitude": -73.229872
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.702468,
+        44.941558
+      ]
+    },
+    "postal_cd": "05447",
+    "country_cd": "US",
+    "city_name": "East Berkshire",
+    "state_abbrv": "VT",
+    "latitude": 44.941558,
+    "longitude": -72.702468
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.882023,
+        44.761373
+      ]
+    },
+    "postal_cd": "05448",
+    "country_cd": "US",
+    "city_name": "East Fairfield",
+    "state_abbrv": "VT",
+    "latitude": 44.761373,
+    "longitude": -72.882023
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.1485,
+        44.5437
+      ]
+    },
+    "postal_cd": "05449",
+    "country_cd": "US",
+    "city_name": "Colchester",
+    "state_abbrv": "VT",
+    "latitude": 44.5437,
+    "longitude": -73.1485
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.794758,
+        44.897955
+      ]
+    },
+    "postal_cd": "05450",
+    "country_cd": "US",
+    "city_name": "Enosburg Falls",
+    "state_abbrv": "VT",
+    "latitude": 44.897955,
+    "longitude": -72.794758
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.0608,
+        44.5215
+      ]
+    },
+    "postal_cd": "05451",
+    "country_cd": "US",
+    "city_name": "Essex",
+    "state_abbrv": "VT",
+    "latitude": 44.5215,
+    "longitude": -73.0608
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.052832,
+        44.510763
+      ]
+    },
+    "postal_cd": "05452",
+    "country_cd": "US",
+    "city_name": "Essex Junction",
+    "state_abbrv": "VT",
+    "latitude": 44.510763,
+    "longitude": -73.052832
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.1116,
+        44.4908
+      ]
+    },
+    "postal_cd": "05453",
+    "country_cd": "US",
+    "city_name": "Essex Junction",
+    "state_abbrv": "VT",
+    "latitude": 44.4908,
+    "longitude": -73.1116
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.017241,
+        44.716346
+      ]
+    },
+    "postal_cd": "05454",
+    "country_cd": "US",
+    "city_name": "Fairfax",
+    "state_abbrv": "VT",
+    "latitude": 44.716346,
+    "longitude": -73.017241
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.969978,
+        44.809174
+      ]
+    },
+    "postal_cd": "05455",
+    "country_cd": "US",
+    "city_name": "Fairfield",
+    "state_abbrv": "VT",
+    "latitude": 44.809174,
+    "longitude": -72.969978
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.266968,
+        44.212922
+      ]
+    },
+    "postal_cd": "05456",
+    "country_cd": "US",
+    "city_name": "Ferrisburgh",
+    "state_abbrv": "VT",
+    "latitude": 44.212922,
+    "longitude": -73.266968
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.912382,
+        44.958573
+      ]
+    },
+    "postal_cd": "05457",
+    "country_cd": "US",
+    "city_name": "Franklin",
+    "state_abbrv": "VT",
+    "latitude": 44.958573,
+    "longitude": -72.912382
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.299926,
+        44.723144
+      ]
+    },
+    "postal_cd": "05458",
+    "country_cd": "US",
+    "city_name": "Grand Isle",
+    "state_abbrv": "VT",
+    "latitude": 44.723144,
+    "longitude": -73.299926
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.00964,
+        44.963314
+      ]
+    },
+    "postal_cd": "05459",
+    "country_cd": "US",
+    "city_name": "Highgate Center",
+    "state_abbrv": "VT",
+    "latitude": 44.963314,
+    "longitude": -73.00964
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.1054,
+        44.9766
+      ]
+    },
+    "postal_cd": "05460",
+    "country_cd": "US",
+    "city_name": "Highgate Springs",
+    "state_abbrv": "VT",
+    "latitude": 44.9766,
+    "longitude": -73.1054
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.090922,
+        44.315623
+      ]
+    },
+    "postal_cd": "05461",
+    "country_cd": "US",
+    "city_name": "Hinesburg",
+    "state_abbrv": "VT",
+    "latitude": 44.315623,
+    "longitude": -73.090922
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.96095,
+        44.291683
+      ]
+    },
+    "postal_cd": "05462",
+    "country_cd": "US",
+    "city_name": "Huntington",
+    "state_abbrv": "VT",
+    "latitude": 44.291683,
+    "longitude": -72.96095
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.301171,
+        44.890407
+      ]
+    },
+    "postal_cd": "05463",
+    "country_cd": "US",
+    "city_name": "Isle La Motte",
+    "state_abbrv": "VT",
+    "latitude": 44.890407,
+    "longitude": -73.301171
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.813533,
+        44.641023
+      ]
+    },
+    "postal_cd": "05464",
+    "country_cd": "US",
+    "city_name": "Jeffersonville",
+    "state_abbrv": "VT",
+    "latitude": 44.641023,
+    "longitude": -72.813533
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.917804,
+        44.4674
+      ]
+    },
+    "postal_cd": "05465",
+    "country_cd": "US",
+    "city_name": "Jericho",
+    "state_abbrv": "VT",
+    "latitude": 44.4674,
+    "longitude": -72.917804
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9382,
+        44.3836
+      ]
+    },
+    "postal_cd": "05466",
+    "country_cd": "US",
+    "city_name": "Jonesville",
+    "state_abbrv": "VT",
+    "latitude": 44.3836,
+    "longitude": -72.9382
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.147455,
+        44.663734
+      ]
+    },
+    "postal_cd": "05468",
+    "country_cd": "US",
+    "city_name": "Milton",
+    "state_abbrv": "VT",
+    "latitude": 44.663734,
+    "longitude": -73.147455
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.1483,
+        44.2388
+      ]
+    },
+    "postal_cd": "05469",
+    "country_cd": "US",
+    "city_name": "Monkton",
+    "state_abbrv": "VT",
+    "latitude": 44.2388,
+    "longitude": -73.1483
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.6386,
+        44.9025
+      ]
+    },
+    "postal_cd": "05470",
+    "country_cd": "US",
+    "city_name": "Montgomery",
+    "state_abbrv": "VT",
+    "latitude": 44.9025,
+    "longitude": -72.6386
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.587924,
+        44.854104
+      ]
+    },
+    "postal_cd": "05471",
+    "country_cd": "US",
+    "city_name": "Montgomery Center",
+    "state_abbrv": "VT",
+    "latitude": 44.854104,
+    "longitude": -72.587924
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.164032,
+        44.141539
+      ]
+    },
+    "postal_cd": "05472",
+    "country_cd": "US",
+    "city_name": "New Haven",
+    "state_abbrv": "VT",
+    "latitude": 44.141539,
+    "longitude": -73.164032
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.203646,
+        44.244494
+      ]
+    },
+    "postal_cd": "05473",
+    "country_cd": "US",
+    "city_name": "North Ferrisburgh",
+    "state_abbrv": "VT",
+    "latitude": 44.244494,
+    "longitude": -73.203646
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.275228,
+        44.838791
+      ]
+    },
+    "postal_cd": "05474",
+    "country_cd": "US",
+    "city_name": "North Hero",
+    "state_abbrv": "VT",
+    "latitude": 44.838791,
+    "longitude": -73.275228
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.650886,
+        44.955183
+      ]
+    },
+    "postal_cd": "05476",
+    "country_cd": "US",
+    "city_name": "Richford",
+    "state_abbrv": "VT",
+    "latitude": 44.955183,
+    "longitude": -72.650886
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.950571,
+        44.388236
+      ]
+    },
+    "postal_cd": "05477",
+    "country_cd": "US",
+    "city_name": "Richmond",
+    "state_abbrv": "VT",
+    "latitude": 44.388236,
+    "longitude": -72.950571
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.126686,
+        44.818326
+      ]
+    },
+    "postal_cd": "05478",
+    "country_cd": "US",
+    "city_name": "Saint Albans",
+    "state_abbrv": "VT",
+    "latitude": 44.818326,
+    "longitude": -73.126686
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.0836,
+        44.8106
+      ]
+    },
+    "postal_cd": "05479",
+    "country_cd": "US",
+    "city_name": "Saint Albans",
+    "state_abbrv": "VT",
+    "latitude": 44.8106,
+    "longitude": -73.0836
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.1398,
+        44.8073
+      ]
+    },
+    "postal_cd": "05481",
+    "country_cd": "US",
+    "city_name": "Saint Albans Bay",
+    "state_abbrv": "VT",
+    "latitude": 44.8073,
+    "longitude": -73.1398
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.230426,
+        44.394886
+      ]
+    },
+    "postal_cd": "05482",
+    "country_cd": "US",
+    "city_name": "Shelburne",
+    "state_abbrv": "VT",
+    "latitude": 44.394886,
+    "longitude": -73.230426
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.969836,
+        44.885684
+      ]
+    },
+    "postal_cd": "05483",
+    "country_cd": "US",
+    "city_name": "Sheldon",
+    "state_abbrv": "VT",
+    "latitude": 44.885684,
+    "longitude": -72.969836
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.981,
+        44.9056
+      ]
+    },
+    "postal_cd": "05485",
+    "country_cd": "US",
+    "city_name": "Sheldon Springs",
+    "state_abbrv": "VT",
+    "latitude": 44.9056,
+    "longitude": -72.981
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.309252,
+        44.625673
+      ]
+    },
+    "postal_cd": "05486",
+    "country_cd": "US",
+    "city_name": "South Hero",
+    "state_abbrv": "VT",
+    "latitude": 44.625673,
+    "longitude": -73.309252
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.003136,
+        44.236003
+      ]
+    },
+    "postal_cd": "05487",
+    "country_cd": "US",
+    "city_name": "Starksboro",
+    "state_abbrv": "VT",
+    "latitude": 44.236003,
+    "longitude": -73.003136
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.133964,
+        44.902072
+      ]
+    },
+    "postal_cd": "05488",
+    "country_cd": "US",
+    "city_name": "Swanton",
+    "state_abbrv": "VT",
+    "latitude": 44.902072,
+    "longitude": -73.133964
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.891354,
+        44.54955
+      ]
+    },
+    "postal_cd": "05489",
+    "country_cd": "US",
+    "city_name": "Underhill",
+    "state_abbrv": "VT",
+    "latitude": 44.54955,
+    "longitude": -72.891354
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9,
+        44.5077
+      ]
+    },
+    "postal_cd": "05490",
+    "country_cd": "US",
+    "city_name": "Underhill Center",
+    "state_abbrv": "VT",
+    "latitude": 44.5077,
+    "longitude": -72.9
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.305775,
+        44.125631
+      ]
+    },
+    "postal_cd": "05491",
+    "country_cd": "US",
+    "city_name": "Vergennes",
+    "state_abbrv": "VT",
+    "latitude": 44.125631,
+    "longitude": -73.305775
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.76642,
+        44.719678
+      ]
+    },
+    "postal_cd": "05492",
+    "country_cd": "US",
+    "city_name": "Waterville",
+    "state_abbrv": "VT",
+    "latitude": 44.719678,
+    "longitude": -72.76642
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.027348,
+        44.603384
+      ]
+    },
+    "postal_cd": "05494",
+    "country_cd": "US",
+    "city_name": "Westford",
+    "state_abbrv": "VT",
+    "latitude": 44.603384,
+    "longitude": -73.027348
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.087094,
+        44.424416
+      ]
+    },
+    "postal_cd": "05495",
+    "country_cd": "US",
+    "city_name": "Williston",
+    "state_abbrv": "VT",
+    "latitude": 44.424416,
+    "longitude": -73.087094
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5759,
+        44.2601
+      ]
+    },
+    "postal_cd": "05601",
+    "country_cd": "US",
+    "city_name": "Montpelier",
+    "state_abbrv": "VT",
+    "latitude": 44.2601,
+    "longitude": -72.5759
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.609412,
+        44.279964
+      ]
+    },
+    "postal_cd": "05602",
+    "country_cd": "US",
+    "city_name": "Montpelier",
+    "state_abbrv": "VT",
+    "latitude": 44.279964,
+    "longitude": -72.609412
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5759,
+        44.2601
+      ]
+    },
+    "postal_cd": "05603",
+    "country_cd": "US",
+    "city_name": "Montpelier",
+    "state_abbrv": "VT",
+    "latitude": 44.2601,
+    "longitude": -72.5759
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5759,
+        44.2601
+      ]
+    },
+    "postal_cd": "05604",
+    "country_cd": "US",
+    "city_name": "Montpelier",
+    "state_abbrv": "VT",
+    "latitude": 44.2601,
+    "longitude": -72.5759
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5759,
+        44.2601
+      ]
+    },
+    "postal_cd": "05609",
+    "country_cd": "US",
+    "city_name": "Montpelier",
+    "state_abbrv": "VT",
+    "latitude": 44.2601,
+    "longitude": -72.5759
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5759,
+        44.2601
+      ]
+    },
+    "postal_cd": "05620",
+    "country_cd": "US",
+    "city_name": "Montpelier",
+    "state_abbrv": "VT",
+    "latitude": 44.2601,
+    "longitude": -72.5759
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5759,
+        44.2601
+      ]
+    },
+    "postal_cd": "05633",
+    "country_cd": "US",
+    "city_name": "Montpelier",
+    "state_abbrv": "VT",
+    "latitude": 44.2601,
+    "longitude": -72.5759
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.498199,
+        44.351662
+      ]
+    },
+    "postal_cd": "05640",
+    "country_cd": "US",
+    "city_name": "Adamant",
+    "state_abbrv": "VT",
+    "latitude": 44.351662,
+    "longitude": -72.498199
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.447615,
+        44.184388
+      ]
+    },
+    "postal_cd": "05641",
+    "country_cd": "US",
+    "city_name": "Barre",
+    "state_abbrv": "VT",
+    "latitude": 44.184388,
+    "longitude": -72.447615
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.289867,
+        44.407038
+      ]
+    },
+    "postal_cd": "05647",
+    "country_cd": "US",
+    "city_name": "Cabot",
+    "state_abbrv": "VT",
+    "latitude": 44.407038,
+    "longitude": -72.289867
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.497325,
+        44.378676
+      ]
+    },
+    "postal_cd": "05648",
+    "country_cd": "US",
+    "city_name": "Calais",
+    "state_abbrv": "VT",
+    "latitude": 44.378676,
+    "longitude": -72.497325
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.39487,
+        44.14781
+      ]
+    },
+    "postal_cd": "05649",
+    "country_cd": "US",
+    "city_name": "East Barre",
+    "state_abbrv": "VT",
+    "latitude": 44.14781,
+    "longitude": -72.39487
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.433596,
+        44.390511
+      ]
+    },
+    "postal_cd": "05650",
+    "country_cd": "US",
+    "city_name": "East Calais",
+    "state_abbrv": "VT",
+    "latitude": 44.390511,
+    "longitude": -72.433596
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.496098,
+        44.281498
+      ]
+    },
+    "postal_cd": "05651",
+    "country_cd": "US",
+    "city_name": "East Montpelier",
+    "state_abbrv": "VT",
+    "latitude": 44.281498,
+    "longitude": -72.496098
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.633388,
+        44.734313
+      ]
+    },
+    "postal_cd": "05652",
+    "country_cd": "US",
+    "city_name": "Eden",
+    "state_abbrv": "VT",
+    "latitude": 44.734313,
+    "longitude": -72.633388
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.490247,
+        44.702792
+      ]
+    },
+    "postal_cd": "05653",
+    "country_cd": "US",
+    "city_name": "Eden Mills",
+    "state_abbrv": "VT",
+    "latitude": 44.702792,
+    "longitude": -72.490247
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.479035,
+        44.147256
+      ]
+    },
+    "postal_cd": "05654",
+    "country_cd": "US",
+    "city_name": "Graniteville",
+    "state_abbrv": "VT",
+    "latitude": 44.147256,
+    "longitude": -72.479035
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.564211,
+        44.62893
+      ]
+    },
+    "postal_cd": "05655",
+    "country_cd": "US",
+    "city_name": "Hyde Park",
+    "state_abbrv": "VT",
+    "latitude": 44.62893,
+    "longitude": -72.564211
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.680382,
+        44.646401
+      ]
+    },
+    "postal_cd": "05656",
+    "country_cd": "US",
+    "city_name": "Johnson",
+    "state_abbrv": "VT",
+    "latitude": 44.646401,
+    "longitude": -72.680382
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.529073,
+        44.541439
+      ]
+    },
+    "postal_cd": "05657",
+    "country_cd": "US",
+    "city_name": "Lake Elmore",
+    "state_abbrv": "VT",
+    "latitude": 44.541439,
+    "longitude": -72.529073
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.353028,
+        44.360319
+      ]
+    },
+    "postal_cd": "05658",
+    "country_cd": "US",
+    "city_name": "Marshfield",
+    "state_abbrv": "VT",
+    "latitude": 44.360319,
+    "longitude": -72.353028
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.761586,
+        44.252609
+      ]
+    },
+    "postal_cd": "05660",
+    "country_cd": "US",
+    "city_name": "Moretown",
+    "state_abbrv": "VT",
+    "latitude": 44.252609,
+    "longitude": -72.761586
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.637343,
+        44.541157
+      ]
+    },
+    "postal_cd": "05661",
+    "country_cd": "US",
+    "city_name": "Morrisville",
+    "state_abbrv": "VT",
+    "latitude": 44.541157,
+    "longitude": -72.637343
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.7159,
+        44.4415
+      ]
+    },
+    "postal_cd": "05662",
+    "country_cd": "US",
+    "city_name": "Moscow",
+    "state_abbrv": "VT",
+    "latitude": 44.4415,
+    "longitude": -72.7159
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.685056,
+        44.137891
+      ]
+    },
+    "postal_cd": "05663",
+    "country_cd": "US",
+    "city_name": "Northfield",
+    "state_abbrv": "VT",
+    "latitude": 44.137891,
+    "longitude": -72.685056
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.649876,
+        44.169954
+      ]
+    },
+    "postal_cd": "05664",
+    "country_cd": "US",
+    "city_name": "Northfield Falls",
+    "state_abbrv": "VT",
+    "latitude": 44.169954,
+    "longitude": -72.649876
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5988,
+        44.6706
+      ]
+    },
+    "postal_cd": "05665",
+    "country_cd": "US",
+    "city_name": "North Hyde Park",
+    "state_abbrv": "VT",
+    "latitude": 44.6706,
+    "longitude": -72.5988
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.468106,
+        44.276852
+      ]
+    },
+    "postal_cd": "05666",
+    "country_cd": "US",
+    "city_name": "North Montpelier",
+    "state_abbrv": "VT",
+    "latitude": 44.276852,
+    "longitude": -72.468106
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.404736,
+        44.2913
+      ]
+    },
+    "postal_cd": "05667",
+    "country_cd": "US",
+    "city_name": "Plainfield",
+    "state_abbrv": "VT",
+    "latitude": 44.2913,
+    "longitude": -72.404736
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.74496,
+        44.069641
+      ]
+    },
+    "postal_cd": "05669",
+    "country_cd": "US",
+    "city_name": "Roxbury",
+    "state_abbrv": "VT",
+    "latitude": 44.069641,
+    "longitude": -72.74496
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.5002,
+        44.1679
+      ]
+    },
+    "postal_cd": "05670",
+    "country_cd": "US",
+    "city_name": "South Barre",
+    "state_abbrv": "VT",
+    "latitude": 44.1679,
+    "longitude": -72.5002
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.7564,
+        44.3379
+      ]
+    },
+    "postal_cd": "05671",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "VT",
+    "latitude": 44.3379,
+    "longitude": -72.7564
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.717655,
+        44.480794
+      ]
+    },
+    "postal_cd": "05672",
+    "country_cd": "US",
+    "city_name": "Stowe",
+    "state_abbrv": "VT",
+    "latitude": 44.480794,
+    "longitude": -72.717655
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.848134,
+        44.200827
+      ]
+    },
+    "postal_cd": "05673",
+    "country_cd": "US",
+    "city_name": "Waitsfield",
+    "state_abbrv": "VT",
+    "latitude": 44.200827,
+    "longitude": -72.848134
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.852488,
+        44.108529
+      ]
+    },
+    "postal_cd": "05674",
+    "country_cd": "US",
+    "city_name": "Warren",
+    "state_abbrv": "VT",
+    "latitude": 44.108529,
+    "longitude": -72.852488
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.420266,
+        44.06932
+      ]
+    },
+    "postal_cd": "05675",
+    "country_cd": "US",
+    "city_name": "Washington",
+    "state_abbrv": "VT",
+    "latitude": 44.06932,
+    "longitude": -72.420266
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.805656,
+        44.352331
+      ]
+    },
+    "postal_cd": "05676",
+    "country_cd": "US",
+    "city_name": "Waterbury",
+    "state_abbrv": "VT",
+    "latitude": 44.352331,
+    "longitude": -72.805656
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.705846,
+        44.392058
+      ]
+    },
+    "postal_cd": "05677",
+    "country_cd": "US",
+    "city_name": "Waterbury Center",
+    "state_abbrv": "VT",
+    "latitude": 44.392058,
+    "longitude": -72.705846
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.46948,
+        44.159644
+      ]
+    },
+    "postal_cd": "05678",
+    "country_cd": "US",
+    "city_name": "Websterville",
+    "state_abbrv": "VT",
+    "latitude": 44.159644,
+    "longitude": -72.46948
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.548263,
+        44.102189
+      ]
+    },
+    "postal_cd": "05679",
+    "country_cd": "US",
+    "city_name": "Williamstown",
+    "state_abbrv": "VT",
+    "latitude": 44.102189,
+    "longitude": -72.548263
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.482192,
+        44.535453
+      ]
+    },
+    "postal_cd": "05680",
+    "country_cd": "US",
+    "city_name": "Wolcott",
+    "state_abbrv": "VT",
+    "latitude": 44.535453,
+    "longitude": -72.482192
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.412264,
+        44.449835
+      ]
+    },
+    "postal_cd": "05681",
+    "country_cd": "US",
+    "city_name": "Woodbury",
+    "state_abbrv": "VT",
+    "latitude": 44.449835,
+    "longitude": -72.412264
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.572618,
+        44.397746
+      ]
+    },
+    "postal_cd": "05682",
+    "country_cd": "US",
+    "city_name": "Worcester",
+    "state_abbrv": "VT",
+    "latitude": 44.397746,
+    "longitude": -72.572618
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.922874,
+        43.639036
+      ]
+    },
+    "postal_cd": "05701",
+    "country_cd": "US",
+    "city_name": "Rutland",
+    "state_abbrv": "VT",
+    "latitude": 43.639036,
+    "longitude": -72.922874
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.9731,
+        43.6106
+      ]
+    },
+    "postal_cd": "05702",
+    "country_cd": "US",
+    "city_name": "Rutland",
+    "state_abbrv": "VT",
+    "latitude": 43.6106,
+    "longitude": -72.9731
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.820736,
+        43.421144
+      ]
+    },
+    "postal_cd": "05730",
+    "country_cd": "US",
+    "city_name": "Belmont",
+    "state_abbrv": "VT",
+    "latitude": 43.421144,
+    "longitude": -72.820736
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.3118,
+        43.7066
+      ]
+    },
+    "postal_cd": "05731",
+    "country_cd": "US",
+    "city_name": "Benson",
+    "state_abbrv": "VT",
+    "latitude": 43.7066,
+    "longitude": -73.3118
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.203987,
+        43.63563
+      ]
+    },
+    "postal_cd": "05732",
+    "country_cd": "US",
+    "city_name": "Bomoseen",
+    "state_abbrv": "VT",
+    "latitude": 43.63563,
+    "longitude": -73.203987
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.092253,
+        43.840453
+      ]
+    },
+    "postal_cd": "05733",
+    "country_cd": "US",
+    "city_name": "Brandon",
+    "state_abbrv": "VT",
+    "latitude": 43.840453,
+    "longitude": -73.092253
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.33395,
+        43.944874
+      ]
+    },
+    "postal_cd": "05734",
+    "country_cd": "US",
+    "city_name": "Bridport",
+    "state_abbrv": "VT",
+    "latitude": 43.944874,
+    "longitude": -73.33395
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.165581,
+        43.653949
+      ]
+    },
+    "postal_cd": "05735",
+    "country_cd": "US",
+    "city_name": "Castleton",
+    "state_abbrv": "VT",
+    "latitude": 43.653949,
+    "longitude": -73.165581
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.018707,
+        43.619312
+      ]
+    },
+    "postal_cd": "05736",
+    "country_cd": "US",
+    "city_name": "Center Rutland",
+    "state_abbrv": "VT",
+    "latitude": 43.619312,
+    "longitude": -73.018707
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.925325,
+        43.710296
+      ]
+    },
+    "postal_cd": "05737",
+    "country_cd": "US",
+    "city_name": "Chittenden",
+    "state_abbrv": "VT",
+    "latitude": 43.710296,
+    "longitude": -72.925325
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.848728,
+        43.548864
+      ]
+    },
+    "postal_cd": "05738",
+    "country_cd": "US",
+    "city_name": "Cuttingsville",
+    "state_abbrv": "VT",
+    "latitude": 43.548864,
+    "longitude": -72.848728
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.992568,
+        43.352171
+      ]
+    },
+    "postal_cd": "05739",
+    "country_cd": "US",
+    "city_name": "Danby",
+    "state_abbrv": "VT",
+    "latitude": 43.352171,
+    "longitude": -72.992568
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.1064,
+        43.9734
+      ]
+    },
+    "postal_cd": "05740",
+    "country_cd": "US",
+    "city_name": "East Middlebury",
+    "state_abbrv": "VT",
+    "latitude": 43.9734,
+    "longitude": -73.1064
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.2052,
+        43.5266
+      ]
+    },
+    "postal_cd": "05741",
+    "country_cd": "US",
+    "city_name": "East Poultney",
+    "state_abbrv": "VT",
+    "latitude": 43.5266,
+    "longitude": -73.2052
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.888618,
+        43.426181
+      ]
+    },
+    "postal_cd": "05742",
+    "country_cd": "US",
+    "city_name": "East Wallingford",
+    "state_abbrv": "VT",
+    "latitude": 43.426181,
+    "longitude": -72.888618
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.306618,
+        43.651664
+      ]
+    },
+    "postal_cd": "05743",
+    "country_cd": "US",
+    "city_name": "Fair Haven",
+    "state_abbrv": "VT",
+    "latitude": 43.651664,
+    "longitude": -73.306618
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.07624,
+        43.688328
+      ]
+    },
+    "postal_cd": "05744",
+    "country_cd": "US",
+    "city_name": "Florence",
+    "state_abbrv": "VT",
+    "latitude": 43.688328,
+    "longitude": -73.07624
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.0546,
+        43.8284
+      ]
+    },
+    "postal_cd": "05745",
+    "country_cd": "US",
+    "city_name": "Forest Dale",
+    "state_abbrv": "VT",
+    "latitude": 43.8284,
+    "longitude": -73.0546
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.754662,
+        43.710646
+      ]
+    },
+    "postal_cd": "05746",
+    "country_cd": "US",
+    "city_name": "Gaysville",
+    "state_abbrv": "VT",
+    "latitude": 43.710646,
+    "longitude": -72.754662
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.829344,
+        44.00486
+      ]
+    },
+    "postal_cd": "05747",
+    "country_cd": "US",
+    "city_name": "Granville",
+    "state_abbrv": "VT",
+    "latitude": 44.00486,
+    "longitude": -72.829344
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.908428,
+        43.9176
+      ]
+    },
+    "postal_cd": "05748",
+    "country_cd": "US",
+    "city_name": "Hancock",
+    "state_abbrv": "VT",
+    "latitude": 43.9176,
+    "longitude": -72.908428
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.234152,
+        43.617884
+      ]
+    },
+    "postal_cd": "05750",
+    "country_cd": "US",
+    "city_name": "Hydeville",
+    "state_abbrv": "VT",
+    "latitude": 43.617884,
+    "longitude": -73.234152
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.785346,
+        43.655457
+      ]
+    },
+    "postal_cd": "05751",
+    "country_cd": "US",
+    "city_name": "Killington",
+    "state_abbrv": "VT",
+    "latitude": 43.655457,
+    "longitude": -72.785346
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.176136,
+        43.999029
+      ]
+    },
+    "postal_cd": "05753",
+    "country_cd": "US",
+    "city_name": "Middlebury",
+    "state_abbrv": "VT",
+    "latitude": 43.999029,
+    "longitude": -73.176136
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.123104,
+        43.484096
+      ]
+    },
+    "postal_cd": "05757",
+    "country_cd": "US",
+    "city_name": "Middletown Springs",
+    "state_abbrv": "VT",
+    "latitude": 43.484096,
+    "longitude": -73.123104
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.798365,
+        43.421628
+      ]
+    },
+    "postal_cd": "05758",
+    "country_cd": "US",
+    "city_name": "Mount Holly",
+    "state_abbrv": "VT",
+    "latitude": 43.421628,
+    "longitude": -72.798365
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.952538,
+        43.536976
+      ]
+    },
+    "postal_cd": "05759",
+    "country_cd": "US",
+    "city_name": "North Clarendon",
+    "state_abbrv": "VT",
+    "latitude": 43.536976,
+    "longitude": -72.952538
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.298882,
+        43.787774
+      ]
+    },
+    "postal_cd": "05760",
+    "country_cd": "US",
+    "city_name": "Orwell",
+    "state_abbrv": "VT",
+    "latitude": 43.787774,
+    "longitude": -73.298882
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.148682,
+        43.358508
+      ]
+    },
+    "postal_cd": "05761",
+    "country_cd": "US",
+    "city_name": "Pawlet",
+    "state_abbrv": "VT",
+    "latitude": 43.358508,
+    "longitude": -73.148682
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.890268,
+        43.775876
+      ]
+    },
+    "postal_cd": "05762",
+    "country_cd": "US",
+    "city_name": "Pittsfield",
+    "state_abbrv": "VT",
+    "latitude": 43.775876,
+    "longitude": -72.890268
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.998026,
+        43.742296
+      ]
+    },
+    "postal_cd": "05763",
+    "country_cd": "US",
+    "city_name": "Pittsford",
+    "state_abbrv": "VT",
+    "latitude": 43.742296,
+    "longitude": -72.998026
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.182204,
+        43.525218
+      ]
+    },
+    "postal_cd": "05764",
+    "country_cd": "US",
+    "city_name": "Poultney",
+    "state_abbrv": "VT",
+    "latitude": 43.525218,
+    "longitude": -73.182204
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.032716,
+        43.649623
+      ]
+    },
+    "postal_cd": "05765",
+    "country_cd": "US",
+    "city_name": "Proctor",
+    "state_abbrv": "VT",
+    "latitude": 43.649623,
+    "longitude": -73.032716
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.985649,
+        43.98408
+      ]
+    },
+    "postal_cd": "05766",
+    "country_cd": "US",
+    "city_name": "Ripton",
+    "state_abbrv": "VT",
+    "latitude": 43.98408,
+    "longitude": -72.985649
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.84853,
+        43.867307
+      ]
+    },
+    "postal_cd": "05767",
+    "country_cd": "US",
+    "city_name": "Rochester",
+    "state_abbrv": "VT",
+    "latitude": 43.867307,
+    "longitude": -72.84853
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.2255,
+        43.2576
+      ]
+    },
+    "postal_cd": "05768",
+    "country_cd": "US",
+    "city_name": "Rupert",
+    "state_abbrv": "VT",
+    "latitude": 43.2576,
+    "longitude": -73.2255
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.115023,
+        43.917627
+      ]
+    },
+    "postal_cd": "05769",
+    "country_cd": "US",
+    "city_name": "Salisbury",
+    "state_abbrv": "VT",
+    "latitude": 43.917627,
+    "longitude": -73.115023
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.321844,
+        43.874879
+      ]
+    },
+    "postal_cd": "05770",
+    "country_cd": "US",
+    "city_name": "Shoreham",
+    "state_abbrv": "VT",
+    "latitude": 43.874879,
+    "longitude": -73.321844
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.740246,
+        43.773638
+      ]
+    },
+    "postal_cd": "05772",
+    "country_cd": "US",
+    "city_name": "Stockbridge",
+    "state_abbrv": "VT",
+    "latitude": 43.773638,
+    "longitude": -72.740246
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.008096,
+        43.445476
+      ]
+    },
+    "postal_cd": "05773",
+    "country_cd": "US",
+    "city_name": "Wallingford",
+    "state_abbrv": "VT",
+    "latitude": 43.445476,
+    "longitude": -73.008096
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.181794,
+        43.447171
+      ]
+    },
+    "postal_cd": "05774",
+    "country_cd": "US",
+    "city_name": "Wells",
+    "state_abbrv": "VT",
+    "latitude": 43.447171,
+    "longitude": -73.181794
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.218126,
+        43.361126
+      ]
+    },
+    "postal_cd": "05775",
+    "country_cd": "US",
+    "city_name": "West Pawlet",
+    "state_abbrv": "VT",
+    "latitude": 43.361126,
+    "longitude": -73.218126
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.188532,
+        43.265585
+      ]
+    },
+    "postal_cd": "05776",
+    "country_cd": "US",
+    "city_name": "West Rupert",
+    "state_abbrv": "VT",
+    "latitude": 43.265585,
+    "longitude": -73.188532
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.049234,
+        43.571372
+      ]
+    },
+    "postal_cd": "05777",
+    "country_cd": "US",
+    "city_name": "West Rutland",
+    "state_abbrv": "VT",
+    "latitude": 43.571372,
+    "longitude": -73.049234
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -73.203834,
+        43.88021
+      ]
+    },
+    "postal_cd": "05778",
+    "country_cd": "US",
+    "city_name": "Whiting",
+    "state_abbrv": "VT",
+    "latitude": 43.88021,
+    "longitude": -73.203834
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.968914,
+        44.423148
+      ]
+    },
+    "postal_cd": "05819",
+    "country_cd": "US",
+    "city_name": "Saint Johnsbury",
+    "state_abbrv": "VT",
+    "latitude": 44.423148,
+    "longitude": -71.968914
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.357962,
+        44.74914
+      ]
+    },
+    "postal_cd": "05820",
+    "country_cd": "US",
+    "city_name": "Albany",
+    "state_abbrv": "VT",
+    "latitude": 44.74914,
+    "longitude": -72.357962
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.082797,
+        44.316294
+      ]
+    },
+    "postal_cd": "05821",
+    "country_cd": "US",
+    "city_name": "Barnet",
+    "state_abbrv": "VT",
+    "latitude": 44.316294,
+    "longitude": -72.082797
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.147225,
+        44.744998
+      ]
+    },
+    "postal_cd": "05822",
+    "country_cd": "US",
+    "city_name": "Barton",
+    "state_abbrv": "VT",
+    "latitude": 44.744998,
+    "longitude": -72.147225
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.1413,
+        45.0053
+      ]
+    },
+    "postal_cd": "05823",
+    "country_cd": "US",
+    "city_name": "Beebe Plain",
+    "state_abbrv": "VT",
+    "latitude": 45.0053,
+    "longitude": -72.1413
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.851258,
+        44.438108
+      ]
+    },
+    "postal_cd": "05824",
+    "country_cd": "US",
+    "city_name": "Concord",
+    "state_abbrv": "VT",
+    "latitude": 44.438108,
+    "longitude": -71.851258
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.235489,
+        44.856872
+      ]
+    },
+    "postal_cd": "05825",
+    "country_cd": "US",
+    "city_name": "Coventry",
+    "state_abbrv": "VT",
+    "latitude": 44.856872,
+    "longitude": -72.235489
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.389794,
+        44.654076
+      ]
+    },
+    "postal_cd": "05826",
+    "country_cd": "US",
+    "city_name": "Craftsbury",
+    "state_abbrv": "VT",
+    "latitude": 44.654076,
+    "longitude": -72.389794
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.358566,
+        44.682376
+      ]
+    },
+    "postal_cd": "05827",
+    "country_cd": "US",
+    "city_name": "Craftsbury Common",
+    "state_abbrv": "VT",
+    "latitude": 44.682376,
+    "longitude": -72.358566
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.122876,
+        44.453342
+      ]
+    },
+    "postal_cd": "05828",
+    "country_cd": "US",
+    "city_name": "Danville",
+    "state_abbrv": "VT",
+    "latitude": 44.453342,
+    "longitude": -72.122876
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.082626,
+        44.954694
+      ]
+    },
+    "postal_cd": "05829",
+    "country_cd": "US",
+    "city_name": "Derby",
+    "state_abbrv": "VT",
+    "latitude": 44.954694,
+    "longitude": -72.082626
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.021396,
+        44.970167
+      ]
+    },
+    "postal_cd": "05830",
+    "country_cd": "US",
+    "city_name": "Derby Line",
+    "state_abbrv": "VT",
+    "latitude": 44.970167,
+    "longitude": -72.021396
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.900911,
+        44.594343
+      ]
+    },
+    "postal_cd": "05832",
+    "country_cd": "US",
+    "city_name": "East Burke",
+    "state_abbrv": "VT",
+    "latitude": 44.594343,
+    "longitude": -71.900911
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.954782,
+        44.83945
+      ]
+    },
+    "postal_cd": "05833",
+    "country_cd": "US",
+    "city_name": "East Charleston",
+    "state_abbrv": "VT",
+    "latitude": 44.83945,
+    "longitude": -71.954782
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.247738,
+        44.5224
+      ]
+    },
+    "postal_cd": "05836",
+    "country_cd": "US",
+    "city_name": "East Hardwick",
+    "state_abbrv": "VT",
+    "latitude": 44.5224,
+    "longitude": -72.247738
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.828896,
+        44.666529
+      ]
+    },
+    "postal_cd": "05837",
+    "country_cd": "US",
+    "city_name": "East Haven",
+    "state_abbrv": "VT",
+    "latitude": 44.666529,
+    "longitude": -71.828896
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.9463,
+        44.4387
+      ]
+    },
+    "postal_cd": "05838",
+    "country_cd": "US",
+    "city_name": "East Saint Johnsbury",
+    "state_abbrv": "VT",
+    "latitude": 44.4387,
+    "longitude": -71.9463
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.221718,
+        44.677822
+      ]
+    },
+    "postal_cd": "05839",
+    "country_cd": "US",
+    "city_name": "Glover",
+    "state_abbrv": "VT",
+    "latitude": 44.677822,
+    "longitude": -72.221718
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.72031,
+        44.602518
+      ]
+    },
+    "postal_cd": "05840",
+    "country_cd": "US",
+    "city_name": "Granby",
+    "state_abbrv": "VT",
+    "latitude": 44.602518,
+    "longitude": -71.72031
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.289069,
+        44.603972
+      ]
+    },
+    "postal_cd": "05841",
+    "country_cd": "US",
+    "city_name": "Greensboro",
+    "state_abbrv": "VT",
+    "latitude": 44.603972,
+    "longitude": -72.289069
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.218341,
+        44.565536
+      ]
+    },
+    "postal_cd": "05842",
+    "country_cd": "US",
+    "city_name": "Greensboro Bend",
+    "state_abbrv": "VT",
+    "latitude": 44.565536,
+    "longitude": -72.218341
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.326255,
+        44.524114
+      ]
+    },
+    "postal_cd": "05843",
+    "country_cd": "US",
+    "city_name": "Hardwick",
+    "state_abbrv": "VT",
+    "latitude": 44.524114,
+    "longitude": -72.326255
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.300119,
+        44.80063
+      ]
+    },
+    "postal_cd": "05845",
+    "country_cd": "US",
+    "city_name": "Irasburg",
+    "state_abbrv": "VT",
+    "latitude": 44.80063,
+    "longitude": -72.300119
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.845163,
+        44.779842
+      ]
+    },
+    "postal_cd": "05846",
+    "country_cd": "US",
+    "city_name": "Island Pond",
+    "state_abbrv": "VT",
+    "latitude": 44.779842,
+    "longitude": -71.845163
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.452698,
+        44.786663
+      ]
+    },
+    "postal_cd": "05847",
+    "country_cd": "US",
+    "city_name": "Lowell",
+    "state_abbrv": "VT",
+    "latitude": 44.786663,
+    "longitude": -72.452698
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.9077,
+        44.3547
+      ]
+    },
+    "postal_cd": "05848",
+    "country_cd": "US",
+    "city_name": "Lower Waterford",
+    "state_abbrv": "VT",
+    "latitude": 44.3547,
+    "longitude": -71.9077
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.0116,
+        44.5145
+      ]
+    },
+    "postal_cd": "05849",
+    "country_cd": "US",
+    "city_name": "Lyndon",
+    "state_abbrv": "VT",
+    "latitude": 44.5145,
+    "longitude": -72.0116
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.018352,
+        44.543938
+      ]
+    },
+    "postal_cd": "05850",
+    "country_cd": "US",
+    "city_name": "Lyndon Center",
+    "state_abbrv": "VT",
+    "latitude": 44.543938,
+    "longitude": -72.018352
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.05016,
+        44.546291
+      ]
+    },
+    "postal_cd": "05851",
+    "country_cd": "US",
+    "city_name": "Lyndonville",
+    "state_abbrv": "VT",
+    "latitude": 44.546291,
+    "longitude": -72.05016
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.984377,
+        44.88426
+      ]
+    },
+    "postal_cd": "05853",
+    "country_cd": "US",
+    "city_name": "Morgan",
+    "state_abbrv": "VT",
+    "latitude": 44.88426,
+    "longitude": -71.984377
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.193716,
+        44.934134
+      ]
+    },
+    "postal_cd": "05855",
+    "country_cd": "US",
+    "city_name": "Newport",
+    "state_abbrv": "VT",
+    "latitude": 44.934134,
+    "longitude": -72.193716
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.297462,
+        44.922956
+      ]
+    },
+    "postal_cd": "05857",
+    "country_cd": "US",
+    "city_name": "Newport Center",
+    "state_abbrv": "VT",
+    "latitude": 44.922956,
+    "longitude": -72.297462
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.770359,
+        44.55553
+      ]
+    },
+    "postal_cd": "05858",
+    "country_cd": "US",
+    "city_name": "North Concord",
+    "state_abbrv": "VT",
+    "latitude": 44.55553,
+    "longitude": -71.770359
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.442233,
+        44.934352
+      ]
+    },
+    "postal_cd": "05859",
+    "country_cd": "US",
+    "city_name": "North Troy",
+    "state_abbrv": "VT",
+    "latitude": 44.934352,
+    "longitude": -72.442233
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.100166,
+        44.798475
+      ]
+    },
+    "postal_cd": "05860",
+    "country_cd": "US",
+    "city_name": "Orleans",
+    "state_abbrv": "VT",
+    "latitude": 44.798475,
+    "longitude": -72.100166
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.0925,
+        44.3801
+      ]
+    },
+    "postal_cd": "05861",
+    "country_cd": "US",
+    "city_name": "Passumpsic",
+    "state_abbrv": "VT",
+    "latitude": 44.3801,
+    "longitude": -72.0925
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.226265,
+        44.326748
+      ]
+    },
+    "postal_cd": "05862",
+    "country_cd": "US",
+    "city_name": "Peacham",
+    "state_abbrv": "VT",
+    "latitude": 44.326748,
+    "longitude": -72.226265
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.0073,
+        44.457
+      ]
+    },
+    "postal_cd": "05863",
+    "country_cd": "US",
+    "city_name": "Saint Johnsbury Center",
+    "state_abbrv": "VT",
+    "latitude": 44.457,
+    "longitude": -72.0073
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.134324,
+        44.637063
+      ]
+    },
+    "postal_cd": "05866",
+    "country_cd": "US",
+    "city_name": "Sheffield",
+    "state_abbrv": "VT",
+    "latitude": 44.637063,
+    "longitude": -72.134324
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.041961,
+        44.664254
+      ]
+    },
+    "postal_cd": "05867",
+    "country_cd": "US",
+    "city_name": "Sutton",
+    "state_abbrv": "VT",
+    "latitude": 44.664254,
+    "longitude": -72.041961
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.364669,
+        44.85339
+      ]
+    },
+    "postal_cd": "05868",
+    "country_cd": "US",
+    "city_name": "Troy",
+    "state_abbrv": "VT",
+    "latitude": 44.85339,
+    "longitude": -72.364669
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.938815,
+        44.675866
+      ]
+    },
+    "postal_cd": "05871",
+    "country_cd": "US",
+    "city_name": "West Burke",
+    "state_abbrv": "VT",
+    "latitude": 44.675866,
+    "longitude": -71.938815
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.045785,
+        44.863513
+      ]
+    },
+    "postal_cd": "05872",
+    "country_cd": "US",
+    "city_name": "West Charleston",
+    "state_abbrv": "VT",
+    "latitude": 44.863513,
+    "longitude": -72.045785
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.204239,
+        44.416422
+      ]
+    },
+    "postal_cd": "05873",
+    "country_cd": "US",
+    "city_name": "West Danville",
+    "state_abbrv": "VT",
+    "latitude": 44.416422,
+    "longitude": -72.204239
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.452388,
+        44.880767
+      ]
+    },
+    "postal_cd": "05874",
+    "country_cd": "US",
+    "city_name": "Westfield",
+    "state_abbrv": "VT",
+    "latitude": 44.880767,
+    "longitude": -72.452388
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -72.271828,
+        44.704582
+      ]
+    },
+    "postal_cd": "05875",
+    "country_cd": "US",
+    "city_name": "West Glover",
+    "state_abbrv": "VT",
+    "latitude": 44.704582,
+    "longitude": -72.271828
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.68273,
+        44.943684
+      ]
+    },
+    "postal_cd": "05901",
+    "country_cd": "US",
+    "city_name": "Averill",
+    "state_abbrv": "VT",
+    "latitude": 44.943684,
+    "longitude": -71.68273
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.510151,
+        45.004698
+      ]
+    },
+    "postal_cd": "05902",
+    "country_cd": "US",
+    "city_name": "Beecher Falls",
+    "state_abbrv": "VT",
+    "latitude": 45.004698,
+    "longitude": -71.510151
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.597474,
+        44.959995
+      ]
+    },
+    "postal_cd": "05903",
+    "country_cd": "US",
+    "city_name": "Canaan",
+    "state_abbrv": "VT",
+    "latitude": 44.959995,
+    "longitude": -71.597474
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.787784,
+        44.412812
+      ]
+    },
+    "postal_cd": "05904",
+    "country_cd": "US",
+    "city_name": "Gilman",
+    "state_abbrv": "VT",
+    "latitude": 44.412812,
+    "longitude": -71.787784
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.618654,
+        44.719137
+      ]
+    },
+    "postal_cd": "05905",
+    "country_cd": "US",
+    "city_name": "Guildhall",
+    "state_abbrv": "VT",
+    "latitude": 44.719137,
+    "longitude": -71.618654
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.70119,
+        44.470037
+      ]
+    },
+    "postal_cd": "05906",
+    "country_cd": "US",
+    "city_name": "Lunenburg",
+    "state_abbrv": "VT",
+    "latitude": 44.470037,
+    "longitude": -71.70119
+  },
+  {
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        -71.811435,
+        44.932076
+      ]
+    },
+    "postal_cd": "05907",
+    "country_cd": "US",
+    "city_name": "Norton",
+    "state_abbrv": "VT",
+    "latitude": 44.932076,
+    "longitude": -71.811435
+  }
+]
