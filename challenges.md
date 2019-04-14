@@ -2,8 +2,6 @@
 
 Hackathon with CosmosDB
 
-Alpha version 1
-
 ---
 
 # The Challenges

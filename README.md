@@ -2,8 +2,6 @@
 
 Hackathon with CosmosDB
 
-Alpha version 1
-
 ---
 
 ![azure-cosmos-db](img/azure-cosmos-db.png)
@@ -30,7 +28,8 @@ Alpha version 1
 
 ### Challenge-Specific
 
-- For Challenge 2, MongoDB installed locally
+- For Challenge 2, MongoDB installed locally.  This is required for Challenge 2 only.
+- For Challenge 9, Cassandra installed locally.  This is optional.
 
 ### Suggested Libraries
 
