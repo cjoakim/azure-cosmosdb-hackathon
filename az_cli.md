@@ -7,8 +7,9 @@ Use the Azure CLI (az) with either Bash or PowerShell for this challenge
 ## Processing
 
 - Install the Azure CLI
-- Lookup at the Azure CLI documentation for CosmosDB:
   - https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
+- Lookup at the Azure CLI documentation for CosmosDB:
+  - https://docs.microsoft.com/en-us/cli/azure/cosmosdb?view=azure-cli-latest
 - Create a Bash or PowerShell script to, per command-line arguments:
   - Create a CosmosDB/SQL Account, with tags
   - Create a Database within the Account
@@ -25,3 +26,4 @@ Use the Azure CLI (az) with either Bash or PowerShell for this challenge
 ## Links
 
 - https://docs.microsoft.com/en-us/cli/azure/install-azure-cli
+- https://docs.microsoft.com/en-us/cli/azure/cosmosdb?view=azure-cli-latest

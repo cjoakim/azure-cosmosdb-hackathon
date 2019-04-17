@@ -121,7 +121,7 @@ in this GitHub repository.
 
 ## Challenge 12 - Provision and modify CosmosDB with the Azure CLI (az)
 
-- [bash](solutions/challenge12/bash/notes.md)
+- [bash](solutions/challenge12/bash/provision_sql_db.sh)
 
 ---
 
