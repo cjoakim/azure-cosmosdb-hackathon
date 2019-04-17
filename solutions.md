@@ -119,6 +119,10 @@ in this GitHub repository.
 - [Node.js](solutions/challenge11/node/notes.md)
 - [Python](solutions/challenge11/python/notes.md)
 
+## Challenge 12 - Provision and modify CosmosDB with the Azure CLI (az)
+
+- [bash](solutions/challenge12/bash/notes.md)
+
 ---
 
 [Hackathon Challenges](challenges.md)
