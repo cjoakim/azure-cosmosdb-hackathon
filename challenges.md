@@ -18,6 +18,7 @@ Hackathon with CosmosDB
 - [Challenge 10 - Use the CosmosDB REST API](rest.md)
 - [Challenge 11 - Integrate Azure Search with CosmosDB](search.md)
 - [Challenge 12 - Provision and modify CosmosDB with the Azure CLI (az)](az_cli.md)
+- [Challenge 13 - AutoScale (up / down) based on monitoring] coming soon
 
 (1) Recommended that you skip this challenge if you don't have MongoDB installed on your workstation
 
