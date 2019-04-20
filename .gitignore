@@ -2,6 +2,7 @@
 
 **/.intellij.
 **/.vscode/
+**/.idea/
 
 **/bin/*
 **/include/*
@@ -10,8 +11,13 @@
 **/man/*
 **/node_modules/*
 **/obj/*
+**/target/
 **/tmp/*
 **/Debug/*
+
+**/*.iml
+
+solutions/challenge1/challenge1/
 
 solutions/challenge1/dotnetcore/cosmosdb1/bin/*
 solutions/challenge1/dotnetcore/cosmosdb1/obj/*
