@@ -7,6 +7,6 @@ date > src/main/resources/build_date.txt
 
 mvn clean compile package
 
-jar tvf target/azure-java-1.0-SNAPSHOT.jar > tmp/jar-contents.txt
+jar tvf target/hack-challenges-1.0.jar > tmp/jar-contents.txt
 
 echo 'done'

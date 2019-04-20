@@ -11,23 +11,23 @@
 
     <properties>
         <!-- Azure/Microsoft library versions -->
-        <azure.version>1.17.0</azure.version>
+        <azure.version>1.21.0</azure.version>
         <azure.cosmosdb.version>2.4.4</azure.cosmosdb.version>
-        <azure.documentdb.version>2.0.0</azure.documentdb.version>
-        <azure.eventhubs.version>1.2.1</azure.eventhubs.version>
-        <azure.keyvault.version>1.1.2</azure.keyvault.version>
-        <azure.servicebus.version>1.2.8</azure.servicebus.version>
+        <azure.documentdb.version>2.2.3</azure.documentdb.version>
+        <azure.eventhubs.version>2.3.0</azure.eventhubs.version>
+        <azure.keyvault.version>1.2.1</azure.keyvault.version>
+        <azure.servicebus.version>1.2.13</azure.servicebus.version>
 
         <!-- 3rd party library versions -->
-        <activemq.version>5.15.7</activemq.version>
+        <activemq.version>5.15.9</activemq.version>
         <commons.csv.version>1.6</commons.csv.version>
-        <jackson.version>2.9.7</jackson.version>
+        <jackson.version>2.9.8</jackson.version>
         <jedis.version>2.9.0</jedis.version>
         <junit.version>4.12</junit.version>
-        <mongodb.driver.version>3.9.0</mongodb.driver.version>
-        <qpid.protonj.version>0.29.0</qpid.protonj.version>
-        <slf4j.simple.version>1.7.25</slf4j.simple.version>
-        <tika.version>1.19.1</tika.version>
+        <mongodb.driver.version>3.10.2</mongodb.driver.version>
+        <qpid.protonj.version>0.32.0</qpid.protonj.version>
+        <slf4j.simple.version>1.7.26</slf4j.simple.version>
+        <tika.version>1.20</tika.version>
 
         <!-- other project properties -->
         <maven.compiler.source>1.8</maven.compiler.source>
