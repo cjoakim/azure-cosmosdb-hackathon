@@ -1,0 +1,7 @@
+pip-tools
+
+arrow
+azure
+docopt
+requests
+simplejson

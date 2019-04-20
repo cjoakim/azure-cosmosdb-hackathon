@@ -1,16 +1,12 @@
 #!/bin/bash
 
 # Ad-hoc Java program execution with mvn.
-# Chris Joakim, Microsoft, 2018/11/07
+# Chris Joakim, Microsoft, 2019/04/20
 
-mvn clean compile
+mvn clean compile package
 
-class="com.chrisjoakim.azure.cosmosdb.CosmosDbUtil"
+class="com.microsoft.csu.cdbhack.Program"
 
-# mvn exec:java -Dexec.mainClass="com.chrisjoakim.azure.cosmosdb.CosmosDbUtil" -Dexec.args="deleteDoc dev airports ATL c190a1cf-a4e8-4449-a142-1220f9cd316d"
-# mvn exec:java -Dexec.mainClass="com.chrisjoakim.azure.cosmosdb.CosmosDbUtil" -Dexec.args="queryDocs dev airports 100"
-# mvn exec:java -Dexec.mainClass="com.chrisjoakim.azure.cosmosdb.CosmosDbUtil" -Dexec.args="loadOpenFlightsAirports dev airports"
-
-mvn exec:java -Dexec.mainClass="com.chrisjoakim.azure.cosmosdb.CosmosDbUtil" -Dexec.args="queryDocs dev airports sql/charlotte_nearby.sql"
+mvn exec:java -Dexec.mainClass="com.microsoft.csu.cdbhack.Program" -Dexec.args="challenge1"
 
 echo 'done'

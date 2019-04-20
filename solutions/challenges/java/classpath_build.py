@@ -5,14 +5,14 @@
 # $ python3 classpath.py classpath > classpath
 # $ python3 classpath.py jar_contents > jar_contents.sh
 #
-# Chris Joakim, Microsoft, 2018/10/23
+# Chris Joakim, Microsoft, 2019/04/20
 
 import sys
 
 classpath_txt = 'doc/classpath.txt'
-jar_file      = 'target/chrisjoakim-azure-java-1.0.jar'
+jar_file      = 'target//hack-challenges-1.0.jar'
 classes_dir   = 'target/classes'
-asof_date     = '2018/10/23'
+asof_date     = '2019/04/20'
 
 if __name__ == "__main__":
 
