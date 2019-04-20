@@ -13,7 +13,7 @@ public class Challenge3 extends Challenge  {
         super(args);
     }
 
-    public void execute() {
+    public void execute() throws Exception {
 
     }
 }

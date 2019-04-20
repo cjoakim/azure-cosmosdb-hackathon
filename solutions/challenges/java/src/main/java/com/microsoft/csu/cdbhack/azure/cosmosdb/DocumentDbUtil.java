@@ -32,14 +32,17 @@ public class DocumentDbUtil {
     private DocumentClient client = null;
 
 
-    public DocumentDbUtil() {
+    public DocumentDbUtil(String uri, String key) {
 
         try {
             this.client = new DocumentClient(
-                    serviceEndpoint(),
-                    Config.getCosmosSqlDbKey(),
-                    new ConnectionPolicy(),
-                    ConsistencyLevel.Session);
+                uri, key, new ConnectionPolicy(), ConsistencyLevel.Session);
+
+//            this.client = new DocumentClient(
+//                    serviceEndpoint(),
+//                    Config.getCosmosSqlDbKey(),
+//                    new ConnectionPolicy(),
+//                    ConsistencyLevel.Session);
         }
         catch (Exception e) {
             e.printStackTrace();
@@ -103,7 +106,7 @@ public class DocumentDbUtil {
 
         try {
             //main_queryAsDocuments();
-            main_queryAsJsonList();
+            //main_queryAsJsonList();
         }
         catch (Exception e) {
             e.printStackTrace();
@@ -113,66 +116,66 @@ public class DocumentDbUtil {
         }
     }
 
-    private static void main_queryAsDocuments() {
+//    private static void main_queryAsDocuments() {
+//
+//        try {
+//            String dbName = Config.getCosmosSqlDbName();
+//            String collName = Config.getCosmosSqlDbDefaultCollName();
+//            logger.warn(String.format("main_queryAsDocuments: %s  db: %s  coll: %s", Config.getCosmosSqlDbAcct(), dbName, collName));
+//
+//            DocumentDbUtil dao = new DocumentDbUtil();
+//
+//            String sql = "SELECT * FROM c WHERE c.id = '11787:current'";
+//            logger.warn(String.format("executing sql: %s", sql));
+//            FeedResponse<Document> queryResults = dao.queryAsDocuments(dbName, collName, sql);
+//
+//            for (Document doc : queryResults.getQueryIterable()) {
+//                // doc is an instance of com.microsoft.azure.documentdb.Document
+//                String json = doc.toJson();
+//                logger.warn("---");
+//                logger.warn(String.format("%s", json));
+//            }
+//            logger.warn("run complete");
+//        }
+//        catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        finally {
+//            System.exit(0);
+//        }
+//    }
 
-        try {
-            String dbName = Config.getCosmosSqlDbName();
-            String collName = Config.getCosmosSqlDbDefaultCollName();
-            logger.warn(String.format("main_queryAsDocuments: %s  db: %s  coll: %s", Config.getCosmosSqlDbAcct(), dbName, collName));
-
-            DocumentDbUtil dao = new DocumentDbUtil();
-
-            String sql = "SELECT * FROM c WHERE c.id = '11787:current'";
-            logger.warn(String.format("executing sql: %s", sql));
-            FeedResponse<Document> queryResults = dao.queryAsDocuments(dbName, collName, sql);
-
-            for (Document doc : queryResults.getQueryIterable()) {
-                // doc is an instance of com.microsoft.azure.documentdb.Document
-                String json = doc.toJson();
-                logger.warn("---");
-                logger.warn(String.format("%s", json));
-            }
-            logger.warn("run complete");
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
-        finally {
-            System.exit(0);
-        }
-    }
-
-    private static void main_queryAsJsonList() {
-
-        try {
-            String dbName = Config.getCosmosSqlDbName();
-            String collName = Config.getCosmosSqlDbDefaultCollName();
-            logger.warn(String.format("main_queryAsDocuments: %s  db: %s  coll: %s", Config.getCosmosSqlDbAcct(), dbName, collName));
-
-            DocumentDbUtil dao = new DocumentDbUtil();
-
-            String sql = "SELECT * FROM c WHERE c.id = '11787:current'";
-            logger.warn(String.format("executing sql: %s", sql));
-            ArrayList<String> queryResults = dao.queryAsJsonList(dbName, collName, sql);
-
-            for (int i = 0; i < queryResults.size(); i++) {
-                // doc is an instance of com.microsoft.azure.documentdb.Document
-                String json = queryResults.get(i);
-                logger.warn("---");
-                logger.warn(String.format("%s", json));
-
-                ObjectMapper mapper = new ObjectMapper();
-                mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
-                JsonNode jsonNodeRoot = mapper.readTree(json);
-            }
-            logger.warn("run complete");
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
-        finally {
-            System.exit(0);
-        }
-    }
+//    private static void main_queryAsJsonList() {
+//
+//        try {
+//            String dbName = Config.getCosmosSqlDbName();
+//            String collName = Config.getCosmosSqlDbDefaultCollName();
+//            logger.warn(String.format("main_queryAsDocuments: %s  db: %s  coll: %s", Config.getCosmosSqlDbAcct(), dbName, collName));
+//
+//            DocumentDbUtil dao = new DocumentDbUtil();
+//
+//            String sql = "SELECT * FROM c WHERE c.id = '11787:current'";
+//            logger.warn(String.format("executing sql: %s", sql));
+//            ArrayList<String> queryResults = dao.queryAsJsonList(dbName, collName, sql);
+//
+//            for (int i = 0; i < queryResults.size(); i++) {
+//                // doc is an instance of com.microsoft.azure.documentdb.Document
+//                String json = queryResults.get(i);
+//                logger.warn("---");
+//                logger.warn(String.format("%s", json));
+//
+//                ObjectMapper mapper = new ObjectMapper();
+//                mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
+//                JsonNode jsonNodeRoot = mapper.readTree(json);
+//            }
+//            logger.warn("run complete");
+//        }
+//        catch (Exception e) {
+//            e.printStackTrace();
+//        }
+//        finally {
+//            System.exit(0);
+//        }
+//    }
 
 }

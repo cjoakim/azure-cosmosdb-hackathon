@@ -28,7 +28,7 @@ public class Program {
 
     public static void main(String[] args) throws Exception {
 
-        if (args.length > 1) {
+        if (args.length > 0) {
             runFunction = args[0];
             System.out.println("runFunction:  " + runFunction);
         }
