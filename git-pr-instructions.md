@@ -5,6 +5,7 @@
 ```
 # Start from the latest version of the master branch:
 $ git checkout master
+$ git reset --hard
 $ git pull
 
 # Create a "Feature Branch" to do your work on:
@@ -16,6 +17,8 @@ $ git push -u origin user-feature-name
 ... make edits to your feature branch, commit and push them ...
 ... create a pull-request, merge it ...
 ... then delete the local branch with: git branch -d user-feature-name
+
+Or, execute **$ ./newbranch.sh user-feature-name** to do the above.
 
 # Other useful git commands:
 $ git branch
