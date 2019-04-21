@@ -1,0 +1,5 @@
+{
+  "query": "SELECT c.id, c.pk FROM c",
+  "parameters": [
+  ]
+}
