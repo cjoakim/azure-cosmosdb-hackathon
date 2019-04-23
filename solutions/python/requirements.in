@@ -1,0 +1,16 @@
+pip-tools
+
+urllib3>=1.24.2
+requests>=2.20.0
+cryptography>=2.3
+
+arrow
+azure
+cassandra-driver
+cql
+docopt
+Jinja2
+prettytable
+pydocumentdb
+pyopenssl
+simplejson
