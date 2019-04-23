@@ -6,6 +6,11 @@ cryptography>=2.3
 
 arrow
 azure
+cassandra-driver
+cql
 docopt
+Jinja2
+prettytable
 pydocumentdb
+pyopenssl
 simplejson

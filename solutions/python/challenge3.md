@@ -1,6 +1,8 @@
-# MongoDB to CosmosDB (m2c) Demonstration
+# azure-cosmosdb-hackathon
 
-This demonstration uses a dataset containing 1459 US Airports.
+## Challenge 3 with Python - Port a MongoDB database CosmosDB/SQL
+
+This solution uses a dataset containing 1459 US Airports.
 
 ---
 

@@ -6,8 +6,8 @@ Options:
     -h --help     Show this screen.
     --version     Show version.
 """
-# This class is invoked from the command-line and contains the main program logic.
 
+# Chris Joakim, Microsoft, 2019/04/23
 
 import json
 import os
