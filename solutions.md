@@ -2,7 +2,7 @@
 
 Hackathon with CosmosDB
 
-Alpha version 1
+Alpha version 2019/04/24
 
 ---
 
@@ -59,23 +59,23 @@ in this GitHub repository.
 
 ## Challenge 4 - Use the Change Feed with Azure Functions
 
-&nbsp;
+Not yet implemented
 
 ## Challenge 5 - Server-Side programming with Stored Procedures
 
-- [Node.js](solutions/challenge5/node/notes.md)
+- [Node.js](solutions/node/challenge5.md)
 
 ## Challenge 6 - Server-Side programming with UDFs
 
-&nbsp;
+Not yet implemented
 
 ## Challenge 7 - Server-Side programming with Triggers
 
-&nbsp;
+Not yet implemented
 
 ## Challenge 8 - Gremlin Graph Database
 
-&nbsp;
+Not yet implemented
 
 ## Challenge 9 - Cassandra
 
@@ -87,7 +87,7 @@ in this GitHub repository.
 
 ## Challenge 11 - Integrate Azure Search with CosmosDB
 
-&nbsp;
+Not yet implemented
 
 ## Challenge 12 - Provision and modify CosmosDB with the Azure CLI (az)
 
