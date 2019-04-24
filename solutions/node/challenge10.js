@@ -4,9 +4,9 @@
 // https://docs.microsoft.com/en-us/rest/api/cosmos-db/access-control-on-cosmosdb-resources
 //
 // Example command-line use:
-// $ node main.js get_document_by_pk_and_id hackathon airports3 LAX 4edc3477-fd20-4dff-975d-123a11adf192
+// $ node challenge10.js get_document_by_pk_and_id hackathon airports3 LAX 6b8f0729-60bf-4e75-8caf-70f4f905da06
 //
-// Chris Joakim, Microsoft, 2019/04/13
+// Chris Joakim, Microsoft, 2019/04/24
 
 const crypto  = require("crypto"); 
 const request = require('request');
