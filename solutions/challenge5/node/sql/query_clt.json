@@ -1,5 +1,0 @@
-{
-  "query": "SELECT * FROM c WHERE c.pk = 'CLT' and c.iata_code = 'CLT'",
-  "parameters": [
-  ]
-}

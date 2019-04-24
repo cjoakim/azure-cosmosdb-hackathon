@@ -79,4 +79,4 @@ files.
 
 ## Let's Go Code!
 
-[Hackathon Challenges](challenges/challenges_list.md)
+[Hackathon Challenges](challenges.md)

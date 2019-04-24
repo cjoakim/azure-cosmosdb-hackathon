@@ -2,8 +2,6 @@
 
 Hackathon with CosmosDB
 
-Alpha version 2019/04/24
-
 ---
 
 # Solution Implementation Notes
@@ -42,20 +40,24 @@ AZURE_COSMOSDB_SQLDB_URI=https://cjoakimcosmosdbsql.documents.azure.com:443/
 
 The following are implementations of one of many possible solutions.
 Not every challenge is currently implemented in each language.
+
 It's entirely fine if your working implementation varies from the solutions
 in this GitHub repository.
 
+**The solutions provided here are working examples, but are NOT intended
+to be optimal implementations for production use.**
+
 ## Challenge 1 - Port Relational and GPS Data to CosmosDB/SQL
 
-- [.Net Core](solutions/challenge1/dotnetcore/notes.md)
+- [.Net Core](challenge1/dotnetcore/notes.md)
 
 ## Challenge 2 - Port a MongoDB database CosmosDB/Mongo with CLI tools
 
-- [CLI](solutions/challenge2/cli/notes.md)
+- [CLI](challenge2/cli/notes.md)
 
 ## Challenge 3 - Port a MongoDB database CosmosDB/SQL
 
-- [Python](solutions/python/challenge3.md)
+- [Python](python/challenge3.md)
 
 ## Challenge 4 - Use the Change Feed with Azure Functions
 
@@ -63,7 +65,7 @@ Not yet implemented
 
 ## Challenge 5 - Server-Side programming with Stored Procedures
 
-- [Node.js](solutions/node/challenge5.md)
+- [Node.js](node/challenge5.md)
 
 ## Challenge 6 - Server-Side programming with UDFs
 
@@ -79,11 +81,11 @@ Not yet implemented
 
 ## Challenge 9 - Cassandra
 
-- [Python](solutions/python/challenge9.md)
+- [Python](python/challenge9.md)
 
 ## Challenge 10 - Use the CosmosDB REST API
 
-- [Node.js](solutions/challenge10/node/notes.md)
+- [Node.js](node/challenge10.md)
 
 ## Challenge 11 - Integrate Azure Search with CosmosDB
 
@@ -91,7 +93,7 @@ Not yet implemented
 
 ## Challenge 12 - Provision and modify CosmosDB with the Azure CLI (az)
 
-- [bash](solutions/challenge12/bash/provision_sql_db.sh)
+- [bash](az_cli/provision_sql_db.sh)
 
 ---
 
