@@ -30,7 +30,7 @@ conlevel=Eventual
 locations='eastus=0'
 dbtags='purpose=demonstration created_on=20190424 created_by=cjoakim'
 throughput1=10000
-throughput2=5000
+throughput2=1000
 
 if [ "$1" == "display_help" ]
 then
