@@ -47,15 +47,15 @@ in this GitHub repository.
 
 ## Challenge 1 - Port Relational and GPS Data to CosmosDB/SQL
 
-- [.Net Core](solutions/challenge1/dotnetcore/notes.md)
+- [.Net Core](challenge1/dotnetcore/notes.md)
 
 ## Challenge 2 - Port a MongoDB database CosmosDB/Mongo with CLI tools
 
-- [CLI](solutions/challenge2/cli/notes.md)
+- [CLI](challenge2/cli/notes.md)
 
 ## Challenge 3 - Port a MongoDB database CosmosDB/SQL
 
-- [Python](solutions/python/challenge3.md)
+- [Python](python/challenge3.md)
 
 ## Challenge 4 - Use the Change Feed with Azure Functions
 
@@ -63,7 +63,7 @@ Not yet implemented
 
 ## Challenge 5 - Server-Side programming with Stored Procedures
 
-- [Node.js](solutions/node/challenge5.md)
+- [Node.js](node/challenge5.md)
 
 ## Challenge 6 - Server-Side programming with UDFs
 
@@ -79,11 +79,11 @@ Not yet implemented
 
 ## Challenge 9 - Cassandra
 
-- [Python](solutions/python/challenge9.md)
+- [Python](python/challenge9.md)
 
 ## Challenge 10 - Use the CosmosDB REST API
 
-- [Node.js](solutions/challenge10/node/notes.md)
+- [Node.js](challenge10/node/notes.md)
 
 ## Challenge 11 - Integrate Azure Search with CosmosDB
 
@@ -91,7 +91,7 @@ Not yet implemented
 
 ## Challenge 12 - Provision and modify CosmosDB with the Azure CLI (az)
 
-- [bash](solutions/challenge12/bash/provision_sql_db.sh)
+- [bash](challenge12/bash/provision_sql_db.sh)
 
 ---
 
