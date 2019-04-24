@@ -21,10 +21,10 @@ A CosmosDB Hackathon
 
 - Bring your favorite workstation: Windows, macOS, or Linux
 - Bring your favorite langage(s): .Net Core, Java, Node.js, Python3, etc
-- Bring your favorite IDE: [Visual Studio Code](https://code.visualstudio.com) is suggested  
-- Install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) 
+- Bring your favorite IDE: [Visual Studio Code](https://code.visualstudio.com) is suggested 
 - Bring your Azure Subscription that you can add resources to
-- Git source control system
+- Install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) 
+- Use the [Git](https://git-scm.com/downloads) source control system 
 
 ### Challenge-Specific
 
@@ -42,22 +42,23 @@ A CosmosDB Hackathon
 
 #### Java
 
+Apache Maven 3.6.x and Java version 1.8.x are used in this repository.
+
+See the **Maven** dependencies in file **solutions/java/pom.xml**
+
 ### Node.js
 
-"dependencies": {
-    "azure": "^2.3.1-preview",
-    "documentdb": "^1.14.5",
-    "sleep": "^6.0.0",
-    "uuid": "^3.3.2"
-}
+Node v8.11.x is used in this repository.
+
+See the **NPM** dependencies in file **solutions/node/package.json**
 
 ### Python
 
-requirements.in:
+Python 3.7.x is used in this repository.
 
-```
-pydocumentdb 
-```
+See the **PyPI** dependencies in file **solutions/python/requirements.in**
+
+File **venv.sh** is used to create a Python **virtual environment** per the requirements.in file.
 
 ---
 

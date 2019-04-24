@@ -5,10 +5,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.microsoft.azure.documentdb.DocumentClient;
-import com.microsoft.csu.cdbhack.utils.CommandLineArgs;
-
-import com.microsoft.csu.cdbhack.Config;
 import com.microsoft.csu.cdbhack.azure.cosmosdb.DocumentDbUtil;
 
 import com.microsoft.csu.cdbhack.utils.JsonUtil;
@@ -19,7 +15,7 @@ import org.slf4j.LoggerFactory;
  * Implementation of Challenge #1.
  *
  * @author Chris Joakim, Microsoft
- * @date   2019/04/20
+ * @date   2019/04/24
  */
 public class Challenge1 extends Challenge  {
 
@@ -28,12 +24,17 @@ public class Challenge1 extends Challenge  {
     private static String[] selectedCountries = {"United States", "United Kingdom", "Japan"};
 
     // Instance variables:
-    ArrayList<HashMap> filteredCsvRows = new ArrayList<HashMap>();
+    private ArrayList<HashMap> filteredCsvRows = new ArrayList<HashMap>();
+    private DocumentDbUtil dbUtil = null;
 
 
     public Challenge1(String[] args) {
 
         super(args);
+
+        String uri = Config.getCosmosSqlDbUri();
+        String key = Config.getCosmosSqlDbKey();
+        this.dbUtil = new DocumentDbUtil(uri, key);
     }
 
     public void execute() throws Exception {
@@ -42,6 +43,9 @@ public class Challenge1 extends Challenge  {
             readFilterCsvRows();
             addGeoJson();
             insertCosmosDbDocuments();
+            countDocuments();
+            queryAirport("CLT");
+            geoQuery(35.499235f, -80.848469f, 40000);
         }
         catch (Exception e) {
             e.printStackTrace();
@@ -62,9 +66,12 @@ public class Challenge1 extends Challenge  {
             String country = (String) row.get("Country");
             if (isInSelectedCountry(country)) {
                 try {
-                    row.put("pk", row.get("IataCode"));
-                    this.filteredCsvRows.add((HashMap) row);
-                    //logger.warn(jsonUtil.pretty(row));
+                    String iata = ((String) row.get("IataCode")).trim();
+                    if (iata.length() == 3) {
+                        row.put("pk", iata);
+                        this.filteredCsvRows.add((HashMap) row);
+                        //logger.warn(jsonUtil.pretty(row));
+                    }
                 }
                 catch (Exception e) {
                     e.printStackTrace();
@@ -119,15 +126,11 @@ public class Challenge1 extends Challenge  {
 
         JsonUtil jsonUtil = new JsonUtil();
 
-        String uri = Config.getCosmosSqlDbUri();
-        String key = Config.getCosmosSqlDbKey();
-        DocumentDbUtil dbUtil = new DocumentDbUtil(uri, key);
-
         for (int i = 0; i < this.filteredCsvRows.size(); i++) {
             Map row = this.filteredCsvRows.get(i);
             try {
                 if (i < 9999) {
-                    dbUtil.upsertDocument("hackathon", "airports", row);
+                    this.dbUtil.upsertDocument("hackathon", "airports", row);
                 }
                 logger.warn(jsonUtil.pretty(row));
             }
@@ -135,5 +138,41 @@ public class Challenge1 extends Challenge  {
                 e.printStackTrace();
             }
         }
+    }
+
+    private void countDocuments() throws Exception {
+
+        String sql = "SELECT VALUE COUNT(1) FROM c";
+        logger.warn("countDocuments, sql: " + sql);
+
+        ArrayList<String> results = this.dbUtil.queryAsJsonList("hackathon", "airports", sql);
+        for (int i = 0; i < results.size(); i++) {
+            logger.warn(results.get(i));
+        }
+        logger.warn("results count: " + results.size());
+    }
+
+    private void queryAirport(String iataCode) throws Exception {
+
+        String sql = "SELECT * from c where c.pk = '" + iataCode + "'";
+        logger.warn("queryAirport, sql: " + sql);
+
+        ArrayList<String> results = this.dbUtil.queryAsJsonList("hackathon", "airports", sql);
+        for (int i = 0; i < results.size(); i++) {
+            logger.warn(results.get(i));
+        }
+        logger.warn("results count: " + results.size());
+    }
+
+    private void geoQuery(float lat, float lng, int meters) {
+
+        String sql = "SELECT * from c WHERE ST_DISTANCE(c.location, {'type': 'Point', 'coordinates':[" + lng + "," + lat + "]}) < " + meters;
+        logger.warn("geoQuery, sql: " + sql);
+
+        ArrayList<String> results = this.dbUtil.queryAsJsonList("hackathon", "airports", sql);
+        for (int i = 0; i < results.size(); i++) {
+            logger.warn(results.get(i));
+        }
+        logger.warn("results count: " + results.size());
     }
 }

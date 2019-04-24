@@ -20,7 +20,7 @@ import java.util.ArrayList;
  * See https://github.com/Azure/azure-documentdb-java/blob/master/documentdb-examples/src/test/java/com/microsoft/azure/documentdb/examples/DocumentQuerySamples.java
  *
  * @author Chris Joakim, Microsoft
- * @date   2019/04/20
+ * @date   2019/04/24
  */
 
 public class DocumentDbUtil {
@@ -37,12 +37,6 @@ public class DocumentDbUtil {
         try {
             this.client = new DocumentClient(
                 uri, key, new ConnectionPolicy(), ConsistencyLevel.Session);
-
-//            this.client = new DocumentClient(
-//                    serviceEndpoint(),
-//                    Config.getCosmosSqlDbKey(),
-//                    new ConnectionPolicy(),
-//                    ConsistencyLevel.Session);
         }
         catch (Exception e) {
             e.printStackTrace();

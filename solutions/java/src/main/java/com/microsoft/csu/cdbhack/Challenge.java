@@ -21,7 +21,7 @@ import org.slf4j.LoggerFactory;
  * Abstract superclass of the several Challenge classes.
  *
  * @author Chris Joakim, Microsoft
- * @date   2019/04/20
+ * @date   2019/04/24
  */
 public abstract class Challenge {
 
@@ -34,24 +34,11 @@ public abstract class Challenge {
     // Instance variables:
     protected String[] args = null;
     protected CommandLineArgs clArgs = new CommandLineArgs(args);
-    protected DocumentClient  client = null;
 
     public Challenge(String[] args) {
 
         super();
         this.args = args;
-    }
-
-    protected DocumentClient getDocumentDbClient() {
-
-        if (client == null) {  // lazy-initialize the client
-            String host = System.getenv("AZURE_COSMOSDB_SQLDB_URI");
-            String key  = System.getenv("AZURE_COSMOSDB_SQLDB_KEY");
-            System.out.println("getDocumentDbClient; host: " + host);
-            System.out.println("getDocumentDbClient; key:  " + key);
-            client = new DocumentClient(host, key, null, null);
-        }
-        return client;
     }
 
     protected List<Map> readCsvFile(String filename, boolean hasHeader, char delim) throws Exception {
