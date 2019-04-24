@@ -2,7 +2,7 @@
 
     <description>
         Ant script to create a zip file backup of this project.
-        Chris Joakim, Microsoft, 2019/04/13
+        Chris Joakim, Microsoft, 2019/04/24
         ant -f backup.xml
     </description>
 
@@ -54,7 +54,12 @@
 
         <zip zipfile="${_zipFilename}"
              basedir="${_projectDir}"
-             excludes=".idea/, **/.git, **/bin/, **/obj/, **/*.nupkg, **/*.jar, **/*.pyc, **/log/, **/tmp/, **/txt_merged.txt" />
+             excludes="**/.idea/, **/.vscode/, **/.git,
+             **/bin/, **/obj/, **/*.nupkg, 
+             **/node_modules/, 
+             **/*.jar, **/java/target/, **/*.class, **/.idea/,
+             **/*.pyc, **/python/lib/, **/site-packages/,
+             **/log/, **/tmp/, **/txt_merged.txt" />
 
         <echo message="file created: ${_zipFilename}" />
         <echo message="done." />
