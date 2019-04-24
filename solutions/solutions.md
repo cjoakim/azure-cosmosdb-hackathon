@@ -50,6 +50,7 @@ to be optimal implementations for production use.**
 ## Challenge 1 - Port Relational and GPS Data to CosmosDB/SQL
 
 - [.Net Core](challenge1/dotnetcore/notes.md)
+- [Java](java/challenge1.md)
 
 ## Challenge 2 - Port a MongoDB database CosmosDB/Mongo with CLI tools
 

@@ -17,7 +17,8 @@ In Azure Portal, create a CosmosDB with SQL API Account.
 
 Then create a **hackathon** database within it.
 
-Then create collection **airports3** within the hackathon database.
+Then create collection **airports3** within the hackathon database
+with a partition key named **pk**
 
 ### Python
 

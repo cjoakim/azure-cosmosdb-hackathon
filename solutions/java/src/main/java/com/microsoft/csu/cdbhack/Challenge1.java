@@ -126,7 +126,7 @@ public class Challenge1 extends Challenge  {
         for (int i = 0; i < this.filteredCsvRows.size(); i++) {
             Map row = this.filteredCsvRows.get(i);
             try {
-                if (i < 3) {
+                if (i < 9999) {
                     dbUtil.upsertDocument("hackathon", "airports", row);
                 }
                 logger.warn(jsonUtil.pretty(row));
