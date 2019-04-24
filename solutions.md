@@ -79,7 +79,7 @@ in this GitHub repository.
 
 ## Challenge 9 - Cassandra
 
-- [Python](solutions/python/challenge9.py)
+- [Python](solutions/python/challenge9.md)
 
 ## Challenge 10 - Use the CosmosDB REST API
 
