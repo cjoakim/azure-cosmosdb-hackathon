@@ -1,6 +1,31 @@
 # azure-cosmosdb-hackathon
 
-## Challenge 10 with Node.js
+## Challenge 10 Solution with Node.js - Use the CosmosDB REST API
+
+The solution code is in file **solutions/node/challenge10.js** in this repository.
+
+## Authorization
+
+Access to resources in the SQL API is governed by a **master key token** 
+or a resource token.  To access a resource, the selected token is included 
+in the REST authorization header, as part of the authorization string.
+
+A HMAC key is generated for each HTTP request with the REST API.
+
+### Authorization Header
+
+Format:
+```
+type={typeoftoken}&ver={tokenversion}&sig={hashsignature}
+
+{typeoftoken} denotes the type of token: master or resource.
+{tokenversion} denotes the version of the token, currently 1.0.
+{hashsignature} denotes the hashed token signature.
+```
+Example:
+type=master&ver=1.0&sig=5mDuQBYA0kb70WDJoTUzSBMTG3owkC0/cEN4fqa18/s=
+
+## Node.js
 
 ```
 npm install
@@ -118,5 +143,8 @@ response body:
 
 ## Notes
 
-This solution uses the **'request' npm library** to execute the REST/HTTP call.
-See https://www.npmjs.com/package/request
+This solution uses the **'request' npm library** to execute the REST/HTTP calls; 
+see https://www.npmjs.com/package/request
+
+This solution also uses the **'crypto' standard library** to create the HMAC;
+see **crypto.createHmac** 
