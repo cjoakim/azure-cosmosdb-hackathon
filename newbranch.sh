@@ -2,9 +2,10 @@
 
 # Bash shell script to create a new git feature branch.
 # Use: 
-# $ ./newbranch.sh <user-feature-name>
+# $ ./newbranch.sh <user-initials-feature-name>
+# $ ./newbranch.sh cj-refactor-node-solution-dirs
 #
-# Chris Joakim, Microsoft, 2019/04/20
+# Chris Joakim, Microsoft, 2019/04/24
 
 while true; do
     read -p "Create feature branch "$1"? " yn
@@ -20,9 +21,10 @@ while true; do
             git checkout $1;
             git branch;
             git push -u origin $1;
+            git branch
             echo '';
             echo 'Next:';
-            echo '... make edits to your feature branch, commit and push them ...';
+            echo '... make edits to your new feature branch, commit and push them ...';
             echo '... create a pull-request, merge it ...';
             echo '... then delete the local branch with: git branch -d user-feature-name';
             echo '';
