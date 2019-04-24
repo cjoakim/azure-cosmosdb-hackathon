@@ -1,6 +1,6 @@
 # This class performs CRUD operations vs CosmosDB with SQL/DocumentDB API.
 # See https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-sql-query
-# Chris Joakim, Microsoft, 2019/04/13
+# Chris Joakim, Microsoft, 2019/04/24
 
 import os
 import sys

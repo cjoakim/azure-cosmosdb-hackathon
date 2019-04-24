@@ -2,12 +2,14 @@
 Usage:
     python challenge3.py load_azure_sql_collection <dbname> <collname> <infile>
     python challenge3.py load_azure_sql_collection hackathon airports3 data/mongoexport_airports.json
+    python challenge3.py count_docs_in_collection hackathon airports3
+    python challenge3.py query_by_iata_code hackathon airports3 ATL
 Options:
     -h --help     Show this screen.
     --version     Show version.
 """
 
-# Chris Joakim, Microsoft, 2019/04/23
+# Chris Joakim, Microsoft, 2019/04/24
 
 import json
 import os
@@ -48,17 +50,24 @@ class Main(object):
                 infile   = sys.argv[4]
                 self.load_azure_sql_collection(dbname, collname, infile)
 
+            elif func == 'count_docs_in_collection':
+                dbname    = sys.argv[2]
+                collname  = sys.argv[3]
+                self.count_docs_in_collection(dbname, collname)
+
+            elif func == 'query_by_iata_code':
+                dbname    = sys.argv[2]
+                collname  = sys.argv[3]
+                iata_code = sys.argv[4]
+                self.query_by_iata_code(dbname, collname, iata_code)
+
             else:
                 self.print_options('invalid function')
         else:
             self.print_options('no function given on command-line')
 
     def load_azure_sql_collection(self, dbname, collname, infile):
-        host   = os.getenv('AZURE_COSMOSDB_SQLDB_URI')
-        key    = os.getenv('AZURE_COSMOSDB_SQLDB_KEY')
-        colllink = self.sql_collection_link(dbname, collname)
-        client = document_client.DocumentClient(host, {'masterKey': key})
-        client.default_headers['x-ms-documentdb-query-enablecrosspartition'] = True
+        util = cosmos.DocDbUtil(True)
 
         with open(infile, 'rt') as f:
             for idx, line in enumerate(f):
@@ -68,15 +77,30 @@ class Main(object):
                     doc['pk'] = doc['iata_code']
                     print(json.dumps(doc, sort_keys=True, indent=2))
                     try:
-                        db_doc = client.UpsertDocument(colllink, doc)
+                        db_doc = util.insert_document(dbname, collname, doc)
                         print(db_doc)
                         time.sleep(0.2)
                     except:
                         print("Unexpected error:{}".format(sys.exc_info()[0]))
                         raise
 
-    def sql_collection_link(self, dbname, collname):
-        return 'dbs/' + dbname + '/colls/' + collname;
+    def count_docs_in_collection(self, dbname, collname):
+        util = cosmos.DocDbUtil(True)
+        query_spec = dict()
+        query_spec['query'] = "SELECT VALUE COUNT(1) FROM c"
+        query_spec['parameters'] = [ ]
+        results = util.execute_query(dbname, collname, query_spec, enable_cross_partition=True)
+        for doc in results:
+            print(json.dumps(doc, sort_keys=False, indent=2))
+
+    def query_by_iata_code(self, dbname, collname, iata_code):
+        util = cosmos.DocDbUtil(False)
+        query_spec = dict()
+        query_spec['query'] = "SELECT * FROM c where c.pk = '{}'".format(iata_code)
+        query_spec['parameters'] = [ ]
+        results = util.execute_query(dbname, collname, query_spec, enable_cross_partition=False)
+        for doc in results:
+            print(json.dumps(doc, sort_keys=False, indent=2))
 
 
 if __name__ == "__main__":
