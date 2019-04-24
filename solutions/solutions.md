@@ -2,8 +2,6 @@
 
 Hackathon with CosmosDB
 
-Alpha version 2019/04/24
-
 ---
 
 # Solution Implementation Notes
@@ -42,8 +40,12 @@ AZURE_COSMOSDB_SQLDB_URI=https://cjoakimcosmosdbsql.documents.azure.com:443/
 
 The following are implementations of one of many possible solutions.
 Not every challenge is currently implemented in each language.
+
 It's entirely fine if your working implementation varies from the solutions
 in this GitHub repository.
+
+**The solutions provided here are working examples, but are NOT intended
+to be optimal implementations for production use.**
 
 ## Challenge 1 - Port Relational and GPS Data to CosmosDB/SQL
 
@@ -83,7 +85,7 @@ Not yet implemented
 
 ## Challenge 10 - Use the CosmosDB REST API
 
-- [Node.js](challenge10/node/notes.md)
+- [Node.js](node/challenge10.md)
 
 ## Challenge 11 - Integrate Azure Search with CosmosDB
 
@@ -91,7 +93,7 @@ Not yet implemented
 
 ## Challenge 12 - Provision and modify CosmosDB with the Azure CLI (az)
 
-- [bash](challenge12/bash/provision_sql_db.sh)
+- [bash](az_cli/provision_sql_db.sh)
 
 ---
 
