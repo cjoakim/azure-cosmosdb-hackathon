@@ -26,4 +26,4 @@ Hackathon with CosmosDB
 
 # Solutions
 
-[Solutions](solutions.md)
+[Solutions](../solutions.md)
