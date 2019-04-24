@@ -1,6 +1,6 @@
 # azure-cosmosdb-hackathon
 
-Hackathon with CosmosDB
+A CosmosDB Hackathon
 
 ---
 

@@ -95,6 +95,10 @@ Not yet implemented
 
 - [bash](az_cli/provision_sql_db.sh)
 
+## Challenge 13 - AutoScale Up and Down based on Monitoring
+
+Not yet implemented
+
 ---
 
 [Hackathon Challenges](challenges.md)
