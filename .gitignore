@@ -22,6 +22,11 @@ solutions/challenge1/challenge1/
 solutions/challenge1/dotnetcore/cosmosdb1/bin/*
 solutions/challenge1/dotnetcore/cosmosdb1/obj/*
 
+solutions/java/.classpath
+solutions/java/.factorypath
+solutions/java/.project
+solutions/java/.settings/
+
 **/__pycache__/
 **/*.py[cod]
 **/pyvenv.cfg
