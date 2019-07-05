@@ -4,7 +4,7 @@ A CosmosDB Hackathon
 
 ---
 
-![azure-cosmos-db](img/azure-cosmos-db.png)
+![azure-cosmos-db](img/azure-cosmosdb-2019.png)
 
 ---
 
