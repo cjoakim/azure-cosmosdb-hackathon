@@ -1,6 +1,6 @@
 # What is a NoSQL Database?
 
-![nosql-history](../img/nosql-history.png)
+![nosql-history](img/nosql-history.png)
 
 ## Definition
 
