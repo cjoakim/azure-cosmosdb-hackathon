@@ -38,13 +38,13 @@ Apache Maven 3.6.x and Java version 1.8.x are used in this repository.
 
 See the **Maven** dependencies in file **solutions/java/pom.xml**
 
-### Node.js
+#### Node.js
 
 Node v8.11.x is used in this repository.
 
 See the **NPM** dependencies in file **solutions/node/package.json**
 
-### Python
+#### Python
 
 Python 3.7.x is used in this repository.
 

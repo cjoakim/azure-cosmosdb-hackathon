@@ -1,4 +1,4 @@
-# azure-cosmosdb-workshop - Agenda
+# azure-cosmosdb-hackathon - Agenda
 
 ### Overview
 
