@@ -4,14 +4,17 @@ A CosmosDB Hackathon
 
 ---
 
-## System Requirements
+## Azure Requirements
+
+- Use **your** subscription
+
+## Developer Workstation Requirements
 
 ### General
 
 - Bring your favorite workstation: Windows, macOS, or Linux
 - Bring your favorite langage(s): .Net Core, Java, Node.js, Python3, etc
 - Bring your favorite IDE: [Visual Studio Code](https://code.visualstudio.com) is suggested 
-- Bring your Azure Subscription that you can add resources to
 - Install the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli) 
 - Use the [Git](https://git-scm.com/downloads) source control system 
 
