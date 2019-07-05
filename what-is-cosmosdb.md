@@ -4,7 +4,7 @@
 
 - It's a **Family of NoSQL PaaS databases** built on a common foundation 
 
-- Six Database Types Currently Supported
+- **Six Database Types Currently Supported**
   - Microsoft:
     - SQL API
     - Table API
@@ -12,26 +12,27 @@
     - MongoDB
     - Cassandra
     - Gremlin / TinkerPop
-    - etcd
+    - etcd 
 
-- You provision a specific type of database for each CosmosDB instance
-  - One CosmosDB instance does not offer all five DB types!
+- **You provision a specific type of database for each CosmosDB instance**
+  - One CosmosDB instance does not offer all six DB types!
   - This is a similar model to Azure HDInsight (Spark, Hadoop, HBase, Storm, Kafka, etc.)
 
-- Programming APIs
-  - SQL and Table
+- **Programming APIs**
+  - Microsoft: SQL and Table
     - Microsoft publishes open-source libraries in DotNet, Java, Node.js, Python, Go, etc.
     - HTTP/REST also supported
-  - MongoDB, Cassandra, Gremlin
+  - Open-Source: MongoDB, Cassandra, Gremlin, etcd 
     - Bring your own language and SDK library (i.e. - MongoDB, Python, and pymongo)
+    - Distributed reliable key-value store, used by Kubernetes and AKS
 
-- Global Distribution
+- **Global Distribution**
   - Deployable to [all 54 Azure Regions](https://docs.microsoft.com/en-us/azure/cosmos-db/regional-presence)
   - Single-Region
   - Multi-Region with one write-region
   - Multi-Region with multiple write-regions
 
-- Elastic Scale
+- **Elastic Scale**
   - Request Units, or **RUs**
     - Simply Scale the Database by number of RUs 
     - [RU is a Unit of CPU, IOPS, and Memory](https://docs.microsoft.com/en-us/azure/cosmos-db/request-units)
@@ -41,7 +42,7 @@
   - Scale is achieved via **Partitions**
   - Can achieve millions of reads and writes per second
 
-- Consistency Levels
+- **Consistency Levels**
   - [Five Consistency Levels](https://docs.microsoft.com/en-us/azure/cosmos-db/consistency-levels)
     - Strong 
     - Bounded Staleness
@@ -52,18 +53,23 @@
   - Database-level default consistency level
   - But can be overridden on any individual DB operation
 
-- SLAs
+- **SLAs**
   - 99.99% single-region, 99.999% multi-region
   - See https://azure.microsoft.com/en-us/support/legal/sla/cosmos-db/v1_0/
 
-- Low Latency
+- **Low Latency**
   - 10ms reads, 15ms writes in 99th percentile
   - ![bell-curve](img/bell-curve.jpg)
+
+- **Coming Soon**
+  - Apache Spark
+  - Notebooks
 
 ## Links
 
 - https://docs.microsoft.com/en-us/azure/cosmos-db/introduction
 - https://docs.microsoft.com/en-us/azure/cosmos-db/
+- https://gotcosmos.com
 - http://tinkerpop.apache.org
 - http://cassandra.apache.org
 - https://www.mongodb.com
