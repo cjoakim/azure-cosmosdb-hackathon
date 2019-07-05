@@ -32,6 +32,9 @@
  
 ### Demonstration of the CosmosDB Graph DB (30 min)
 
+- [Bill-of-Materials](https://github.com/Azure-Samples/azure-cosmos-db-graph-npm-bom-sample)
+- [Six Degrees of Kevin Bacon](https://github.com/cjoakim/azure-cosmosdb-graph-node)
+
 ### Azure Search Integration (30 min)
 
 ### Hackathon (2 hours)
