@@ -1,6 +1,6 @@
 # What is CosmosDB?
 
-![azure-cosmos-db](img/azure-cosmosdb-2019.png)
+![azure-cosmos-db](../img/azure-cosmosdb-2019.png)
 
 - It's a **Family of NoSQL PaaS databases** built on a common foundation 
 
