@@ -1,8 +1,6 @@
 # azure-cosmosdb-hackathon
 
-A CosmosDB Hackathon
-
----
+A CosmosDB Overview and Hackathon
 
 ![azure-cosmos-db](img/azure-cosmosdb-2019.png)
 

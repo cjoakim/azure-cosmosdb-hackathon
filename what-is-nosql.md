@@ -5,7 +5,7 @@
 ## Definition
 
 - [Wikipedia](https://en.wikipedia.org/wiki/NoSQL)
-- Defined more by what it isn't than what exactly it is
+- Defined more by what it isn't than what it is
 - It's a **Family** of databases; there is no "NoSQL Standard"
 - **Non-Relational**
 - **No Referential Integrity**
@@ -18,7 +18,7 @@
 ## Reasons NoSQL Databases arose?
 
 - Horizontal scaling; designed for massive scale
-- Technology has evolved; disk is inexpensive now.  Y2K, CW50
+- Technology has evolved; disk is inexpensive now.  99/12/31, Y2K, CW50
 - Designed to solve different problems
 - Speed of Development - schemaless
 - JavaScript resurgence, end-to-end JSON.  Node.js, MEAN Stack, Isomorphic

@@ -1,10 +1,8 @@
 # azure-cosmosdb-workshop
 
-"CosmosDB-in-a-Day"
-
 ![azure-cosmos-db](img/azure-cosmosdb-2019.png)
 
---
+---
 
 # Agenda
 
