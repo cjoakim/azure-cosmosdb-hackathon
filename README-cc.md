@@ -8,8 +8,8 @@ A CosmosDB Overview and Hackathon
 
 ## Overview and Topics
 
-[Overview and Topics](agenda-cc.md)
+[Overview and Topics](content/agenda-cc.md)
 
 ## Hackathon
 
-[Hackathon Setup and Challenges](hackathon.md)
+[Hackathon Setup and Challenges](content/hackathon.md)
