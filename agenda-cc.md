@@ -1,10 +1,4 @@
-# azure-cosmosdb-workshop
-
-![azure-cosmos-db](img/azure-cosmosdb-2019.png)
-
----
-
-# Agenda
+# azure-cosmosdb-workshop - Agenda
 
 ### Overview
 
@@ -42,9 +36,8 @@
 
 ### Hackathon (2 hours)
 
-- in this subjects of their interest as I assist them individually or in groups
-- point them to my GitHub hackathon repo for ideas 
- 
+[Hackathon Challenges](challenges/challenges_list.md)
+
 ### Examples
 
 - [SQL API](sql-api-demo.md)
