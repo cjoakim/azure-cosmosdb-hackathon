@@ -1,10 +1,10 @@
 # What is CosmosDB?
 
-![azure-cosmos-db](img/azure-cosmos-db.png)
+![azure-cosmos-db](img/azure-cosmosdb-2019.png)
 
 - It's a **Family of NoSQL PaaS databases** built on a common foundation 
 
-- Five Database Types Currently Supported
+- Six Database Types Currently Supported
   - Microsoft:
     - SQL API
     - Table API
@@ -12,6 +12,7 @@
     - MongoDB
     - Cassandra
     - Gremlin / TinkerPop
+    - etcd
 
 - You provision a specific type of database for each CosmosDB instance
   - One CosmosDB instance does not offer all five DB types!

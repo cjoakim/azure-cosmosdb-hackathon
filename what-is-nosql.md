@@ -18,33 +18,22 @@
 ## Reasons NoSQL Databases arose?
 
 - Horizontal scaling; designed for massive scale
-- Technology has evolved; disk is inexpensive now
+- Technology has evolved; disk is inexpensive now.  Y2K, CW50
 - Designed to solve different problems
 - Speed of Development - schemaless
-- JavaScript resurgence, end-to-end JSON
+- JavaScript resurgence, end-to-end JSON.  Node.js, MEAN Stack, Isomorphic
 - [Object-Relational Impedance Mismatch](https://en.wikipedia.org/wiki/Object-relational_impedance_mismatch)
 
 ## Example NoSQL Databases
 
 ### Column
-- **Cassandra**
-- HBase
+- **Cassandra**, HBase
 
 ### Document
-- Apache CouchDB
-- Couchbase
-- **CosmosDB**
-- **MongoDB**
+- **CosmosDB**, **MongoDB**, Couchbase, Apache CouchDB
 
 ### Key-value
-- Dynamo
-- MemcacheDB
-- Redis
-- Riak
-- **CosmosDB Table API**
+- **CosmosDB Table API**, Redis, Riak, MemcacheD
 
 ### Graph
-- Apache Giraph 
-- Neo4J
-- **Apache TinkerPop (Gremlin)**
-
+- **Apache TinkerPop (Gremlin API)**, Neo4J, Apache Giraph
