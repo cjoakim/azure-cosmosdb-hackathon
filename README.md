@@ -10,8 +10,8 @@ A CosmosDB Hackathon
 
 ## NoSQL and CosmosDB
 
-- [What is NoSQL?](content/what-is-nosql.md)
-- [What is CosmosDB?](content/what-is-cosmosdb.md)
+- [What is NoSQL?](what-is-nosql.md)
+- [What is CosmosDB?](what-is-cosmosdb.md)
 
 ---
 
