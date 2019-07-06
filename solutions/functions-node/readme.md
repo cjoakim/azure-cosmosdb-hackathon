@@ -153,7 +153,7 @@ $ cat local.settings.json
   "IsEncrypted": false,
   "Values": {
     "FUNCTIONS_WORKER_RUNTIME": "node",
-    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=cjoakimfunctionsjs;AccountKey=rEZfZ+/GBOEKZEDYSiLkEw/mWzsyjU0eb9fFZrBDK/PGyh9yo0GPaaHCswNaV1qQtADC6c7787UQqRvFRRvSOg==",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=cjoakimfunctionsjs;AccountKey=...secret...",
     "FUNCTIONS_EXTENSION_VERSION": "~2",
     "WEBSITE_NODE_DEFAULT_VERSION": "10.14.1",
     "APPINSIGHTS_INSTRUMENTATIONKEY": "f59f1dbf-e9e9-465c-9a56-38d2df375117"
