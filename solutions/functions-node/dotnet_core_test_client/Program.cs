@@ -11,7 +11,6 @@ using Microsoft.Azure.EventHubs;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-
 // DotNet Core Text Client App for the Azure Functions
 // Chris Joakim, Microsoft, 2019/07/06
 
@@ -19,12 +18,16 @@ namespace dotnet_core_test_client
 {
     class Program
     {
+        static EventHubClient eventHubClient = null;
+        static string eventHubName    = Environment.GetEnvironmentVariable("AZURE_EVENTHUB_HUBNAME");
+        static string eventHubConnStr = Environment.GetEnvironmentVariable("AZURE_EVENTHUB_CONN_STRING");
+            
         static void Main(string[] args)
         {
             Console.WriteLine(args);
 
             if (args.Length < 1) {
-                Console.WriteLine("Invalid program args.");
+                Log("Invalid program args.");
                 DisplayCommandLineExamples();
             }
             else {
@@ -40,7 +43,7 @@ namespace dotnet_core_test_client
                         QueryCosmosDB(queryName);
                         break;
                     default:
-                        Console.WriteLine("Unknown CLI function: " + func);
+                        Log("Unknown CLI function: " + func);
                         DisplayCommandLineExamples();
                         break;
                 }
@@ -49,69 +52,82 @@ namespace dotnet_core_test_client
 
         private static void SendEventHubMessages(int messageCount)
         {
-            Console.WriteLine("SendEventHubMessages: " + messageCount);
-            ReadAirportData();
+            Log("SendEventHubMessages: " + messageCount);
+            var connectionStringBuilder = new EventHubsConnectionStringBuilder(eventHubConnStr)
+            {
+                EntityPath = eventHubName
+            };
+            eventHubClient = EventHubClient.CreateFromConnectionString(connectionStringBuilder.ToString());
 
+            JArray airports = ReadAirportData();
+            Random random = new Random();
 
-            // TODO
+            for (int i = 0; i < messageCount; i++) {
+                var index = random.Next(0, airports.Count);
+                JObject airport = (JObject) airports[index];
+                RandomFlight(airport);
+                Console.WriteLine(airport);
+                Task task = SendMessageAsync(airport);
+                task.Wait();
+            }
+        }
 
+        private static async Task SendMessageAsync(JObject airport)
+        {
+            try
+            {
+                var message = airport.ToString(Formatting.None);
+                Console.WriteLine($"Sending message: {message}");
+                await eventHubClient.SendAsync(new EventData(Encoding.UTF8.GetBytes(message)));
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine($"{DateTime.Now} > Exception: {exception.Message}");
+            }
         }
 
         private static void QueryCosmosDB(string queryName)
         {
-            Console.WriteLine("QueryCosmosDB: " + queryName);
+            Log("QueryCosmosDB: " + queryName);
             // TODO
         }
 
         private static void DisplayCommandLineExamples()
         {
-            Console.WriteLine("Command-Line Examples:");
-            Console.WriteLine("  dotnet run send_event_hub_messsagess 10");
-            Console.WriteLine("  dotnet run query_cosmosdb tbd");
-            Console.WriteLine("");
+            Log("Command-Line Examples:");
+            Log("  dotnet run send_event_hub_messsages 10");
+            Log("  dotnet run query_cosmosdb tbd");
+            Log("");
         }
 
-        private static void ReadAirportData() {
+        private static JArray ReadAirportData() {
+            JArray array = new JArray();
             try {
                 string infile = @"data/world_airports_50.json";
                 string jsonString = System.IO.File.ReadAllText(infile);
-                Console.WriteLine(jsonString);
+                //Log(jsonString);
                 JArray airports = JArray.Parse(jsonString);
-                Console.WriteLine(airports);
 
                 foreach (JObject airport in airports.Children<JObject>())
                 {
-                    // Console.WriteLine(airport.GetType());
-                    // airport is an instance of Newtonsoft.Json.Linq.JObject
-                    Console.WriteLine("---");
-                    string[] flight = RandomFlight();
-                    airport.Add("epoch", CurrentEpochTime());
-                    airport.Add("airline", flight[0]);
-                    airport.Add("flightNumber", flight[1]);
-                    airport.Add("eventName", flight[2]);
-                    Console.WriteLine(airport);
+                    array.Add(airport);
                 }
-
             }
             catch (Exception e) {
-                Console.WriteLine(e);
+                Console.WriteLine(e);  // System.Exception
             }
+            Log("" + array.Count + " airports read");
+            return array;
         }
 
-        private static long CurrentEpochTime() {
-            DateTime now = DateTime.Now;
-            DateTimeOffset dto = new DateTimeOffset(now);
-            return dto.ToUnixTimeSeconds();
-        }
-
-        private static string[] RandomFlight() {
+        private static void RandomFlight(JObject airport) {
             Random random = new Random();
             string airline = "AA";
-            string evt     = "Depart";
-            string number  = "" + random.Next(100, 5000);
+            string eventName = "Depart";
+            string flightNumber = "" + random.Next(100, 5000);
             int n1 = random.Next(0,5);
             int n2 = random.Next(0,2);
-            Console.WriteLine("" + n1 + "," + n2);
+            //Log("" + n1 + "," + n2);
 
             switch (n1)
             {
@@ -138,22 +154,34 @@ namespace dotnet_core_test_client
             switch (n2)
             {
                 case 0:
-                    evt = "Depart";
+                    eventName = "Depart";
                     break;
                 default:
-                    evt = "Arrive";
+                    eventName = "Arrive";
                     break;
             }
 
-            //return airline + " " + number + " " + evt;
-            return new [] { airline, number, evt };
+            if (airport["airline"] != null)  // as JToken itemToken) 
+            {
+                Log("already present");
+            }
+            else {
+                airport.Add("pk", "" + CurrentEpochTime());
+                airport.Add("epoch", CurrentEpochTime());
+                airport.Add("airline", airline);
+                airport.Add("flightNumber", flightNumber);
+                airport.Add("eventName", eventName);
+            }
         }
 
-        private static void RandomFlightLoop() {
-            for (int i = 0; i < 100; i++)
-            {
-                Console.WriteLine(RandomFlight());
-            }
+        private static long CurrentEpochTime() {
+            DateTime now = DateTime.Now;
+            DateTimeOffset dto = new DateTimeOffset(now);
+            return dto.ToUnixTimeSeconds();
+        }
+
+        private static void Log(string msg) {
+            Console.WriteLine(msg);
         }
     }
 }

@@ -13,7 +13,7 @@
       "type": "cosmosDB",
       "name": "outDoc",
       "databaseName": "dev",
-      "collectionName": "functions",
+      "collectionName": "events",
       "createIfNotExists": false,
       "connectionStringSetting": "cjoakimcosmosdbsql_DOCUMENTDB",
       "partitionKey": "/pk",
