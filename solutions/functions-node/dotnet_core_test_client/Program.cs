@@ -12,6 +12,8 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 // DotNet Core Text Client Console App for the Azure Functions
+// It is used to send messages to Azure Event Hubs, and query
+// the resulting documents in Azure CosmosDB.
 // Chris Joakim, Microsoft, 2019/07/06
 
 namespace dotnet_core_test_client
