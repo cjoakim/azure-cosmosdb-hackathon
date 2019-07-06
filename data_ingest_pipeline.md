@@ -1,4 +1,4 @@
-# azure-cosmosdb-hackathon - Data Ingestion Pipelines into CosmosDB
+# Data Ingestion Pipelines into CosmosDB
 
 ## PaaS Services
 
@@ -19,7 +19,7 @@
 
 - We'll focus on this one today; what we'll do:
   - See the EventHub and the Function App in Azure Portal
-  - Create Functions using the **Azure CLI and Functions Tooling**
+  - Create Functions using the **Azure CLI and Functions Tooling** (azure-functions-core-tools)
   - Write the Functions in **TypeScript**
   - Compile/Transpile them into **JavaScript (Node.js)**
   - **Test the Functions locally** on Developer Workstation (Windows, Mac, Linux)

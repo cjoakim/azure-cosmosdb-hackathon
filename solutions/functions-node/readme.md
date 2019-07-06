@@ -69,23 +69,9 @@ $ brew tap azure/functions
 $ brew install azure-functions-core-tools
 ```
 
-### Additional npm libraries:
-
-I personally use the JavaScript **grunt** tool in most projects; it isn't required for Azure Function apps.
-```
-$ npm install -g grunt
-$ npm install -g grunt-cli
-```
-
-### GitHub
-
-Create a Node.js repo 'azure-functions-cli-typescript', then:
-```
-git clone git@github.com:cjoakim/azure-functions-cli-typescript.git
-```
-
 ### Create Project with the CLI tools
 
+Create a project named hackathon
 ```
 $ func init hackathon
 Select a worker runtime:
