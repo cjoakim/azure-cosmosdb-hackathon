@@ -31,8 +31,6 @@ namespace dotnet_core_test_client
 
         static void Main(string[] args)
         {
-            Console.WriteLine(args);
-
             if (args.Length < 1) {
                 Log("Invalid program args.");
                 DisplayCommandLineExamples();
@@ -46,8 +44,7 @@ namespace dotnet_core_test_client
                         SendEventHubMessages(messageCount);
                         break;
                     case "query_cosmosdb":
-                        string queryName = args[1];
-                        QueryCosmosDB(queryName, args);
+                        QueryCosmosDB(args);
                         break;
                     default:
                         Log("Unknown CLI function: " + func);
@@ -179,9 +176,12 @@ namespace dotnet_core_test_client
             }
         }
 
-        private static void QueryCosmosDB(string queryName, string[] args)
+        // ===
+
+        private static void QueryCosmosDB(string[] args)
         {
-            Log("QueryCosmosDB: " + queryName + "" + cosmosDbName + "" + cosmosCollName);
+            string queryName = args[1];
+            Log("QueryCosmosDB: " + queryName + ", " + cosmosDbName + ", " + cosmosCollName);
             cosmosDbClient = new DocumentClient(new Uri(cosmosUri), cosmosKey);
 
             switch (queryName)
@@ -203,12 +203,11 @@ namespace dotnet_core_test_client
 
             FeedOptions queryOptions = new FeedOptions { MaxItemCount = -1, EnableCrossPartitionQuery = true};
             string sql = $"SELECT * FROM functions WHERE functions.pk = '{iataCode}'";
-            Log(sql);
+            Log("SQL: " + sql);
             IQueryable<Object> query = cosmosDbClient.CreateDocumentQuery<Object>(
                 UriFactory.CreateDocumentCollectionUri(cosmosDbName, cosmosCollName),
                 sql, queryOptions);
 
-            Console.WriteLine("Running direct SQL query...");
             foreach (Object obj in query)
             {
                 Console.WriteLine("{0}", obj);
