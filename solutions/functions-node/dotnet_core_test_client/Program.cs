@@ -11,17 +11,22 @@ using Microsoft.Azure.EventHubs;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-// DotNet Core Text Client App for the Azure Functions
+// DotNet Core Text Client Console App for the Azure Functions
 // Chris Joakim, Microsoft, 2019/07/06
 
 namespace dotnet_core_test_client
 {
     class Program
     {
-        static EventHubClient eventHubClient = null;
-        static string eventHubName    = Environment.GetEnvironmentVariable("AZURE_EVENTHUB_HUBNAME");
-        static string eventHubConnStr = Environment.GetEnvironmentVariable("AZURE_EVENTHUB_CONN_STRING");
-            
+        private static EventHubClient eventHubClient = null;
+        private static DocumentClient cosmosDbClient = null;
+        private static string eventHubName     = Environment.GetEnvironmentVariable("AZURE_EVENTHUB_HUBNAME");
+        private static string eventHubConnStr  = Environment.GetEnvironmentVariable("AZURE_EVENTHUB_CONN_STRING");
+        private static string cosmosUri        = Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_URI");
+        private static string cosmosKey        = Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_KEY");
+        private static string cosmosDbName     = "dev";    // Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_DBNAME");
+        private static string cosmosCollName   = "events"; // Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_COLLNAME");
+
         static void Main(string[] args)
         {
             Console.WriteLine(args);
@@ -40,7 +45,7 @@ namespace dotnet_core_test_client
                         break;
                     case "query_cosmosdb":
                         string queryName = args[1];
-                        QueryCosmosDB(queryName);
+                        QueryCosmosDB(queryName, args);
                         break;
                     default:
                         Log("Unknown CLI function: " + func);
@@ -48,6 +53,14 @@ namespace dotnet_core_test_client
                         break;
                 }
             }
+        }
+
+        private static void DisplayCommandLineExamples()
+        {
+            Log("Command-Line Examples:");
+            Log("  dotnet run send_event_hub_messsages 10");
+            Log("  dotnet run query_cosmosdb airport_events ATL");
+            Log("");
         }
 
         private static void SendEventHubMessages(int messageCount)
@@ -87,21 +100,8 @@ namespace dotnet_core_test_client
             }
         }
 
-        private static void QueryCosmosDB(string queryName)
+        private static JArray ReadAirportData()
         {
-            Log("QueryCosmosDB: " + queryName);
-            // TODO
-        }
-
-        private static void DisplayCommandLineExamples()
-        {
-            Log("Command-Line Examples:");
-            Log("  dotnet run send_event_hub_messsages 10");
-            Log("  dotnet run query_cosmosdb tbd");
-            Log("");
-        }
-
-        private static JArray ReadAirportData() {
             JArray array = new JArray();
             try {
                 string infile = @"data/world_airports_50.json";
@@ -121,7 +121,9 @@ namespace dotnet_core_test_client
             return array;
         }
 
-        private static void RandomFlight(JObject airport) {  // Newtonsoft.Json.Linq.JObject
+        private static void RandomFlight(JObject airport) 
+        {  
+            // airport is a Newtonsoft.Json.Linq.JObject
             Random random = new Random();
             string airline = "AA";
             string eventName = "Depart";
@@ -175,13 +177,51 @@ namespace dotnet_core_test_client
             }
         }
 
-        private static long CurrentEpochTime() {
+        private static void QueryCosmosDB(string queryName, string[] args)
+        {
+            Log("QueryCosmosDB: " + queryName + "" + cosmosDbName + "" + cosmosCollName);
+            cosmosDbClient = new DocumentClient(new Uri(cosmosUri), cosmosKey);
+
+            switch (queryName)
+            {
+                case "airport_events":
+                    string iataCode = args[2];
+                    QueryAirportEvents(iataCode);
+                    break;
+                default:
+                    Log("Unknown queryName: " + queryName);
+                    DisplayCommandLineExamples();
+                    break;
+            }
+        }
+
+        private static void QueryAirportEvents(string iataCode)
+        {
+            Log("QueryAirportEvents: " + iataCode);
+
+            FeedOptions queryOptions = new FeedOptions { MaxItemCount = -1, EnableCrossPartitionQuery = true};
+            string sql = $"SELECT * FROM functions WHERE functions.pk = '{iataCode}'";
+            Log(sql);
+            IQueryable<Object> query = cosmosDbClient.CreateDocumentQuery<Object>(
+                UriFactory.CreateDocumentCollectionUri(cosmosDbName, cosmosCollName),
+                sql, queryOptions);
+
+            Console.WriteLine("Running direct SQL query...");
+            foreach (Object obj in query)
+            {
+                Console.WriteLine("{0}", obj);
+            }
+        }
+
+        private static long CurrentEpochTime()
+        {
             DateTime now = DateTime.Now;
             DateTimeOffset dto = new DateTimeOffset(now);
             return dto.ToUnixTimeSeconds();
         }
 
-        private static void Log(string msg) {
+        private static void Log(string msg)
+        {
             Console.WriteLine(msg);
         }
     }
