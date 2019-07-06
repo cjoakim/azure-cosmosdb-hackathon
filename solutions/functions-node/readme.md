@@ -257,6 +257,30 @@ drwxr-xr-x  4 cjoakim  staff   128 Jul  6 06:43 ..
 done
 ```
 
+#### Configure the Azure Function in Azure Portal
+
+Add your **EventHub and CosmosDB connection configuration** in Function Platform Settings -> Configuration:
+```
+cjoakimeventhubs_RootManageSharedAccessKey_EVENTHUB = Endpoint=sb://cjoakimeventhubs.servicebus.windows.net/; ...secret...
+cjoakimcosmosdbsql_DOCUMENTDB = AccountEndpoint=https://cjoakimcosmosdbsql.documents.azure.com:443/;AccountKey=...secret...
+```
+
+Fetch your app settings again to get the new CosmosDB EVENTHUB and DOCUMENTDB settings:
+```
+$ func azure functionapp fetch-app-settings cjoakim-functions-js
+
+App Settings:
+Loading APPINSIGHTS_INSTRUMENTATIONKEY = *****
+Loading AzureWebJobsStorage = *****
+Loading cjoakimcosmosdbsql_DOCUMENTDB = *****                            <--
+Loading cjoakimeventhubs_RootManageSharedAccessKey_EVENTHUB = *****      <--
+Loading FUNCTIONS_EXTENSION_VERSION = *****
+Loading FUNCTIONS_WORKER_RUNTIME = *****
+Loading WEBSITE_NODE_DEFAULT_VERSION = *****
+
+Connection Strings::
+```
+
 #### Test the Function App Locally on your Workstation
 
 ```
