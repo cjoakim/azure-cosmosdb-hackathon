@@ -46,4 +46,6 @@ A CosmosDB Overview and Hackathon
 
 ## Hackathon
 
-[Hackathon Setup and Challenges](hackathon.md)
+[Hackathon Setup](hackathon_setup.md)
+
+[Hackathon Challenges](challenges/challenges_list.md)
