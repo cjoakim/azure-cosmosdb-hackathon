@@ -22,38 +22,38 @@ $ dotnet add package Microsoft.Azure.DocumentDB.Core
 ```
 $ dotnet build
 $ dotnet run send_event_hub_messsages 1
-Sending message: {"name":"Ninoy Aquino Intl","city":"Manila","country":"Philippines","iata_code":"MNL","latitude":"14.508647","longitude":"121.019581","altitude":"75","timezone_num":"8","timezone_code":"Asia/Manila","location":{"type":"Point","coordinates":[121.019581,14.508647]},"pk":"1562439498","epoch":1562439498,"airline":"UA","flightNumber":"4792","eventName":"Arrive"}
+Sending message: {"name":"Sydney Intl","city":"Sydney","country":"Australia","iata_code":"SYD","latitude":"-33.946111","longitude":"151.177222","altitude":"21","timezone_num":"10","timezone_code":"Australia/Sydney","location":{"type":"Point","coordinates":[151.177222,-33.946111]},"pk":"SYD","epoch":1562440407,"airline":"DL","flightNumber":"2413","eventName":"Depart"}
 ```
 
 Sample Event Document in CosmosDB:
 ```
 {
-    "name": "Ninoy Aquino Intl",
-    "city": "Manila",
-    "country": "Philippines",
-    "iata_code": "MNL",
-    "latitude": "14.508647",
-    "longitude": "121.019581",
-    "altitude": "75",
-    "timezone_num": "8",
-    "timezone_code": "Asia/Manila",
+    "name": "Sydney Intl",
+    "city": "Sydney",
+    "country": "Australia",
+    "iata_code": "SYD",
+    "latitude": "-33.946111",
+    "longitude": "151.177222",
+    "altitude": "21",
+    "timezone_num": "10",
+    "timezone_code": "Australia/Sydney",
     "location": {
         "type": "Point",
         "coordinates": [
-            121.019581,
-            14.508647
+            151.177222,
+            -33.946111
         ]
     },
-    "pk": "1562439498",
-    "epoch": 1562439498,
-    "airline": "UA",
-    "flightNumber": "4792",
-    "eventName": "Arrive",
-    "id": "3e350c39-f185-446d-ae2a-1cfc5474d2a7",
-    "_rid": "M2ZjAMK7mfMBAAAAAAAAAA==",
-    "_self": "dbs/M2ZjAA==/colls/M2ZjAMK7mfM=/docs/M2ZjAMK7mfMBAAAAAAAAAA==/",
-    "_etag": "\"1301da2c-0000-0100-0000-5d20ef4d0000\"",
+    "pk": "SYD",
+    "epoch": 1562440407,
+    "airline": "DL",
+    "flightNumber": "2413",
+    "eventName": "Depart",
+    "id": "047f35b4-7a09-4312-afe1-c44d171606ca",
+    "_rid": "M2ZjAMK7mfMEAAAAAAAAAA==",
+    "_self": "dbs/M2ZjAA==/colls/M2ZjAMK7mfM=/docs/M2ZjAMK7mfMEAAAAAAAAAA==/",
+    "_etag": "\"5501e8c3-0000-0100-0000-5d20f2d90000\"",
     "_attachments": "attachments/",
-    "_ts": 1562439502
+    "_ts": 1562440409
 }
 ```

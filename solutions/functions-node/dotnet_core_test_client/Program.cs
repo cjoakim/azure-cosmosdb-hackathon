@@ -76,7 +76,7 @@ namespace dotnet_core_test_client
         {
             try
             {
-                Log("airport Type: " + airport.GetType());  // Newtonsoft.Json.Linq.JObject
+                // Log("airport Type: " + airport.GetType());  // Newtonsoft.Json.Linq.JObject
                 var message = airport.ToString(Formatting.None);
                 Console.WriteLine($"Sending message: {message}");
                 await eventHubClient.SendAsync(new EventData(Encoding.UTF8.GetBytes(message)));
