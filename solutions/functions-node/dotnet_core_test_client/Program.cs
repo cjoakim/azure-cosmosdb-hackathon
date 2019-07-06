@@ -76,6 +76,7 @@ namespace dotnet_core_test_client
         {
             try
             {
+                Log("airport Type: " + airport.GetType());  // Newtonsoft.Json.Linq.JObject
                 var message = airport.ToString(Formatting.None);
                 Console.WriteLine($"Sending message: {message}");
                 await eventHubClient.SendAsync(new EventData(Encoding.UTF8.GetBytes(message)));
@@ -120,7 +121,7 @@ namespace dotnet_core_test_client
             return array;
         }
 
-        private static void RandomFlight(JObject airport) {
+        private static void RandomFlight(JObject airport) {  // Newtonsoft.Json.Linq.JObject
             Random random = new Random();
             string airline = "AA";
             string eventName = "Depart";
@@ -161,12 +162,12 @@ namespace dotnet_core_test_client
                     break;
             }
 
-            if (airport["airline"] != null)  // as JToken itemToken) 
+            if (airport["airline"] != null)
             {
                 Log("already present");
             }
             else {
-                airport.Add("pk", "" + CurrentEpochTime());
+                airport.Add("pk", "" + airport["iata_code"]);
                 airport.Add("epoch", CurrentEpochTime());
                 airport.Add("airline", airline);
                 airport.Add("flightNumber", flightNumber);
