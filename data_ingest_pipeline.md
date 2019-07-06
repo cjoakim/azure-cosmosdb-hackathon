@@ -1,21 +1,19 @@
 # Data Ingestion Pipelines into CosmosDB
 
-## PaaS Services
+## Azure PaaS Services
 
 - Azure Event Hubs
-- Azure Functions
+- Azure Functions - serverless, event-driven
 - Azure CosmosDB
-- Azure Stream Analytics
+- Azure Stream Analytics 
 
 ### Solution 1
 
 - Azure Functions (HttpTrigger) -> CosmosDB
-- Introduce Functions - serverless, event-driven
 
 ### Solution 2
 
 - Event Hubs -> Azure Functions -> CosmosDB
-- Introduce Event Hubs
 
 - We'll focus on this one today; what we'll do:
   - See the EventHub and the Function App in Azure Portal
@@ -43,3 +41,6 @@
 
 - There are many possible solutions; HDInsight Kafka, Spark, etc
 
+---
+
+![nosql-history](img/azure-cosmosdb-iot.png)
