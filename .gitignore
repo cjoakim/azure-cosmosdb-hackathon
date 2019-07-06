@@ -18,7 +18,8 @@
 
 **/*.iml
 
-solutions/challenge1/challenge1/
+solutions/functions-node/dotnet_core_test_client/bin/*
+solutions/functions-node/dotnet_core_test_client/obj/*
 
 solutions/challenge1/dotnetcore/cosmosdb1/bin/*
 solutions/challenge1/dotnetcore/cosmosdb1/obj/*
