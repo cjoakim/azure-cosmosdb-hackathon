@@ -281,6 +281,70 @@ Loading WEBSITE_NODE_DEFAULT_VERSION = *****
 Connection Strings::
 ```
 
+#### Configure the Azure Function - function.json files
+
+The HttpTrigger function; add the output bindings:
+```
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "outDoc",
+      "databaseName": "dev",
+      "collectionName": "function",
+      "createIfNotExists": false,
+      "connectionStringSetting": "cjoakimcosmosdbsql_DOCUMENTDB",
+      "partitionKey": "/pk",
+      "direction": "out"
+    }
+  ],
+  "scriptFile": "../dist/HttpTrigger/index.js"
+}
+```
+
+The EventHubTrigger function; add the input and output bindings:
+```
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "eventHubMessages",
+      "direction": "in",
+      "eventHubName": "dev",
+      "connection": "cjoakimeventhubs_RootManageSharedAccessKey_EVENTHUB",
+      "cardinality": "many",
+      "consumerGroup": "$Default"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "outDoc",
+      "databaseName": "dev",
+      "collectionName": "functions",
+      "createIfNotExists": false,
+      "connectionStringSetting": "cjoakimcosmosdbsql_DOCUMENTDB",
+      "partitionKey": "/pk",
+      "direction": "out"
+    }
+  ],
+  "scriptFile": "../dist/EventHubTrigger/index.js"
+}
+```
+
 #### Test the Function App Locally on your Workstation
 
 ```
@@ -323,114 +387,40 @@ Hello MollyMcKay
 ### Deploy to Azure
 
 ```
-$ func azure functionapp publish cjoakim-functions-js
+$ ./deploy.sh
 Getting site publishing info...
 Creating archive for current directory...
-Uploading 10.46 MB [##############################################################################]
+Uploading 13.28 MB [##############################################################################]
 Upload completed successfully.
 Deployment completed successfully.
 Syncing triggers...
 Functions in cjoakim-functions-js:
     HttpTrigger - [httpTrigger]
-        Invoke url: https://cjoakim-functions-js.azurewebsites.net/api/httptrigger?code=...secret...==
+        Invoke url: https://cjoakim-functions-js.azurewebsites.net/api/httptrigger?code=Dr15O1QXcBfHv4KgKQePdB4WUNdmb/hS6qU1PtINymVhiopDiSXnSw==
+
+    EventHubTrigger - [eventHubTrigger]
+
+done
 ```
 
-Invoke the deployed Function with curl:
-```
-$ curl "https://cjoakim-functions-js.azurewebsites.net/api/httptrigger?code=...secret...==&name=Miles"
-Hello Miles
-```
+Save the above secret HttpTrigger URL as environment variable **AZURE_FUNCTION_URL** on your workstation.
 
-Alternatively, see deploy.sh
-
-#### Iterate - edit, compile, deploy
-
+Then, invoke the deployed Function with curl:
 ```
-$ ./build.sh
-
-$ func azure functionapp publish cjoakim-functions-js
-Getting site publishing info...
-Creating archive for current directory...
-Uploading 10.46 MB [##############################################################################]
-Upload completed successfully.
-Deployment completed successfully.
-Syncing triggers...
-Functions in cjoakim-functions-js:
-    HttpTrigger - [httpTrigger]
-        Invoke url: https://cjoakim-functions-js.azurewebsites.net/api/httptrigger?code=...secret...==
-```
-
-### Add CosmosDB Integration
-
-For each HTTP request, log a document to CosmosDB.
-
-First, add an output binding of type **cosmosDB** to file **function.json**.  The CosmosDB 
-connection string value will be obtained from **environment variable** named **cjoakimcosmosdbsql_DOCUMENTDB**.
-```
-    {
-      "type": "cosmosDB",
-      "name": "outDoc",
-      "databaseName": "dev",
-      "collectionName": "function",
-      "createIfNotExists": false,
-      "connectionStringSetting": "cjoakimcosmosdbsql_DOCUMENTDB",
-      "partitionKey": "/pk",
-      "direction": "out"
-    }
-```
-
-Next, add an entry to your **local.settings.json** file like this.  Note that cjoakimcosmosdbsql
-is my CosmosDB account name; specify your database account name and key.
-```
-"cjoakimcosmosdbsql_DOCUMENTDB": "AccountEndpoint=https://cjoakimcosmosdbsql.documents.azure.com:443/;AccountKey=...secret...==;"
-```
-
-Next, edit and recompile the application code.  Add the following:
-```
-    // Write a document to CosmosDB
-    var doc = {};
-    var date = new Date();
-    var epoch = date.getTime();
-    doc['pk'] = name + '-' + epoch;  // pk is the Partition-Key attribute in the CosmosDB collection
-    doc['date'] = date.toDateString();
-    doc['epoch'] = date.getTime();
-    context.log('doc: ' + JSON.stringify(doc));
-    context.bindings.outDoc = doc;  // <-- this is all that is needed to write the document to CosmosDB
-```
-
-Next, test the Function locally:
-```
-$ local_test.sh
-
-$ curl "http://localhost:7071/api/HttpTrigger?name=miles"
-```
-
-You should then see documents added to your CosmosDB like this:
-```
+$ curl $AZURE_FUNCTION_URL"&name=Miles"
 {
-    "pk": "miles-1560787893266",
-    "name": "miles",
-    "date": "Mon Jun 17 2019",
-    "epoch": 1560787893266,
-    "build_timestamp": "Mon Jun 17 2019 12:11:01 GMT-0400 (EDT)",
-    "m26_version": "0.4.0",
-    "id": "14a39bed-7f89-4973-aedb-de3a9ae55769",
-    "_rid": "M2ZjALte+XAMAAAAAAAAAA==",
-    "_self": "dbs/M2ZjAA==/colls/M2ZjALte+XA=/docs/M2ZjALte+XAMAAAAAAAAAA==/",
-    "_etag": "\"f901d95f-0000-0100-0000-5d07bbb60000\"",
-    "_attachments": "attachments/",
-    "_ts": 1560787894
+  "pk": "Miles-1562414935433",
+  "name": "Miles",
+  "date": "Sat Jul 06 2019",
+  "epoch": 1562414935433,
+  "build_timestamp": "Sat Jul 06 2019 07:51:25 GMT-0400 (EDT)",
+  "function_name": "HttpTrigger",
+  "function_invocation_id": "e1e396fe-68ac-4506-ab19-d8959e71bafb",
+  "function_directory": "D:\\home\\site\\wwwroot\\HttpTrigger"
 }
 ```
 
-Deploy to Azure after **updating your Function App settings**, add environment variable
-cjoakimcosmosdbsql_DOCUMENTDB as was done to local.settings.json.
-
-![function-app-settings](img/function-app-settings.png)
-
-```
-$ func azure functionapp publish cjoakim-functions-js
-```
+Alternatively, see deploy.sh
 
 ### TypeScript and Visual Studio Code
 
