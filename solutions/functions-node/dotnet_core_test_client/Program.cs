@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -28,6 +29,7 @@ namespace dotnet_core_test_client
         private static string cosmosKey        = Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_KEY");
         private static string cosmosDbName     = "dev";    // Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_DBNAME");
         private static string cosmosCollName   = "events"; // Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_COLLNAME");
+        private static AirportData airportData = new AirportData();
 
         static void Main(string[] args)
         {
@@ -44,7 +46,10 @@ namespace dotnet_core_test_client
                         SendEventHubMessages(messageCount);
                         break;
                     case "query_cosmosdb":
-                        QueryCosmosDB(args);
+                        QueryCosmos(args);
+                        break;
+                    case "insert_cosmosdb_documents":
+                        InsertCosmosDocuments(args);
                         break;
                     default:
                         Log("Unknown CLI function: " + func);
@@ -71,13 +76,12 @@ namespace dotnet_core_test_client
             };
             eventHubClient = EventHubClient.CreateFromConnectionString(connectionStringBuilder.ToString());
 
-            JArray airports = ReadAirportData();
             Random random = new Random();
 
             for (int i = 0; i < messageCount; i++) {
-                var index = random.Next(0, airports.Count);
-                JObject airport = (JObject) airports[index];
-                RandomFlight(airport);
+                var index = random.Next(0, airportData.airports.Count);
+                JObject airport = (JObject) airportData.airports[index];
+                airportData.AddRandomFlight(airport);
                 Console.WriteLine(airport);
                 Task task = SendMessageAsync(airport);
                 task.Wait();
@@ -99,96 +103,23 @@ namespace dotnet_core_test_client
             }
         }
 
-        private static JArray ReadAirportData()
-        {
-            JArray array = new JArray();
-            try {
-                string infile = @"data/world_airports_50.json";
-                string jsonString = System.IO.File.ReadAllText(infile);
-                //Log(jsonString);
-                JArray airports = JArray.Parse(jsonString);
-
-                foreach (JObject airport in airports.Children<JObject>())
-                {
-                    array.Add(airport);
-                }
-            }
-            catch (Exception e) {
-                Console.WriteLine(e);  // System.Exception
-            }
-            Log("" + array.Count + " airports read");
-            return array;
-        }
-
-        private static void RandomFlight(JObject airport) 
-        {  
-            // airport is a Newtonsoft.Json.Linq.JObject
-            Random random = new Random();
-            string airline = "AA";
-            string eventName = "Depart";
-            string flightNumber = "" + random.Next(100, 5000);
-            int n1 = random.Next(0,5);
-            int n2 = random.Next(0,2);
-            //Log("" + n1 + "," + n2);
-
-            switch (n1)
-            {
-                case 0:
-                    airline = "AA";
-                    break;
-                case 1:
-                    airline = "DL";
-                    break;
-                case 2:
-                    airline = "UA";
-                    break;
-                case 3:
-                    airline = "LH";
-                    break;
-                case 4:
-                    airline = "AF";
-                    break;
-                default:
-                    airline = "AA";
-                    break;
-            }
-
-            switch (n2)
-            {
-                case 0:
-                    eventName = "Depart";
-                    break;
-                default:
-                    eventName = "Arrive";
-                    break;
-            }
-
-            if (airport["airline"] != null)
-            {
-                Log("already present");
-            }
-            else {
-                airport.Add("pk", "" + airport["iata_code"]);
-                airport.Add("epoch", CurrentEpochTime());
-                airport.Add("airline", airline);
-                airport.Add("flightNumber", flightNumber);
-                airport.Add("eventName", eventName);
-            }
-        }
-
         // ===
 
-        private static void QueryCosmosDB(string[] args)
+        private static void QueryCosmos(string[] args)
         {
             string queryName = args[1];
-            Log("QueryCosmosDB: " + queryName + ", " + cosmosDbName + ", " + cosmosCollName);
+            Log("QueryCosmos: " + queryName + ", " + cosmosDbName + ", " + cosmosCollName);
             cosmosDbClient = new DocumentClient(new Uri(cosmosUri), cosmosKey);
 
             switch (queryName)
             {
                 case "airport_events":
                     string iataCode = args[2];
-                    QueryAirportEvents(iataCode);
+                    List<Object> events = QueryAirportEvents(iataCode);
+                    foreach (Object obj in events)
+                    {
+                        Console.WriteLine("{0}", obj);
+                    }
                     break;
                 default:
                     Log("Unknown queryName: " + queryName);
@@ -197,28 +128,49 @@ namespace dotnet_core_test_client
             }
         }
 
-        private static void QueryAirportEvents(string iataCode)
+        private static List<Object> QueryAirportEvents(string iataCode)
         {
             Log("QueryAirportEvents: " + iataCode);
-
-            FeedOptions queryOptions = new FeedOptions { MaxItemCount = -1, EnableCrossPartitionQuery = true};
+            List<Object> objects = new List<Object>();
             string sql = $"SELECT * FROM functions WHERE functions.pk = '{iataCode}'";
             Log("SQL: " + sql);
             IQueryable<Object> query = cosmosDbClient.CreateDocumentQuery<Object>(
-                UriFactory.CreateDocumentCollectionUri(cosmosDbName, cosmosCollName),
-                sql, queryOptions);
+                CollectionUri(), sql, DefaultFeedOptions());
 
             foreach (Object obj in query)
             {
-                Console.WriteLine("{0}", obj);
+                objects.Add(obj);
+                //Console.WriteLine("{0}", obj);
             }
+            return objects;            
+        }
+
+        private static void InsertCosmosDocuments(string[] args)
+        {
+            Random random = new Random();
+
+            // for (int i = 0; i < messageCount; i++) {
+            //     var index = random.Next(0, airports.Count);
+            //     JObject airport = (JObject) airports[index];
+            //     RandomFlight(airport);
+            //     Console.WriteLine(airport);
+            // }
+        }
+
+
+        private static FeedOptions DefaultFeedOptions()
+        {
+            return new FeedOptions { MaxItemCount = -1, EnableCrossPartitionQuery = true};
+        }
+
+        private static Uri CollectionUri()
+        {
+            return UriFactory.CreateDocumentCollectionUri(cosmosDbName, cosmosCollName);
         }
 
         private static long CurrentEpochTime()
         {
-            DateTime now = DateTime.Now;
-            DateTimeOffset dto = new DateTimeOffset(now);
-            return dto.ToUnixTimeSeconds();
+            return new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds();
         }
 
         private static void Log(string msg)

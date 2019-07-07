@@ -4,6 +4,9 @@
 
 - https://docs.microsoft.com/en-us/azure/event-hubs/event-hubs-dotnet-standard-getstarted-send
 - https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-dotnetcore-get-started
+- https://github.com/Azure/azure-cosmos-dotnet-v2
+- https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-sdk-dotnet-core
+- https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-sdk-dotnet-core
 
 ## Create the App
 ```
