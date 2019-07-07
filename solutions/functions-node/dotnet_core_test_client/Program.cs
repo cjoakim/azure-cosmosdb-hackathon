@@ -22,7 +22,7 @@ namespace dotnet_core_test_client
     class Program
     {
         private static EventHubClient eventHubClient = null;
-        private static DocumentClient cosmosDbClient = null;
+        private static DocumentClient cosmosClient   = null;
         private static string eventHubName     = Environment.GetEnvironmentVariable("AZURE_EVENTHUB_HUBNAME");
         private static string eventHubConnStr  = Environment.GetEnvironmentVariable("AZURE_EVENTHUB_CONN_STRING");
         private static string cosmosUri        = Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_URI");
@@ -39,17 +39,19 @@ namespace dotnet_core_test_client
             }
             else {
                 var func = args[0];
+                int messageCount = 0;
                 switch (func)
                 {
                     case "send_event_hub_messsages":
-                        int messageCount = Int32.Parse(args[1]);
+                        messageCount = Int32.Parse(args[1]);
                         SendEventHubMessages(messageCount);
                         break;
                     case "query_cosmosdb":
                         QueryCosmos(args);
                         break;
                     case "insert_cosmosdb_documents":
-                        InsertCosmosDocuments(args);
+                        messageCount = Int32.Parse(args[1]);
+                        InsertCosmosDocuments(messageCount);
                         break;
                     default:
                         Log("Unknown CLI function: " + func);
@@ -64,6 +66,7 @@ namespace dotnet_core_test_client
             Log("Command-Line Examples:");
             Log("  dotnet run send_event_hub_messsages 10");
             Log("  dotnet run query_cosmosdb airport_events ATL");
+            Log("  dotnet run insert_cosmosdb_documents 10");
             Log("");
         }
 
@@ -109,7 +112,7 @@ namespace dotnet_core_test_client
         {
             string queryName = args[1];
             Log("QueryCosmos: " + queryName + ", " + cosmosDbName + ", " + cosmosCollName);
-            cosmosDbClient = new DocumentClient(new Uri(cosmosUri), cosmosKey);
+            cosmosClient = new DocumentClient(new Uri(cosmosUri), cosmosKey);
 
             switch (queryName)
             {
@@ -134,7 +137,7 @@ namespace dotnet_core_test_client
             List<Object> objects = new List<Object>();
             string sql = $"SELECT * FROM functions WHERE functions.pk = '{iataCode}'";
             Log("SQL: " + sql);
-            IQueryable<Object> query = cosmosDbClient.CreateDocumentQuery<Object>(
+            IQueryable<Object> query = cosmosClient.CreateDocumentQuery<Object>(
                 CollectionUri(), sql, DefaultFeedOptions());
 
             foreach (Object obj in query)
@@ -145,18 +148,36 @@ namespace dotnet_core_test_client
             return objects;            
         }
 
-        private static void InsertCosmosDocuments(string[] args)
+        private static void InsertCosmosDocuments(int messageCount)
         {
+            cosmosClient = new DocumentClient(new Uri(cosmosUri), cosmosKey);
             Random random = new Random();
 
-            // for (int i = 0; i < messageCount; i++) {
-            //     var index = random.Next(0, airports.Count);
-            //     JObject airport = (JObject) airports[index];
-            //     RandomFlight(airport);
-            //     Console.WriteLine(airport);
-            // }
+            for (int i = 0; i < messageCount; i++) {
+                var index = random.Next(0, airportData.airports.Count);
+                JObject airport = (JObject) airportData.airports[index];
+                airportData.AddRandomFlight(airport);
+                Console.WriteLine(airport);
+                Task task = UpsertDoc(airport);
+                task.Wait();
+            }
         }
 
+        private static async Task UpsertDoc(JObject airport)
+        {
+            try
+            {
+                ResourceResponse<Document> response = 
+                    await cosmosClient.UpsertDocumentAsync(CollectionUri(), airport);
+                var doc = response.Resource;
+                Log("Document: " + doc.ToString());
+                Log("RequestCharge: " + response.RequestCharge);
+            }
+            catch (Exception exception)
+            {
+                Console.WriteLine($"UpsertDoc {DateTime.Now} > Exception: {exception.Message}");
+            }
+        }
 
         private static FeedOptions DefaultFeedOptions()
         {

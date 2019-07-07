@@ -7,6 +7,7 @@
 - https://github.com/Azure/azure-cosmos-dotnet-v2
 - https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-sdk-dotnet-core
 - https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-sdk-dotnet-core
+- https://github.com/Azure/azure-cosmos-dotnet-v2/blob/master/samples/code-samples/DocumentManagement/Program.cs
 
 ## Create the App
 ```
