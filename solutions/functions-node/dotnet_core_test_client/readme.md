@@ -8,6 +8,7 @@
 - https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-sdk-dotnet-core
 - https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-sdk-dotnet-core
 - https://github.com/Azure/azure-cosmos-dotnet-v2/blob/master/samples/code-samples/DocumentManagement/Program.cs
+- https://docs.microsoft.com/en-us/rest/api/cosmos-db/http-status-codes-for-cosmosdb
 
 ## Create the App
 ```

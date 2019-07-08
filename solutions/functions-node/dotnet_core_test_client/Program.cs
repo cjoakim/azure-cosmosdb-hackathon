@@ -35,7 +35,7 @@ namespace dotnet_core_test_client
         private static string cosmosCollectionName = "events"; // Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_COLLNAME");
         private static AirportData airportData = new AirportData();
         private static string sql = null;
-        private static double ruCharge = 0;
+        private static double queryCharge = 0;
 
         static void Main(string[] args) {
             if (args.Length < 1) {
@@ -74,10 +74,10 @@ namespace dotnet_core_test_client
             Log("Command-Line Examples:");
             Log("  dotnet run send_event_hub_messsages 10");
             Log("  dotnet run query_cosmos doc_by_pk_id SYD 047f35b4-7a09-4312-afe1-c44d171606ca");
-            Log("  dotnet run query_cosmos all_events");
-            Log("  dotnet run query_cosmos events_for_airport SYD");
-            Log("  dotnet run query_cosmos events_for_city Sydney");
-            Log("  dotnet run query_cosmos events_for_location -80.842842 35.499586 1"); // 35.499586, -80.842842
+            Log("  dotnet run query_cosmos all_events <optional-after-epoch>");
+            Log("  dotnet run query_cosmos events_for_airport SYD <optional-after-epoch>");
+            Log("  dotnet run query_cosmos events_for_city Sydney <optional-after-epoch>");
+            Log("  dotnet run query_cosmos events_for_location -80.842842 35.499586 1 <optional-after-epoch>"); // 35.499586, -80.842842
             Log("  dotnet run insert_cosmos_documents 10");
             Log("  dotnet run time_now");
             Log("");
@@ -119,6 +119,7 @@ namespace dotnet_core_test_client
 
         private static void QueryCosmos(string[] args) {
             string queryName = args[1];
+            double fromEpoch = 0;
             Log("QueryCosmos: " + queryName + ", " + cosmosDatabaseName + ", " + cosmosCollectionName);
             cosmosClient = new DocumentClient(new Uri(cosmosUri), cosmosKey);
             string iataCode = null;
@@ -130,10 +131,7 @@ namespace dotnet_core_test_client
             double km  = 0.0;
   
             switch (queryName) {
-                case "all_events":
-                    DisplayDocuments(QueryAllEvents());
-                    DisplayChargeAndSql();  
-                    break;
+                // cosmosClient.ReadDocumentAsync
                 case "doc_by_pk_id":
                     pk = args[2];
                     id = args[3];
@@ -141,22 +139,31 @@ namespace dotnet_core_test_client
                     Console.WriteLine(result.Resource);
                     Console.WriteLine("Charge: " + result.RequestCharge);
                     break;
+
+                // cosmosClient.CreateDocumentQuery....AsDocumentQuery() below
+                case "all_events":
+                    fromEpoch = EpochArg(args, 2);
+                    DisplayDocuments(QueryAllEvents(fromEpoch));
+                    DisplayQueryMetadata();  
+                    break;
                 case "events_for_airport":
                     iataCode = args[2];
-                    DisplayDocuments(QueryEventsForAirport(iataCode));
-                    DisplayChargeAndSql();  
+                    fromEpoch = EpochArg(args, 3);
+                    DisplayDocuments(QueryEventsForAirport(iataCode, fromEpoch));
+                    DisplayQueryMetadata();  
                     break;
                 case "events_for_city":
                     city = args[2];
-                    DisplayDocuments(QueryEventsForCity(city));
-                    DisplayChargeAndSql();  
+                    DisplayDocuments(QueryEventsForCity(city, fromEpoch));
+                    DisplayQueryMetadata();  
                     break;
                 case "events_for_location":
                     lng = Double.Parse(args[2]);
                     lat = Double.Parse(args[3]);
                     km  = Double.Parse(args[4]);
-                    DisplayDocuments(QueryEventsForLocation(lng, lat, km));
-                    DisplayChargeAndSql();  
+                    fromEpoch = EpochArg(args, 5);
+                    DisplayDocuments(QueryEventsForLocation(lng, lat, km, fromEpoch));
+                    DisplayQueryMetadata();  
                     break;
                 default:
                     Log("Unknown queryName: " + queryName);
@@ -165,47 +172,54 @@ namespace dotnet_core_test_client
             }
         }
 
+        private static double EpochArg(string[] args, int idx) {
+            if (args.Length == idx) {
+                return Double.Parse(args[idx]);
+            }
+            else {
+                return 0;
+            }
+        }
+
         private static void DisplayDocuments(List<Object> documents) {
             foreach (Object doc in documents) {
                 Console.WriteLine("{0}", doc);
             }
+            Console.WriteLine("Document count: " + documents.Count);
         }
 
-        private static void DisplayChargeAndSql() {
-            Log("RU Charge: " + ruCharge + ",  SQL: " + sql);
+        private static void DisplayQueryMetadata() {
+            Log("Query Charge: " + queryCharge + ",  SQL: " + sql);
         }
 
-        private static List<Object> QueryAllEvents() {
+        private static List<Object> QueryAllEvents(double fromEpoch) {
             List<object> objects = new List<object>();
-            sql = $"SELECT * FROM c";
+            sql = $"SELECT * FROM c WHERE c.epoch > {fromEpoch}";
             return DocumentsQuery(sql, true).Result;        
         }
 
-        private static List<Object> QueryEventsForAirport(string iataCode) {
-            Log("QueryEventsForAirport: " + iataCode);
+        private static List<Object> QueryEventsForAirport(string iataCode, double fromEpoch) {
             List<Object> objects = new List<Object>();
-            sql = $"SELECT * FROM c WHERE c.pk = '{iataCode}'";
+            sql = $"SELECT * FROM c WHERE c.pk = '{iataCode}' AND c.epoch > {fromEpoch}";
             return DocumentsQuery(sql, false).Result;                 
         }
 
-        private static List<Object> QueryEventsForCity(string city) {
-            Log("QueryEventsForCity: " + city);
+        private static List<Object> QueryEventsForCity(string city, double fromEpoch) {
             List<Object> objects = new List<Object>();
-            sql = $"SELECT * FROM c WHERE c.city = '{city}'";
+            sql = $"SELECT * FROM c WHERE c.city = '{city}' AND c.epoch > {fromEpoch}";
             return DocumentsQuery(sql, true).Result;                 
         }
 
-        private static List<Object> QueryEventsForLocation(double lng, double lat, double km) {
-            Log("QueryEventsForLocation: " + lat + ", " + lng + ", " + km);
+        private static List<Object> QueryEventsForLocation(double lng, double lat, double km, double fromEpoch) {
             List<Object> objects = new List<Object>();
             double meters = km * 1000;
-            sql = $"SELECT * from c WHERE ST_DISTANCE(c.location, {{'type': 'Point', 'coordinates':[ {lng}, {lat} ]}}) < {meters}";
+            sql = $"SELECT * from c WHERE ST_DISTANCE(c.location, {{'type': 'Point', 'coordinates':[ {lng}, {lat} ]}}) < {meters} AND c.epoch > {fromEpoch}";
             return DocumentsQuery(sql, true).Result;  
         }
 
         private static async Task<List<object>> DocumentsQuery(string sql, bool enableCrossPartition) {
             List<object> objects = new List<object>();
-            double queryCharge = 0.0;
+            double charge = 0.0;
             try {
                 Log("DocumentsQuery SQL: " + sql);
                 // .AsDocumentQuery() enables the collection of the RequestCharge
@@ -215,15 +229,19 @@ namespace dotnet_core_test_client
                 while (query.HasMoreResults) {
                     var response = await query.ExecuteNextAsync<Object>();
 	                objects.AddRange(response);  // Add the next few Documents from the while-iteration response
-                    queryCharge = queryCharge + response.RequestCharge;  // accumulate the query RequestCharge
+                    charge = charge + response.RequestCharge;  // accumulate the query RequestCharge
                 }
             }
-            catch (Exception exception) {
-                Console.WriteLine($"DocumentsQuery {DateTime.Now} > Exception: {exception.Message}");
+            catch (DocumentClientException dce) {
+                Exception baseException = dce.GetBaseException();
+                Console.WriteLine("DocumentsQuery Exception; {0}, {1}, {2}", 
+                    dce.StatusCode, dce.Message, baseException.Message);
+            }
+            catch (Exception excp) {
+                Console.WriteLine($"DocumentsQuery Exception: {excp.Message}");
             }
             finally {
-                Log("total queryCharge: " + queryCharge);
-                ruCharge = queryCharge;
+                queryCharge = charge;
             }
             return objects;
         }
