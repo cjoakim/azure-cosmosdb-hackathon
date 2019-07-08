@@ -21,8 +21,8 @@ using Newtonsoft.Json.Serialization;
 // the resulting documents in Azure CosmosDB.
 // Chris Joakim, Microsoft, 2019/07/08
 
-namespace dotnet_core_test_client
-{
+namespace dotnet_core_test_client {
+
     class EventDoc {
         public string id { get; set; }
         public string pk { get; set; }
@@ -80,16 +80,16 @@ namespace dotnet_core_test_client
         }
 
         private static void DisplayCommandLineExamples() {
-            Log("Command-Line Examples:");
+            Log("Command-Line Format:");
             Log("  dotnet run time_now");
             Log("  dotnet run send_event_hub_messsages 10");
-            Log("  dotnet run query_cosmos doc_by_pk_id SYD 047f35b4-7a09-4312-afe1-c44d171606ca");
+            Log("  dotnet run query_cosmos doc_by_pk_id <pk> <id>");
             Log("  dotnet run query_cosmos all_events <optional-after-epoch>");
-            Log("  dotnet run query_cosmos events_for_airport SYD <optional-after-epoch>");
-            Log("  dotnet run query_cosmos events_for_city Sydney <optional-after-epoch>");
+            Log("  dotnet run query_cosmos events_for_airport <pk> <optional-after-epoch>");
+            Log("  dotnet run query_cosmos events_for_city <city> <optional-after-epoch>");
             Log("  dotnet run query_cosmos delete_documents <max-count> optional-after-epoch>");
             Log("  dotnet run query_cosmos count_documents");
-            Log("  dotnet run query_cosmos events_for_location -80.842842 35.499586 1 <optional-after-epoch>"); // 35.499586, -80.842842
+            Log("  dotnet run query_cosmos events_for_location -80.842842 35.499586 1 <optional-after-epoch>");
             Log("  dotnet run insert_cosmos_documents 10");
             Log("");
         }
@@ -105,10 +105,10 @@ namespace dotnet_core_test_client
 
             Random random = new Random();
 
-            for (int i = 0; i < messageCount; i++) {
+            for (int seq = 1; seq <= messageCount; seq++) {
                 var index = random.Next(0, airportData.airports.Count);
                 JObject airport = (JObject) airportData.airports[index];
-                airportData.AddRandomFlight(airport);
+                airportData.AddRandomEvent(airport, seq);
                 Console.WriteLine(airport);
                 Task task = SendMessageAsync(airport);
                 task.Wait();
@@ -277,10 +277,10 @@ namespace dotnet_core_test_client
             cosmosClient = new DocumentClient(new Uri(cosmosUri), cosmosKey);
             Random random = new Random();
 
-            for (int i = 0; i < messageCount; i++) {
+            for (int seq = 0; seq < messageCount; seq++) {
                 var index = random.Next(0, airportData.airports.Count);
                 JObject airport = (JObject) airportData.airports[index];
-                airportData.AddRandomFlight(airport);
+                airportData.AddRandomEvent(airport, seq);
                 Console.WriteLine(airport);
                 Task task = UpsertDoc(airport);
                 task.Wait();
