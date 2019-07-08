@@ -88,6 +88,7 @@ namespace dotnet_core_test_client
             Log("  dotnet run query_cosmos events_for_airport SYD <optional-after-epoch>");
             Log("  dotnet run query_cosmos events_for_city Sydney <optional-after-epoch>");
             Log("  dotnet run query_cosmos delete_documents <max-count> optional-after-epoch>");
+            Log("  dotnet run query_cosmos count_documents");
             Log("  dotnet run query_cosmos events_for_location -80.842842 35.499586 1 <optional-after-epoch>"); // 35.499586, -80.842842
             Log("  dotnet run insert_cosmos_documents 10");
             Log("");
@@ -180,6 +181,10 @@ namespace dotnet_core_test_client
                     fromEpoch = EpochArg(args, 3);
                     DeleteDocuments(maxCount, fromEpoch);
                     break; 
+                case "count_documents":
+                    DisplayDocuments(CountDocuments());
+                    DisplayQueryMetadata();  
+                    break; 
                 default:
                     Log("Unknown queryName: " + queryName);
                     DisplayCommandLineExamples();
@@ -228,6 +233,11 @@ namespace dotnet_core_test_client
             return DocumentsQuery(sql, true).Result;  
         }
 
+        private static List<Object> CountDocuments() {
+            sql = "SELECT VALUE COUNT(1) FROM c";
+            return DocumentsQuery(sql, true).Result;  
+        }
+
         private static async Task<List<object>> DocumentsQuery(string sql, bool enableCrossPartition) {
             List<object> objects = new List<object>();
             double charge = 0.0;
@@ -236,14 +246,9 @@ namespace dotnet_core_test_client
                 // .AsDocumentQuery() enables the collection of the RequestCharge
                 var query = cosmosClient.CreateDocumentQuery<object>(
                     CollectionUri(), sql, StandardFeedOptions(enableCrossPartition)).AsDocumentQuery();
-                Console.WriteLine("query type: " + query.GetType());
-
-                // query type:          Microsoft.Azure.Documents.Linq.DocumentQuery`1[System.Object]
-                // query response type: Microsoft.Azure.Documents.Linq.DocumentQuery`1[System.Object]
 
                 while (query.HasMoreResults) {
                     var response = await query.ExecuteNextAsync<object>();
-                    Console.WriteLine("query response type: " + query.GetType());
 	                objects.AddRange(response);  // Add the next few Documents from the while-iteration response
                     charge = charge + response.RequestCharge;  // accumulate the query RequestCharge
                 }
@@ -322,7 +327,7 @@ namespace dotnet_core_test_client
             ResourceResponse<Document> response =
                 await cosmosClient.DeleteDocumentAsync(DocumentUri(evtDoc.id),
                     new RequestOptions { PartitionKey = new PartitionKey(evtDoc.pk) });
-                    
+
             Console.WriteLine("Delete RU Charge: {0}", response.RequestCharge);
         }
 
