@@ -57,6 +57,11 @@ namespace dotnet_core_test_client
                         messageCount = Int32.Parse(args[1]);
                         InsertCosmosDocuments(messageCount);
                         break;
+                    case "time_now":
+                        var now = DateTime.Now;
+                        var epoch = new DateTimeOffset(now).ToUnixTimeSeconds();
+                        Console.WriteLine($"date: {now}  epoch: {epoch}");
+                        break;
                     default:
                         Log("Unknown CLI function: " + func);
                         DisplayCommandLineExamples();
@@ -74,6 +79,7 @@ namespace dotnet_core_test_client
             Log("  dotnet run query_cosmos events_for_city Sydney");
             Log("  dotnet run query_cosmos events_for_location -80.842842 35.499586 1"); // 35.499586, -80.842842
             Log("  dotnet run insert_cosmos_documents 10");
+            Log("  dotnet run time_now");
             Log("");
         }
 
