@@ -23,8 +23,14 @@ using Newtonsoft.Json.Serialization;
 
 namespace dotnet_core_test_client
 {
-    class Program
-    {
+    class EventDoc {
+        public string id { get; set; }
+        public string pk { get; set; }
+        public string doctype { get; set; }
+        public double epoch { get; set; }
+    }
+
+    class Program {
         private static EventHubClient eventHubClient = null;
         private static DocumentClient cosmosClient   = null;
         private static string eventHubName    = Environment.GetEnvironmentVariable("AZURE_EVENTHUB_HUBNAME");
@@ -36,8 +42,11 @@ namespace dotnet_core_test_client
         private static AirportData airportData = new AirportData();
         private static string sql = null;
         private static double queryCharge = 0;
-
+ 
         static void Main(string[] args) {
+            for (int i = 0; i < args.Length; i++) {
+                Console.WriteLine("arg: " + i + " -> "+ args[i]);
+            }
             if (args.Length < 1) {
                 Log("Invalid program args.");
                 DisplayCommandLineExamples();
@@ -46,6 +55,11 @@ namespace dotnet_core_test_client
                 var func = args[0];
                 int messageCount = 0;
                 switch (func) {
+                    case "time_now":
+                        var now = DateTime.Now;
+                        var epoch = new DateTimeOffset(now).ToUnixTimeSeconds();
+                        Console.WriteLine($"date: {now}  epoch: {epoch}");
+                        break;
                     case "send_event_hub_messsages":
                         messageCount = Int32.Parse(args[1]);
                         SendEventHubMessages(messageCount);
@@ -57,11 +71,6 @@ namespace dotnet_core_test_client
                         messageCount = Int32.Parse(args[1]);
                         InsertCosmosDocuments(messageCount);
                         break;
-                    case "time_now":
-                        var now = DateTime.Now;
-                        var epoch = new DateTimeOffset(now).ToUnixTimeSeconds();
-                        Console.WriteLine($"date: {now}  epoch: {epoch}");
-                        break;
                     default:
                         Log("Unknown CLI function: " + func);
                         DisplayCommandLineExamples();
@@ -72,14 +81,15 @@ namespace dotnet_core_test_client
 
         private static void DisplayCommandLineExamples() {
             Log("Command-Line Examples:");
+            Log("  dotnet run time_now");
             Log("  dotnet run send_event_hub_messsages 10");
             Log("  dotnet run query_cosmos doc_by_pk_id SYD 047f35b4-7a09-4312-afe1-c44d171606ca");
             Log("  dotnet run query_cosmos all_events <optional-after-epoch>");
             Log("  dotnet run query_cosmos events_for_airport SYD <optional-after-epoch>");
             Log("  dotnet run query_cosmos events_for_city Sydney <optional-after-epoch>");
+            Log("  dotnet run query_cosmos delete_documents <max-count> optional-after-epoch>");
             Log("  dotnet run query_cosmos events_for_location -80.842842 35.499586 1 <optional-after-epoch>"); // 35.499586, -80.842842
             Log("  dotnet run insert_cosmos_documents 10");
-            Log("  dotnet run time_now");
             Log("");
         }
 
@@ -165,6 +175,11 @@ namespace dotnet_core_test_client
                     DisplayDocuments(QueryEventsForLocation(lng, lat, km, fromEpoch));
                     DisplayQueryMetadata();  
                     break;
+                case "delete_documents":
+                    int maxCount = Int32.Parse(args[2]);
+                    fromEpoch = EpochArg(args, 3);
+                    DeleteDocuments(maxCount, fromEpoch);
+                    break; 
                 default:
                     Log("Unknown queryName: " + queryName);
                     DisplayCommandLineExamples();
@@ -173,7 +188,7 @@ namespace dotnet_core_test_client
         }
 
         private static double EpochArg(string[] args, int idx) {
-            if (args.Length == idx) {
+            if (idx == (args.Length - 1)) {
                 return Double.Parse(args[idx]);
             }
             else {
@@ -193,25 +208,21 @@ namespace dotnet_core_test_client
         }
 
         private static List<Object> QueryAllEvents(double fromEpoch) {
-            List<object> objects = new List<object>();
             sql = $"SELECT * FROM c WHERE c.epoch > {fromEpoch}";
             return DocumentsQuery(sql, true).Result;        
         }
 
         private static List<Object> QueryEventsForAirport(string iataCode, double fromEpoch) {
-            List<Object> objects = new List<Object>();
             sql = $"SELECT * FROM c WHERE c.pk = '{iataCode}' AND c.epoch > {fromEpoch}";
             return DocumentsQuery(sql, false).Result;                 
         }
 
         private static List<Object> QueryEventsForCity(string city, double fromEpoch) {
-            List<Object> objects = new List<Object>();
             sql = $"SELECT * FROM c WHERE c.city = '{city}' AND c.epoch > {fromEpoch}";
             return DocumentsQuery(sql, true).Result;                 
         }
 
         private static List<Object> QueryEventsForLocation(double lng, double lat, double km, double fromEpoch) {
-            List<Object> objects = new List<Object>();
             double meters = km * 1000;
             sql = $"SELECT * from c WHERE ST_DISTANCE(c.location, {{'type': 'Point', 'coordinates':[ {lng}, {lat} ]}}) < {meters} AND c.epoch > {fromEpoch}";
             return DocumentsQuery(sql, true).Result;  
@@ -223,11 +234,16 @@ namespace dotnet_core_test_client
             try {
                 Log("DocumentsQuery SQL: " + sql);
                 // .AsDocumentQuery() enables the collection of the RequestCharge
-                var query = cosmosClient.CreateDocumentQuery<Object>(
+                var query = cosmosClient.CreateDocumentQuery<object>(
                     CollectionUri(), sql, StandardFeedOptions(enableCrossPartition)).AsDocumentQuery();
+                Console.WriteLine("query type: " + query.GetType());
+
+                // query type:          Microsoft.Azure.Documents.Linq.DocumentQuery`1[System.Object]
+                // query response type: Microsoft.Azure.Documents.Linq.DocumentQuery`1[System.Object]
 
                 while (query.HasMoreResults) {
-                    var response = await query.ExecuteNextAsync<Object>();
+                    var response = await query.ExecuteNextAsync<object>();
+                    Console.WriteLine("query response type: " + query.GetType());
 	                objects.AddRange(response);  // Add the next few Documents from the while-iteration response
                     charge = charge + response.RequestCharge;  // accumulate the query RequestCharge
                 }
@@ -279,6 +295,35 @@ namespace dotnet_core_test_client
             catch (Exception exception) {
                 Console.WriteLine($"UpsertDoc {DateTime.Now} > Exception: {exception.Message}");
             }
+        }
+
+        private static void DeleteDocuments(int maxDeleteCount, double fromEpoch) {
+            Console.WriteLine("DeleteDocuments; max: " + maxDeleteCount + ", fromEpoch: " + fromEpoch);
+
+            // this is an example of Linq queries, select the oldest docs with an epoch > fromEpoch
+            IQueryable<EventDoc> eventQuery = cosmosClient.CreateDocumentQuery<EventDoc>(
+                CollectionUri(), StandardFeedOptions(true))
+                .Where(ed => ed.epoch >= fromEpoch)
+                .OrderBy(ed => ed.epoch);
+
+            int count = 0;
+            Console.WriteLine("Running LINQ query...");
+            foreach (EventDoc evtDoc in eventQuery) {
+                if (count < maxDeleteCount) {
+                    count++;
+                    Console.WriteLine("Deleting EventDoc, pk: {0} id: {1} epoch: {2}", evtDoc.pk, evtDoc.id, evtDoc.epoch);
+                    Task task = DeleteDoc(evtDoc);
+                    task.Wait();
+                }
+            }
+        }
+
+        private static async Task DeleteDoc(EventDoc evtDoc) {
+            ResourceResponse<Document> response =
+                await cosmosClient.DeleteDocumentAsync(DocumentUri(evtDoc.id),
+                    new RequestOptions { PartitionKey = new PartitionKey(evtDoc.pk) });
+                    
+            Console.WriteLine("Delete RU Charge: {0}", response.RequestCharge);
         }
 
         private static FeedOptions StandardFeedOptions(bool enableCrossPartition) {
