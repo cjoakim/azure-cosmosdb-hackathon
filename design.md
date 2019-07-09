@@ -1,10 +1,12 @@
 ## Design with the Document/SQL Database
 
-### Comparison; the evolution of the Telephone
+### Comparison: the evolution of the Telephone
 
 ![rotary-phone](img/rotary-phone.jpg)
 
 ---
+
+### Steve Jobs introducing the iPhone!?
 
 ![jobs1](img/steve-jobs-iphone-1.jpg)
 
