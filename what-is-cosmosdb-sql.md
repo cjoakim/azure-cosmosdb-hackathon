@@ -1,6 +1,6 @@
 # What is CosmosDB SQL?
 
-It's the Microsoft Document-oriented database with a **SQL syntax**.
+It's the Microsoft Document-oriented database with a **SQL syntax**.  It's **not** a relational database.
 
 ## Concepts
 
@@ -13,6 +13,11 @@ It's the Microsoft Document-oriented database with a **SQL syntax**.
   - Indexing
   - Transactions
   - SDKs
+
+- SQL-like **Query** Language
+  - SELECT * FROM c WHERE c.epoch > 0
+  - SELECT * FROM c WHERE c.pk = 'SYD' AND c.id = '1efad365-b53c-4084-a688-22b9c5ec3c2f'
+  - SELECT VALUE COUNT(1) FROM c
 
 - Distributed Concepts
   - [Azure Regions](https://azure.microsoft.com/en-us/global-infrastructure/regions/)
@@ -48,7 +53,3 @@ coll_link = ''dbs/dev/colls/map_points'
 
 client.UpsertDocument(coll_link, some_json_doc)
 ```
-
-## CosmosDB, Azure Maps, and Spatial Queries demonstration
-
-See https://github.com/cjoakim/azure-web-services/blob/master/maps/readme_v2.md
