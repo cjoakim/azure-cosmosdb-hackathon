@@ -6,7 +6,7 @@
 
 ---
 
-### Steve Jobs introducing the iPhone!?
+### Steve Jobs introducing the iPhone in 2007!?
 
 ![jobs1](img/steve-jobs-iphone-1.jpg)
 
