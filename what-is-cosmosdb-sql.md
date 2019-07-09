@@ -35,9 +35,28 @@ It's the Microsoft Document-oriented database with a **SQL syntax**.  It's **not
   - [Spatial Queries and GeoJSON](https://docs.microsoft.com/en-us/azure/cosmos-db/geospatial)
   - [Pooled RUs](https://docs.microsoft.com/en-us/azure/cosmos-db/set-throughput)
 
+
+---
+
+## Deeper Dive on Partitions
+
+- Partition Key Values != Physical Partitions
+- CosmosDB Algorithm calculates the physical partition for a given pk
+- Partition Splits, like VSAM
+
+![resource-partition](img/resource-partition.png)
+
+### An even distribution of your PK values and data is desired
+
+![skew](img/cosmosdbpartitions.jpg)
+
+
+---
+
 ## Links
 
 - Common Use-Cases: https://docs.microsoft.com/en-us/azure/cosmos-db/use-cases
+- https://docs.microsoft.com/en-us/azure/cosmos-db/sql-query-getting-started
 
 ## pydocumentdb SDK in-a-nutshell
 
