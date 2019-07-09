@@ -8,12 +8,13 @@ A CosmosDB Overview and Hackathon
 
 ## Overview and Topics
 
-### Overview
+### Overview (60 min)
 
 - [What is NoSQL?](what-is-nosql.md)
 - [What is CosmosDB?](what-is-cosmosdb.md)
+- [What is CosmosDB SQL?](what-is-cosmosdb-sql.md)
 
-### Data Ingestion Pipeline (90 min)
+### Data Ingestion Pipeline (60 min)
 
 - [Data Ingestion Pipeline](data_ingest_pipeline.md)
 
@@ -25,11 +26,11 @@ A CosmosDB Overview and Hackathon
 
 - [Server Side](server_side.md)
 
-### CosmosDB Design - Patterns and Anti-Patterns (50 min)
+### CosmosDB Design - Patterns and Anti-Patterns (30 min)
 
 - [Design](design.md)
 
-### Scale CosmosDB with the Azure CLI (20 min)
+### Scale CosmosDB with the Azure CLI (10 min)
 
 - [Scale with CLI](scale_with_cli.md)
 
