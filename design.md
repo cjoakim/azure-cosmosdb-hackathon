@@ -35,17 +35,17 @@
   - Identify the use-cases for your application
   - Identify the queries your application will execute
 
-- **Use a generic name for the partition key** in each collection
+- **Use a generic name for the partition key in each collection**
   - **pk**, partition_key, partitionKey - these are recommended names
-  - The name of the partition key is fixed; can't be changed after creation
+  - The **name** of the partition key is fixed; it can't be changed after creation
   - pk values should have a high cardinality - thousands of values or more
   - pk values should also be well-distributed
     - Don't, for example, use country_code as a pk!
-  - The values that you use to populate the pk can and will evolve over time
+  - The **values** that you use to populate the pk can and often will evolve over time
   - **Most of you queries should use the partition key**
 
 - **Put differently-shaped documents in the same collection**
-  - It's **schemaless!**, this is allowed
+  - It's **schemaless!**  This is allowed
   - Use a **doctype** attribute to identify the type of the Document
   - There is no need to conform your documents to a given shape
     - Other than **pk** and perhaps **doctype**
@@ -53,7 +53,7 @@
 - **Think of collections as a Unit-for-Scaling rather than a type of data**
   - The Request Units (RU) can be configured separately for each collection
 
-- **Do "partition key joins" rather than **"cross-collection joins"**
+- **Do "partition key joins" rather than "cross-collection joins"**
   - Read the related documents within one pk value in one query
 
 - **If your Documents contain collections, be aware of their Bounds**
@@ -74,6 +74,12 @@
   - This saves the cost of numerous aggregation queries
   - Another term for this is a **Materialized View**
   - These can be **Normalized Documents for PowerBI**
+
+- **Remember that Documents are JavaScript JSON Documents; beware of Truncation**
+```
+Node.js - Number.MAX_SAFE_INTEGER =    9007199254740991
+Java    - Long.MAX_VALUE          = 9223372036854775807
+```
 
 - **Use the Change Feed functionally to trigger downstream operations**
   - Typically implemented with an **Azure Function** observing the collection
