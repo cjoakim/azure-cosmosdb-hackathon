@@ -36,6 +36,7 @@ A CosmosDB Overview and Hackathon
 
 ### Demonstration of the CosmosDB Graph DB (30 min)
 
+- [What does a Graph Look Like?](img/sample-graph.png)
 - [Bill-of-Materials at https://github.com/Azure-Samples/](https://github.com/Azure-Samples/azure-cosmos-db-graph-npm-bom-sample)
 - [Six Degrees of Kevin Bacon](https://github.com/cjoakim/azure-cosmosdb-graph-node)
 
