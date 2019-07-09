@@ -26,7 +26,7 @@
   - there is no referential integrity
   - No need for [Third normal form (3NF) ](https://en.wikipedia.org/wiki/Third_normal_form)
   - storage is inexpensive now
-- Don't think you have to put differently-shaped documents in different collections
+- Don't think that you have to put differently-shaped documents in different collections
 - **Don't think relationally**; this is a NoSQL Document-Oriented database
 
 ## Best Practices
@@ -87,7 +87,7 @@ Java    - Long.MAX_VALUE          = 9223372036854775807
 
 ---
 
-## Example 1 - Inventory Lookup by SKU and Location
+## Exercise 1 - Inventory Lookup by SKU and Location
 
 Your Documents look like this; actual product at https://www.homedepot.com/p/DEWALT-20-oz-Hammer-DWHT51054/205594063  
 
@@ -112,7 +112,7 @@ How would you design this in CosmosDB?
 
 ---
 
-## Example 2 - Online Retail
+## Exercise 2 - Online Retail
 
 The conceptual objects are: Order, LineItem, Delivery, Customer
 
@@ -142,7 +142,8 @@ How would you design this in CosmosDB?
 
 
 
-Example 1:
+Exercise 1:
+
 - Consider Duplicating the data into Two Documents
 - The cost of the queries can be > cost of the storage
  
@@ -184,7 +185,9 @@ Example 1:
 
 
 
-Example 2:
+
+
+Exercise 2:
 
 Two Collections:
 
@@ -245,7 +248,7 @@ Alternatively:
   ],
   "deliveries: [
     ... an array or collection of deliveries ...
-  ],
+  ]
 }
 
 ```
