@@ -18,6 +18,7 @@ It's the Microsoft Document-oriented database with a **SQL syntax**.  It's **not
   - SELECT * FROM c WHERE c.epoch > 0
   - SELECT * FROM c WHERE c.pk = 'SYD' AND c.id = '1efad365-b53c-4084-a688-22b9c5ec3c2f'
   - SELECT VALUE COUNT(1) FROM c
+  - [Syntax](https://docs.microsoft.com/en-us/azure/cosmos-db/sql-query-getting-started)
 
 - Distributed Concepts
   - [Azure Regions](https://azure.microsoft.com/en-us/global-infrastructure/regions/)

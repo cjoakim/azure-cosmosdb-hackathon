@@ -95,7 +95,7 @@ Your Documents look like this; actual product at https://www.homedepot.com/p/DEW
 {
   "pk": "???",               <-- what value to use?
   "sku": "DWHT51054",
-  "location": "store 485",   <-- hundreds of stores, warehouses
+  "location": "store-485",   <-- hundreds of stores, warehouses
   "current_inventory": 33,
   "description": "hammer, 20oz, steel, rubber handle",
   "vendor": "DeWalt",
@@ -114,7 +114,7 @@ How would you design this in CosmosDB?
 
 ## Example 2 - Online Retail
 
-The conceptual objects are: Order, LineItem, Delivery, Customer, Location
+The conceptual objects are: Order, LineItem, Delivery, Customer
 
 How would you design this in CosmosDB?
 
@@ -142,14 +142,14 @@ How would you design this in CosmosDB?
 
 
 
-
-
-
-
+Example 1:
+- Consider Duplicating the data into Two Documents
+- The cost of the queries can be > cost of the storage
+ 
 {
-  "pk": "???",               <-- what value to use?
+  "pk": "DWHT51054",
   "sku": "DWHT51054",
-  "location": "store 485",   <-- hundreds of stores, warehouses
+  "location": "store-485",
   "current_inventory": 33,
   "description": "hammer, 20oz, steel, rubber handle",
   "vendor": "DeWalt",
@@ -158,6 +158,96 @@ How would you design this in CosmosDB?
   }
   "state": "active"
 }
+
+{
+  "pk": "store-485",
+  "sku": "DWHT51054",
+  "location": "store-485",
+  "current_inventory": 33,
+  "description": "hammer, 20oz, steel, rubber handle",
+  "vendor": "DeWalt",
+  "features": {
+      ... cool info about the product...
+  }
+  "state": "active"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+Example 2:
+
+Two Collections:
+
+- Customers Collection
+  - Relatively static and smaller number of Documents and RUs
+  - No pk relationship to the Orders
+
+- Orders Collection
+  - for the Order, LineItems, Deliveries
+  - Relatively dynamic, with more documents and RUs
+  - Could use TTL to purge old orders
+
+{
+  "pk": "XK1123",
+  "doctype": "order",
+  "orderNumber": "XK1123",
+  ... order attributes ...
+}
+
+{
+  "pk": "XK1123",
+  "doctype": "lineitem",
+  "orderNumber": "XK1123",
+  "lineItem": 1,
+  ... lineitem attributes ...
+}
+
+{
+  "pk": "XK1123",
+  "doctype": "lineitem",
+  "orderNumber": "XK1123",
+  "lineItem": 2,
+  ... lineitem attributes ...
+}
+
+{
+  "pk": "XK1123",
+  "doctype": "delivery",
+  "orderNumber": "XK1123",
+  "lineItem": 1,
+  "deliveryNumber": 1,
+  ... delivery attributes ...
+}
+
+select * from c where c.pk = "XK1123"
+select * from c where c.pk = "XK1123" and c.doctype = "order"
+select * from c where c.pk = "XK1123" and c.doctype in ("order", "lineitem")
+
+Alternatively:
+
+{
+  "pk": "XK1123",
+  "doctype": "order",
+  "orderNumber": "XK1123",
+  ... order attributes ...
+  "lineItems: [
+    ... an array or collection of line items ...
+  ],
+  "deliveries: [
+    ... an array or collection of deliveries ...
+  ],
+}
+
 ```
 
 
