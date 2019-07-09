@@ -64,16 +64,39 @@
 - Be aware of the **Request Charge** for each of your queries
   - The SDKs will make this response value available
 
+- Use **Time-to-Live (TTL)** to automatically delete old documents
+  - Saves you the RU costs of the delete operations you'd have to do
+
+- Use the **Change Feed** functionally to trigger downstream operations
+  - Typically implemented with an **Azure Function** observing the collection
+  - DotNet and Java SDKs for this also
+
+---
+
 ## Example 1 - Inventory Lookup by SKU and Location
 
 Your documents look like this.  
+https://www.homedepot.com/p/DEWALT-20-oz-Hammer-DWHT51054/205594063
 ```
-
+{
+  "pk": "???",               <-- what value to use?
+  "sku": "DWHT51054",
+  "location": "store 485",   <-- hundreds of stores, warehouses
+  "current_inventory": 33,
+  "description": "hammer, 20oz, steel, rubber handle",
+  "vendor": "DeWalt",
+  "features": {
+      ... cool info about the product...
+  }
+  "state": "active"
+}
 ```
 
 How would you design this in CosmosDB?
 - Assume 1 million queries by **sku** per month
 - Assume 1 million queries by **location** per month
+
+---
 
 ## Example 2 - Online Retail
 
