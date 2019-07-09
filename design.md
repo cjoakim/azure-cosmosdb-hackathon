@@ -35,7 +35,7 @@
   - Identify the use-cases for your application
   - Identify the queries your application will execute
 
-- Use a generic name for the **partition key** in each collection
+- **Use a generic name for the partition key** in each collection
   - **pk**, partition_key, partitionKey - these are recommended names
   - The name of the partition key is fixed; can't be changed after creation
   - pk values should have a high cardinality - thousands of values or more
@@ -44,32 +44,38 @@
   - The values that you use to populate the pk can and will evolve over time
   - **Most of you queries should use the partition key**
 
-- Put differently-shaped documents in the same collection
+- **Put differently-shaped documents in the same collection**
+  - It's **schemaless!**, this is allowed
   - Use a **doctype** attribute to identify the type of the Document
-  - It's **schemaless!** 
   - There is no need to conform your documents to a given shape
     - Other than **pk** and perhaps **doctype**
 
-- Think of collections as **unit-for-scaling** rather than a type of data
+- **Think of collections as a Unit-for-Scaling rather than a type of data**
   - The Request Units (RU) can be configured separately for each collection
 
-- Do **"partition key joins"** rather than **"cross-collection joins"**
+- **Do "partition key joins" rather than **"cross-collection joins"**
   - Read the related documents within one pk value in one query
 
-- If your Documents contain collections, be aware of their **bounds**
+- **If your Documents contain collections, be aware of their Bounds**
   - Be aware of the **2MB size limit for a Document**
   - GameOfBaseball Document - typically 9 innings, Ok
   - RoundOfGolf Document - typically 18 holes, Ok
   - WeatherHistoryForCity Document - hourly entries = unbounded!!
   - Generally prefer many smaller documents vs fewer larger documents
 
-- Be aware of the **Request Charge** for each of your queries
+- **Be aware of the Request Charge for each of your queries**
   - The SDKs will make this response value available
 
-- Use **Time-to-Live (TTL)** to automatically delete old documents
-  - Saves you the RU costs of the delete operations you'd have to do
+- **Use Time-to-Live (TTL) to automatically delete old documents**
+  - Saves you the RU costs of the delete operations you'd otherwise have to do
 
-- Use the **Change Feed** functionally to trigger downstream operations
+- **Consider Aggregating Summary-Data in Advance**
+  - Store Aggregated or Summary documents from your many Detail Documents
+  - This saves the cost of numerous aggregation queries
+  - Another term for this is a **Materialized View**
+  - These can be **Normalized Documents for PowerBI**
+
+- **Use the Change Feed functionally to trigger downstream operations**
   - Typically implemented with an **Azure Function** observing the collection
   - DotNet and Java SDKs for this also
 
@@ -77,8 +83,8 @@
 
 ## Example 1 - Inventory Lookup by SKU and Location
 
-Your documents look like this.  
-https://www.homedepot.com/p/DEWALT-20-oz-Hammer-DWHT51054/205594063
+Your Documents look like this; actual product at https://www.homedepot.com/p/DEWALT-20-oz-Hammer-DWHT51054/205594063  
+
 ```
 {
   "pk": "???",               <-- what value to use?
@@ -107,7 +113,46 @@ The conceptual objects are: Order, LineItem, Delivery, Customer, Location
 How would you design this in CosmosDB?
 
 
+```
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "pk": "???",               <-- what value to use?
+  "sku": "DWHT51054",
+  "location": "store 485",   <-- hundreds of stores, warehouses
+  "current_inventory": 33,
+  "description": "hammer, 20oz, steel, rubber handle",
+  "vendor": "DeWalt",
+  "features": {
+      ... cool info about the product...
+  }
+  "state": "active"
+}
+```
 
 
 
