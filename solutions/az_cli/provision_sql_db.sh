@@ -18,19 +18,25 @@
 # $ ./provision_sql_db.sh update_collection
 # $ ./provision_sql_db.sh show_collection
 #
-# Chris Joakim, Microsoft, 2019/04/24
+# Chris Joakim, Microsoft, 2019/07/10
 
 # Define environment variables for this script:
 rg_name=cjoakim-cosmos
-acct_name=cjoakim-az-cli
+acct_name=cjoakimcosmosdbsql
 db_name=dev
 coll_name=collection1
 dbkind=GlobalDocumentDB
 conlevel=Eventual
 locations='eastus=0'
-dbtags='purpose=demonstration created_on=20190424 created_by=cjoakim'
+dbtags='purpose=demonstration created_on=20190710 created_by=cjoakim'
 throughput1=10000
 throughput2=1000
+
+# Login as necessary
+# az login
+
+# Logout as necessary
+# az logout
 
 if [ "$1" == "display_help" ]
 then

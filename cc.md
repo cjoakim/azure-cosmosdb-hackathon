@@ -26,7 +26,7 @@ A CosmosDB Overview and Hackathon
 
 - [Server Side](server_side.md)
 
-### CosmosDB Design - Patterns and Anti-Patterns (30 min)
+### CosmosDB Design - Patterns and Anti-Patterns (40 min)
 
 - [Design](design.md)
 
