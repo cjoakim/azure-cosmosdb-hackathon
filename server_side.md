@@ -1,12 +1,15 @@
 # azure-cosmosdb-hackathon - Server-Side Programming
 
-[Server-Side Programming](https://docs.microsoft.com/en-us/azure/cosmos-db/stored-procedures-triggers-udfs)
 
 ## Topics
 
 - Stored Procedures
 - Triggers; pre and post
 - UDF
+- Authored in JavaScript
+- Invoked via SDKs
+
+[Server-Side Programming Documentation](https://docs.microsoft.com/en-us/azure/cosmos-db/stored-procedures-triggers-udfs)
 
 
 # Code
