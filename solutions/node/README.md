@@ -1,4 +1,4 @@
-# azure-cosmosdb-samples - server-side stored procedures
+# azure-cosmosdb-Hackathon - server-side stored procedures
 
 ## The Test
 

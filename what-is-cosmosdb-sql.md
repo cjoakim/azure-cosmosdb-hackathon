@@ -26,7 +26,7 @@ It's the Microsoft Document-oriented database with a **SQL syntax**.  It's **not
   - Single vs Multi-Master
 
 - [Server-Side Programming](https://docs.microsoft.com/en-us/azure/cosmos-db/stored-procedures-triggers-udfs)
-  - Stored Procedure
+  - Stored Procedures
   - Triggers; pre and post
   - UDF
 
