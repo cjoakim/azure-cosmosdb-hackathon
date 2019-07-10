@@ -1,11 +1,10 @@
 # azure-cosmosdb-hackathon - Server-Side Programming
 
-
 ## Topics
 
 - Stored Procedures
 - Triggers; pre and post
-- UDF
+- User-Defined Functions (UDFs)
 - Authored in JavaScript
 - Invoked via SDKs
 
@@ -16,5 +15,5 @@
 
 See the **solutions/node/** directory in this repo
 
-[Stored Procedures Example](solutions/node/README.md)
+[Stored Procedures Example](solutions/node/STORED_PROCEDURES.md)
 

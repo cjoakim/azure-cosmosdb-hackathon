@@ -42,7 +42,7 @@ var lookupDoc = {
 
 var upsertAirportDoc = {
     id: "upsertAirportDoc",
-    serverScript: function (givendoc) {  // Version: 2018/09/16 07:30
+    serverScript: function (givendoc) { 
 
         function insertCallback(err, doc, options) {
             if (err) throw err;

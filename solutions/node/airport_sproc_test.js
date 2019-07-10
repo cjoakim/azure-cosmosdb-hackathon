@@ -120,6 +120,7 @@ class Main {
             airport['id'] = airport['iata_code'];
             airport['pk'] = airport['iata_code'];
             this.sp_diff_expected = 0;
+            //console.log("executing stored proc for: " + airport['pk']);
 
             if (this.actual_upserts <= this.airports_count) {
                 // first, unconditionally add ALL of the airports to the DB

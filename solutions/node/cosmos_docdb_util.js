@@ -8,7 +8,7 @@ const DocumentBase = require('documentdb').DocumentBase;
 
 // This utility class contains functions for invoking Azure CosmosDB/DocumentDB.
 // See https://github.com/Azure/azure-cosmosdb-node/blob/master/source/lib/documentclient.js
-// Chris Joakim, Microsoft, 2019/04/14
+// Chris Joakim, Microsoft, 2019/07/10
 
 class CosmosDocDbUtil extends events.EventEmitter {
 
@@ -18,23 +18,6 @@ class CosmosDocDbUtil extends events.EventEmitter {
         var uri     = process.env.AZURE_COSMOSDB_SQLDB_URI;
         var key     = process.env.AZURE_COSMOSDB_SQLDB_KEY;
         this.client = new DocumentDBClient(uri, { masterKey: key });
-
-        // TODO - possibly revisit preferred read/write locations
-        // var pref_locs = process.env.AZURE_COSMOSDB_SQLDB_PREF_LOC;
-        // if (typeof override_pref_locs !== 'undefined' && override_pref_locs) {
-        //     pref_locs = override_pref_locs;
-        // } 
-        // this.locations = this.preferred_locations(pref_locs);
-        // if (this.locations.length > 0) {
-        //     var connectionPolicy = new DocumentBase.ConnectionPolicy();
-        //     connectionPolicy.PreferredLocations = this.locations;
-        //     connectionPolicy.WritableLocations  = this.locations;
-        //     connectionPolicy.EnableEndpointDiscovery = true;
-        //     this.client = new DocumentDBClient(uri, { masterKey: key }, connectionPolicy);
-        // }
-        // else {
-        //     this.client = new DocumentDBClient(uri, { masterKey: key });
-        // }
     }
 
     // Account operations
@@ -161,7 +144,6 @@ class CosmosDocDbUtil extends events.EventEmitter {
     }
 
     preferred_locations(comma_delim_locations) {
-
         if (typeof comma_delim_locations !== 'undefined' && comma_delim_locations) {
             return comma_delim_locations.split(',');
         }
@@ -212,8 +194,6 @@ class CosmosDocDbUtil extends events.EventEmitter {
         });
     }
 
-    // QQQQ
-    // SELECT * FROM c where c.id = "a0ca4655-40a2-36f2-a726-18c7cd048c62"
     read_by_id(dbname, cname, doc_id) {
         var opts = {};
         opts['enableCrossPartitionQuery'] = true;
@@ -238,7 +218,6 @@ class CosmosDocDbUtil extends events.EventEmitter {
         });
     }
 
-    // QQQQ
     update_document(dbname, cname, doc_id, doc) {
         var doclink = 'dbs/' + dbname + '/colls/' + cname + '/docs/' + doc_id;
         var start_epoch = (new Date).getTime();
@@ -401,9 +380,6 @@ class CosmosDocDbUtil extends events.EventEmitter {
     coll_link(dbname, cname) {
         return 'dbs/' + dbname + '/colls/' + cname;
     }
-
-
-
 }
 
 module.exports.CosmosDocDbUtil = CosmosDocDbUtil;
