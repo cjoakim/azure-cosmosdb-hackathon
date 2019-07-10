@@ -1,6 +1,16 @@
 # azure-cosmosdb-hackathon - DotNet Core
 
-- Walk through and execute code that does CosmosDB CRUD and query operations
-- Deeper dive into RUs and how to see how many RUs your code is using 
-- Mention the other programming language SDKs - Java, Node, Python
-- Mention .Net 5 and future roadmap (https://devblogs.microsoft.com/dotnet/introducing-net-5/)
+## The Future of .Net
+
+- .Net 5 (https://devblogs.microsoft.com/dotnet/introducing-net-5/)
+
+## DotNet Core
+
+See example project at **solutions/functions-node/dotnet_core_test_client/** in this repo.
+
+## Other Programming Language SDKs for CosmosDB/SQL
+
+- Java
+- Node.js
+- Python
+- REST
