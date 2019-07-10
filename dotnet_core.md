@@ -6,6 +6,13 @@
 
 "**There will be just one .NET going forward, and you will be able to use it to target Windows, Linux, macOS, iOS, Android, tvOS, watchOS and WebAssembly and more.**"
 
+#### Highlights
+
+- Open source and community-oriented on GitHub
+- Cross-platform implementation
+- Capable command-line interface (CLI)
+- Visual Studio, Visual Studio for Mac, and Visual Studio Code integration
+
 ## DotNet Core
 
 See example project at **solutions/functions-node/dotnet_core_test_client/** in this repo.
