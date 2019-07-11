@@ -2,7 +2,7 @@
 
 // This file executes a test of the 'upsertAirportDoc' stored-procedure
 // using the world_airports_50.json data file.
-// Chris Joakim, Microsoft, 2019/04/14
+// Chris Joakim, Microsoft, 2019/07/11
 
 // Command-line use:
 // node airport_sproc_test.js test <db> <coll> <upsert-count> <sleep-ms> <change-randomness>
@@ -98,8 +98,12 @@ class Main {
                 msg = 'ERR';
             }
             console.log('evt_obj: ' + JSON.stringify(evt_obj, null, 2));
-            console.log(util.format('evt_obj_results; %s %s iata: %s xdiff: %s sp_diff: %s sp_updated_at %s sp_diffs %s ',
-                msg, this.actual_upserts, iata, this.sp_diff_expected, sp_diff, sp_updated_at, JSON.stringify(sp_diffs)));
+
+            // original output
+            // console.log(util.format('evt_obj_results; %s %s iata: %s xdiff: %s sp_diff: %s sp_updated_at %s sp_diffs %s ',
+            //     msg, this.actual_upserts, iata, this.sp_diff_expected, sp_diff, sp_updated_at, JSON.stringify(sp_diffs)));
+
+            console.log(util.format('cache_refresh_result; iata: %s sp_diffs %s ', iata, JSON.stringify(sp_diffs)));
 
             sleep.msleep(this.sleep_ms);
             this.upsert_next_doc();
@@ -120,7 +124,6 @@ class Main {
             airport['id'] = airport['iata_code'];
             airport['pk'] = airport['iata_code'];
             this.sp_diff_expected = 0;
-            //console.log("executing stored proc for: " + airport['pk']);
 
             if (this.actual_upserts <= this.airports_count) {
                 // first, unconditionally add ALL of the airports to the DB

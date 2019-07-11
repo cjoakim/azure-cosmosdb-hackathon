@@ -6,7 +6,7 @@
 
 // This file contains CosmosDB Stored Procedures.
 // See https://azure.github.io/azure-cosmosdb-js-server/ for server-side API.
-// Chris Joakim, Microsoft, 2019/04/14
+// Chris Joakim, Microsoft, 2019/07/11
 
 var helloWorld = {
     id: "helloWorld",
@@ -44,25 +44,17 @@ var upsertAirportDoc = {
     id: "upsertAirportDoc",
     serverScript: function (givendoc) { 
 
-        function insertCallback(err, doc, options) {
-            if (err) throw err;
-            getContext().getResponse().setBody(doc);
-        }
-
         function upsertCallback(err, doc, options) {
             if (err) throw err;
             getContext().getResponse().setBody(doc);
         }
 
         function omit_field(key) {
-            var fields = 'location'.split(',');
-            if (key.startsWith('__')) {
+            if (key.startsWith('_')) {
                 return true;
             }
-            for (var i = 0 ; i < fields.length; i++) {
-                if (key === fields[i]) {
-                    return true;
-                }
+            if (key === 'location') {
+                return true;
             }
             return false;
         }
@@ -73,6 +65,7 @@ var upsertAirportDoc = {
             var pk   = givendoc['pk'];
             var iata = givendoc['iata_code'];
             var sql  = "SELECT * FROM root r where r.pk = '" + pk + "' and r.iata_code = '" + iata + "' ";
+
             var queryAccepted = collection.queryDocuments(selfLink, sql,
                 function (err, query_result_docs, options) {
                     if (err) throw err;
@@ -83,7 +76,7 @@ var upsertAirportDoc = {
                         givendoc['__sp_updated_at'] = epoch;
                         givendoc['__sp_diff'] = 0;
                         givendoc['__sp_diffs'] = [];
-                        collection.createDocument(selfLink, givendoc, insertCallback);
+                        collection.createDocument(selfLink, givendoc, upsertCallback);
                     }
                     else {
                         // update/overlay the original doc in the DB from the givendoc, and detect diffs
@@ -97,7 +90,7 @@ var upsertAirportDoc = {
                         for (var i = 0; i < len; i++) {
                             var key = keys[i];
                             if (omit_field(key)) {
-                                // pass, don't do diff logic for this key/attribute
+                                // don't do diff logic for this key/attribute
                             }
                             else {
                                 var newval = givendoc[key];
@@ -121,7 +114,7 @@ var upsertAirportDoc = {
                             dbdoc['__sp_diffs'] = diffs;
                         }
 
-                        // Only update the document if necessary
+                        // Update the Document only if there are differences
                         if (dbdoc['__sp_diff'] > 0) {
                             dbdoc['__sp_updated_at'] = new Date().getTime();
                             collection.upsertDocument(selfLink, dbdoc, upsertCallback);

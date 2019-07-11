@@ -1,16 +1,24 @@
 # Server-Side Stored Procedures
 
-## The Test
+## The Real-World Example
+
+- Customer has a **Cache of Data in CosmosDB**, millions of items
+- Customer uses **AI/ML to intelligently refresh items in the cache**
+- But they don't know if individual cache updates actually change the item 
+- They need a **feedback-loop to indicate if the cache needed to be updated or not**
+- Calling the stored procedure reduces latency
+
+### The Test
 
 - See file **test.sh** which executes the following
 - Queries and Deletes all Documents in the CosmosDB **dev** database **airports** collection
 - Deletes and Redeploys the  **upsertAirportDoc** Stored Procedure
 - Executes the **airport_sproc_test.js** Node.js client program:
-  - Loads the list of top 50 world airports
-  - Perform 300 iterations through this list and invoke the Stored Procedure for each iteration
+  - Reads the list of top 50 world airports
+  - Perform n-iterations through this list and invoke the Stored Procedure for each iteration
   - The first 50 are inserts
-  - The remaining 250 are either **no-change upserts** or **actual upserts**
-  - Randomly determine if the iteration is a no-change or not
+  - The remaining iterations are either **no-change upserts** or **actual upserts**
+  - Test client program randomly determines if the iteration should be a change or not (randomness parameter)
   - Randomly generate temperature, humidity, and rainfall values for changes
   - Test client program checks the expected vs actual results of the Stored Proc and writes to a log file
 - Grep the log file for CLT (Charlotte, NC) results
@@ -25,12 +33,12 @@
   - Detects individual attribute changes between existing Document and given Object
   - Overlays the Document with the changed or additional values
   - **upserts the Document only if there are changes**
-- Several **__sp_xxx** attributes are added as necessary:
+- Several **__sp_xxx** (stored proc) attributes are added as necessary:
   - __sp_created_at - an epoch time
   - __sp_updated_at - an epoch time
-  - __sp_diff - indicates if the Document was changed; 1 = true, 0 = false
-  - __sp_diffs - an array of the specific changes
-  - These last two fields are intented for the intelligent use by the client program for ML purposes
+  - **__sp_diff** - indicates if the Document was changed; 1 = true, 0 = false
+  - **__sp_diffs** - an array of the specific changes
+  - These last two fields are intented for the intelligent use by the client program for AI/ML purposes
 
 See **sproc.js** for the implementation of **upsertAirportDoc** Stored Procedure.
 
