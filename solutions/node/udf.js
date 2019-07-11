@@ -24,13 +24,7 @@ var docAge = {
 var southEastUsa = {
     id: "southEastUsa",
     serverScript: function southEastUsa(pk) {
-        if (pk == 'ATL') {
-            return true;
-        } 
-        if (pk == 'CLT') {
-            return true;
-        }
-        return false;
+        return ["ATL", "CLT", "MIA"].includes(pk);
     }
 }
 
