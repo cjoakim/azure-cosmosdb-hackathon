@@ -2,6 +2,7 @@
 Usage:
     python challenge3.py load_azure_sql_collection <dbname> <collname> <infile>
     python challenge3.py load_azure_sql_collection hackathon airports3 data/mongoexport_airports.json
+    python challenge3.py load_azure_sql_collection dev world_airports data/world_airports_flat.json --to-numerics
     python challenge3.py count_docs_in_collection hackathon airports3
     python challenge3.py query_by_iata_code hackathon airports3 ATL
 Options:
@@ -73,9 +74,18 @@ class Main(object):
             for idx, line in enumerate(f):
                 if idx < 99999:
                     doc = json.loads(line)
-                    del doc['_id']
+                    if '_id' in doc.keys():
+                         doc['_id']
                     doc['pk'] = doc['iata_code']
+
+                    if self.convert_to_numerics():
+                        doc['latitude']  = float(doc['latitude'])
+                        doc['longitude'] = float(doc['longitude'])
+                        doc['altitude']  = float(doc['altitude'])
+                        doc['timezone_num'] = float(doc['timezone_num'])
+                    
                     print(json.dumps(doc, sort_keys=True, indent=2))
+
                     try:
                         db_doc = util.insert_document(dbname, collname, doc)
                         print(db_doc)
@@ -83,6 +93,12 @@ class Main(object):
                     except:
                         print("Unexpected error:{}".format(sys.exc_info()[0]))
                         raise
+
+    def convert_to_numerics(self):
+        for arg in self.args:
+            if arg == '--to-numerics':
+                return True
+        return False
 
     def count_docs_in_collection(self, dbname, collname):
         util = cosmos.DocDbUtil(True)
