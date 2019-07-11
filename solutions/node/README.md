@@ -1,12 +1,21 @@
 # Server-Side Stored Procedures
 
+[Server-Side Programming Documentation](https://docs.microsoft.com/en-us/azure/cosmos-db/stored-procedures-triggers-udfs)
+
 ## The Real-World Example
 
 - Customer has a **Cache of Data in CosmosDB**, millions of items
 - Customer uses **AI/ML to intelligently refresh items in the cache**
 - But they don't know if individual cache updates actually change the item 
 - They need a **feedback-loop to indicate if the cache needed to be updated or not**
-- Calling the stored procedure reduces latency
+
+### Why Implement this as a StoredProcedure?
+
+- Calling the stored procedure reduces latency; just one-trip/one-call to ComsosDB
+- The JavaScript SP code is pre-compiled in CosmosDB
+- Allows for individual attribute updates
+- Stored Procedure calls are Transactional 
+- Provides a feedback loop to the caller
 
 ### The Test
 
@@ -23,6 +32,19 @@
   - Test client program checks the expected vs actual results of the Stored Proc and writes to a log file
 - Grep the log file for CLT (Charlotte, NC) results
 - Query CosmosDB for the final state of CLT
+
+#### Sample Output
+
+```
+cache_refresh_result; iata: ATL sp_diffs []
+cache_refresh_result; iata: ATL sp_diffs ["chg; temperature: 57 -> 64","chg; humidity: 79 -> 62","chg; rain: 2 -> 1"]
+cache_refresh_result; iata: ATL sp_diffs []
+cache_refresh_result; iata: ATL sp_diffs []
+cache_refresh_result; iata: CLT sp_diffs []
+cache_refresh_result; iata: CLT sp_diffs []
+cache_refresh_result; iata: CLT sp_diffs ["chg; temperature: 104 -> 90","chg; humidity: 78 -> 67","chg; rain: 1 -> 2"]
+cache_refresh_result; iata: CLT sp_diffs []
+```
 
 ## upsertAirportDoc Stored Proc Logic
 

@@ -6,7 +6,7 @@ const TriggerOperation = DocumentBase.TriggerOperation;
 
 // This file contains CosmosDB Triggers.
 // See https://azure.github.io/azure-cosmosdb-js-server/
-// Chris Joakim, Microsoft, 2019/04/14
+// Chris Joakim, Microsoft, 2019/07/11
 
 // triggerOperation: TriggerOperation.Create
 // triggerOperation: TriggerOperation.All
@@ -64,8 +64,6 @@ var postHistory = {
                     doc['last_err_date'] = date; 
                 }
             }); 
-
-        //request.setBody(doc);
     }
 }
 

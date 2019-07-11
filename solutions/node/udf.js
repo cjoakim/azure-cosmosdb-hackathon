@@ -6,7 +6,7 @@
 
 // This file contains CosmosDB User-Defined Functions (UDF).
 // See https://azure.github.io/azure-cosmosdb-js-server/
-// Chris Joakim, Microsoft, 2019/04/14
+// Chris Joakim, Microsoft, 2019/07/11
 
 
 var docAge = {
@@ -18,6 +18,19 @@ var docAge = {
         else {
             return (new Date().getTime()) - Number(epoch);
         }
+    }
+}
+
+var southEastUsa = {
+    id: "southEastUsa",
+    serverScript: function southEastUsa(pk) {
+        if (pk == 'ATL') {
+            return true;
+        } 
+        if (pk == 'CLT') {
+            return true;
+        }
+        return false;
     }
 }
 
@@ -49,5 +62,6 @@ var docOverlay = {
     }
 }
 
-module.exports.docAge     = docAge;
-module.exports.docOverlay = docOverlay;
+module.exports.docAge       = docAge;
+module.exports.southEastUsa = southEastUsa;
+module.exports.docOverlay   = docOverlay;

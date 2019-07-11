@@ -8,22 +8,23 @@
 // node main.js list_databases
 // node main.js list_collections hackathon
 //
-// node main.js create_stored_proc hackathon airports lookupDoc create
-// node main.js create_stored_proc hackathon airports createHistoryDoc create
-// node main.js create_stored_proc hackathon airports bulkImport create
-// node main.js create_stored_proc hackathon airports upsertAirportDoc create
+// node main.js create_stored_proc dev airports lookupDoc create
+// node main.js create_stored_proc dev airports createHistoryDoc create
+// node main.js create_stored_proc dev airports bulkImport create
+// node main.js create_stored_proc dev airports upsertAirportDoc create
 //
-// node main.js delete_stored_proc hackathon airports lookupDoc
+// node main.js delete_stored_proc dev airports lookupDoc
 //
-// node main.js execute_stored_proc hackathon airports lookupDoc bos bos
-// node main.js execute_stored_proc hackathon airports createHistoryDoc bos bos
-// node main.js execute_stored_proc hackathon airports bulkImport
-// node main.js execute_stored_proc hackathon airports upsertAirportDoc
+// node main.js execute_stored_proc dev airports lookupDoc bos bos
+// node main.js execute_stored_proc dev airports createHistoryDoc bos bos
+// node main.js execute_stored_proc dev airports bulkImport
+// node main.js execute_stored_proc dev airports upsertAirportDoc
 //
-// node main.js create_udf hackathon airports docOverlayUdf create
+// node main.js create_udf dev airports docOverlayUdf create
+// node main.js create_udf dev airports southEastUsa create
 //
-// node main.js create_trigger hackathon airports preCreate create
-// node main.js create_trigger hackathon airports postHistory create
+// node main.js create_trigger dev airports preCreate create
+// node main.js create_trigger dev airports postHistory create
 //
 // Links:
 // https://docs.microsoft.com/en-us/azure/cosmos-db/programming
@@ -33,7 +34,7 @@
 // https://azure.github.io/azure-cosmosdb-js-server/  (SDK)
 // https://github.com/Azure/azure-cosmosdb-node/blob/master/source/lib/documentclient.js
 //
-// Chris Joakim, Microsoft, 2019/04/14
+// Chris Joakim, Microsoft, 2019/07/11
 
 const events = require('events');
 const fs     = require('fs');
@@ -266,6 +267,9 @@ class Main {
                 break;
             case 'docOverlay':
                 udf_def = udf.docOverlay;
+                break;
+            case 'southEastUsa':
+                udf_def = udf.southEastUsa;
                 break;
             default:
                 console.log('error: unknown triggername - ' + udfname);
