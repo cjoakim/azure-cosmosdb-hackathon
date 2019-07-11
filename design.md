@@ -196,7 +196,7 @@ Two Collections:
   - No pk relationship to the Orders
 
 - Orders Collection
-  - for the Order, LineItems, Deliveries
+  - for the Order, LineItems, Deliveries; use a doctype attribute
   - Relatively dynamic, with more documents and RUs
   - Could use TTL to purge old orders
 
