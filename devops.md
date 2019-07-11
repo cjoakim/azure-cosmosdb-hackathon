@@ -22,3 +22,11 @@
 
 - [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)
 
+- One size does not fit all.  There are many possible DevOps flows; customize for **your** apps.
+
+- [AKS & Jenkins Example](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/apps/devops-with-aks)
+
+- [Azure App Service](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/apps/devops-dotnet-webapp)
+
+- [Jenkins](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/apps/jenkins)
+
