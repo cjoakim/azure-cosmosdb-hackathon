@@ -98,7 +98,7 @@ SELECT * FROM c WHERE c.altitude < 30000 and c._ts >= @HighWaterMark ORDER BY c.
 
 ### Use the Azure Search Index
 
-#### The Search Explorer
+#### With Search Explorer
 
 [Search Explorer in Azure Portal](https://docs.microsoft.com/en-us/azure/search/search-explorer)
 
@@ -106,6 +106,7 @@ SELECT * FROM c WHERE c.altitude < 30000 and c._ts >= @HighWaterMark ORDER BY c.
 search=*
 
 search=Atlanta
+https://cjoakim-search.search.windows.net/indexes/cosmosdb-index/docs?api-version=2019-05-06&search=Atlanta
 
 search=Atlanta&$count=true
 
@@ -119,6 +120,24 @@ search=*&$count=true&$filter=geo.distance(location, geography'POINT(-84.396158 3
 
 ```
 
+---
 
+#### With the command-line and curl
 
+See bash script **azure_search.sh**
 
+```
+curl -X GET \
+    -H 'Content-Type: application/json' \
+    -H 'Accept: application/json' \
+    -H 'api-key: '$AZURE_SEARCH_QUERY_KEY \
+    'https://cjoakim-search.search.windows.net/indexes/cosmosdb-index/docs?api-version=2019-05-06&search=Atlanta&$select=iata_code,name,city,latitude,longitude,altitude'
+```
+
+Invoke the script:
+
+```
+./azure_search.sh 
+or
+./azure_search.sh | jq
+```
