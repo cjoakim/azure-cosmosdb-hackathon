@@ -110,18 +110,17 @@ Here are the base commands:
     webapp            : Manage web apps.
 ```
 
-## Links
-
-- https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
-- https://docs.microsoft.com/en-us/cli/azure/cosmosdb?view=azure-cli-latest
-
 ## Example
 
 See file [solutions/az_cli/provision_sql_db.sh](solutions/az_cli/provision_sql_db.sh) in this repo.
 
-
+```
+$ cd solutions/az_cli/
+$ ./provision_sql_db.sh
 ```
 
+## Links
 
-```
+- https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest
+- https://docs.microsoft.com/en-us/cli/azure/cosmosdb?view=azure-cli-latest
 
