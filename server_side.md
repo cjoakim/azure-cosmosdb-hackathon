@@ -67,6 +67,7 @@ node main.js create_udf dev airports southEastUsa create
 Use the UDF in a SQL Query:
 ```
 SELECT * FROM c WHERE udf.southEastUsa(c.pk)
+SELECT c.pk, c.city, c.name FROM c WHERE udf.southEastUsa(c.pk)
 ```
 
 --- 
