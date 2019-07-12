@@ -30,7 +30,7 @@
   
   - Have CosmosDB automatically **replicate** the data to other regions
 
-- [Azure Functions Code](solutions/functions-node/readme.md)
+- [Azure Functions Code](solutions/functions-node/readme.md) in solutions/functions-node/ directory
 
 ### Solution 3
 
