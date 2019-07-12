@@ -8,6 +8,9 @@ const eventHubTrigger: AzureFunction = async function (context: Context, eventHu
         context.log('doc: ' + JSON.stringify(message));
         context.bindings.outDoc = message;  // <-- this is all that is needed to write the message to CosmosDB!
     });
+
+    context.done();
+    context.log('done');
 };
 
 export default eventHubTrigger;

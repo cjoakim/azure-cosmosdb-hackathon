@@ -19,7 +19,7 @@ using Newtonsoft.Json.Serialization;
 // DotNet Core Text Client Console App for the Azure Functions
 // It is used to send messages to Azure Event Hubs, and query
 // the resulting documents in Azure CosmosDB.
-// Chris Joakim, Microsoft, 2019/07/08
+// Chris Joakim, Microsoft, 2019/07/12
 
 namespace dotnet_core_test_client {
 
@@ -44,6 +44,10 @@ namespace dotnet_core_test_client {
         private static double queryCharge = 0;
  
         static void Main(string[] args) {
+            
+            Console.WriteLine(eventHubName);
+            Console.WriteLine(eventHubConnStr);
+            
             for (int i = 0; i < args.Length; i++) {
                 Console.WriteLine("arg: " + i + " -> "+ args[i]);
             }
@@ -87,7 +91,7 @@ namespace dotnet_core_test_client {
             Log("  dotnet run query_cosmos all_events <optional-after-epoch>");
             Log("  dotnet run query_cosmos events_for_airport <pk> <optional-after-epoch>");
             Log("  dotnet run query_cosmos events_for_city <city> <optional-after-epoch>");
-            Log("  dotnet run query_cosmos delete_documents <max-count> optional-after-epoch>");
+            Log("  dotnet run query_cosmos delete_documents <max-count> <optional-after-epoch>");
             Log("  dotnet run query_cosmos count_documents");
             Log("  dotnet run query_cosmos events_for_location -80.842842 35.499586 1 <optional-after-epoch>");
             Log("  dotnet run insert_cosmos_documents 10");
