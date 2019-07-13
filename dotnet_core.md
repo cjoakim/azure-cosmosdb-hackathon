@@ -19,10 +19,41 @@ See example project at **solutions/functions-node/dotnet_core_test_client/** in 
 
 #### Demonstrate
 
-- CRUD Operations
+- Build/Compile
+- Entries in dotnet_core_test_client.csproj
+- Create Client
+  - cosmosClient = new DocumentClient(new Uri(cosmosUri), cosmosKey);
+- Task and Wait() or .Result, Promises
 - SQL-style code
 - Linq-style code
+- [URIs](https://docs.microsoft.com/en-us/rest/api/cosmos-db/cosmosdb-resource-uri-syntax-for-rest), line 360
+- FeedOptions / RequestOptions, line 339+
+- Operations
+  - InsertCosmosDocuments, line 280
+  - QueryByPkId, line 276
+  - QueryEventsForAirport, SQL-style, line 224
+  - QueryEventsForLocation, ST_DISTANCE, line 234
+  - DeleteDocuments, Linq-style, line 309
 - RU Request Charge display
+  - DocumentsQuery, line 245
+  - .AsDocumentQuery() enables the collection of the RequestCharge
+
+```
+$ dotnet build
+
+$ dotnet run
+dotnet run time_now
+dotnet run send_event_hub_messsages 10
+dotnet run query_cosmos doc_by_pk_id <pk> <id>
+dotnet run query_cosmos all_events <optional-after-epoch>
+dotnet run query_cosmos events_for_airport <pk> <optional-after-epoch>
+dotnet run query_cosmos events_for_city <city> <optional-after-epoch>
+dotnet run query_cosmos delete_documents <max-count> <optional-after-epoch>
+dotnet run query_cosmos count_documents
+dotnet run query_cosmos events_for_location -80.842842 35.499586 1 <optional-after-epoch>
+dotnet run insert_cosmos_documents 10
+
+```
 
 ## Other Programming Language SDKs for CosmosDB/SQL
 

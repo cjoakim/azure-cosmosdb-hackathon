@@ -310,10 +310,11 @@ namespace dotnet_core_test_client {
             Console.WriteLine("DeleteDocuments; max: " + maxDeleteCount + ", fromEpoch: " + fromEpoch);
 
             // this is an example of Linq queries, select the oldest docs with an epoch > fromEpoch
-            IQueryable<EventDoc> eventQuery = cosmosClient.CreateDocumentQuery<EventDoc>(
-                CollectionUri(), StandardFeedOptions(true))
-                .Where(ed => ed.epoch >= fromEpoch)
-                .OrderBy(ed => ed.epoch);
+            IQueryable<EventDoc> eventQuery = 
+                cosmosClient.CreateDocumentQuery<EventDoc>(
+                    CollectionUri(), StandardFeedOptions(true))
+                    .Where(ed => ed.epoch >= fromEpoch)
+                    .OrderBy(ed => ed.epoch);
 
             int count = 0;
             Console.WriteLine("Running LINQ query...");

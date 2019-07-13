@@ -116,7 +116,13 @@ See file [solutions/az_cli/provision_sql_db.sh](solutions/az_cli/provision_sql_d
 
 ```
 $ cd solutions/az_cli/
-$ ./provision_sql_db.sh
+
+$ ./provision_sql_db.sh create_collection
+
+$ ./provision_sql_db.sh update_collection
+
+$ ./provision_sql_db.sh show_collection
+
 ```
 
 ## Links
