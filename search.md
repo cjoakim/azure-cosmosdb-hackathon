@@ -114,8 +114,6 @@ search=Atlanta&$count=true&$select=iata_code,name,city,latitude,longitude,altitu
 
 search=*&$filter= altitude gt 5000&$count=true
 
-note: 528 Luckie St, Atlanta, GA 30313 = 33.766339, -84.396158 
-
 search=*&$count=true&$filter=geo.distance(location, geography'POINT(-84.396158 33.766339)') le 10
 
 ```

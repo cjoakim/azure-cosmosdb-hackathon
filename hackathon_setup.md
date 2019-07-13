@@ -29,7 +29,8 @@ A CosmosDB Hackathon
 
 ```
 <PackageReference Include="CsvHelper" Version="12.1.2" />
-<PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="2.3.0" />
+<PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="2.5.1" />
+<PackageReference Include="Microsoft.Azure.EventHubs" Version="3.0.0" />
 ```
 
 #### Java
