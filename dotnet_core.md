@@ -19,6 +19,8 @@ See example project at **solutions/functions-node/dotnet_core_test_client/** in 
 
 #### Demonstrate
 
+- dotnet new --help
+- dotnet new console
 - Build/Compile
 - Entries in dotnet_core_test_client.csproj
 - Create Client
@@ -61,3 +63,7 @@ dotnet run insert_cosmos_documents 10
 - Node.js
 - Python
 - REST
+
+## ASP.DotNet Core
+
+- Similar to Ruby-on-Rails, and Node.js/Express
