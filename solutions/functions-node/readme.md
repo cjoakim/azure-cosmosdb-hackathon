@@ -366,8 +366,27 @@ Http Functions:
 
 Invoke the HTTP Function with curl:
 ```
-$ curl http://localhost:7071/api/HttpTrigger?name=MollyMcKay
-Hello MollyMcKay
+$ curl http://localhost:7071/api/HttpTrigger?name=miles
+```
+
+Then see the document in CosmosDB:
+```
+{
+    "pk": "miles-1563011451731",
+    "name": "miles",
+    "date": "Sat Jul 13 2019",
+    "epoch": 1563011451731,
+    "build_timestamp": "Sat Jul 13 2019 05:43:29 GMT-0400 (EDT)",
+    "function_name": "HttpTrigger",
+    "function_invocation_id": "d926b4f4-b4fd-44ea-9e8f-b9262ed433de",
+    "function_directory": "/Users/cjoakim/github/azure-cosmosdb-hackathon/solutions/functions-node/hackathon/HttpTrigger",
+    "id": "7c0ca263-c156-435d-b609-7429cf640f5b",
+    "_rid": "M2ZjAMK7mfOdAAAAAAAABA==",
+    "_self": "dbs/M2ZjAA==/colls/M2ZjAMK7mfM=/docs/M2ZjAMK7mfOdAAAAAAAABA==/",
+    "_etag": "\"0b00f9e9-0000-0100-0000-5d29a97d0000\"",
+    "_attachments": "attachments/",
+    "_ts": 1563011453
+}
 ```
 
 ### Deploy to Azure
