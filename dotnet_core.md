@@ -17,12 +17,17 @@
 
 See example project at **solutions/functions-node/dotnet_core_test_client/** in this repo.
 
-#### Demonstrate
+### Demonstrate
+
+#### SetUp
 
 - dotnet new --help
-- dotnet new console
+- dotnet new console --output cosmos_console_app
 - Build/Compile
 - Entries in dotnet_core_test_client.csproj
+
+#### Code
+
 - Create Client
   - cosmosClient = new DocumentClient(new Uri(cosmosUri), cosmosKey);
 - Task and Wait() or .Result, Promises
@@ -54,7 +59,6 @@ dotnet run query_cosmos delete_documents <max-count> <optional-after-epoch>
 dotnet run query_cosmos count_documents
 dotnet run query_cosmos events_for_location -80.842842 35.499586 1 <optional-after-epoch>
 dotnet run insert_cosmos_documents 10
-
 ```
 
 ## Other Programming Language SDKs for CosmosDB/SQL
@@ -67,3 +71,7 @@ dotnet run insert_cosmos_documents 10
 ## ASP.DotNet Core
 
 - Similar to Ruby-on-Rails, and Node.js/Express
+- Entity Framework Core Cosmos DB (preview)
+  - https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-2-2-preview-2/
+  - https://msdn.microsoft.com/en-us/magazine/mt848702.aspx
+
