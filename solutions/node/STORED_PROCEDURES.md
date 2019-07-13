@@ -1,20 +1,50 @@
-# azure-cosmosdb-Hackathon - server-side stored procedures
+# Server-Side Stored Procedures
 
-## The Test
+[Server-Side Programming Documentation](https://docs.microsoft.com/en-us/azure/cosmos-db/stored-procedures-triggers-udfs)
+
+## The Real-World Example
+
+- Customer has a **Cache of Data in CosmosDB**, millions of items
+- Customer uses **AI/ML to intelligently refresh items in the cache**
+- But they don't know if individual cache updates actually change the item 
+- They need a **feedback-loop to indicate if the cache needed to be updated or not**
+
+### Why Implement this as a StoredProcedure?
+
+- Calling the stored procedure reduces latency; just one-trip/one-call to ComsosDB
+- The JavaScript SP code is pre-compiled in CosmosDB
+- Allows for individual attribute updates
+- Stored Procedure calls are Transactional 
+- Provides a feedback loop to the caller
+
+### The Test
 
 - See file **test.sh** which executes the following
 - Queries and Deletes all Documents in the CosmosDB **dev** database **airports** collection
 - Deletes and Redeploys the  **upsertAirportDoc** Stored Procedure
 - Executes the **airport_sproc_test.js** Node.js client program:
-  - Loads the list of top 50 world airports
-  - Perform 300 iterations through this list and invoke the Stored Procedure for each iteration
+  - Reads the list of top 50 world airports
+  - Perform n-iterations through this list and invoke the Stored Procedure for each iteration
   - The first 50 are inserts
-  - The remaining 250 are either **no-change upserts** or **actual upserts**
-  - Randomly determine if the iteration is a no-change or not
+  - The remaining iterations are either **no-change upserts** or **actual upserts**
+  - Test client program randomly determines if the iteration should be a change or not (randomness parameter)
   - Randomly generate temperature, humidity, and rainfall values for changes
   - Test client program checks the expected vs actual results of the Stored Proc and writes to a log file
 - Grep the log file for CLT (Charlotte, NC) results
 - Query CosmosDB for the final state of CLT
+
+#### Sample Output
+
+```
+cache_refresh_result; iata: ATL sp_diffs []
+cache_refresh_result; iata: ATL sp_diffs ["chg; temperature: 57 -> 64","chg; humidity: 79 -> 62","chg; rain: 2 -> 1"]
+cache_refresh_result; iata: ATL sp_diffs []
+cache_refresh_result; iata: ATL sp_diffs []
+cache_refresh_result; iata: CLT sp_diffs []
+cache_refresh_result; iata: CLT sp_diffs []
+cache_refresh_result; iata: CLT sp_diffs ["chg; temperature: 104 -> 90","chg; humidity: 78 -> 67","chg; rain: 1 -> 2"]
+cache_refresh_result; iata: CLT sp_diffs []
+```
 
 ## upsertAirportDoc Stored Proc Logic
 
@@ -25,12 +55,12 @@
   - Detects individual attribute changes between existing Document and given Object
   - Overlays the Document with the changed or additional values
   - **upserts the Document only if there are changes**
-- Several **__sp_xxx** attributes are added as necessary:
+- Several **__sp_xxx** (stored proc) attributes are added as necessary:
   - __sp_created_at - an epoch time
   - __sp_updated_at - an epoch time
-  - __sp_diff - indicates if the Document was changed; 1 = true, 0 = false
-  - __sp_diffs - an array of the specific changes
-  - These last two fields are intented for the intelligent use by the client program for ML purposes
+  - **__sp_diff** - indicates if the Document was changed; 1 = true, 0 = false
+  - **__sp_diffs** - an array of the specific changes
+  - These last two fields are intented for the intelligent use by the client program for AI/ML purposes
 
 See **sproc.js** for the implementation of **upsertAirportDoc** Stored Procedure.
 
