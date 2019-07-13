@@ -14,9 +14,9 @@ A CosmosDB Overview and Hackathon
 - [What is CosmosDB?](what-is-cosmosdb.md)
 - [What is CosmosDB SQL?](what-is-cosmosdb-sql.md)
 
-### Data Ingestion Pipeline (60 min)
+### Streaming Data Ingestion Pipeline (60 min)
 
-- [Data Ingestion Pipeline](data_ingest_pipeline.md)
+- [Streaming Data Ingestion Pipeline](data_ingest_pipeline.md)
 
 ### DotNet Core & SDKs  (50 min)
 

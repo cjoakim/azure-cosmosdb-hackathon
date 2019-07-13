@@ -1,4 +1,4 @@
-# Data Ingestion Pipelines into CosmosDB
+# Streaming Data Ingestion Pipelines into CosmosDB
 
 ## Azure PaaS Services
 
@@ -22,12 +22,14 @@
   - Compile/Transpile them into **JavaScript (Node.js)**
   - **Test the Functions locally** on Developer Workstation (Windows, Mac, Linux)
   - **Deploy the Function App to Azure**, Discuss Deployment Options
-  - Write some world Airports data to the EventHub
-  - Query the destination collection in Azure Portal
-  - **Query GeoSpatial data (GeoJSON)** in the collection in Azure Portal
+
+  - Use a **DotNet Core Client Program** to:
+    - Write some world Airports data to the EventHub
+    - Query the destination collection in Azure Portal
+    - **Query GeoSpatial data (GeoJSON)** in the collection in Azure Portal
 
   - Discuss another Function that reads the **CosmosDB change-feed**
-  
+
   - Have CosmosDB automatically **replicate** the data to other regions
 
 - [Azure Functions Code](solutions/functions-node/readme.md) in solutions/functions-node/ directory

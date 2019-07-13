@@ -19,7 +19,7 @@ See example project at **solutions/functions-node/dotnet_core_test_client/** in 
 
 ### Demonstrate
 
-#### SetUp
+#### Project SetUp
 
 - dotnet new --help
 - dotnet new console --output cosmos_console_app
@@ -31,8 +31,8 @@ See example project at **solutions/functions-node/dotnet_core_test_client/** in 
 - Create Client
   - cosmosClient = new DocumentClient(new Uri(cosmosUri), cosmosKey);
 - Task and Wait() or .Result, Promises
-- SQL-style code
-- Linq-style code
+- SQL-style code - express the query as a SQL String
+- Linq-style code - express the query in fluent code
 - [URIs](https://docs.microsoft.com/en-us/rest/api/cosmos-db/cosmosdb-resource-uri-syntax-for-rest), line 360
 - FeedOptions / RequestOptions, line 339+
 - Operations
@@ -44,7 +44,7 @@ See example project at **solutions/functions-node/dotnet_core_test_client/** in 
 - RU Request Charge display
   - DocumentsQuery, line 245
   - .AsDocumentQuery() enables the collection of the RequestCharge
-
+  - response.RequestCharge
 ```
 $ dotnet build
 
