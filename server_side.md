@@ -37,24 +37,10 @@ See the **solutions/node/** directory in this repo
 
 UDF Code:
 ```
-
 var southEastUsa = {
     id: "southEastUsa",
     serverScript: function southEastUsa(pk) {
         return ["ATL", "CLT", "MIA"].includes(pk);
-    }
-}
-
-var southEastUsa = {
-    id: "southEastUsa",
-    serverScript: function southEastUsa(pk) {
-        if (pk == 'ATL') {
-            return true;
-        } 
-        if (pk == 'CLT') {
-            return true;
-        }
-        return false;
     }
 }
 ```

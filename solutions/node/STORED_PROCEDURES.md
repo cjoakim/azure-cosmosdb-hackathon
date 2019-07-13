@@ -6,14 +6,14 @@
 
 - Customer has a **Cache of Data in CosmosDB**, millions of items
 - Customer uses **AI/ML to intelligently refresh items in the cache**
-- But they don't know if individual cache updates actually change the item 
-- They need a **feedback-loop to indicate if the cache needed to be updated or not, so they could improve their algorithm**
+- But they didn't know if individual cache updates actually change the item 
+- They needed a **feedback-loop to indicate if the cache needed to be updated or not, so they could improve their algorithm**
 
 ### Why Implement this as a StoredProcedure?
 
 - Calling the stored procedure reduces latency; just one-trip/one-call to ComsosDB
-- The JavaScript SP code is pre-compiled in CosmosDB
-- Allows for individual attribute updates
+- The JavaScript SP code is pre-compiled in CosmosDB; fast and efficient
+- Allows for individual attribute updates, and smaller network messages
 - Stored Procedure calls are Transactional 
 - Provides a feedback loop to the caller
 
@@ -24,7 +24,7 @@
 - Deletes and Redeploys the  **upsertAirportDoc** Stored Procedure
 - Executes the **airport_sproc_test.js** Node.js client program:
   - Reads the list of top 50 world airports
-  - Perform n-iterations through this list and invoke the Stored Procedure for each iteration
+  - Perform n-iterations through this list and invoke the Stored Procedure for each iteration  (n = 200)
   - The first 50 are inserts
   - The remaining iterations are either **no-change upserts** or **actual upserts**
   - Test client program randomly determines if the iteration should be a change or not (randomness parameter)
