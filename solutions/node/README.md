@@ -6,8 +6,8 @@
 
 - Customer has a **Cache of Data in CosmosDB**, millions of items
 - Customer uses **AI/ML to intelligently refresh items in the cache**
-- But they don't know if individual cache updates actually change the item 
-- They need a **feedback-loop to indicate if the cache needed to be updated or not**
+- But they don't know if individual cache updates actually changed the item 
+- They need a **feedback-loop to indicate if the cache needed to be updated or not, so they could improve their algorithm**
 
 ### Why Implement this as a StoredProcedure?
 
