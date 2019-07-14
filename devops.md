@@ -20,6 +20,9 @@
 
 ## DevOps in Azure
 
+Cloud-hosted DevOps Services
+dev.azure.com
+
 - [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)
 
 - One size does not fit all.  There are many possible DevOps flows; customize for **your** apps.
@@ -30,3 +33,11 @@
 
 - [Jenkins](https://docs.microsoft.com/en-us/azure/architecture/example-scenario/apps/jenkins)
 
+## Example Project
+
+https://github.com/cjoakim/azure-webapp-devops1
+
+## Links
+
+- Donovan Brown Video, Intro, https://www.youtube.com/watch?v=JhqpF-5E10I
+- Donovan Brown Video, Getting Started, https://www.youtube.com/watch?v=tlGl6I4WIcQ
