@@ -1,6 +1,6 @@
 {
   "name": "cosmosdb-hackathon-server-side",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Server-Side code in CosmosDB, and systemadmin with Node.js",
   "main": "main.js",
   "author": "Chris Joakim",
@@ -10,6 +10,7 @@
     "documentdb": "^1.14.5",
     "request": "^2.88.0",
     "sleep": "^6.1.0",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "lodash": ">=4.17.14"
   }
 }
