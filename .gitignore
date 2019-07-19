@@ -97,3 +97,21 @@ typings/
 
 # next.js build output
 .next
+/.vs/azure-cosmosdb-hackathon/v16/Server/sqlite3/db.lock
+*.ide
+/.vs/azure-cosmosdb-hackathon/v16/.suo
+/solutions/dotnetcore/src/solution3/.vs/solution2/v16/Server/sqlite3/db.lock
+/solutions/dotnetcore/src/solution3/.vs/solution2/DesignTimeBuild/.dtbcache
+/solutions/dotnetcore/src/solution3/.vs/solution2/v16/.suo
+/.vs/VSWorkspaceState.json
+/solutions/dotnetcore/src/solution3/.vs/solution3/v15/Server/sqlite3/db.lock
+/solutions/dotnetcore/src/solution3/.vs/solution3/v15/Server/sqlite3/storage.ide-shm
+/solutions/dotnetcore/src/solution3/.vs/solution3/v15/Server/sqlite3/storage.ide-wal
+/solutions/dotnetcore/src/solution3/.vs/solution3/v15/.suo
+/solutions/dotnetcore/src/solution3/.vs/solution3/v16/Server/sqlite3/storage.ide-wal
+/solutions/dotnetcore/src/solution3/.vs/solution3/v16/Server/sqlite3/storage.ide-shm
+/solutions/dotnetcore/src/solution3/.vs/solution3/v16/Server/sqlite3/db.lock
+/solutions/dotnetcore/src/solution3/.vs/solution3/v16/.suo
+/solutions/dotnetcore/src/solution3/.vs/solution3/config/applicationhost.config
+/solutions/dotnetcore/src/.vs/solution/v15/.suo
+/solutions/dotnetcore/src/solution3/.vs/solution3/DesignTimeBuild/.dtbcache
