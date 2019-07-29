@@ -53,6 +53,12 @@
 - **Think of collections as a Unit-for-Scaling rather than a type of data**
   - The Request Units (RU) can be configured separately for each collection
 
+- **Know your data before you load it into CosmosDB**
+  - Use a tool like python/pandas to explore your canditate partition key values
+  - Verify high-cardinality and limited "spikes"
+  - See solutions/python/pandas_pk.py
+  - Consider a concatinated key like: 'MIAMI:FL:US'
+
 - **Do "partition key joins" rather than "cross-collection joins"**
   - Read the related documents within one pk value in one query
 
