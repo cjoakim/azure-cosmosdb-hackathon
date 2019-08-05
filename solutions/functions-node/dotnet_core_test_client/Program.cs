@@ -19,7 +19,9 @@ using Newtonsoft.Json.Serialization;
 // DotNet Core Text Client Console App for the Azure Functions
 // It is used to send messages to Azure Event Hubs, and query
 // the resulting documents in Azure CosmosDB.
-// Chris Joakim, Microsoft, 2019/07/12
+// Chris Joakim, Microsoft, 2019/08/05
+//
+// https://docs.microsoft.com/en-us/azure/cosmos-db/tutorial-global-distribution-sql-api
 
 namespace dotnet_core_test_client {
 
@@ -33,10 +35,14 @@ namespace dotnet_core_test_client {
     class Program {
         private static EventHubClient eventHubClient = null;
         private static DocumentClient cosmosClient   = null;
-        private static string eventHubName    = Environment.GetEnvironmentVariable("AZURE_EVENTHUB_HUBNAME");
-        private static string eventHubConnStr = Environment.GetEnvironmentVariable("AZURE_EVENTHUB_CONN_STRING");
-        private static string cosmosUri       = Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_URI");
-        private static string cosmosKey       = Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_KEY");
+        private static string eventHubName      = Environment.GetEnvironmentVariable("AZURE_EVENTHUB_HUBNAME");
+        private static string eventHubConnStr   = Environment.GetEnvironmentVariable("AZURE_EVENTHUB_CONN_STRING");
+        private static string cosmosUri         = Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_URI");
+        private static string cosmosKey         = Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_KEY");
+        private static string prefLoc1          = Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_PREF_LOC1");
+        private static string prefLoc2          = Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_PREF_LOC2");
+        private static string multiRegionWrites = Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_MULTI_REGION_WRITES");
+
         private static string cosmosDatabaseName   = "dev";    // Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_DBNAME");
         private static string cosmosCollectionName = "events"; // Environment.GetEnvironmentVariable("AZURE_COSMOSDB_SQLDB_COLLNAME");
         private static AirportData airportData = new AirportData();
@@ -136,7 +142,26 @@ namespace dotnet_core_test_client {
             string queryName = args[1];
             double fromEpoch = 0;
             Log("QueryCosmos: " + queryName + ", " + cosmosDatabaseName + ", " + cosmosCollectionName);
-            cosmosClient = new DocumentClient(new Uri(cosmosUri), cosmosKey);
+
+            // Use ConnectionPolicy to set read region selection preferences per environment variables
+            ConnectionPolicy connectionPolicy = new ConnectionPolicy();
+            if (prefLoc1.Equals("EastUS")) {
+                connectionPolicy.PreferredLocations.Add(LocationNames.EastUS);
+            }
+            else {
+                connectionPolicy.PreferredLocations.Add(LocationNames.NorthEurope);
+            }
+            if (prefLoc2.Equals("EastUS")) {
+                connectionPolicy.PreferredLocations.Add(LocationNames.EastUS);
+            }
+            else {
+                connectionPolicy.PreferredLocations.Add(LocationNames.NorthEurope);
+            }
+            if (multiRegionWrites.Equals("true")) {
+                connectionPolicy.UseMultipleWriteLocations = true;
+            }
+
+            cosmosClient = new DocumentClient(new Uri(cosmosUri), cosmosKey, connectionPolicy);
             string iataCode = null;
             string city = null;
             string pk  = null;
