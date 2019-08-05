@@ -56,7 +56,8 @@
 - **Know your data before you load it into CosmosDB**
   - Use a tool like python/pandas to explore your canditate partition key values
   - Verify high-cardinality and limited "spikes"
-  - See solutions/python/pandas_pk.py
+  - See solutions/python/
+    - python pandas_pk.py explore_postal_codes
   - Consider a concatinated key like: 'MIAMI:FL:US'
 
 - **Do "partition key joins" rather than "cross-collection joins"**
