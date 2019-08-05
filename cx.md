@@ -12,7 +12,7 @@ A CosmosDB Overview and Hackathon
 
 - Cosmos DB from an Ops perspective
 - How to improve quality of queries
-- How  to partition containers
+- How to partition containers
 - Available features – single vs multi region
  
 
