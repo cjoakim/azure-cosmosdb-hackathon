@@ -8,6 +8,14 @@ A CosmosDB Overview and Hackathon
 
 ## Overview and Topics
 
+## Specific Items
+
+- Cosmos DB from an Ops perspective
+- How to improve quality of queries
+- How  to partition containers
+- Available features – single vs multi region
+ 
+
 ### Overview (60 min)
 
 - [What is NoSQL?](what-is-nosql.md)
