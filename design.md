@@ -31,9 +31,15 @@
 
 ## Best Practices
 
-- **Think first about how you will query your data**
+- **Think first about how you will query your data, NOT the "shape" of your data**
   - Identify the use-cases for your application
   - Identify the queries your application will execute
+
+- **Put differently-shaped documents in the same collection**
+  - It's **schemaless!**  This is allowed
+  - Use a **doctype** attribute to identify the type of the Document
+  - There is no need to conform your documents to a given shape
+    - Other than **pk** and perhaps **doctype**
 
 - **Use a generic name for the partition key in each collection**
   - **pk**, partition_key, partitionKey - these are recommended names
@@ -44,18 +50,12 @@
   - The **values** that you use to populate the pk can and often will evolve over time
   - **Most of you queries should use the partition key**
 
-- **Put differently-shaped documents in the same collection**
-  - It's **schemaless!**  This is allowed
-  - Use a **doctype** attribute to identify the type of the Document
-  - There is no need to conform your documents to a given shape
-    - Other than **pk** and perhaps **doctype**
-
 - **Think of collections as a Unit-for-Scaling rather than a type of data**
   - The Request Units (RU) can be configured separately for each collection
 
 - **Know your data before you load it into CosmosDB**
   - Use a tool like python/pandas to explore your canditate partition key values
-  - Verify high-cardinality and limited "spikes"
+  - Strive for high-cardinality and limited "spikes"
   - See solutions/python/
     - python pandas_pk.py explore_postal_codes
   - Consider a concatinated key like: 'MIAMI:FL:US'

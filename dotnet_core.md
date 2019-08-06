@@ -13,7 +13,9 @@
 - Capable command-line interface (CLI)
 - Visual Studio, Visual Studio for Mac, and Visual Studio Code integration
 
-## DotNet Core
+## DotNet Core Current State; Azure Cosmos DB libraries for .NET
+
+- https://docs.microsoft.com/en-us/dotnet/api/overview/azure/cosmosdb?view=azure-dotnet
 
 See example project at **solutions/functions-node/dotnet_core_test_client/** in this repo.
 
@@ -57,7 +59,8 @@ dotnet run query_cosmos events_for_airport <pk> <optional-after-epoch>
 dotnet run query_cosmos events_for_city <city> <optional-after-epoch>
 dotnet run query_cosmos delete_documents <max-count> <optional-after-epoch>
 dotnet run query_cosmos count_documents
-dotnet run query_cosmos events_for_location -80.842842 35.499586 1 <optional-after-epoch>
+dotnet run query_cosmos events_for_location -80.842842 35.499586 50 <optional-after-epoch> Davidson, NC
+dotnet run query_cosmos events_for_location -80.290556 25.79325 1 <optional-after-epoch> Miami, FL
 dotnet run insert_cosmos_documents 10
 ```
 
@@ -74,4 +77,3 @@ dotnet run insert_cosmos_documents 10
 - Entity Framework Core Cosmos DB (preview)
   - https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-2-2-preview-2/
   - https://msdn.microsoft.com/en-us/magazine/mt848702.aspx
-
