@@ -99,7 +99,8 @@ namespace dotnet_core_test_client {
             Log("  dotnet run query_cosmos events_for_city <city> <optional-after-epoch>");
             Log("  dotnet run query_cosmos delete_documents <max-count> <optional-after-epoch>");
             Log("  dotnet run query_cosmos count_documents");
-            Log("  dotnet run query_cosmos events_for_location -80.842842 35.499586 1 <optional-after-epoch>");
+            Log("  dotnet run query_cosmos events_for_location -80.842842 35.499586 50 <optional-after-epoch> Davidson, NC");
+            Log("  dotnet run query_cosmos events_for_location -80.290556 25.79325 1 <optional-after-epoch> Miami, FL");
             Log("  dotnet run insert_cosmos_documents 10");
             Log("");
         }
