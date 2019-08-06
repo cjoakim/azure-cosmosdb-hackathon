@@ -16,12 +16,12 @@ TTL functionality eliminates the need to explicitly spend RUs to delete obsolete
   - Range - equality, range, ORDER BY, joins
   - Spatial - for Geospatial/GeoJSON data
   - Composite - for ORDER BY queries on multiple properties
-  
+
 - indexingMode
   - Consistent - synchronous
   - None - used as a pure key-value store
 
-![Indexing Policy Docs](https://docs.microsoft.com/en-us/azure/cosmos-db/index-policy)
+[Indexing Policy Docs](https://docs.microsoft.com/en-us/azure/cosmos-db/index-policy)
 
 #### Default indexing policy
 
@@ -52,6 +52,8 @@ TTL functionality eliminates the need to explicitly spend RUs to delete obsolete
 ```
 
 ### Programming - Stored Procedures, Triggers, UDFs
+
+Utilize Stored Procedures for "one trip API calls" to the Database.
 
 - [Server Side](server_side.md)
 
