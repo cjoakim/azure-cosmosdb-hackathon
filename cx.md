@@ -15,7 +15,7 @@ A CosmosDB Overview and Hackathon
 - Available features – single vs multi region
   - https://docs.microsoft.com/en-us/azure/cosmos-db/distribute-data-globally
 - Cosmos DB from an Ops perspective
-  - Performance tips (perf.md)
+  - [Performance tips](perf.md)
 
 ### Overview
 
