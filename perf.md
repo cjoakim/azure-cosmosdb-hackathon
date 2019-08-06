@@ -8,6 +8,12 @@
 
 TTL functionality eliminates the need to explicitly spend RUs to delete obsolete documents.
 
+### Observe the RU Costs of your DB Operations
+
+```
+
+```
+
 ### Optimize Indexes If Necessary
 
 - Include and Exclude Paths
