@@ -10,11 +10,10 @@ A CosmosDB Overview and Hackathon
 
 ## Specific Items
 
-- Cosmos DB from an Ops perspective
-- How to improve quality of queries
 - How to partition containers
+- How to improve the quality of queries
 - Available features – single vs multi region
- 
+- Cosmos DB from an Ops perspective
 
 ### Overview
 
