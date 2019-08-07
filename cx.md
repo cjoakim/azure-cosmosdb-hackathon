@@ -11,9 +11,24 @@ A CosmosDB Overview and Hackathon
 ## Specific Items
 
 - How to partition containers
+  - [Design](design.md)
+  - Know your Data
+
 - How to improve the quality of queries
+  - Execute sample queries, see response.RequestCharge values
+  - dotnet run send_event_hub_messsages 10
+  - dotnet run query_cosmos doc_by_pk_id MIA 6d61f28f-a796-45ea-8025-355e4a35bd39
+  - dotnet run query_cosmos all_events 
+  - dotnet run query_cosmos events_for_airport MIA
+  - dotnet run query_cosmos events_for_city Miami
+  - dotnet run query_cosmos delete_documents 1
+  - dotnet run query_cosmos count_documents
+  - dotnet run query_cosmos events_for_location -80.842842 35.499586 50
+  - dotnet run query_cosmos events_for_location -80.290556 25.79325 1
+
 - Available features – single vs multi region
   - https://docs.microsoft.com/en-us/azure/cosmos-db/distribute-data-globally
+  
 - Cosmos DB from an Ops perspective
   - [Performance tips](perf.md)
 
