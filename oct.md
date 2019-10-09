@@ -2,12 +2,25 @@
 
 ## Agenda
 
-- Overview of CosmosDB  (10min)
-- Product Roadmap  (10min)
-- SQL API demo with Spatial Data  (5min)
-- Graph API demo for Bill-of-Material  (15min)
+- Overview of CosmosDB  (10 min)
+  - https://github.com/cjoakim/azure-cosmosdb-hackathon/blob/master/oct.md
+
+- SQL API demo with Spatial Data  (10 min)
+  - Azure Portal UI
+  - Partition Key and Partitions
+    - /pk attribute
+    - Metrics -> Storage -> Dev -> Airports
+  - New Jupyter Notebooks with GEO queries
+
+- Product Roadmap  (10 min)
+
+- Graph API demo for Bill-of-Material  (15 min)
   - https://github.com/Azure-Samples/azure-cosmos-db-graph-npm-bom-sample
-- Discussion  (20min)
+
+- IoT Example Architecture  (5 min, optional)
+  - https://github.com/cjoakim/azure-cosmosdb-iot
+
+- Discussion  (10-15 min)
 
 ---
 
