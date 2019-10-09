@@ -7,10 +7,12 @@
 
 - **SQL API demo with Spatial Data**  (10 min)
   - Azure Portal UI
+  - Request Units
   - Partition Key and Partitions
     - /pk attribute
     - Metrics -> Storage -> Dev -> Airports
   - New Jupyter Notebooks with GEO queries
+  - Replicate Data to Other Regions
 
 - **Product Roadmap**  (10 min)
 
