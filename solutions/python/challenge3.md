@@ -17,7 +17,7 @@ In Azure Portal, create a CosmosDB with SQL API Account.
 
 Then create a **hackathon** database within it.
 
-Then create collection **airports3** within the hackathon database
+Then create collection **airports** within the hackathon database
 with a partition key named **pk**
 
 ### Python
@@ -32,15 +32,15 @@ python --version
 
 Then load the collection with Python:
 ```
-python challenge3.py load_azure_sql_collection hackathon airports3 data/mongoexport_airports.json
+python challenge3.py load_azure_sql_collection dev airports data/mongoexport_airports.json
 ```
 
 Then query the number of documents in the collection:
 ```
-python challenge3.py count_docs_in_collection hackathon airports3
+python challenge3.py count_docs_in_collection dev airports
 ```
 
 Then query for the airport with the iata code 'ATL':
 ```
-python challenge3.py query_by_iata_code hackathon airports3 ATL
+python challenge3.py query_by_iata_code dev airports ATL
 ```

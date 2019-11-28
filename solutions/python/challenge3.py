@@ -89,7 +89,7 @@ class Main(object):
                     try:
                         db_doc = util.insert_document(dbname, collname, doc)
                         print(db_doc)
-                        time.sleep(0.2)
+                        #time.sleep(0.2)
                     except:
                         print("Unexpected error:{}".format(sys.exc_info()[0]))
                         raise
