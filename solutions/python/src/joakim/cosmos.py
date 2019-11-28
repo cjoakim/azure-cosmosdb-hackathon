@@ -1,74 +1,67 @@
 # This class performs CRUD operations vs CosmosDB with SQL/DocumentDB API.
+# This class now uses the new Microsoft open-source library for CosmosDB w/SQL API.
+# See https://pypi.org/project/azure-cosmos/
 # See https://docs.microsoft.com/en-us/azure/cosmos-db/sql-api-sql-query
-# Chris Joakim, Microsoft, 2019/04/24
+# Chris Joakim, Microsoft, 2019/11/28
 
 import os
 import sys
 
 from src.joakim import config
 
-import pydocumentdb.document_client as document_client
+import azure.cosmos.cosmos_client as cosmos_client
+import azure.cosmos.errors as errors
+import azure.cosmos.http_constants as http_constants
 
 
-class DocDbUtil(object):
+class CosmosSqlUtil(object):
 
-    def __init__(self, enable_cross_partition=False):
+    def __init__(self):
         c = config.Config()
         host = c.cosmosdb_uri()
         key  = c.cosmosdb_key()
-        self.client = document_client.DocumentClient(host, {'masterKey': key})
+        self.client = cosmos_client.CosmosClient(host, {'masterKey': key})
 
-        if enable_cross_partition:
-            self.client.default_headers['x-ms-documentdb-query-enablecrosspartition'] = True
+    def db_link(self, dbname):
+        return 'dbs/' + dbname
 
     def collection_link(self, dbname, cname):
-        return 'dbs/' + dbname + '/colls/' + cname;
+        return self.db_link(dbname) + '/colls/' + cname
 
     def document_link(self, dbname, cname, id):
         return self.collection_link(dbname, cname) + '/docs/' + id
 
     def list_databases(self):
-        databases = list(self.client.ReadDatabases())
-        if not databases:
-            print('no databases')
-        else:
-            for db in databases:
-                id = db['id']
-                print('database: {}'.format(id))
-        return databases
+        return list(self.client.ReadDatabases())
+
+    def list_collections(self, dbname):
+        db_link = self.db_link(dbname)
+        return list(self.client.ReadContainers(db_link))
 
     def insert_document(self, dbname, cname, doc):
         link = self.collection_link(dbname, cname)
         try:
-            return self.client.UpsertDocument(link, doc)
+            return self.client.CreateItem(link, doc)
         except:
             print("Unexpected error:{}".format(sys.exc_info()[0]))
             raise
 
-    def delete_document(self, dbname, cname, id, pk=None):
-        link = self.document_link(dbname, cname, id)
+    def delete_document(self, dbname, cname, doc_id, pk):
+        link = self.document_link(dbname, cname, doc_id)
         opts = dict()
-        if pk:
-            opts['partitionKey'] = pk
+        opts['partitionKey'] = pk
         try:
-            return self.client.DeleteDocument(link, opts)
+            return self.client.DeleteItem(link, opts)
         except:
             print("Unexpected error:{}".format(sys.exc_info()[0]))
             raise
 
-    def execute_query(self, dbname, cname, query_spec, enable_cross_partition=False):
-        self.set_cross_partition_header(enable_cross_partition)
+    def execute_query(self, dbname, cname, sql, enable_cross_partition=False):
+        opts = {'enableCrossPartitionQuery': enable_cross_partition}
         link = self.collection_link(dbname, cname)
-        print('execute_query; link: {} query_spec: {}'.format(link, query_spec))
+        print('execute_query; link: {} sql: {} opts: {}'.format(link, sql, opts))
         try:
-            return list(self.client.QueryDocuments(link, query_spec))
+            return list(self.client.QueryItems(link, sql, opts))
         except:
             print("Unexpected error:{}".format(sys.exc_info()[0]))
             raise
-
-    def set_cross_partition_header(self, boolean):
-        header = self.cross_partition_header()
-        self.client.default_headers[header] = boolean
-
-    def cross_partition_header(self):
-        return 'x-ms-documentdb-query-enablecrosspartition'

@@ -5,8 +5,9 @@ pip-tools
 cryptography>=2.8
 
 azure>=4.0.0
+azure-cosmos
 arrow
-azure>=4.0.0
+
 # cassandra-driver
 # cql
 docopt
@@ -15,6 +16,7 @@ matplotlib
 openpyxl
 pandas
 prettytable
-pydocumentdb
+azure-cosmos
+# pydocumentdb  # obsolete
 # pyopenssl
 simplejson

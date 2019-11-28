@@ -5,12 +5,16 @@ Usage:
     python challenge3.py load_azure_sql_collection dev world_airports data/world_airports_flat.json --to-numerics
     python challenge3.py count_docs_in_collection hackathon airports3
     python challenge3.py query_by_iata_code hackathon airports3 ATL
+    python challenge3.py delete_document dev airports ebb42868-2931-4b30-a777-632b30dff1dc BDL
+    python challenge3.py list_databases
+    python challenge3.py list_collections dev
 Options:
     -h --help     Show this screen.
     --version     Show version.
 """
 
-# Chris Joakim, Microsoft, 2019/04/24
+# Chris Joakim, Microsoft, 2019/11/28
+
 
 import json
 import os
@@ -22,12 +26,11 @@ import arrow
 
 from docopt import docopt
 
-# Microsoft open-source library for CosmosDB w/SQL API
-import pydocumentdb.document_client as document_client 
+
 
 from src.joakim import cosmos
 
-VERSION='April 2019'
+VERSION='November 2019'
 
 
 class Main(object):
@@ -62,13 +65,27 @@ class Main(object):
                 iata_code = sys.argv[4]
                 self.query_by_iata_code(dbname, collname, iata_code)
 
+            elif func == 'list_databases':
+                self.list_databases()
+
+            elif func == 'list_collections':
+                dbname    = sys.argv[2]
+                self.list_collections(dbname)
+
+            elif func == 'delete_document':
+                dbname    = sys.argv[2]
+                collname  = sys.argv[3]
+                doc_id    = sys.argv[4]
+                pk        = sys.argv[5]
+                self.delete_document(dbname, collname, doc_id, pk)
+
             else:
                 self.print_options('invalid function')
         else:
             self.print_options('no function given on command-line')
 
     def load_azure_sql_collection(self, dbname, collname, infile):
-        util = cosmos.DocDbUtil(True)
+        util = cosmos.CosmosSqlUtil()
 
         with open(infile, 'rt') as f:
             for idx, line in enumerate(f):
@@ -101,22 +118,34 @@ class Main(object):
         return False
 
     def count_docs_in_collection(self, dbname, collname):
-        util = cosmos.DocDbUtil(True)
-        query_spec = dict()
-        query_spec['query'] = "SELECT VALUE COUNT(1) FROM c"
-        query_spec['parameters'] = [ ]
-        results = util.execute_query(dbname, collname, query_spec, enable_cross_partition=True)
+        util = cosmos.CosmosSqlUtil()
+        sql = "SELECT VALUE COUNT(1) FROM c"
+        results = util.execute_query(dbname, collname, sql, True)
         for doc in results:
             print(json.dumps(doc, sort_keys=False, indent=2))
 
     def query_by_iata_code(self, dbname, collname, iata_code):
-        util = cosmos.DocDbUtil(False)
-        query_spec = dict()
-        query_spec['query'] = "SELECT * FROM c where c.pk = '{}'".format(iata_code)
-        query_spec['parameters'] = [ ]
-        results = util.execute_query(dbname, collname, query_spec, enable_cross_partition=False)
+        util = cosmos.CosmosSqlUtil()
+        sql = "SELECT * FROM c where c.pk = '{}'".format(iata_code)
+        results = util.execute_query(dbname, collname, sql, False)
         for doc in results:
             print(json.dumps(doc, sort_keys=False, indent=2))
+
+    def list_databases(self):
+        util = cosmos.CosmosSqlUtil()
+        results = util.list_databases()
+        print(json.dumps(results, sort_keys=False, indent=2))
+
+    def list_collections(self, dbname):
+        util = cosmos.CosmosSqlUtil()
+        results = util.list_collections(dbname)
+        print(json.dumps(results, sort_keys=False, indent=2))
+
+    def delete_document(self, dbname, collname, doc_id, pk):
+        util = cosmos.CosmosSqlUtil()
+        results = util.delete_document(dbname, collname, doc_id, pk)
+        if results:
+            print(json.dumps(results, sort_keys=False, indent=2))
 
 
 if __name__ == "__main__":
