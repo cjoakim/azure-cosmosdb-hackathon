@@ -13,6 +13,6 @@ python challenge3.py load_azure_sql_collection dev airports data/mongoexport_air
 
 python challenge3.py count_docs_in_collection dev airports
 
-python challenge3.py query_by_iata_code dev airports3 ATL
+python challenge3.py query_by_iata_code dev airports ATL
 
 echo 'done'
