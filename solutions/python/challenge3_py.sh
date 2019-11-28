@@ -9,7 +9,7 @@ python challenge3.py list_collections dev
 
 python challenge3.py count_docs_in_collection dev airports
 
-python challenge3.py load_azure_sql_collection hackathon airports data/mongoexport_airports.json --to-numerics
+python challenge3.py load_azure_sql_collection dev airports data/mongoexport_airports.json --to-numerics
 
 python challenge3.py count_docs_in_collection dev airports
 
